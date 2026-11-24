@@ -1,0 +1,8 @@
+# Archivos de trabajo que no forman parte de la web
+_to_delete/
+*.bak
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

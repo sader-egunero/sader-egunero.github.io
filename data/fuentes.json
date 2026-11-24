@@ -1,0 +1,730 @@
+[
+ {
+  "n": 1,
+  "cat": "Científica y vecinal",
+  "t": "Sader, S.A. Plan de Vigilancia Ambiental 2025, tabla 4 «Residuos admitidos por línea de tratamiento» (capacidad autorizada y cantidades admitidas en 2025, por línea). Documento público, disponible a solicitud (sin enlace público).",
+  "url": "",
+  "legacy": false,
+  "k": "pva25"
+ },
+ {
+  "n": 2,
+  "cat": "Registros y corporativas",
+  "t": "ASEGRE, Asociación de Empresas Gestoras de Residuos y Recursos Especiales. Dossier corporativo (2022): en España se generan unos 2,5 millones de toneladas de residuos peligrosos al año.",
+  "url": "https://asegre.com/wp-content/uploads/2022/12/Dossier_Asegre_2022_12_VF.pdf",
+  "legacy": false,
+  "k": "asegre"
+ },
+ {
+  "n": 3,
+  "cat": "Científica y vecinal",
+  "t": "Elaboración propia para la edición íntegra de este informe: localización de los centros escolares según sus fichas oficiales y distancias en línea recta medidas sobre cartografía © OpenStreetMap contributors.",
+  "url": "",
+  "legacy": false,
+  "k": "osm"
+ },
+ {
+  "n": 4,
+  "cat": "Registros y corporativas",
+  "t": "Sader. «Acerca de Sader» (sitio web corporativo): «la instalación de mayor capacidad de tratamiento de residuos de toda la zona Norte»; capacidad de gestión superior a 150.000 t/año.",
+  "url": "https://sader.es/acerca-de-sader/",
+  "legacy": false,
+  "k": "sader_web"
+ },
+ {
+  "n": 5,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (12/11/2024). I. Rioja Andueza, «La empresa Sader de Bilbao superó en 2022 y 2023 el máximo de residuos “peligrosos” que podía recibir».",
+  "url": "https://www.eldiario.es/euskadi/empresa-sader-bilbao-supero-2022-2023-maximo-residuos-peligrosos-podia-recibir_1_11813106.html",
+  "legacy": false,
+  "k": "ed_exceso24"
+ },
+ {
+  "n": 6,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (11/02/2025). «La última inspección del Gobierno vasco en la empresa Sader de Bilbao detectó cinco “desviaciones” ambientales».",
+  "url": "https://www.eldiario.es/euskadi/ultima-inspeccion-gobierno-vasco-empresa-sader-bilbao-detecto-cinco-desviaciones-ambientales_1_12045420.html",
+  "legacy": false,
+  "k": "ed_insp25"
+ },
+ {
+  "n": 7,
+  "cat": "Prensa",
+  "t": "Naiz (14/11/2025). «Una nueva marcha vecinal demanda soluciones y “no más autorizaciones” para Sader y Profersa».",
+  "url": "https://www.naiz.eus/info/noticia/amp/20251114/una-marcha-vecinal-demanda-soluciones-y-no-mas-autorizaciones-para-sader-y-profersa",
+  "legacy": false,
+  "k": "naiz_marcha25"
+ },
+ {
+  "n": 8,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (19/12/2025). I. Rioja Andueza, «El Gobierno vasco niega que Sader sea un “riesgo” en Bilbao pero admite que en el puerto se “minimizará” el impacto».",
+  "url": "https://www.eldiario.es/euskadi/gobierno-vasco-niega-sader-sea-riesgo-bilbao-admite-puerto-minimizara-impacto_1_12858662.html",
+  "legacy": false,
+  "k": "ed_riesgo25"
+ },
+ {
+  "n": 9,
+  "cat": "Oficial y normativa",
+  "t": "Boletín Oficial del País Vasco, n.º 14, 20 de enero de 2023. Resolución de 17 de agosto de 2022, de la viceconsejera de Sostenibilidad Ambiental, por la que se revisa y modifica la autorización ambiental integrada concedida a SADER (concedida por Resolución de 14 de enero de 2008).",
+  "url": "https://www.euskadi.eus/bopv2/datos/2023/01/2300336a.pdf",
+  "legacy": false,
+  "k": "bopv23"
+ },
+ {
+  "n": 10,
+  "cat": "Oficial y normativa",
+  "t": "Directiva 2010/75/UE del Parlamento Europeo y del Consejo, de 24 de noviembre de 2010, sobre las emisiones industriales. Art. 20.3 (cambios sustanciales) y anexo I, punto 5.1.",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32010L0075",
+  "legacy": false,
+  "k": "dei"
+ },
+ {
+  "n": 11,
+  "cat": "Oficial y normativa",
+  "t": "Real Decreto 815/2013, de 18 de octubre, por el que se aprueba el Reglamento de emisiones industriales. Art. 14 (criterios de modificación sustancial) y anejo 1, epígrafe 5.1. Texto consolidado, BOE-A-2013-10949.",
+  "url": "https://www.boe.es/buscar/pdf/2013/BOE-A-2013-10949-consolidado.pdf",
+  "legacy": false,
+  "k": "rd815"
+ },
+ {
+  "n": 12,
+  "cat": "Oficial y normativa",
+  "t": "International Agency for Research on Cancer (2012). Arsenic, Metals, Fibres and Dusts. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, vol. 100C. Lyon: IARC. (Compuestos de cromo VI, arsénico, cadmio, compuestos de níquel y amianto: grupo 1.)",
+  "url": "https://publications.iarc.fr/120",
+  "legacy": false,
+  "k": "iarc100c"
+ },
+ {
+  "n": 13,
+  "cat": "Científica y vecinal",
+  "t": "Pey Betrán, J. (2026). Estudio de la deposición atmosférica en Bilbao. Instituto Pirenaico de Ecología (IPE-CSIC). Campaña de muestreo: 30 de abril–25 de junio de 2026; 16 pp.; tablas 1 a 4.",
+  "url": "doc:estudio-deposicion-csic-2026.pdf",
+  "legacy": false,
+  "k": "csic"
+ },
+ {
+  "n": 14,
+  "cat": "Prensa",
+  "t": "Naiz (8/05/2026). «Niveles alarmantes de plomo y arsénico en un parque junto a la planta de Sader en Zorrotza».",
+  "url": "https://www.naiz.eus/eu/info/noticia/20260508/niveles-alarmantes-de-plomo-y-arsenico-en-un-parque-junto-a-la-planta-de-sader-en-zorrotza",
+  "legacy": false,
+  "k": "naiz_suelo26"
+ },
+ {
+  "n": 15,
+  "cat": "Oficial y normativa",
+  "t": "Ley 4/2015, de 25 de junio, para la prevención y corrección de la contaminación del suelo (País Vasco). Art. 16 (informes de situación del suelo), art. 23 (declaración de la calidad del suelo) y anexo III (valores indicativos de evaluación VIE-B). Texto consolidado.",
+  "url": "https://www.euskadi.eus/bopv2/datos/textosconsolidados/201502935_vigentea.pdf",
+  "legacy": false,
+  "k": "ley4"
+ },
+ {
+  "n": 16,
+  "cat": "Científica y vecinal",
+  "t": "Órgano ambiental del Gobierno Vasco. Resolución que deniega una solicitud vecinal de acceso al «Informe Preliminar de la Situación del Suelo» de Sader por no haber sido presentado por la empresa. Documentación vecinal.",
+  "url": "",
+  "legacy": false,
+  "k": "res_suelo"
+ },
+ {
+  "n": 17,
+  "cat": "Científica y vecinal",
+  "t": "Ayuntamiento de Bilbao, Área de Urbanismo y Medio Ambiente. Expediente 07-1250-000005: informe de la Subárea de Medio Ambiente de 5/07/2007 sobre la solicitud de autorización ambiental integrada de Sader, notificado al Gobierno Vasco el 9/07/2007. Documentación vecinal.",
+  "url": "",
+  "legacy": false,
+  "k": "ayto07"
+ },
+ {
+  "n": 18,
+  "cat": "Oficial y normativa",
+  "t": "Gobierno Vasco. Informes anuales de la calidad del aire en la CAPV (2010–2014 y 2024): relación de estaciones con datos de cada año.",
+  "url": "",
+  "legacy": false,
+  "k": "gv_aire"
+ },
+ {
+  "n": 19,
+  "cat": "Prensa",
+  "t": "El Correo (20/01/2014). V. Urieta, «Los malos olores colman la paciencia de vecinos de Zorroza y San Ignacio» y «¿Por qué no funcionan las cabinas?».",
+  "url": "",
+  "legacy": false,
+  "k": "elcorreo14"
+ },
+ {
+  "n": 20,
+  "cat": "Científica y vecinal",
+  "t": "Cálculo vecinal a partir de los datos públicos de la estación Unidad Móvil 2 de la red de calidad del aire del Gobierno Vasco (datos desde junio de 2024; análisis de octubre de 2025).",
+  "url": "",
+  "legacy": false,
+  "k": "calc_aire"
+ },
+ {
+  "n": 21,
+  "cat": "Científica y vecinal",
+  "t": "Testimonios vecinales (2026). Se citan como testimonio.",
+  "url": "",
+  "legacy": false,
+  "k": "testimonios26"
+ },
+ {
+  "n": 22,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (18/05/2024). I. Rioja Andueza, «Sader-Profersa: la última empresa contaminante en el casco urbano de Bilbao en seis claves».",
+  "url": "https://www.eldiario.es/euskadi/sader-profersa-ultima-empresa-contaminante-casco-bilbao-seis-claves-urbano_1_11371352.amp.html",
+  "legacy": false,
+  "k": "ed_claves24"
+ },
+ {
+  "n": 23,
+  "cat": "Oficial y normativa",
+  "t": "Boletín Oficial del País Vasco, n.º 108, 10 de junio de 2026. Resolución de 11 de febrero de 2026, del viceconsejero de Medio Ambiente, por la que se formula declaración de impacto ambiental y se concede autorización ambiental integrada a la instalación de valorización y eliminación de residuos peligrosos y no peligrosos promovida por Agaleus Circular Thinking, S.L. en Zierbena (Bizkaia).",
+  "url": "https://www.euskadi.eus/bopv2/datos/2026/06/2602517a.pdf",
+  "legacy": false,
+  "k": "bopv26"
+ },
+ {
+  "n": 24,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (24/02/2026). I. Rioja Andueza, «El Gobierno vasco rechaza las alegaciones y autoriza a Agaleus en el puerto de Bilbao, que permitirá cerrar Sader».",
+  "url": "https://www.eldiario.es/euskadi/gobierno-vasco-rechaza-alegaciones-autoriza-agaleus-puerto-bilbao-permitira-cerrar-sader_1_13015725.html",
+  "legacy": false,
+  "k": "ed_zierbena26"
+ },
+ {
+  "n": 25,
+  "cat": "Oficial y normativa",
+  "t": "Organización Mundial de la Salud (2021). WHO global air quality guidelines: particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide. Ginebra: OMS. ISBN 978-92-4-003422-8.",
+  "url": "https://www.who.int/publications/i/item/9789240034228",
+  "legacy": false,
+  "k": "oms21"
+ },
+ {
+  "n": 26,
+  "cat": "Registros y corporativas",
+  "t": "Empresia (registros del BORME). «Sociedad Anónima de Descontaminación y Eliminación de Residuos».",
+  "url": "https://www.empresia.es/empresa/sociedad-anonima-de-descontaminacion-y-eliminacion-de-residuos/",
+  "legacy": true,
+  "k": "empresia_sader"
+ },
+ {
+  "n": 27,
+  "cat": "Prensa",
+  "t": "El Salto (6/02/2022). G. Uriarte, «Sader, la última fábrica altamente contaminante de Bilbao».",
+  "url": "https://www.elsaltodiario.com/medioambiente/sader-ultima-fabrica-altamente-contaminante-bilbao",
+  "legacy": false,
+  "k": "salto22"
+ },
+ {
+  "n": 28,
+  "cat": "Prensa",
+  "t": "Radio Popular–Herri Irratia (2024). «Denuncian que la salud de los bilbaínos está en peligro: Sader Profersa sigue contaminando».",
+  "url": "https://radiopopular.com/podcast/denuncian-que-la-salud-de-los-bilbainos-esta-en-peligro-sader-profersa-sigue-contaminando",
+  "legacy": true,
+  "k": "radiopop24"
+ },
+ {
+  "n": 29,
+  "cat": "Científica y vecinal",
+  "t": "Registro fotográfico vecinal (2025–2026).",
+  "url": "",
+  "legacy": false,
+  "k": "fotos"
+ },
+ {
+  "n": 30,
+  "cat": "Oficial y normativa",
+  "t": "Gestoresderesiduos.org. Ficha del centro «S.A. de Descontaminación y Eliminación de Residuos (SADER)» (operaciones de gestión autorizadas).",
+  "url": "https://gestoresderesiduos.org/manager_centers/s-a-de-descontaminacion-y-elim-de-residuos-sader",
+  "legacy": true,
+  "k": "gestores"
+ },
+ {
+  "n": 31,
+  "cat": "Prensa",
+  "t": "Naiz (4/06/2026). «El vecindario afectado por Sader pide “fechas” para el cese de esta actividad en Bilbo».",
+  "url": "https://www.naiz.eus/es/info/noticia/20260604/el-vecindario-afectado-por-sader-piden-fechas-para-el-cese-de-esta-actividad-en-bilbo",
+  "legacy": false,
+  "k": "naiz_fechas26"
+ },
+ {
+  "n": 32,
+  "cat": "Oficial y normativa",
+  "t": "Gobierno Vasco. Plan de Prevención y Gestión de Residuos de la CAPV 2030, tabla 1 (generación de residuos peligrosos en 2018: 326.169 t).",
+  "url": "https://www.euskadi.eus/contenidos/noticia/xiileg_planes_departamentales/es_def/Plan-gestion-residuos-2030.pdf",
+  "legacy": false,
+  "k": "ppgr30"
+ },
+ {
+  "n": 33,
+  "cat": "Registros y corporativas",
+  "t": "Sader. «Comunicaciones» (comunicados de la empresa sobre la inspección de 2024 y su historial sancionador).",
+  "url": "https://sader.es/comunicaciones/",
+  "legacy": true,
+  "k": "sader_com"
+ },
+ {
+  "n": 34,
+  "cat": "Científica y vecinal",
+  "t": "Sader, S.A. Plan de Vigilancia Ambiental 2024. Documento público, disponible a solicitud (sin enlace público).",
+  "url": "",
+  "legacy": false,
+  "k": "pva24"
+ },
+ {
+  "n": 35,
+  "cat": "Oficial y normativa",
+  "t": "Technische Anleitung zur Reinhaltung der Luft (TA Luft), Alemania, n.º 4.5.1, tabla 6: valores de inmisión para la deposición de contaminantes (arsénico 4, plomo 100, cadmio 2, níquel 15 µg/m²·día, media anual).",
+  "url": "https://www.umwelt-online.de/recht/luft/ta_luft/ta02_4b.htm",
+  "legacy": false,
+  "k": "taluft"
+ },
+ {
+  "n": 36,
+  "cat": "Oficial y normativa",
+  "t": "Directiva (UE) 2024/2881 del Parlamento Europeo y del Consejo, de 23 de octubre de 2024, sobre la calidad del aire ambiente y una atmósfera más limpia en Europa (versión refundida). DOUE L, 20/11/2024. Transposición: 11 de diciembre de 2026.",
+  "url": "https://eur-lex.europa.eu/eli/dir/2024/2881/oj?locale=es",
+  "legacy": false,
+  "k": "dir2024"
+ },
+ {
+  "n": 37,
+  "cat": "Oficial y normativa",
+  "t": "Organización Mundial de la Salud. «Intoxicación por plomo y salud» (nota descriptiva).",
+  "url": "https://www.who.int/es/news-room/fact-sheets/detail/lead-poisoning-and-health",
+  "legacy": false,
+  "k": "omsplomo"
+ },
+ {
+  "n": 38,
+  "cat": "Científica y vecinal",
+  "t": "Profersa. Plan de Vigilancia Ambiental 2025. Documento público, disponible a solicitud (sin enlace público).",
+  "url": "",
+  "legacy": false,
+  "k": "pva25p"
+ },
+ {
+  "n": 39,
+  "cat": "Prensa",
+  "t": "El Correo (20/01/2011). J. García, «La estación fantasma de San Ignacio».",
+  "url": "",
+  "legacy": false,
+  "k": "elcorreo11"
+ },
+ {
+  "n": 40,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (22/11/2024). «El Gobierno vasco promete “gestiones” para sacar las empresas Sader y Profersa del casco urbano de Bilbao».",
+  "url": "https://www.eldiario.es/euskadi/gobierno-vasco-promete-gestiones-sacar-empresas-sader-profersa-casco-urbano-bilbao_1_11844389.html",
+  "legacy": false,
+  "k": "ed_gestiones24"
+ },
+ {
+  "n": 41,
+  "cat": "Oficial y normativa",
+  "t": "Directiva 2008/50/CE del Parlamento Europeo y del Consejo, de 21 de mayo de 2008, relativa a la calidad del aire ambiente y a una atmósfera más limpia en Europa (valores límite vigentes hasta su sustitución).",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32008L0050",
+  "legacy": false,
+  "k": "dir2008"
+ },
+ {
+  "n": 42,
+  "cat": "Oficial y normativa",
+  "t": "Consejo de la Unión Europea. «Calidad del aire» (ficha explicativa de la Directiva (UE) 2024/2881 y de los valores límite para 2030).",
+  "url": "https://www.consilium.europa.eu/es/policies/air-quality/",
+  "legacy": false,
+  "k": "consilium"
+ },
+ {
+  "n": 43,
+  "cat": "Científica y vecinal",
+  "t": "Ararteko. Escrito de 13/07/2026 de cierre del expediente 1550/2026/QC, sobre el uso del muelle del Astillero por las empresas del grupo. Documentación vecinal.",
+  "url": "",
+  "legacy": false,
+  "k": "ararteko26"
+ },
+ {
+  "n": 44,
+  "cat": "Prensa",
+  "t": "El Correo (14/04/2025). «Preocupación vecinal por la presencia de amianto en Molinos Vascos».",
+  "url": "https://www.elcorreo.com/bizkaia/preocupacion-vecinal-presencia-amianto-molinos-vascos-20250414004743-nt_amp.html",
+  "legacy": false,
+  "k": "elcorreo25"
+ },
+ {
+  "n": 45,
+  "cat": "Prensa",
+  "t": "Naiz (20/04/2025). «19 toneladas de amianto aguardan en Molinos Vascos, pendiente de restauración por la Diputación».",
+  "url": "https://www.naiz.eus/es/info/noticia/20250420/19-toneladas-de-amianto-aguardan-en-molinos-vascos-pendiente-de-restauracion-por-la-diputacion",
+  "legacy": false,
+  "k": "naiz_amianto25"
+ },
+ {
+  "n": 46,
+  "cat": "Científica y vecinal",
+  "t": "Inspección Ambiental del Gobierno Vasco. Correo electrónico de 18/12/2025 en respuesta a una denuncia vecinal. Documentación vecinal.",
+  "url": "",
+  "legacy": false,
+  "k": "correo_insp"
+ },
+ {
+  "n": 47,
+  "cat": "Prensa",
+  "t": "Deia (7/06/2024). «Profersa reabre en Zorrotza tras un incidente que provocó una nube de vapor y el cierre temporal de la planta».",
+  "url": "https://www.deia.eus/bilbao/2024/06/07/profersa-reabre-zorrotza-incidente-provoco-8328901.html",
+  "legacy": false,
+  "k": "deia_profersa24"
+ },
+ {
+  "n": 48,
+  "cat": "Prensa",
+  "t": "El Salto (15/05/2024). «Sader y Profersa siguen contaminando Bilbao con una bula del Ayuntamiento que dura ya nueve años».",
+  "url": "https://www.elsaltodiario.com/contaminacion/sader-profersa-siguen-contaminando-bilbao-bula-del-ayuntamiento-dura-ya-nueve-anos",
+  "legacy": false,
+  "k": "salto24"
+ },
+ {
+  "n": 49,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (15/05/2024). «Decretan el cierre cautelar de una empresa en Bilbao que acumula incidencias y críticas vecinales».",
+  "url": "https://www.eldiario.es/euskadi/decretan-cierre-cautelar-empresa-bilbao-acumula-incidencias-criticas-vecinales_1_11366874.html",
+  "legacy": false,
+  "k": "ed_cierre24"
+ },
+ {
+  "n": 50,
+  "cat": "Prensa",
+  "t": "Europa Press (15/05/2024). «El Gobierno vasco ordena el cierre cautelar de la empresa Profersa en Zorroza tras los últimos incidentes».",
+  "url": "https://www.europapress.es/euskadi/noticia-gobierno-vasco-ordena-cierre-cautelar-empresa-profersa-zorroza-ultimos-incidentes-20240515143410.html",
+  "legacy": true,
+  "k": "europapress24"
+ },
+ {
+  "n": 51,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (15/07/2024). I. Rioja Andueza, «La empresa Sader de Bilbao registró en junio un pequeño vertido de ácido clorhídrico».",
+  "url": "https://www.eldiario.es/euskadi/empresa-sader-bilbao-registro-junio-pequeno-vertido-acido-clorhidrico_1_11525365.html",
+  "legacy": false,
+  "k": "ed_hcl24"
+ },
+ {
+  "n": 52,
+  "cat": "Oficial y normativa",
+  "t": "Irekia, Gobierno Vasco. «El Gobierno vasco recuerda que la planta de fertilizantes de Zorrotza realiza síntesis química y nada tiene que ver con el caso de Texas».",
+  "url": "https://www.irekia.euskadi.eus/es/news/14185-gobierno-vasco-recuerda-que-planta-fertilizantes-zorrotza-realiza-sintesis-quimica-nada-tiene-que-ver-con-caso-texas",
+  "legacy": false,
+  "k": "irekia_texas"
+ },
+ {
+  "n": 53,
+  "cat": "Oficial y normativa",
+  "t": "Gobierno Vasco. Informes de inspección ambiental de Profersa publicados en el buscador de informes de inspección (2016–2022).",
+  "url": "",
+  "legacy": false,
+  "k": "insp_gv"
+ },
+ {
+  "n": 54,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (13/11/2024). M. López, «Vecinos de Bilbao contra Sader-Profersa y el “abandono de las instituciones”: “Nos ahogamos, respiramos basura cada día”».",
+  "url": "https://www.eldiario.es/euskadi/vecinos-bilbao-sader-profersa-abandono-instituciones-ahogamos-respiramos-basura-dia_1_11818133.html",
+  "legacy": false,
+  "k": "ed_vecinos24"
+ },
+ {
+  "n": 55,
+  "cat": "Oficial y normativa",
+  "t": "International Agency for Research on Cancer (2006). Inorganic and Organic Lead Compounds. IARC Monographs, vol. 87. Lyon: IARC. (Compuestos inorgánicos de plomo: grupo 2A.)",
+  "url": "https://publications.iarc.fr/105",
+  "legacy": false,
+  "k": "iarc87"
+ },
+ {
+  "n": 56,
+  "cat": "Oficial y normativa",
+  "t": "International Agency for Research on Cancer (2016). Outdoor Air Pollution. IARC Monographs, vol. 109. Lyon: IARC. (Contaminación atmosférica exterior y materia particulada: grupo 1.)",
+  "url": "https://publications.iarc.fr/538",
+  "legacy": false,
+  "k": "iarc109"
+ },
+ {
+  "n": 57,
+  "cat": "Literatura científica",
+  "t": "Hill, W., Lim, E. L., Weeden, C. E., et al. (2023). Lung adenocarcinoma promotion by air pollutants. Nature, 616, 159–167. doi:10.1038/s41586-023-05874-3. (Presentado por C. Swanton en el congreso de la ESMO de 2022.)",
+  "url": "https://doi.org/10.1038/s41586-023-05874-3",
+  "legacy": false,
+  "k": "hill23"
+ },
+ {
+  "n": 58,
+  "cat": "Literatura científica",
+  "t": "Agencia Europea de Medio Ambiente. Daños a la salud humana por la contaminación del aire en Europa (evaluación de la carga de enfermedad, 2022).",
+  "url": "",
+  "legacy": false,
+  "k": "eea22"
+ },
+ {
+  "n": 59,
+  "cat": "Literatura científica",
+  "t": "Ecologistas en Acción / Ekologistak Martxan (2025). La calidad del aire en el Estado español durante 2024.",
+  "url": "",
+  "legacy": false,
+  "k": "eea_aq"
+ },
+ {
+  "n": 60,
+  "cat": "Literatura científica",
+  "t": "Fervers, B., et al. (2023). Estudio XENAIR sobre exposición a contaminación atmosférica y riesgo de cáncer de mama, presentado en el congreso de la European Society for Medical Oncology (Madrid, octubre de 2023).",
+  "url": "",
+  "legacy": false,
+  "k": "esmo23"
+ },
+ {
+  "n": 61,
+  "cat": "Registros y corporativas",
+  "t": "Empresia (registros del BORME). «Agaleus Medio Ambiente y Energía SL»: órganos sociales, vinculaciones y actos inscritos.",
+  "url": "https://www.empresia.es/empresa/agaleus-medio-ambiente-y-energia/",
+  "legacy": true,
+  "k": "empresia_ag"
+ },
+ {
+  "n": 62,
+  "cat": "Registros y corporativas",
+  "t": "Datoscif (registros del BORME). «Agaleus Medio Ambiente y Energía SL» y «Agaleus Circular Thinking SL».",
+  "url": "https://www.datoscif.es/empresa/agaleus-medio-ambiente-y-energia-sl",
+  "legacy": true,
+  "k": "datoscif"
+ },
+ {
+  "n": 63,
+  "cat": "Registros y corporativas",
+  "t": "eInforma (Informa D&B). «Agaleus Medio Ambiente y Energía SL» (perfil mercantil).",
+  "url": "https://www.einforma.com/informacion-empresa/agaleus-medio-ambiente-energia",
+  "legacy": true,
+  "k": "einforma"
+ },
+ {
+  "n": 64,
+  "cat": "Registros y corporativas",
+  "t": "Iberinform. «Producción de Fertilizantes SA» (perfil mercantil y actos del BORME).",
+  "url": "https://www.iberinform.es/empresa/5453573/produccion-de-fertilizantes",
+  "legacy": true,
+  "k": "iberinform"
+ },
+ {
+  "n": 65,
+  "cat": "Oficial y normativa",
+  "t": "Gobierno Vasco. El sector público de la CAE y entidades participadas, 2012: ficha de Cogeneración Zorroza, A.I.E.",
+  "url": "https://www.euskadi.eus/contenidos/informacion/sector_publico_cae_2013/es_def/adjuntos/cogeneracion%20zorroza%202012.pdf",
+  "legacy": true,
+  "k": "cadem12"
+ },
+ {
+  "n": 66,
+  "cat": "Registros y corporativas",
+  "t": "Deia (3/03/2025). «Ángela Fernández (Agaleus): “Ekinbarri nos ha permitido ordenarnos, entendernos y delegar”».",
+  "url": "https://www.deia.eus/economia/2025/03/03/ekinbarri-permitido-ordenarnos-entender-delegar-agaleus-empresas-bizkaia-programa-mejora-9329658.html",
+  "legacy": true,
+  "k": "deia_ekin25"
+ },
+ {
+  "n": 67,
+  "cat": "Registros y corporativas",
+  "t": "Estrategia Empresarial. «El Grupo Agaleus adquiere el 100 % de Quimycat».",
+  "url": "https://estrategia.net/noticias/el-grupo-agaleus-adquiere-el-100-de-quimycat",
+  "legacy": true,
+  "k": "estrategia"
+ },
+ {
+  "n": 68,
+  "cat": "Registros y corporativas",
+  "t": "Agaleus. Sitio web corporativo (actividad, cifras del grupo y clientes).",
+  "url": "https://agaleus.com/",
+  "legacy": true,
+  "k": "agaleus_web"
+ },
+ {
+  "n": 69,
+  "cat": "Registros y corporativas",
+  "t": "Agaleus. «Agaleus adquiere el 100 % de las acciones de Sogecar» (comunicación corporativa).",
+  "url": "https://agaleus.com/agaleus-adquiere-la-propiedad-completa-de-sogecar/",
+  "legacy": true,
+  "k": "agaleus_sogecar"
+ },
+ {
+  "n": 70,
+  "cat": "Registros y corporativas",
+  "t": "Noticias de Álava (16/06/2025). «El grupo Agaleus compra la alavesa Ekinoil».",
+  "url": "https://www.noticiasdealava.eus/alava/2025/06/16/grupo-agaleus-compra-alavesa-ekinoil-troconiz-9765642.html",
+  "legacy": true,
+  "k": "nalava"
+ },
+ {
+  "n": 71,
+  "cat": "Registros y corporativas",
+  "t": "AVEQ-KIMIKA (octubre de 2025). «Agaleus anuncia cambios en su cúpula directiva».",
+  "url": "https://www.aveq-kimika.es/noticias/agaleus-cambio-directiva/",
+  "legacy": true,
+  "k": "aveq_cambio"
+ },
+ {
+  "n": 72,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (9/10/2025). I. Rioja Andueza, «Xabier Caño deja su cargo como directivo de Agaleus, el grupo que aglutina a Sader y Profersa».",
+  "url": "https://www.eldiario.es/euskadi/xabier-cano-deja-cargo-directivo-agaleus-grupo-aglutina-sader-profersa_1_12671247.html",
+  "legacy": false,
+  "k": "ed_cano25"
+ },
+ {
+  "n": 73,
+  "cat": "Oficial y normativa",
+  "t": "Ihobe, Sociedad Pública de Gestión Ambiental (9/07/2025). «Ihobe y Aclima trabajarán conjuntamente para mejorar la gestión de residuos y fomentar la economía circular».",
+  "url": "https://www.ihobe.eus/es/actualidad/ihobe-y-aclima-trabajaran-conjuntamente-para-mejorar-gestion-residuos-fomentar",
+  "legacy": false,
+  "k": "ihobe25"
+ },
+ {
+  "n": 74,
+  "cat": "Registros y corporativas",
+  "t": "Aclima, Basque Environment Cluster. «Xabier Caño, presidente de Aclima» (entrevista y datos del clúster).",
+  "url": "https://aclima.eus/en/noticia/xabier-cano-presidente-de-aclima-las-empresas-invierten-en-tecnologia-porque-no-reciclar-ahora-es-mas-caro/",
+  "legacy": true,
+  "k": "aclima_cano"
+ },
+ {
+  "n": 75,
+  "cat": "Registros y corporativas",
+  "t": "AVEQ-KIMIKA. Ficha de empresa socia: Sogecar.",
+  "url": "https://www.aveq-kimika.es/empresas-socias/sogecar/",
+  "legacy": true,
+  "k": "aveq_sogecar"
+ },
+ {
+  "n": 76,
+  "cat": "Registros y corporativas",
+  "t": "AVEQ-KIMIKA. «Ángela Fernández, nombrada colegiada de honor del COQIQ».",
+  "url": "https://www.aveq-kimika.es/noticias/angela-fernandez-nombrada-colegiada-de-honor-coqiq/",
+  "legacy": true,
+  "k": "aveq_coqiq"
+ },
+ {
+  "n": 77,
+  "cat": "Oficial y normativa",
+  "t": "Ayuntamiento de Bilbao (16/09/2015). Nota oficial sobre la aprobación del convenio urbanístico para adelantar el cese de la actividad de Sader en Punta Zorroza.",
+  "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279146426368&language=es&pageid=3000075248&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia",
+  "legacy": true,
+  "k": "ayto15"
+ },
+ {
+  "n": 78,
+  "cat": "Prensa",
+  "t": "Diario del Puerto, reproducido por ACE-Cargadores (17/05/2024). «El proyecto de Agaleus en el nuevo muelle AZ-0 refuerza el valor industrial del Puerto de Bilbao».",
+  "url": "https://www.ace-cargadores.com/2024/05/17/el-proyecto-de-agaleus-en-el-nuevo-muelle-az-0-refuerza-el-valor-industrial-del-puerto-de-bilbao/",
+  "legacy": false,
+  "k": "ace24"
+ },
+ {
+  "n": 79,
+  "cat": "Prensa",
+  "t": "Idom. «Ordenación urbanística Punta Zorroza» (ficha del proyecto).",
+  "url": "https://www.idom.com/proyecto/ordenacion-urbanistica-punta-zorroza/",
+  "legacy": true,
+  "k": "idom"
+ },
+ {
+  "n": 80,
+  "cat": "Oficial y normativa",
+  "t": "Ayuntamiento de Bilbao. Ordenanza Municipal de Protección del Medio Ambiente, Boletín Oficial de Bizkaia de 10 de junio de 2000 (sustituye a la de 22 de julio de 1992).",
+  "url": "https://normatia.com/es/normativa/proteccion-medio-ambiente-bilbao/2000/exposicion-de-motivos/",
+  "legacy": false,
+  "k": "opma"
+ },
+ {
+  "n": 81,
+  "cat": "Oficial y normativa",
+  "t": "Ararteko. Informe anual al Parlamento Vasco 2025, entregado el 30 de marzo de 2026. Resumen difundido por la Red Europea de Defensores del Pueblo.",
+  "url": "https://eno.ombudsman.europa.eu/home/news/maincontent/informe-anual-del-ararteko-al-pa.html",
+  "legacy": false,
+  "k": "ararteko25"
+ },
+ {
+  "n": 82,
+  "cat": "Prensa",
+  "t": "Deia (24/02/2026). «La dueña de Sader recibe autorización ambiental para su planta de residuos en el Puerto de Bilbao».",
+  "url": "https://www.deia.eus/bizkaia/2026/02/24/duena-sader-recibe-autorizacion-ambiental-10743467.html",
+  "legacy": false,
+  "k": "deia_aai26"
+ },
+ {
+  "n": 83,
+  "cat": "Prensa",
+  "t": "Tercera Información (18/02/2025). «Elkarrekin Podemos presenta alegaciones a la instalación de Sader-Profersa en el puerto de Bilbao».",
+  "url": "https://www.tercerainformacion.es/articulo/actualidad/euskal-herria/18/02/2025/elkarrekin-podemos-presenta-alegaciones-a-la-instalacion-de-sader-profersa-en-el-puerto-de-bilbao/",
+  "legacy": true,
+  "k": "tercera25"
+ },
+ {
+  "n": 84,
+  "cat": "Prensa",
+  "t": "Cadena SER / Radio Bilbao (5/02/2025). «El PP de Getxo alerta sobre el impacto de Sader y Profersa y exige un nuevo estudio ambiental».",
+  "url": "https://cadenaser.com/euskadi/2025/02/05/el-pp-de-getxo-alerta-sobre-el-impacto-de-sader-y-profersa-y-exige-un-nuevo-estudio-ambiental-radio-bilbao/",
+  "legacy": true,
+  "k": "ser_pp25"
+ },
+ {
+  "n": 85,
+  "cat": "Oficial y normativa",
+  "t": "Ley 27/2006, de 18 de julio, por la que se regulan los derechos de acceso a la información, de participación pública y de acceso a la justicia en materia de medio ambiente. Art. 13 (excepciones a la obligación de facilitar la información ambiental). BOE-A-2006-13010.",
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13010",
+  "legacy": false,
+  "k": "ley27"
+ },
+ {
+  "n": 86,
+  "cat": "Prensa",
+  "t": "Gestoresderesiduos.org (2025). «Los lixiviados de la discordia: un conflicto de residuos enfrenta a País Vasco y Navarra».",
+  "url": "https://gestoresderesiduos.org/noticias/los-lixiviados-de-la-discordia-un-conflicto-de-residuos-enfrenta-a-pais-vasco-y-navarra",
+  "legacy": true,
+  "k": "gestores_lix"
+ },
+ {
+  "n": 87,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (5/03/2025). I. Rioja Andueza, «La Guardia Civil da un balón de oxígeno a Asensio, Sader y Ecofert Sansoain al no ver peligrosos los lixiviados de Zubieta».",
+  "url": "https://www.eldiario.es/euskadi/guardia-civil-da-balon-oxigeno-asensio-sader-ecofert-sansoain-no-ver-peligrosos-lixiviados-zubieta_1_12105341.html",
+  "legacy": false,
+  "k": "ed_gc25"
+ },
+ {
+  "n": 88,
+  "cat": "Prensa",
+  "t": "elDiario.es/Euskadi (9/11/2025). I. Rioja Andueza, «Competencia cierra la investigación contra Sader, en la que buscaba pruebas de reparto del mercado vasco de residuos».",
+  "url": "https://www.eldiario.es/euskadi/competencia-cierra-investigacion-sader-buscaba-pruebas-reparto-mercado-vasco-residuos_1_12753523.html",
+  "legacy": false,
+  "k": "ed_comp25"
+ },
+ {
+  "n": 89,
+  "cat": "Prensa",
+  "t": "EH Bildu Bilbao (mayo de 2024). «La decisión de clausurar la planta de Profersa pone en evidencia la necesidad de sacar del casco urbano Profersa y Sader».",
+  "url": "https://ehbildu.eus/herriak/bilbo/es/noticias/la-decision-de-clausurar-la-planta-de-profersa-pone-en-evidencia-la-necesidad-de-sacar-del-casco-urbano-profersa-y-sader-tal-y-como-demanda-la-ciudadania",
+  "legacy": true,
+  "k": "ehbildu24"
+ },
+ {
+  "n": 90,
+  "cat": "Prensa",
+  "t": "Radio Nervión (12/11/2026). «Bilbao une fuerzas contra Sader y Profersa y prepara una gran movilización antes de diciembre».",
+  "url": "https://www.radionervion.com/2026/11/12/bilbao-une-fuerzas-contra-sader-y-profersa-y-prepara-una-gran-movilizacion-antes-de-diciembre/",
+  "legacy": false,
+  "k": "rnervion26"
+ },
+ {
+  "n": 91,
+  "cat": "Prensa",
+  "t": "BilbaoHiria (12/11/2026). «“Sader-Profersa Kanpora”: los vecinos de Bilbao preparan una movilización antes de diciembre».",
+  "url": "https://bilbaohiria.com/bilbao/sader-profersa-kanpora-movilizacion-diciembre-estudio-csic",
+  "legacy": false,
+  "k": "bhiria26"
+ }
+]

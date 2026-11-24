@@ -1,0 +1,42 @@
+PEGATINAS · PEGATINAK
+Diseños para que cualquiera los imprima y los pegue (papel adhesivo o copistería, a tamaño real).
+Edonork inprimatu eta itsasteko diseinuak (paper itsasgarria edo kopia-denda, benetako tamainan).
+Sader Egunero · sader-egunero.net
+
+DISEÑOS · DISEINUAK
+  01  kanpora-redonda              Redonda Ø 8 cm       SADER-PROFERSA KANPORA! + ¿Qué estamos respirando?
+  02  grito-rectangular            15 × 5 cm            SADER-PROFERSA KANPORA! + ¿Qué estamos respirando? + QR
+  03  fecha-datos-salud-cuadrada   7 × 7 cm             Fecha. Datos. Salud. / Data. Datuak. Osasuna.
+  04  leihoak-cuadrada             7 × 7 cm             Leihoak ireki nahi ditugu (ventana abierta)
+  05  plomo-rectangular            15 × 5 cm            El dato del plomo · IPE-CSIC 2026 + QR
+  06  salud-redonda                Redonda Ø 8 cm       Nuestra salud vale más que sus beneficios.
+  Todas llevan sader-egunero.net. El QR abre https://sader-egunero.net (comprobado).
+
+VERSIONES (en el nombre del archivo)
+  -ES  castellano · -EU  euskera · -BI  bilingüe · -mono  blanco y negro (para fotocopia o impresora sin color)
+
+CARPETAS
+  hojas-A4/       PARA IMPRIMIR EN CASA. Una hoja A4 con las 6 pegatinas (dos de 15×5, dos redondas, dos cuadradas).
+                  hoja-A4-ES, -EU, -BI, y sus versiones -mono.
+  imprenta-pdf/   PARA COPISTERÍA O IMPRENTA. Una pegatina por PDF, a tamaño real, con 3 mm de sangrado y marcas de corte.
+                  En las redondas, las marcas indican el cuadrado que contiene el círculo; pedid corte redondo de 8 cm.
+  png-300ppp/     Cada pegatina en PNG a 300 ppp y tamaño final (las redondas, con fondo transparente).
+                  Para pegatineras online o para montar vuestras propias hojas.
+
+CÓMO IMPRIMIR EN CASA
+  1. Papel adhesivo A4 (blanco mate o brillo; para exterior, vinilo adhesivo).
+  2. Abre la hoja-A4 en PDF. Imprime a «Tamaño real» o «100 %». NO marques «Ajustar a la página».
+  3. Haz primero una prueba en papel normal y mide: la pegatina rectangular debe medir 15 cm.
+  4. Recorta por la línea discontinua (tijera, o cúter y regla en las rectas; un cortador de círculos de 8 cm ayuda).
+  Sin impresora en color: usa las versiones -mono.
+
+ETXEAN INPRIMATZEKO
+  Ireki hoja-A4 PDFa eta inprimatu «benetako tamainan» (% 100), «orrira egokitu» aukerarik gabe.
+  Egin lehenik proba bat paper arruntean: pegatina luzeak 15 cm neurtu behar ditu. Moztu marra etenetik.
+  Kolorerik gabeko inprimagailua? Erabili -mono bertsioak.
+
+Recuerda: pega solo donde esté permitido. · Gogoratu: itsatsi baimenduta dagoen lekuetan bakarrik.
+
+LICENCIA · LIZENTZIA
+© 2026 Sader Egunero. Material con licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0): cópialo, difúndelo y adáptalo citando a Sader Egunero y con la misma licencia. https://creativecommons.org/licenses/by-sa/4.0/deed.es
+© 2026 Sader Egunero. Materiala Creative Commons Aitortu-PartekatuBerdin 4.0 Nazioartekoa (CC BY-SA 4.0) lizentziarekin: kopiatu, zabaldu eta moldatu, Sader Egunero aipatuz eta lizentzia berarekin. https://creativecommons.org/licenses/by-sa/4.0/deed.eu

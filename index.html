@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sader-Profersa Kanpora! · ¿Qué estamos respirando? · Sader Egunero</title>
+<meta name="description" content="Campaña vecinal de Zorroza, San Ignacio y Deusto. El informe sobre la planta de residuos peligrosos de Sader-Profersa en Bilbao, con todos los datos y sus fuentes. Cómo protegerte, cómo participar y el archivo de lo que han hecho (y no han hecho) las instituciones.">
+<meta property="og:title" content="¿Qué estamos respirando? · Sader-Profersa Kanpora!">
+<meta property="og:description" content="Una de las mayores plantas de residuos peligrosos del Estado funciona dentro de Bilbao. Los datos, con su fuente. Y la información que todavía necesitamos conocer.">
+<meta property="og:image" content="https://sader-egunero.net/img/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="¿Qué estamos respirando? Sader-Profersa Kanpora!">
+<meta property="og:url" content="https://sader-egunero.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sader Egunero">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sader-egunero.net/">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">
+<meta name="author" content="Sader Egunero">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#141414">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --red:#D7141E; --red-d:#A80E16; --ink:#141414; --ink-2:#2a2a2a; --paper:#F5F2ED; --paper-2:#EBE6DE;
+  --line:#d8d1c6; --muted:#5f5a53; --white:#fff; --ok:#1f6f43; --amber:#B86E00;
+  --display:'Anton',Impact,'Arial Narrow',sans-serif; --cond:'Barlow Condensed','Arial Narrow',sans-serif; --body:'Barlow',system-ui,-apple-system,Segoe UI,sans-serif;
+  --wrap:1180px; --r:4px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0 0 1em}
+h1,h2,h3{margin:0;font-weight:400}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.kicker{font-family:var(--cond);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px}
+.display{font-family:var(--display);text-transform:uppercase;line-height:.95;letter-spacing:.005em}
+.red{color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--cond);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:17px;padding:14px 22px;border:2px solid currentColor;text-decoration:none;cursor:pointer;background:none;color:inherit;border-radius:var(--r);transition:transform .15s, background .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--red);border-color:var(--red);color:#fff}
+.btn.solid:hover{background:var(--red-d);border-color:var(--red-d)}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.small{font-size:14px;padding:9px 14px}
+.btn svg{width:18px;height:18px}
+section{padding:96px 0}
+.sec-head{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:44px;max-width:860px}
+.sec-head h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(42px,6vw,76px);line-height:.95}
+.sec-head .lede{font-size:21px;color:var(--muted);max-width:760px}
+.dark-sec{background:var(--ink);color:#fff}
+.dark-sec .sec-head .lede{color:#bdb6ac}
+.red-sec{background:var(--red);color:#fff}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;border-bottom:3px solid var(--red)}
+.topbar .wrap{display:flex;align-items:center;gap:24px;height:62px}
+.brand{font-family:var(--display);font-size:22px;letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--red);font-weight:400}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{white-space:nowrap;font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:15px;text-decoration:none;padding:8px 10px;border-radius:3px;color:#ddd}
+.nav a:hover,.nav a.on{color:#fff;background:#2b2b2b}
+.nav a.cta{background:var(--red);color:#fff;margin-left:8px}
+.nav a.cta:hover{background:var(--red-d)}
+.lang{font-family:var(--cond);font-weight:700;font-size:13px;border:1px solid #555;padding:4px 8px;border-radius:3px;text-decoration:none;color:#ccc;letter-spacing:.1em}
+.burger{display:none;margin-left:auto;background:none;border:0;color:#fff;cursor:pointer;padding:8px}
+.burger svg{width:28px;height:28px}
+@media (max-width:1180px){
+  .nav{display:none;position:absolute;top:65px;left:0;right:0;background:var(--ink);flex-direction:column;align-items:stretch;padding:12px 24px 24px;border-bottom:3px solid var(--red)}
+  .nav.open{display:flex}
+  .nav a{font-size:20px;padding:12px 8px}
+  .nav a.cta{margin:8px 0 0;text-align:center}
+  .burger{display:block}
+}
+
+/* ---------- alert ribbon ---------- */
+.ribbon{background:var(--red);color:#fff;font-family:var(--cond);font-weight:600;letter-spacing:.04em;font-size:17px}
+.ribbon .wrap{display:flex;gap:16px;align-items:center;justify-content:center;padding:10px 24px;flex-wrap:wrap;text-align:center}
+.ribbon .pill{background:#fff;color:var(--red);padding:2px 10px;border-radius:2px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:13px}
+.ribbon a{color:#fff;font-weight:700}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:calc(100vh - 110px);min-height:min(calc(100svh - 110px),900px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#0b0b0b}
+.hero .bg{position:absolute;inset:0;background:url(img/hero-noche.jpg) center 35%/cover no-repeat;filter:grayscale(.35) contrast(1.05);transform:scale(1.04);animation:drift 30s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.12) translateX(-2%)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.25) 0%,rgba(10,10,10,.55) 45%,rgba(10,10,10,.96) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:80px;padding-bottom:64px;width:100%}
+.hero .kicker{color:#fff;opacity:.9}
+.hero h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(64px,12.5vw,176px);line-height:.86;margin:18px 0 26px}
+.hero h1 span{display:block}
+.hero h1 .r{color:var(--red)}
+.hero .sub{font-size:clamp(19px,2.1vw,25px);max-width:760px;margin-bottom:34px;font-weight:500}
+.hero .sub strong{background:var(--red);padding:0 6px;font-weight:600}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero .claim{position:absolute;right:24px;bottom:28px;z-index:2;font-family:var(--cond);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;opacity:.7;writing-mode:vertical-rl;transform:rotate(180deg)}
+@media (max-width:700px){.hero .claim{display:none}}
+
+/* ticker */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;border-top:1px solid #333;border-bottom:1px solid #333}
+.ticker .track{display:flex;width:max-content;animation:tick 55s linear infinite}
+.ticker span{font-family:var(--display);text-transform:uppercase;font-size:28px;padding:16px 0;white-space:nowrap}
+.ticker span i{font-style:normal;color:var(--red);padding:0 26px}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker .track,.hero .bg{animation:none}}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:3px solid var(--ink)}
+.stat{padding:30px 26px 30px 0;border-bottom:1px solid var(--line)}
+.stat:not(:nth-child(3n+1)){padding-left:26px;border-left:1px solid var(--line)}
+.stat .n{font-family:var(--display);font-size:clamp(52px,6vw,84px);line-height:1;color:var(--red)}
+.stat .t{font-size:17px;max-width:300px;margin-top:8px}
+.stat .src{font-size:13px;color:var(--muted);margin-top:8px;font-family:var(--cond);letter-spacing:.04em}
+@media (max-width:820px){.stats{grid-template-columns:1fr 1fr}.stat{padding:22px 14px!important;border-left:0!important}.stat:nth-child(2n){border-left:1px solid var(--line)!important}}
+@media (max-width:480px){.stats{grid-template-columns:1fr}.stat:nth-child(2n){border-left:0!important}}
+.note{background:var(--paper-2);border-left:4px solid var(--ink);padding:16px 20px;font-size:16px;margin-top:28px}
+
+/* ---------- where ---------- */
+.where{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.where figure{margin:0}
+.where table{width:100%;border-collapse:collapse;font-size:16px;margin-top:10px}
+.where td,.where th{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line)}
+.where th{font-family:var(--cond);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted)}
+.where td:last-child{font-family:var(--cond);font-weight:700;font-size:18px;color:var(--red);white-space:nowrap}
+@media (max-width:900px){.where{grid-template-columns:1fr}}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px;font-family:var(--cond);letter-spacing:.02em}
+.zoom{cursor:zoom-in}
+
+/* ---------- findings ---------- */
+.findings{counter-reset:f;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.finding{counter-increment:f;display:grid;grid-template-columns:64px 1fr;gap:16px;padding:24px 0;border-top:1px solid #333}
+.finding:before{content:counter(f,decimal-leading-zero);font-family:var(--display);font-size:44px;line-height:1;color:var(--red)}
+.finding h3{font-family:var(--cond);font-weight:700;font-size:23px;line-height:1.15;margin-bottom:8px}
+.finding p{font-size:16.5px;color:#cfc8bd;margin:0}
+.finding a.go{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid var(--red);display:inline-block;margin-top:10px}
+@media (max-width:860px){.findings{grid-template-columns:1fr}}
+
+/* ---------- report reader ---------- */
+.report-top{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:34px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 36px}
+.tag{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;padding:3px 9px;border-radius:2px;display:inline-block}
+.tag.hecho{background:var(--ink);color:#fff}
+.tag.indicio{background:#f1d9a6;color:#5a3a00}
+.tag.nosabe{background:#e2dcd3;color:#333;border:1px dashed #888}
+.tag.pregunta{background:var(--red);color:#fff}
+.tag.responden{background:#dfe7ef;color:#1f3a56}
+.tag.importa{background:#fff;color:var(--ink);border:1px solid var(--ink)}
+.tag.tener{background:#fff;color:var(--muted);border:1px solid var(--line)}
+.reader{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.toc{position:sticky;top:84px;max-height:calc(100vh - 100px);overflow:auto;border-top:3px solid var(--ink);padding-right:6px}
+.toc h4{font-family:var(--cond);text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--muted);margin:18px 0 6px}
+.toc button{display:grid;grid-template-columns:30px 1fr;width:100%;text-align:left;background:none;border:0;padding:7px 6px;font:500 15.5px/1.25 var(--body);color:var(--ink);cursor:pointer;border-radius:3px}
+.toc button span{font-family:var(--cond);font-weight:700;color:var(--muted)}
+.toc button:hover{background:var(--paper-2)}
+.toc button.on{background:var(--ink);color:#fff}
+.toc button.on span{color:var(--red)}
+.chapter{background:#fff;border:1px solid var(--line);padding:48px 56px 40px;min-height:600px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.chapter .kicker{color:var(--red)}
+.chapter h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(34px,4vw,54px);line-height:.98;margin:10px 0 24px}
+.chapter p{font-size:18.5px;line-height:1.62}
+.chapter figure{margin:28px 0}
+.chapter figure img{border:1px solid var(--line)}
+.chapter .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chapter .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.chapter .pair img,.chapter .trio img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.chapter table{width:100%;border-collapse:collapse;font-size:15.5px;margin:20px 0}
+.chapter th,.chapter td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.chapter th{font-family:var(--cond);text-transform:uppercase;letter-spacing:.06em;font-size:13px;background:var(--paper)}
+.chapter ul{padding-left:20px}.chapter li{margin-bottom:6px}
+.big-quote{font-family:var(--display);text-transform:uppercase;font-size:clamp(30px,3.6vw,46px);line-height:1;background:var(--red);color:#fff;padding:28px 30px;margin:30px 0}
+.big-quote small{display:block;font-family:var(--body);text-transform:none;font-size:17px;line-height:1.45;margin-top:14px;font-weight:500}
+.box{border:1px solid var(--line);padding:18px 22px;margin:24px 0;background:var(--paper)}
+.box .tag{margin-bottom:10px}
+.box p:last-child{margin:0}
+.box.pregunta{border-color:var(--red);background:#fff4f4}
+.box.responden{border-color:#b9c9d9;background:#f2f6fa}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+sup.s{font-family:var(--cond);font-weight:700;font-size:12px;line-height:0}
+sup.s a{color:var(--red);text-decoration:none;cursor:pointer;padding:0 1px}
+sup.s a:hover{text-decoration:underline}
+.big-quote sup.s a,.red-sec sup.s a,.dark-sec sup.s a{color:#fff}
+@media (max-width:980px){
+  .reader{grid-template-columns:1fr}
+  .toc{position:relative;top:0;max-height:none;display:none}
+  .toc.open{display:block}
+  .toc-toggle{display:inline-flex!important}
+  .chapter{padding:30px 22px}
+  .chapter .trio{grid-template-columns:1fr 1fr}
+}
+.toc-toggle{display:none}
+
+/* ---------- demands ---------- */
+.demands{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.demand{padding:34px 30px;border-left:1px solid rgba(255,255,255,.35)}
+.demand:first-child{border-left:0;padding-left:0}
+.demand .n{font-family:var(--display);font-size:120px;line-height:.8;opacity:.25}
+.demand h3{font-family:var(--display);text-transform:uppercase;font-size:48px;line-height:1;margin:8px 0 14px}
+.demand p{font-size:18px;margin:0}
+.slogan{font-family:var(--display);text-transform:uppercase;font-size:clamp(34px,5vw,64px);line-height:1;margin-top:56px;padding-top:30px;border-top:3px solid #fff}
+@media (max-width:860px){.demands{grid-template-columns:1fr}.demand{border-left:0;padding:24px 0;border-top:1px solid rgba(255,255,255,.35)}}
+
+/* ---------- protect ---------- */
+.protect{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tip{background:#fff;border:1px solid var(--line);padding:26px 24px;position:relative}
+.tip .ico{width:54px;height:54px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;margin-bottom:16px}
+.tip .ico svg{width:28px;height:28px}
+.tip h3{font-family:var(--cond);font-weight:700;font-size:24px;line-height:1.1;margin-bottom:10px}
+.tip p{font-size:16.5px;margin:0;color:#3d3933}
+.tip .why{display:block;margin-top:12px;font-size:14.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px}
+@media (max-width:980px){.protect{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.protect{grid-template-columns:1fr}}
+.episode{display:grid;grid-template-columns:1fr 1.2fr;gap:0;margin-top:48px;border:3px solid var(--ink)}
+.episode .l{background:var(--ink);color:#fff;padding:36px}
+.episode .l h3{font-family:var(--display);text-transform:uppercase;font-size:46px;line-height:1}
+.episode ol{margin:0;padding:30px 36px 30px 60px;font-size:17.5px;background:#fff}
+.episode li{margin-bottom:12px;padding-left:6px}
+.episode li::marker{font-family:var(--display);color:var(--red)}
+@media (max-width:860px){.episode{grid-template-columns:1fr}}
+.disclaimer{font-size:14.5px;color:var(--muted);margin-top:22px;max-width:900px}
+
+/* ---------- act ---------- */
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.act{background:#1d1d1d;border:1px solid #333;padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.act .ico{color:var(--red)}
+.act .ico svg{width:40px;height:40px}
+.act h3{font-family:var(--display);text-transform:uppercase;font-size:32px;line-height:1}
+.act p{font-size:16.5px;color:#cfc8bd;margin:0;flex:1}
+.act .btn{align-self:flex-start;margin-top:6px}
+.act.feature{grid-column:span 2;background:var(--red);border-color:var(--red)}
+.act.feature p{color:#fff}
+.act.feature .ico{color:#fff}
+@media (max-width:980px){.acts{grid-template-columns:1fr 1fr}.act.feature{grid-column:span 2}}
+@media (max-width:620px){.acts{grid-template-columns:1fr}.act.feature{grid-column:auto}}
+.agenda{margin-top:56px;display:grid;grid-template-columns:320px 1fr;gap:40px}
+.agenda h3{font-family:var(--display);text-transform:uppercase;font-size:46px;line-height:1}
+.ev{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-top:1px solid #333}
+.ev .d{font-family:var(--display);font-size:34px;line-height:1;color:var(--red);text-transform:uppercase}
+.ev .d small{display:block;font-family:var(--cond);font-weight:700;font-size:14px;color:#aaa;letter-spacing:.1em;margin-top:4px}
+.ev h4{font-family:var(--cond);font-weight:700;font-size:22px;margin:0 0 4px}
+.ev p{margin:0;color:#bdb6ac;font-size:16px}
+@media (max-width:860px){.agenda{grid-template-columns:1fr}}
+.kit{margin-top:56px}
+.kit-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:20px}
+.kit-grid img{aspect-ratio:4/5;object-fit:cover;width:100%;border:1px solid #333;cursor:zoom-in;transition:transform .15s}
+.kit-grid img:hover{transform:scale(1.03)}
+@media (max-width:900px){.kit-grid{grid-template-columns:repeat(4,1fr)}}
+.kit-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;align-items:center}
+.share-text{background:#1d1d1d;border:1px solid #333;padding:18px;font-size:16px;color:#ddd;margin-top:20px;white-space:pre-line}
+
+/* ---------- tracker ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px}
+.tabs button{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:15px;padding:10px 14px;border:2px solid var(--ink);background:#fff;cursor:pointer;border-radius:3px}
+.tabs button.on{background:var(--ink);color:#fff}
+.actor{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.actor-head{grid-column:1/-1;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;border-bottom:3px solid var(--ink);padding-bottom:14px}
+.actor-head h3{font-family:var(--display);text-transform:uppercase;font-size:44px;line-height:1}
+.actor-head .role{font-size:17px;color:var(--muted)}
+.col h4{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:15px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.col h4:before{content:"";width:12px;height:12px;border-radius:50%;background:var(--ink)}
+.col.no h4:before{background:transparent;border:2px solid var(--red)}
+.item{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:16.5px}
+.item .d{font-family:var(--cond);font-weight:700;font-size:15px;color:var(--muted)}
+.col.no .item .d{color:var(--red)}
+@media (max-width:820px){.actor{grid-template-columns:1fr}}
+.questions{margin-top:64px}
+.q{display:grid;grid-template-columns:48px 1fr 200px 120px;gap:16px;padding:16px 0;border-top:1px solid var(--line);align-items:start;font-size:16.5px}
+.q .n{font-family:var(--display);font-size:30px;color:var(--red);line-height:1}
+.q .who{font-family:var(--cond);font-weight:600;font-size:15.5px;color:var(--muted)}
+.q .st{justify-self:start}
+@media (max-width:760px){.q{grid-template-columns:40px 1fr}.q .who,.q .st{grid-column:2}}
+
+/* ---------- timeline ---------- */
+.tl-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chip{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;padding:7px 12px;border:1px solid #555;border-radius:20px;background:none;color:#ddd;cursor:pointer}
+.chip.on{background:#fff;color:var(--ink);border-color:#fff}
+.timeline{position:relative;padding-left:0}
+.tl{display:grid;grid-template-columns:150px 22px 1fr;gap:18px;padding:12px 0}
+.tl .d{font-family:var(--cond);font-weight:700;font-size:18px;text-align:right;color:#ccc;padding-top:1px}
+.tl .dot{position:relative}
+.tl .dot:before{content:"";position:absolute;left:10px;top:-14px;bottom:-14px;width:2px;background:#3a3a3a}
+.tl .dot:after{content:"";position:absolute;left:4px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--ink);border:2px solid #888}
+.tl.t-acc .dot:after{background:var(--red);border-color:var(--red)}
+.tl.t-adm .dot:after{background:#fff;border-color:#fff}
+.tl.t-vec .dot:after{background:#f1d9a6;border-color:#f1d9a6}
+.tl.t-fut .dot:after{background:transparent;border:2px dashed var(--red)}
+.tl .x{font-size:17px;color:#e8e2d8}
+.tl .x .tag{margin-left:6px;vertical-align:2px}
+@media (max-width:640px){.tl{grid-template-columns:86px 18px 1fr;gap:10px}.tl .d{font-size:15px}}
+
+/* ---------- archive ---------- */
+.arch-tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.arch-tools input{flex:1;min-width:240px;font:500 17px var(--body);padding:13px 16px;border:2px solid var(--ink);border-radius:3px;background:#fff}
+.arch-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.arch-chips .chip{color:var(--ink);border-color:var(--ink)}
+.arch-chips .chip.on{background:var(--ink);color:#fff}
+.docs-feat{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:46px}
+.doc{background:#fff;border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:border-color .15s,transform .15s}
+.doc:hover{border-color:var(--ink);transform:translateY(-2px)}
+.doc .ty{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--red)}
+.doc h4{font-family:var(--cond);font-weight:700;font-size:21px;line-height:1.1;margin:0}
+.doc p{font-size:14.5px;color:var(--muted);margin:0;flex:1}
+.doc .go{font-family:var(--cond);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:980px){.docs-feat{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.docs-feat{grid-template-columns:1fr}}
+.src-list{border-top:3px solid var(--ink)}
+.src{display:grid;grid-template-columns:52px 170px 1fr 110px;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px;align-items:start}
+.src .n{font-family:var(--display);font-size:22px;color:var(--red)}
+.src .c{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--muted);padding-top:3px}
+.src a.lk{font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.08em;text-decoration:none;border-bottom:2px solid var(--red);justify-self:start}
+.src .na{font-size:13px;color:var(--muted)}
+.src.flash{background:#fff4c2;transition:background 1.5s}
+.src .leg{font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
+@media (max-width:760px){.src{grid-template-columns:44px 1fr}.src .c{grid-column:2}.src .t{grid-column:2}.src .lk,.src .na{grid-column:2}}
+.count{font-family:var(--cond);font-weight:600;color:var(--muted)}
+
+/* ---------- contact ---------- */
+.contact{display:grid;grid-template-columns:1fr 1.25fr;gap:56px}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form label{display:block;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:14px;margin:16px 0 6px}
+form input,form select,form textarea{width:100%;font:500 17px var(--body);padding:12px 14px;border:2px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink)}
+form textarea{min-height:150px;resize:vertical}
+form .check{display:flex;gap:10px;align-items:flex-start;font-size:15px;margin:16px 0 22px;text-transform:none;font-family:var(--body);font-weight:400;letter-spacing:0}
+form .check input{width:20px;height:20px;margin-top:2px;flex:none}
+.out{display:none;border:3px solid var(--ink);background:#fff;padding:22px;margin-top:20px}
+.out.show{display:block}
+.out pre{white-space:pre-wrap;font:15px/1.5 var(--body);background:var(--paper);padding:14px;margin:12px 0}
+.contact-side .line{padding:16px 0;border-top:1px solid var(--line)}
+.contact-side .line b{display:block;font-family:var(--cond);text-transform:uppercase;letter-spacing:.1em;font-size:13px;color:var(--muted);font-weight:700}
+.contact-side .line span{font-size:19px;font-weight:600}
+@media (max-width:860px){.contact{grid-template-columns:1fr}form .row{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#bdb6ac;padding:64px 0 40px;font-size:15px}
+footer .big{font-family:var(--display);text-transform:uppercase;color:#fff;font-size:clamp(44px,8vw,110px);line-height:.9}
+footer .big b{color:var(--red);font-weight:400}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-top:40px;border-top:1px solid #333;padding-top:30px}
+footer a{color:#fff}
+footer h5{font-family:var(--cond);text-transform:uppercase;letter-spacing:.12em;color:#fff;font-size:14px;margin:0 0 10px}
+footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr}}
+
+/* ---------- popover & lightbox ---------- */
+.pop{position:fixed;z-index:90;max-width:380px;background:var(--ink);color:#fff;padding:14px 16px;font-size:14.5px;line-height:1.45;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.35);display:none}
+.pop.show{display:block}
+.pop .c{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:11.5px;color:var(--red);margin-bottom:4px}
+.pop a{color:#fff;font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.08em;display:inline-block;margin-top:8px;margin-right:12px}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,10,10,.94);display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.lb.show{display:flex}
+.lb img{max-width:100%;max-height:88vh;object-fit:contain;background:#fff}
+.lb p{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#ccc;font-size:14px;margin:0;padding:0 20px}
+.lb button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:40px;cursor:pointer;line-height:1}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 20px;border-radius:4px;font-family:var(--cond);font-weight:700;letter-spacing:.06em;z-index:120;opacity:0;transition:opacity .25s;pointer-events:none}
+.toast.show{opacity:1}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+.pending{opacity:.75;font-style:italic}
+</style>
+</head>
+<body>
+<noscript><p style="margin:0;padding:14px 24px;background:#D7141E;color:#fff;font-family:sans-serif">Esta web necesita JavaScript para mostrar el informe por capítulos. Mientras tanto, puedes leer el <a href="docs/informe-sader-es.pdf" style="color:#fff">informe completo en PDF</a>.</p></noscript>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio">SADER-PROFERSA <b>KANPORA!</b></a>
+    <nav class="nav" id="nav">
+      <a href="#informe">El informe</a>
+      <a href="#protegete">Protégete</a>
+      <a href="#actua">Actúa</a>
+      <a href="#quien-decide">Quién decide</a>
+      <a href="#cronologia">Cronología</a>
+      <a href="#archivo">Archivo</a>
+      <a href="#contacto">Contacto</a>
+      <a class="lang" data-doc="informe-sader-eu.pdf" target="_blank" rel="noopener" title="Txostena euskaraz">EU</a>
+      <a class="cta" href="#actua" data-wa>Únete</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<div class="ribbon" id="ribbon"><div class="wrap"><span class="pill">Próxima cita</span><span id="ribbon-text">Manifestación · 1 de diciembre · 18:30 · Del Gobierno Vasco (Gran Vía 85) al Ayuntamiento de Bilbao</span><a href="#agenda">Ver agenda →</a></div></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" style="padding:0">
+  <div class="bg" role="img" aria-label="El complejo de Sader-Profersa de noche, junto a las viviendas nuevas de la otra orilla"></div>
+  <div class="wrap">
+    <div class="kicker">Zorroza · San Ignacio · Deusto · Ribera de Deusto · Basurto</div>
+    <h1><span>¿Qué estamos</span><span class="r">respirando?</span></h1>
+    <p class="sub">Dentro de Bilbao, a unos 500 metros de tres colegios, funciona una de las mayores plantas de residuos peligrosos del Estado. <strong>Los datos, con su fuente. Y la información que todavía necesitamos conocer.</strong></p>
+    <div class="ctas">
+      <a class="btn solid" href="#agenda">1 de diciembre · ¡Manifestación!</a>
+      <a class="btn" href="#informe">Lee el informe</a>
+      <a class="btn" href="#actua">Actúa ya</a>
+      <a class="btn" href="#protegete">Protégete en casa</a>
+    </div>
+  </div>
+  <div class="claim">Nuestra salud vale más que sus beneficios</div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="ticker"></div></div>
+
+<!-- ============ CIFRAS ============ -->
+<section id="cifras">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">De un vistazo</div>
+      <h2>Nueve cifras que deberías conocer</h2>
+      <p class="lede">Todas salen del informe vecinal <em>¿Qué estamos respirando?</em> (noviembre de 2026). Pulsa en el número entre corchetes para ver la fuente.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+    <p class="note reveal">Las cifras de capacidad varían según la fuente porque miden cosas distintas (residuos peligrosos o totales; autorizado o realmente tratado). El capítulo 2 del informe las ordena todas en una tabla.</p>
+  </div>
+</section>
+
+<!-- ============ DÓNDE ============ -->
+<section style="padding-top:0">
+  <div class="wrap where">
+    <figure class="reveal"><img class="zoom" src="img/mapa-colegios.jpg" alt="Mapa: la planta de Sader en Punta Zorroza y los centros escolares de su entorno, con radios de 500 m y 1 km" loading="lazy"><figcaption>La planta y los centros escolares de su entorno, con radios de 500 m y 1 km. Elaboración propia sobre © OpenStreetMap contributors.</figcaption></figure>
+    <div class="reveal">
+      <div class="kicker red">Dónde está</div>
+      <h2 class="display" style="font-size:clamp(38px,4.6vw,60px);margin:10px 0 18px">Una planta de residuos peligrosos en mitad de la ciudad</h2>
+      <p>Sader trata residuos industriales peligrosos en Punta Zorroza desde 1986. A su lado, Profersa fabrica fertilizantes a partir de residuos. Las dos pertenecen al grupo Agaleus. San Ignacio queda justo enfrente, al otro lado de la ría; Zorroza, detrás; Ribera de Deusto, a sotavento.<sup class="s" data-s="27,26,22"></sup></p>
+      <table>
+        <thead><tr><th>Centro escolar</th><th>Barrio</th><th>Distancia</th></tr></thead>
+        <tbody>
+          <tr><td>IES Zorrotza BHI</td><td>Zorroza</td><td>≈ 300 m</td></tr>
+          <tr><td>CEIP Zorrotza Fray Juan</td><td>Zorroza</td><td>≈ 490 m</td></tr>
+          <tr><td>IES San Inazio BHI</td><td>San Ignacio</td><td>≈ 600 m</td></tr>
+          <tr><td>CEIP Intxixu Ikastola</td><td>San Ignacio</td><td>≈ 600 m</td></tr>
+          <tr><td>CEIP Zazpilanda</td><td>Zorroza</td><td>≈ 690 m</td></tr>
+          <tr><td>CEIP San Inazio</td><td>San Ignacio</td><td>≈ 930 m</td></tr>
+          <tr><td>Madre de Dios Ikastetxea</td><td>San Ignacio</td><td>≈ 1,2 km</td></tr>
+        </tbody>
+      </table>
+      <figcaption>Distancias aproximadas (±50 m) en línea recta entre la dirección de la planta (Camino del Arsenal 19) y la de cada centro; no son recorridos.<sup class="s" data-s="3"></sup></figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HALLAZGOS ============ -->
+<section class="dark-sec" id="hallazgos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Resumen</div>
+      <h2>Nueve hallazgos</h2>
+      <p class="lede">Lo esencial del informe. Cada hallazgo te lleva al capítulo con todos los datos, los matices y las fuentes.</p>
+    </div>
+    <div class="findings" id="findings"></div>
+  </div>
+</section>
+
+<!-- ============ INFORME ============ -->
+<section id="informe">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Informe vecinal · edición pública · noviembre de 2026</div>
+      <h2>El informe completo, para consultar</h2>
+      <p class="lede">Veinte capítulos: qué es la planta y lo que se ha medido (parte I), y quién es quién y quién decide (parte II). Aquí tienes cada capítulo resumido con sus figuras y fuentes. Para citar o imprimir, descarga el PDF íntegro.</p>
+    </div>
+    <div class="report-top">
+      <a class="btn solid" data-doc="informe-sader-es.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>Informe en PDF (castellano)</a>
+      <a class="btn" data-doc="informe-sader-eu.pdf" target="_blank" rel="noopener">Txostena PDF (euskaraz)</a>
+      <a class="btn" data-doc="estudio-deposicion-csic-2026.pdf" target="_blank" rel="noopener">Estudio del CSIC</a>
+      <button class="btn toc-toggle" id="tocToggle">Índice de capítulos</button>
+    </div>
+    <div class="legend">
+      <span class="tag hecho">Hecho documentado</span><span class="tag indicio">Indicio</span><span class="tag nosabe">Lo que no se sabe</span><span class="tag pregunta">Pregunta sin respuesta</span>
+      <span style="font-size:15px;color:var(--muted)">El informe distingue los hechos documentados de las hipótesis y las preguntas abiertas; las referencias a posibles irregularidades no constituyen conclusiones sobre responsabilidad jurídica. Se ha construido de forma automatizada con inteligencia artificial a partir de fuentes abiertas; el resultado ha sido revisado por vecinas y vecinos de las zonas afectadas, pero aún puede contener alguna imprecisión, que se subsanará.</span>
+    </div>
+    <div class="reader">
+      <aside class="toc" id="toc"></aside>
+      <article class="chapter" id="chapter" aria-live="polite"></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXIGIMOS ============ -->
+<section class="red-sec" id="exigimos">
+  <div class="wrap">
+    <div class="kicker">Qué exige el vecindario</div>
+    <div class="demands" style="margin-top:24px">
+      <div class="demand reveal"><div class="n">1</div><h3>Fecha</h3><p>Fecha de cierre obligatoria e inmediata en Zorroza, también para Profersa, con garantía de los puestos de trabajo. La autorización del puerto no obliga a cerrar y tres fechas anteriores se han incumplido.</p></div>
+      <div class="demand reveal"><div class="n">2</div><h3>Datos</h3><p>Datos públicos de emisiones y de suelo. Medidores fijos, que funcionen y que cuenten en la evaluación oficial. Un protocolo de aviso a la población cuando haya un incidente.</p></div>
+      <div class="demand reveal"><div class="n">3</div><h3>Salud</h3><p>Un estudio epidemiológico de los barrios afectados y la especiación del cromo: saber si el que cae sobre nuestras casas es el cancerígeno.</p></div>
+    </div>
+    <div class="slogan reveal">Nuestra salud vale más que sus beneficios.</div>
+  </div>
+</section>
+
+<!-- ============ PROTÉGETE ============ -->
+<section id="protegete">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Mientras tanto</div>
+      <h2>Qué puedes hacer para protegerte</h2>
+      <p class="lede">Junto a la planta se han medido plomo, arsénico, níquel y cromo en el suelo y en lo que cae del aire. El polvo ambiental puede ser una vía de contacto con algunas sustancias. Las mediciones ambientales citadas no permiten cuantificar por sí solas la exposición individual ni identificar una fuente única. Estos hábitos generales pueden ayudar a limitar el contacto con polvo.</p>
+    </div>
+    <div class="protect" id="protect"></div>
+    <div class="episode reveal">
+      <div class="l"><div class="kicker red">Si hay un episodio</div><h3>Nube, olor fuerte o polvo visible</h3><p style="margin-top:14px;color:#bdb6ac;font-size:16px">No se ha localizado en las fuentes disponibles un plan de emergencia exterior específico ni un protocolo público de aviso; corresponde aclarar cuáles son legalmente exigibles y cuáles están vigentes. En mayo de 2024 quien llamó al 112 recibió la indicación de cerrar puertas y ventanas.<sup class="s" data-s="22,52"></sup></p></div>
+      <ol>
+        <li><b>Cierra puertas y ventanas</b> y apaga los aparatos que toman aire de fuera (extractores, climatización).</li>
+        <li><b>Llama al 112</b> si ves humo o una nube, o si alguien se encuentra mal.</li>
+        <li><b>Documenta:</b> foto o vídeo con la hora, el lugar desde el que grabas y hacia dónde sopla el viento. Una prueba fechada vale más que diez quejas.</li>
+        <li><b>Denúncialo</b> a la Inspección Ambiental del Gobierno Vasco y <a data-wa target="_blank" rel="noopener">compártelo en la comunidad de WhatsApp</a>: lo sumamos al registro vecinal.</li>
+        <li><b>Si tienes síntomas</b> (irritación de ojos o garganta, tos, dificultad para respirar), acude a tu centro de salud y menciona la exposición. Así queda constancia.</li>
+      </ol>
+    </div>
+    <p class="disclaimer">Son consejos generales de higiene para reducir la exposición al polvo, no un consejo médico. Si tienes dudas sobre tu salud o la de tus hijos e hijas, consulta a tu médico o pediatra. Y recuerda: protegerse en casa ayuda, pero la solución no está en tu fregona. Está en que no haya una planta de residuos peligrosos junto a las viviendas.</p>
+  </div>
+</section>
+
+<!-- ============ ACTÚA ============ -->
+<section class="dark-sec" id="actua">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Organízate</div>
+      <h2>Qué puedes hacer para que se vaya</h2>
+      <p class="lede">Si estos datos existen es porque el vecindario los ha medido y pagado. Todo lo conseguido hasta ahora (el medidor de 2024, el cierre cautelar de Profersa, el estudio del CSIC) llegó después de movilizarse. Cada balcón, cada pegatina y cada mensaje compartido cuentan.</p>
+    </div>
+    <div class="acts" id="acts"></div>
+
+    <div class="agenda" id="agenda">
+      <div><div class="kicker red">Agenda</div><h3>Movilizaciones</h3><p style="color:#bdb6ac;margin-top:14px;font-size:16px">Las convocatorias se anuncian en la comunidad de WhatsApp y en Instagram.</p><figure style="margin:24px 0 0"><img class="zoom" src="kit/cartel-1-diciembre.jpg" alt="Cartel: Manifestazioa · Abenduak 1 / 1 de diciembre · 18:30 · Eusko Jaurlaritza, Gran Vía 85 → Bilboko Udala" loading="lazy" style="border:1px solid #333"><figcaption style="color:#8f887f">Cartel de la manifestación del 1 de diciembre. Pulsa para ampliar y compártelo.</figcaption></figure></div>
+      <div id="events"></div>
+    </div>
+
+    <div class="kit" id="kit">
+      <div class="kicker red">Kit de campaña</div>
+      <h3 class="display" style="font-size:clamp(36px,4.6vw,58px);margin:10px 0 8px">Compártelo</h3>
+      <p style="color:#cfc8bd;max-width:780px">Carrusel para Instagram (en orden, del 00 al 06), tarjetas sueltas, versiones verticales para stories y estados de WhatsApp, vídeos, díptico y pegatinas para imprimir. Cada imagen se publica con su texto y sus fuentes. Pulsa una imagen para verla grande; en la página de material está cada pieza a tamaño completo, en castellano y en euskera.</p>
+      <div class="kit-grid" id="kitgrid"></div>
+      <div class="kit-row">
+        <a class="btn solid" id="kitAll">Descargar todo el material (ES / EU)</a>
+        <a class="btn" id="kitVideos">Vídeos</a>
+        <a class="btn" data-doc="diptico-es.pdf" target="_blank" rel="noopener">Díptico para imprimir</a>
+        <a class="btn" data-doc="guia-redes-es.pdf" target="_blank" rel="noopener">Guía rápida de redes</a>
+        <a class="btn" id="kitStickers">Pegatinas para imprimir</a>
+        <button class="btn" id="copyShare">Copiar texto para compartir</button>
+      </div>
+      <div class="share-text" id="shareText"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIÉN DECIDE ============ -->
+<section id="quien-decide">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Seguimiento institucional</div>
+      <h2>Quién decide: acciones e inacciones</h2>
+      <p class="lede">Lo que ha hecho, y lo que no ha hecho, cada administración y organismo en este asunto. Selección de actuaciones descritas en las fuentes citadas; su interpretación puede requerir consultar el expediente íntegro.</p>
+    </div>
+    <div class="tabs" id="actorTabs"></div>
+    <div class="actor" id="actor"></div>
+
+    <div class="questions">
+      <div class="sec-head reveal" style="margin-bottom:20px">
+        <div class="kicker red">Para periodistas e instituciones</div>
+        <h2 style="font-size:clamp(36px,4.6vw,58px)">Doce preguntas que tienen respuesta</h2>
+        <p class="lede">Cada una puede contestarse con un documento que ya existe o con una medición que una administración puede encargar. Cuando alguna se responda, lo actualizaremos aquí.</p>
+      </div>
+      <div id="questions"></div>
+      <div class="kit-row"><button class="btn dark" id="copyQ">Copiar las doce preguntas</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRONOLOGÍA ============ -->
+<section class="dark-sec" id="cronologia">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">1986–2031</div>
+      <h2>Cuarenta años en Punta Zorroza</h2>
+      <p class="lede">Licencias, ampliaciones, accidentes, promesas de traslado y lo que ha hecho el vecindario.</p>
+    </div>
+    <div class="tl-filter" id="tlFilter"></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ============ ARCHIVO ============ -->
+<section id="archivo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Centro de documentación</div>
+      <h2>Archivo documental</h2>
+      <p class="lede">Los informes de la campaña y todas las fuentes en las que se apoyan: boletines oficiales, leyes, estudios científicos, registros mercantiles y la cobertura de prensa. Busca por palabra o filtra por tipo.</p>
+    </div>
+    <div class="docs-feat" id="docsFeat"></div>
+    <div class="arch-tools">
+      <input type="search" id="q" placeholder="Buscar: Ararteko, cromo, BOPV, Profersa, elDiario…" aria-label="Buscar en el archivo">
+      <span class="count" id="count"></span>
+    </div>
+    <div class="arch-chips" id="archChips"></div>
+    <div class="src-list" id="srcList"></div>
+    <p class="disclaimer">Los números coinciden con las notas del informe. Las fuentes marcadas como «heredadas» proceden de la edición íntegra y conviene volver a consultarlas antes de citarlas en un medio, porque los registros cambian. Fuentes revisadas entre el 16 y el 22 de noviembre de 2026; conviene revalidar los enlaces y documentos antes de citarlos, porque pueden cambiar.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" style="background:var(--paper-2)">
+  <div class="wrap contact" style="grid-template-columns:1fr">
+    <div class="contact-side reveal">
+      <div class="kicker red">Contacto</div>
+      <h2 class="display" style="font-size:clamp(42px,6vw,76px);margin:10px 0 18px">Súmate</h2>
+      <p style="font-size:19px;max-width:760px">Para sumarte, enterarte de las movilizaciones o avisar de un episodio, entra en la comunidad de WhatsApp. También estamos en Instagram.</p>
+      <div class="line"><b>Comunidad de WhatsApp</b><span id="waShow">—</span></div>
+      <div class="line"><b>Instagram</b><span><a id="igShow" target="_blank" rel="noopener">@sader_profersa_kanpora</a></span></div>
+      <div class="line"><b>Material de campaña</b><span><a id="kitLink2">Imágenes, vídeos, díptico y pegatinas para descargar</a></span></div>
+      <div class="line"><b>Web</b><span><a href="https://sader-egunero.net">sader-egunero.net</a> · Sader Egunero</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">Sader-Profersa <b>Kanpora!</b></div>
+    <div class="cols">
+      <div><h5>Aviso</h5><p>Este sitio reúne datos con su fuente. Se ha construido de forma automatizada con inteligencia artificial a partir de fuentes abiertas; el resultado ha sido revisado por vecinas y vecinos de las zonas afectadas, pero aún puede contener alguna imprecisión, que se subsanará. Distingue los hechos documentados de las hipótesis y las preguntas abiertas; las referencias a posibles irregularidades no constituyen conclusiones sobre responsabilidad jurídica. Los nombres de persona aparecen solo cuando ocupan o han ocupado un cargo público, societario o asociativo, y solo en relación con ese cargo. No es un dictamen médico ni jurídico. ¿Has visto un error? <a href="mailto:sader-egunero-info@ni.eus?subject=Error">Avísanos</a> y lo corregimos.</p></div>
+      <div><h5>Secciones</h5><ul><li><a href="#informe">El informe</a></li><li><a href="#protegete">Protégete</a></li><li><a href="#actua">Actúa</a></li><li><a href="#quien-decide">Quién decide</a></li><li><a href="#archivo">Archivo</a></li></ul></div>
+      <div><h5>Documentos</h5><ul><li><a data-doc="informe-sader-es.pdf" target="_blank" rel="noopener">Informe (ES)</a></li><li><a data-doc="informe-sader-eu.pdf" target="_blank" rel="noopener">Txostena (EU)</a></li><li><a data-doc="estudio-deposicion-csic-2026.pdf" target="_blank" rel="noopener">Estudio IPE-CSIC</a></li><li><a data-doc="diptico-es.pdf" target="_blank" rel="noopener">Díptico</a></li><li><a href="material/index.html">Material de campaña</a></li></ul></div>
+    </div>
+    <p style="margin-top:34px;font-size:13px">Informe vecinal «¿Qué estamos respirando?», edición pública, noviembre de 2026. Sader Egunero · sader-egunero.net · Campaña Sader-Profersa Kanpora! Mapas: © OpenStreetMap contributors. Esta web cuenta las visitas sin cookies ni datos personales, con <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a>.</p>
+    <p style="margin-top:10px;font-size:13px">© 2026 Sader Egunero. Salvo que se indique otra cosa, esta web, el informe y el material de campaña se publican con licencia <a rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>: puedes copiarlos, difundirlos y adaptarlos si citas a Sader Egunero y compartes el resultado con la misma licencia. La licencia no cubre los materiales de terceros: el estudio del IPE-CSIC, el cartel de la manifestación, los mapas de OpenStreetMap y los tipos de letra.</p>
+  </div>
+</footer>
+
+<div class="pop" id="pop"></div>
+<div class="lb" id="lb"><button aria-label="Cerrar">×</button><img alt=""><p></p></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* =====================================================================
+   CONFIGURACIÓN — edita solo este bloque para poner la web al día
+   ===================================================================== */
+const CONFIG = {
+  // Enlace de invitación a la comunidad de WhatsApp. Vacío = el botón pide el enlace por correo.
+  whatsapp: "https://chat.whatsapp.com/FS7nTh8IU3nCq67NZSfTjH",
+  // Correo público de contacto. Retirado de la web el 23/11/2026: vacío = no se muestra.
+  email: "",
+  // Instagram de la campaña
+  instagram: "https://www.instagram.com/sader_profersa_kanpora",
+  // Página de descargas con todo el material de campaña (carpeta material/)
+  materialUrl: "material/index.html",
+  // Carpeta de los PDF enlazados
+  docBase: "docs/",
+  // Bandera de balcón
+  flag: { price: "", where: "Pídela en la comunidad de WhatsApp." },
+  // Pegatinas
+  stickers: { where: "Hojas A4 para imprimir en casa y archivos para copistería, en castellano, en euskera y bilingües." },
+  // Texto del aviso rojo de arriba
+  ribbon: "Manifestación · 1 de diciembre · 18:30 · Del Gobierno Vasco (Gran Vía 85) al Ayuntamiento de Bilbao",
+  // URL pública de la web
+  siteUrl: "https://sader-egunero.net",
+  // Agenda. date: "AAAA-MM-DD" (o "" si no hay fecha), time, title, place, text
+  events: [
+    { date: "2026-12-01", time: "18:30", title: "Manifestación: Sader-Profersa Kanpora! · Noiz arte?", place: "Salida: Gobierno Vasco, Gran Vía 85 → Ayuntamiento de Bilbao", text: "«Leihoak ireki nahi ditugu»: queremos abrir las ventanas. Convocan Ekologistak Martxan, FACUA Euskadi y la Federación de Asociaciones Vecinales de Bilbao." },
+  ]
+};
+/* ===================================================================== */
+
+const FUENTES = [{"n": 1, "cat": "Científica y vecinal", "t": "Sader, S.A. Plan de Vigilancia Ambiental 2025, tabla 4 «Residuos admitidos por línea de tratamiento» (capacidad autorizada y cantidades admitidas en 2025, por línea). Documento público, disponible a solicitud (sin enlace público).", "url": "", "legacy": false, "k": "pva25"}, {"n": 2, "cat": "Registros y corporativas", "t": "ASEGRE, Asociación de Empresas Gestoras de Residuos y Recursos Especiales. Dossier corporativo (2022): en España se generan unos 2,5 millones de toneladas de residuos peligrosos al año.", "url": "https://asegre.com/wp-content/uploads/2022/12/Dossier_Asegre_2022_12_VF.pdf", "legacy": false, "k": "asegre"}, {"n": 3, "cat": "Científica y vecinal", "t": "Elaboración propia para la edición íntegra de este informe: localización de los centros escolares según sus fichas oficiales y distancias en línea recta medidas sobre cartografía © OpenStreetMap contributors.", "url": "", "legacy": false, "k": "osm"}, {"n": 4, "cat": "Registros y corporativas", "t": "Sader. «Acerca de Sader» (sitio web corporativo): «la instalación de mayor capacidad de tratamiento de residuos de toda la zona Norte»; capacidad de gestión superior a 150.000 t/año.", "url": "https://sader.es/acerca-de-sader/", "legacy": false, "k": "sader_web"}, {"n": 5, "cat": "Prensa", "t": "elDiario.es/Euskadi (12/11/2024). I. Rioja Andueza, «La empresa Sader de Bilbao superó en 2022 y 2023 el máximo de residuos “peligrosos” que podía recibir».", "url": "https://www.eldiario.es/euskadi/empresa-sader-bilbao-supero-2022-2023-maximo-residuos-peligrosos-podia-recibir_1_11813106.html", "legacy": false, "k": "ed_exceso24"}, {"n": 6, "cat": "Prensa", "t": "elDiario.es/Euskadi (11/02/2025). «La última inspección del Gobierno vasco en la empresa Sader de Bilbao detectó cinco “desviaciones” ambientales».", "url": "https://www.eldiario.es/euskadi/ultima-inspeccion-gobierno-vasco-empresa-sader-bilbao-detecto-cinco-desviaciones-ambientales_1_12045420.html", "legacy": false, "k": "ed_insp25"}, {"n": 7, "cat": "Prensa", "t": "Naiz (14/11/2025). «Una nueva marcha vecinal demanda soluciones y “no más autorizaciones” para Sader y Profersa».", "url": "https://www.naiz.eus/info/noticia/amp/20251114/una-marcha-vecinal-demanda-soluciones-y-no-mas-autorizaciones-para-sader-y-profersa", "legacy": false, "k": "naiz_marcha25"}, {"n": 8, "cat": "Prensa", "t": "elDiario.es/Euskadi (19/12/2025). I. Rioja Andueza, «El Gobierno vasco niega que Sader sea un “riesgo” en Bilbao pero admite que en el puerto se “minimizará” el impacto».", "url": "https://www.eldiario.es/euskadi/gobierno-vasco-niega-sader-sea-riesgo-bilbao-admite-puerto-minimizara-impacto_1_12858662.html", "legacy": false, "k": "ed_riesgo25"}, {"n": 9, "cat": "Oficial y normativa", "t": "Boletín Oficial del País Vasco, n.º 14, 20 de enero de 2023. Resolución de 17 de agosto de 2022, de la viceconsejera de Sostenibilidad Ambiental, por la que se revisa y modifica la autorización ambiental integrada concedida a SADER (concedida por Resolución de 14 de enero de 2008).", "url": "https://www.euskadi.eus/bopv2/datos/2023/01/2300336a.pdf", "legacy": false, "k": "bopv23"}, {"n": 10, "cat": "Oficial y normativa", "t": "Directiva 2010/75/UE del Parlamento Europeo y del Consejo, de 24 de noviembre de 2010, sobre las emisiones industriales. Art. 20.3 (cambios sustanciales) y anexo I, punto 5.1.", "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32010L0075", "legacy": false, "k": "dei"}, {"n": 11, "cat": "Oficial y normativa", "t": "Real Decreto 815/2013, de 18 de octubre, por el que se aprueba el Reglamento de emisiones industriales. Art. 14 (criterios de modificación sustancial) y anejo 1, epígrafe 5.1. Texto consolidado, BOE-A-2013-10949.", "url": "https://www.boe.es/buscar/pdf/2013/BOE-A-2013-10949-consolidado.pdf", "legacy": false, "k": "rd815"}, {"n": 12, "cat": "Oficial y normativa", "t": "International Agency for Research on Cancer (2012). Arsenic, Metals, Fibres and Dusts. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, vol. 100C. Lyon: IARC. (Compuestos de cromo VI, arsénico, cadmio, compuestos de níquel y amianto: grupo 1.)", "url": "https://publications.iarc.fr/120", "legacy": false, "k": "iarc100c"}, {"n": 13, "cat": "Científica y vecinal", "t": "Pey Betrán, J. (2026). Estudio de la deposición atmosférica en Bilbao. Instituto Pirenaico de Ecología (IPE-CSIC). Campaña de muestreo: 30 de abril–25 de junio de 2026; 16 pp.; tablas 1 a 4.", "url": "doc:estudio-deposicion-csic-2026.pdf", "legacy": false, "k": "csic"}, {"n": 14, "cat": "Prensa", "t": "Naiz (8/05/2026). «Niveles alarmantes de plomo y arsénico en un parque junto a la planta de Sader en Zorrotza».", "url": "https://www.naiz.eus/eu/info/noticia/20260508/niveles-alarmantes-de-plomo-y-arsenico-en-un-parque-junto-a-la-planta-de-sader-en-zorrotza", "legacy": false, "k": "naiz_suelo26"}, {"n": 15, "cat": "Oficial y normativa", "t": "Ley 4/2015, de 25 de junio, para la prevención y corrección de la contaminación del suelo (País Vasco). Art. 16 (informes de situación del suelo), art. 23 (declaración de la calidad del suelo) y anexo III (valores indicativos de evaluación VIE-B). Texto consolidado.", "url": "https://www.euskadi.eus/bopv2/datos/textosconsolidados/201502935_vigentea.pdf", "legacy": false, "k": "ley4"}, {"n": 16, "cat": "Científica y vecinal", "t": "Órgano ambiental del Gobierno Vasco. Resolución que deniega una solicitud vecinal de acceso al «Informe Preliminar de la Situación del Suelo» de Sader por no haber sido presentado por la empresa. Documentación vecinal.", "url": "", "legacy": false, "k": "res_suelo"}, {"n": 17, "cat": "Científica y vecinal", "t": "Ayuntamiento de Bilbao, Área de Urbanismo y Medio Ambiente. Expediente 07-1250-000005: informe de la Subárea de Medio Ambiente de 5/07/2007 sobre la solicitud de autorización ambiental integrada de Sader, notificado al Gobierno Vasco el 9/07/2007. Documentación vecinal.", "url": "", "legacy": false, "k": "ayto07"}, {"n": 18, "cat": "Oficial y normativa", "t": "Gobierno Vasco. Informes anuales de la calidad del aire en la CAPV (2010–2014 y 2024): relación de estaciones con datos de cada año.", "url": "", "legacy": false, "k": "gv_aire"}, {"n": 19, "cat": "Prensa", "t": "El Correo (20/01/2014). V. Urieta, «Los malos olores colman la paciencia de vecinos de Zorroza y San Ignacio» y «¿Por qué no funcionan las cabinas?».", "url": "", "legacy": false, "k": "elcorreo14"}, {"n": 20, "cat": "Científica y vecinal", "t": "Cálculo vecinal a partir de los datos públicos de la estación Unidad Móvil 2 de la red de calidad del aire del Gobierno Vasco (datos desde junio de 2024; análisis de octubre de 2025).", "url": "", "legacy": false, "k": "calc_aire"}, {"n": 21, "cat": "Científica y vecinal", "t": "Testimonios vecinales (2026). Se citan como testimonio.", "url": "", "legacy": false, "k": "testimonios26"}, {"n": 22, "cat": "Prensa", "t": "elDiario.es/Euskadi (18/05/2024). I. Rioja Andueza, «Sader-Profersa: la última empresa contaminante en el casco urbano de Bilbao en seis claves».", "url": "https://www.eldiario.es/euskadi/sader-profersa-ultima-empresa-contaminante-casco-bilbao-seis-claves-urbano_1_11371352.amp.html", "legacy": false, "k": "ed_claves24"}, {"n": 23, "cat": "Oficial y normativa", "t": "Boletín Oficial del País Vasco, n.º 108, 10 de junio de 2026. Resolución de 11 de febrero de 2026, del viceconsejero de Medio Ambiente, por la que se formula declaración de impacto ambiental y se concede autorización ambiental integrada a la instalación de valorización y eliminación de residuos peligrosos y no peligrosos promovida por Agaleus Circular Thinking, S.L. en Zierbena (Bizkaia).", "url": "https://www.euskadi.eus/bopv2/datos/2026/06/2602517a.pdf", "legacy": false, "k": "bopv26"}, {"n": 24, "cat": "Prensa", "t": "elDiario.es/Euskadi (24/02/2026). I. Rioja Andueza, «El Gobierno vasco rechaza las alegaciones y autoriza a Agaleus en el puerto de Bilbao, que permitirá cerrar Sader».", "url": "https://www.eldiario.es/euskadi/gobierno-vasco-rechaza-alegaciones-autoriza-agaleus-puerto-bilbao-permitira-cerrar-sader_1_13015725.html", "legacy": false, "k": "ed_zierbena26"}, {"n": 25, "cat": "Oficial y normativa", "t": "Organización Mundial de la Salud (2021). WHO global air quality guidelines: particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide. Ginebra: OMS. ISBN 978-92-4-003422-8.", "url": "https://www.who.int/publications/i/item/9789240034228", "legacy": false, "k": "oms21"}, {"n": 26, "cat": "Registros y corporativas", "t": "Empresia (registros del BORME). «Sociedad Anónima de Descontaminación y Eliminación de Residuos».", "url": "https://www.empresia.es/empresa/sociedad-anonima-de-descontaminacion-y-eliminacion-de-residuos/", "legacy": true, "k": "empresia_sader"}, {"n": 27, "cat": "Prensa", "t": "El Salto (6/02/2022). G. Uriarte, «Sader, la última fábrica altamente contaminante de Bilbao».", "url": "https://www.elsaltodiario.com/medioambiente/sader-ultima-fabrica-altamente-contaminante-bilbao", "legacy": false, "k": "salto22"}, {"n": 28, "cat": "Prensa", "t": "Radio Popular–Herri Irratia (2024). «Denuncian que la salud de los bilbaínos está en peligro: Sader Profersa sigue contaminando».", "url": "https://radiopopular.com/podcast/denuncian-que-la-salud-de-los-bilbainos-esta-en-peligro-sader-profersa-sigue-contaminando", "legacy": true, "k": "radiopop24"}, {"n": 29, "cat": "Científica y vecinal", "t": "Registro fotográfico vecinal (2025–2026).", "url": "", "legacy": false, "k": "fotos"}, {"n": 30, "cat": "Oficial y normativa", "t": "Gestoresderesiduos.org. Ficha del centro «S.A. de Descontaminación y Eliminación de Residuos (SADER)» (operaciones de gestión autorizadas).", "url": "https://gestoresderesiduos.org/manager_centers/s-a-de-descontaminacion-y-elim-de-residuos-sader", "legacy": true, "k": "gestores"}, {"n": 31, "cat": "Prensa", "t": "Naiz (4/06/2026). «El vecindario afectado por Sader pide “fechas” para el cese de esta actividad en Bilbo».", "url": "https://www.naiz.eus/es/info/noticia/20260604/el-vecindario-afectado-por-sader-piden-fechas-para-el-cese-de-esta-actividad-en-bilbo", "legacy": false, "k": "naiz_fechas26"}, {"n": 32, "cat": "Oficial y normativa", "t": "Gobierno Vasco. Plan de Prevención y Gestión de Residuos de la CAPV 2030, tabla 1 (generación de residuos peligrosos en 2018: 326.169 t).", "url": "https://www.euskadi.eus/contenidos/noticia/xiileg_planes_departamentales/es_def/Plan-gestion-residuos-2030.pdf", "legacy": false, "k": "ppgr30"}, {"n": 33, "cat": "Registros y corporativas", "t": "Sader. «Comunicaciones» (comunicados de la empresa sobre la inspección de 2024 y su historial sancionador).", "url": "https://sader.es/comunicaciones/", "legacy": true, "k": "sader_com"}, {"n": 34, "cat": "Científica y vecinal", "t": "Sader, S.A. Plan de Vigilancia Ambiental 2024. Documento público, disponible a solicitud (sin enlace público).", "url": "", "legacy": false, "k": "pva24"}, {"n": 35, "cat": "Oficial y normativa", "t": "Technische Anleitung zur Reinhaltung der Luft (TA Luft), Alemania, n.º 4.5.1, tabla 6: valores de inmisión para la deposición de contaminantes (arsénico 4, plomo 100, cadmio 2, níquel 15 µg/m²·día, media anual).", "url": "https://www.umwelt-online.de/recht/luft/ta_luft/ta02_4b.htm", "legacy": false, "k": "taluft"}, {"n": 36, "cat": "Oficial y normativa", "t": "Directiva (UE) 2024/2881 del Parlamento Europeo y del Consejo, de 23 de octubre de 2024, sobre la calidad del aire ambiente y una atmósfera más limpia en Europa (versión refundida). DOUE L, 20/11/2024. Transposición: 11 de diciembre de 2026.", "url": "https://eur-lex.europa.eu/eli/dir/2024/2881/oj?locale=es", "legacy": false, "k": "dir2024"}, {"n": 37, "cat": "Oficial y normativa", "t": "Organización Mundial de la Salud. «Intoxicación por plomo y salud» (nota descriptiva).", "url": "https://www.who.int/es/news-room/fact-sheets/detail/lead-poisoning-and-health", "legacy": false, "k": "omsplomo"}, {"n": 38, "cat": "Científica y vecinal", "t": "Profersa. Plan de Vigilancia Ambiental 2025. Documento público, disponible a solicitud (sin enlace público).", "url": "", "legacy": false, "k": "pva25p"}, {"n": 39, "cat": "Prensa", "t": "El Correo (20/01/2011). J. García, «La estación fantasma de San Ignacio».", "url": "", "legacy": false, "k": "elcorreo11"}, {"n": 40, "cat": "Prensa", "t": "elDiario.es/Euskadi (22/11/2024). «El Gobierno vasco promete “gestiones” para sacar las empresas Sader y Profersa del casco urbano de Bilbao».", "url": "https://www.eldiario.es/euskadi/gobierno-vasco-promete-gestiones-sacar-empresas-sader-profersa-casco-urbano-bilbao_1_11844389.html", "legacy": false, "k": "ed_gestiones24"}, {"n": 41, "cat": "Oficial y normativa", "t": "Directiva 2008/50/CE del Parlamento Europeo y del Consejo, de 21 de mayo de 2008, relativa a la calidad del aire ambiente y a una atmósfera más limpia en Europa (valores límite vigentes hasta su sustitución).", "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32008L0050", "legacy": false, "k": "dir2008"}, {"n": 42, "cat": "Oficial y normativa", "t": "Consejo de la Unión Europea. «Calidad del aire» (ficha explicativa de la Directiva (UE) 2024/2881 y de los valores límite para 2030).", "url": "https://www.consilium.europa.eu/es/policies/air-quality/", "legacy": false, "k": "consilium"}, {"n": 43, "cat": "Científica y vecinal", "t": "Ararteko. Escrito de 13/07/2026 de cierre del expediente 1550/2026/QC, sobre el uso del muelle del Astillero por las empresas del grupo. Documentación vecinal.", "url": "", "legacy": false, "k": "ararteko26"}, {"n": 44, "cat": "Prensa", "t": "El Correo (14/04/2025). «Preocupación vecinal por la presencia de amianto en Molinos Vascos».", "url": "https://www.elcorreo.com/bizkaia/preocupacion-vecinal-presencia-amianto-molinos-vascos-20250414004743-nt_amp.html", "legacy": false, "k": "elcorreo25"}, {"n": 45, "cat": "Prensa", "t": "Naiz (20/04/2025). «19 toneladas de amianto aguardan en Molinos Vascos, pendiente de restauración por la Diputación».", "url": "https://www.naiz.eus/es/info/noticia/20250420/19-toneladas-de-amianto-aguardan-en-molinos-vascos-pendiente-de-restauracion-por-la-diputacion", "legacy": false, "k": "naiz_amianto25"}, {"n": 46, "cat": "Científica y vecinal", "t": "Inspección Ambiental del Gobierno Vasco. Correo electrónico de 18/12/2025 en respuesta a una denuncia vecinal. Documentación vecinal.", "url": "", "legacy": false, "k": "correo_insp"}, {"n": 47, "cat": "Prensa", "t": "Deia (7/06/2024). «Profersa reabre en Zorrotza tras un incidente que provocó una nube de vapor y el cierre temporal de la planta».", "url": "https://www.deia.eus/bilbao/2024/06/07/profersa-reabre-zorrotza-incidente-provoco-8328901.html", "legacy": false, "k": "deia_profersa24"}, {"n": 48, "cat": "Prensa", "t": "El Salto (15/05/2024). «Sader y Profersa siguen contaminando Bilbao con una bula del Ayuntamiento que dura ya nueve años».", "url": "https://www.elsaltodiario.com/contaminacion/sader-profersa-siguen-contaminando-bilbao-bula-del-ayuntamiento-dura-ya-nueve-anos", "legacy": false, "k": "salto24"}, {"n": 49, "cat": "Prensa", "t": "elDiario.es/Euskadi (15/05/2024). «Decretan el cierre cautelar de una empresa en Bilbao que acumula incidencias y críticas vecinales».", "url": "https://www.eldiario.es/euskadi/decretan-cierre-cautelar-empresa-bilbao-acumula-incidencias-criticas-vecinales_1_11366874.html", "legacy": false, "k": "ed_cierre24"}, {"n": 50, "cat": "Prensa", "t": "Europa Press (15/05/2024). «El Gobierno vasco ordena el cierre cautelar de la empresa Profersa en Zorroza tras los últimos incidentes».", "url": "https://www.europapress.es/euskadi/noticia-gobierno-vasco-ordena-cierre-cautelar-empresa-profersa-zorroza-ultimos-incidentes-20240515143410.html", "legacy": true, "k": "europapress24"}, {"n": 51, "cat": "Prensa", "t": "elDiario.es/Euskadi (15/07/2024). I. Rioja Andueza, «La empresa Sader de Bilbao registró en junio un pequeño vertido de ácido clorhídrico».", "url": "https://www.eldiario.es/euskadi/empresa-sader-bilbao-registro-junio-pequeno-vertido-acido-clorhidrico_1_11525365.html", "legacy": false, "k": "ed_hcl24"}, {"n": 52, "cat": "Oficial y normativa", "t": "Irekia, Gobierno Vasco. «El Gobierno vasco recuerda que la planta de fertilizantes de Zorrotza realiza síntesis química y nada tiene que ver con el caso de Texas».", "url": "https://www.irekia.euskadi.eus/es/news/14185-gobierno-vasco-recuerda-que-planta-fertilizantes-zorrotza-realiza-sintesis-quimica-nada-tiene-que-ver-con-caso-texas", "legacy": false, "k": "irekia_texas"}, {"n": 53, "cat": "Oficial y normativa", "t": "Gobierno Vasco. Informes de inspección ambiental de Profersa publicados en el buscador de informes de inspección (2016–2022).", "url": "", "legacy": false, "k": "insp_gv"}, {"n": 54, "cat": "Prensa", "t": "elDiario.es/Euskadi (13/11/2024). M. López, «Vecinos de Bilbao contra Sader-Profersa y el “abandono de las instituciones”: “Nos ahogamos, respiramos basura cada día”».", "url": "https://www.eldiario.es/euskadi/vecinos-bilbao-sader-profersa-abandono-instituciones-ahogamos-respiramos-basura-dia_1_11818133.html", "legacy": false, "k": "ed_vecinos24"}, {"n": 55, "cat": "Oficial y normativa", "t": "International Agency for Research on Cancer (2006). Inorganic and Organic Lead Compounds. IARC Monographs, vol. 87. Lyon: IARC. (Compuestos inorgánicos de plomo: grupo 2A.)", "url": "https://publications.iarc.fr/105", "legacy": false, "k": "iarc87"}, {"n": 56, "cat": "Oficial y normativa", "t": "International Agency for Research on Cancer (2016). Outdoor Air Pollution. IARC Monographs, vol. 109. Lyon: IARC. (Contaminación atmosférica exterior y materia particulada: grupo 1.)", "url": "https://publications.iarc.fr/538", "legacy": false, "k": "iarc109"}, {"n": 57, "cat": "Literatura científica", "t": "Hill, W., Lim, E. L., Weeden, C. E., et al. (2023). Lung adenocarcinoma promotion by air pollutants. Nature, 616, 159–167. doi:10.1038/s41586-023-05874-3. (Presentado por C. Swanton en el congreso de la ESMO de 2022.)", "url": "https://doi.org/10.1038/s41586-023-05874-3", "legacy": false, "k": "hill23"}, {"n": 58, "cat": "Literatura científica", "t": "Agencia Europea de Medio Ambiente. Daños a la salud humana por la contaminación del aire en Europa (evaluación de la carga de enfermedad, 2022).", "url": "", "legacy": false, "k": "eea22"}, {"n": 59, "cat": "Literatura científica", "t": "Ecologistas en Acción / Ekologistak Martxan (2025). La calidad del aire en el Estado español durante 2024.", "url": "", "legacy": false, "k": "eea_aq"}, {"n": 60, "cat": "Literatura científica", "t": "Fervers, B., et al. (2023). Estudio XENAIR sobre exposición a contaminación atmosférica y riesgo de cáncer de mama, presentado en el congreso de la European Society for Medical Oncology (Madrid, octubre de 2023).", "url": "", "legacy": false, "k": "esmo23"}, {"n": 61, "cat": "Registros y corporativas", "t": "Empresia (registros del BORME). «Agaleus Medio Ambiente y Energía SL»: órganos sociales, vinculaciones y actos inscritos.", "url": "https://www.empresia.es/empresa/agaleus-medio-ambiente-y-energia/", "legacy": true, "k": "empresia_ag"}, {"n": 62, "cat": "Registros y corporativas", "t": "Datoscif (registros del BORME). «Agaleus Medio Ambiente y Energía SL» y «Agaleus Circular Thinking SL».", "url": "https://www.datoscif.es/empresa/agaleus-medio-ambiente-y-energia-sl", "legacy": true, "k": "datoscif"}, {"n": 63, "cat": "Registros y corporativas", "t": "eInforma (Informa D&B). «Agaleus Medio Ambiente y Energía SL» (perfil mercantil).", "url": "https://www.einforma.com/informacion-empresa/agaleus-medio-ambiente-energia", "legacy": true, "k": "einforma"}, {"n": 64, "cat": "Registros y corporativas", "t": "Iberinform. «Producción de Fertilizantes SA» (perfil mercantil y actos del BORME).", "url": "https://www.iberinform.es/empresa/5453573/produccion-de-fertilizantes", "legacy": true, "k": "iberinform"}, {"n": 65, "cat": "Oficial y normativa", "t": "Gobierno Vasco. El sector público de la CAE y entidades participadas, 2012: ficha de Cogeneración Zorroza, A.I.E.", "url": "https://www.euskadi.eus/contenidos/informacion/sector_publico_cae_2013/es_def/adjuntos/cogeneracion%20zorroza%202012.pdf", "legacy": true, "k": "cadem12"}, {"n": 66, "cat": "Registros y corporativas", "t": "Deia (3/03/2025). «Ángela Fernández (Agaleus): “Ekinbarri nos ha permitido ordenarnos, entendernos y delegar”».", "url": "https://www.deia.eus/economia/2025/03/03/ekinbarri-permitido-ordenarnos-entender-delegar-agaleus-empresas-bizkaia-programa-mejora-9329658.html", "legacy": true, "k": "deia_ekin25"}, {"n": 67, "cat": "Registros y corporativas", "t": "Estrategia Empresarial. «El Grupo Agaleus adquiere el 100 % de Quimycat».", "url": "https://estrategia.net/noticias/el-grupo-agaleus-adquiere-el-100-de-quimycat", "legacy": true, "k": "estrategia"}, {"n": 68, "cat": "Registros y corporativas", "t": "Agaleus. Sitio web corporativo (actividad, cifras del grupo y clientes).", "url": "https://agaleus.com/", "legacy": true, "k": "agaleus_web"}, {"n": 69, "cat": "Registros y corporativas", "t": "Agaleus. «Agaleus adquiere el 100 % de las acciones de Sogecar» (comunicación corporativa).", "url": "https://agaleus.com/agaleus-adquiere-la-propiedad-completa-de-sogecar/", "legacy": true, "k": "agaleus_sogecar"}, {"n": 70, "cat": "Registros y corporativas", "t": "Noticias de Álava (16/06/2025). «El grupo Agaleus compra la alavesa Ekinoil».", "url": "https://www.noticiasdealava.eus/alava/2025/06/16/grupo-agaleus-compra-alavesa-ekinoil-troconiz-9765642.html", "legacy": true, "k": "nalava"}, {"n": 71, "cat": "Registros y corporativas", "t": "AVEQ-KIMIKA (octubre de 2025). «Agaleus anuncia cambios en su cúpula directiva».", "url": "https://www.aveq-kimika.es/noticias/agaleus-cambio-directiva/", "legacy": true, "k": "aveq_cambio"}, {"n": 72, "cat": "Prensa", "t": "elDiario.es/Euskadi (9/10/2025). I. Rioja Andueza, «Xabier Caño deja su cargo como directivo de Agaleus, el grupo que aglutina a Sader y Profersa».", "url": "https://www.eldiario.es/euskadi/xabier-cano-deja-cargo-directivo-agaleus-grupo-aglutina-sader-profersa_1_12671247.html", "legacy": false, "k": "ed_cano25"}, {"n": 73, "cat": "Oficial y normativa", "t": "Ihobe, Sociedad Pública de Gestión Ambiental (9/07/2025). «Ihobe y Aclima trabajarán conjuntamente para mejorar la gestión de residuos y fomentar la economía circular».", "url": "https://www.ihobe.eus/es/actualidad/ihobe-y-aclima-trabajaran-conjuntamente-para-mejorar-gestion-residuos-fomentar", "legacy": false, "k": "ihobe25"}, {"n": 74, "cat": "Registros y corporativas", "t": "Aclima, Basque Environment Cluster. «Xabier Caño, presidente de Aclima» (entrevista y datos del clúster).", "url": "https://aclima.eus/en/noticia/xabier-cano-presidente-de-aclima-las-empresas-invierten-en-tecnologia-porque-no-reciclar-ahora-es-mas-caro/", "legacy": true, "k": "aclima_cano"}, {"n": 75, "cat": "Registros y corporativas", "t": "AVEQ-KIMIKA. Ficha de empresa socia: Sogecar.", "url": "https://www.aveq-kimika.es/empresas-socias/sogecar/", "legacy": true, "k": "aveq_sogecar"}, {"n": 76, "cat": "Registros y corporativas", "t": "AVEQ-KIMIKA. «Ángela Fernández, nombrada colegiada de honor del COQIQ».", "url": "https://www.aveq-kimika.es/noticias/angela-fernandez-nombrada-colegiada-de-honor-coqiq/", "legacy": true, "k": "aveq_coqiq"}, {"n": 77, "cat": "Oficial y normativa", "t": "Ayuntamiento de Bilbao (16/09/2015). Nota oficial sobre la aprobación del convenio urbanístico para adelantar el cese de la actividad de Sader en Punta Zorroza.", "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279146426368&language=es&pageid=3000075248&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia", "legacy": true, "k": "ayto15"}, {"n": 78, "cat": "Prensa", "t": "Diario del Puerto, reproducido por ACE-Cargadores (17/05/2024). «El proyecto de Agaleus en el nuevo muelle AZ-0 refuerza el valor industrial del Puerto de Bilbao».", "url": "https://www.ace-cargadores.com/2024/05/17/el-proyecto-de-agaleus-en-el-nuevo-muelle-az-0-refuerza-el-valor-industrial-del-puerto-de-bilbao/", "legacy": false, "k": "ace24"}, {"n": 79, "cat": "Prensa", "t": "Idom. «Ordenación urbanística Punta Zorroza» (ficha del proyecto).", "url": "https://www.idom.com/proyecto/ordenacion-urbanistica-punta-zorroza/", "legacy": true, "k": "idom"}, {"n": 80, "cat": "Oficial y normativa", "t": "Ayuntamiento de Bilbao. Ordenanza Municipal de Protección del Medio Ambiente, Boletín Oficial de Bizkaia de 10 de junio de 2000 (sustituye a la de 22 de julio de 1992).", "url": "https://normatia.com/es/normativa/proteccion-medio-ambiente-bilbao/2000/exposicion-de-motivos/", "legacy": false, "k": "opma"}, {"n": 81, "cat": "Oficial y normativa", "t": "Ararteko. Informe anual al Parlamento Vasco 2025, entregado el 30 de marzo de 2026. Resumen difundido por la Red Europea de Defensores del Pueblo.", "url": "https://eno.ombudsman.europa.eu/home/news/maincontent/informe-anual-del-ararteko-al-pa.html", "legacy": false, "k": "ararteko25"}, {"n": 82, "cat": "Prensa", "t": "Deia (24/02/2026). «La dueña de Sader recibe autorización ambiental para su planta de residuos en el Puerto de Bilbao».", "url": "https://www.deia.eus/bizkaia/2026/02/24/duena-sader-recibe-autorizacion-ambiental-10743467.html", "legacy": false, "k": "deia_aai26"}, {"n": 83, "cat": "Prensa", "t": "Tercera Información (18/02/2025). «Elkarrekin Podemos presenta alegaciones a la instalación de Sader-Profersa en el puerto de Bilbao».", "url": "https://www.tercerainformacion.es/articulo/actualidad/euskal-herria/18/02/2025/elkarrekin-podemos-presenta-alegaciones-a-la-instalacion-de-sader-profersa-en-el-puerto-de-bilbao/", "legacy": true, "k": "tercera25"}, {"n": 84, "cat": "Prensa", "t": "Cadena SER / Radio Bilbao (5/02/2025). «El PP de Getxo alerta sobre el impacto de Sader y Profersa y exige un nuevo estudio ambiental».", "url": "https://cadenaser.com/euskadi/2025/02/05/el-pp-de-getxo-alerta-sobre-el-impacto-de-sader-y-profersa-y-exige-un-nuevo-estudio-ambiental-radio-bilbao/", "legacy": true, "k": "ser_pp25"}, {"n": 85, "cat": "Oficial y normativa", "t": "Ley 27/2006, de 18 de julio, por la que se regulan los derechos de acceso a la información, de participación pública y de acceso a la justicia en materia de medio ambiente. Art. 13 (excepciones a la obligación de facilitar la información ambiental). BOE-A-2006-13010.", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13010", "legacy": false, "k": "ley27"}, {"n": 86, "cat": "Prensa", "t": "Gestoresderesiduos.org (2025). «Los lixiviados de la discordia: un conflicto de residuos enfrenta a País Vasco y Navarra».", "url": "https://gestoresderesiduos.org/noticias/los-lixiviados-de-la-discordia-un-conflicto-de-residuos-enfrenta-a-pais-vasco-y-navarra", "legacy": true, "k": "gestores_lix"}, {"n": 87, "cat": "Prensa", "t": "elDiario.es/Euskadi (5/03/2025). I. Rioja Andueza, «La Guardia Civil da un balón de oxígeno a Asensio, Sader y Ecofert Sansoain al no ver peligrosos los lixiviados de Zubieta».", "url": "https://www.eldiario.es/euskadi/guardia-civil-da-balon-oxigeno-asensio-sader-ecofert-sansoain-no-ver-peligrosos-lixiviados-zubieta_1_12105341.html", "legacy": false, "k": "ed_gc25"}, {"n": 88, "cat": "Prensa", "t": "elDiario.es/Euskadi (9/11/2025). I. Rioja Andueza, «Competencia cierra la investigación contra Sader, en la que buscaba pruebas de reparto del mercado vasco de residuos».", "url": "https://www.eldiario.es/euskadi/competencia-cierra-investigacion-sader-buscaba-pruebas-reparto-mercado-vasco-residuos_1_12753523.html", "legacy": false, "k": "ed_comp25"}, {"n": 89, "cat": "Prensa", "t": "EH Bildu Bilbao (mayo de 2024). «La decisión de clausurar la planta de Profersa pone en evidencia la necesidad de sacar del casco urbano Profersa y Sader».", "url": "https://ehbildu.eus/herriak/bilbo/es/noticias/la-decision-de-clausurar-la-planta-de-profersa-pone-en-evidencia-la-necesidad-de-sacar-del-casco-urbano-profersa-y-sader-tal-y-como-demanda-la-ciudadania", "legacy": true, "k": "ehbildu24"}, {"n": 90, "cat": "Prensa", "t": "Radio Nervión (12/11/2026). «Bilbao une fuerzas contra Sader y Profersa y prepara una gran movilización antes de diciembre».", "url": "https://www.radionervion.com/2026/11/12/bilbao-une-fuerzas-contra-sader-y-profersa-y-prepara-una-gran-movilizacion-antes-de-diciembre/", "legacy": false, "k": "rnervion26"}, {"n": 91, "cat": "Prensa", "t": "BilbaoHiria (12/11/2026). «“Sader-Profersa Kanpora”: los vecinos de Bilbao preparan una movilización antes de diciembre».", "url": "https://bilbaohiria.com/bilbao/sader-profersa-kanpora-movilizacion-diciembre-estudio-csic", "legacy": false, "k": "bhiria26"}];
+const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const docUrl = f => CONFIG.docBase + f;
+const srcMap = Object.fromEntries(FUENTES.map(s => [s.n, s]));
+const srcHref = s => !s ? '' : s.url && s.url.startsWith('doc:') ? docUrl(s.url.slice(4)) : s.url;
+/* {1,2} → superíndice con enlace a la fuente */
+const R = html => html.replace(/\{([\d,\s]+)\}/g, (_, l) => `<sup class="s" data-s="${l.replace(/\s/g,'')}"></sup>`);
+const ico = {
+  hand:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11V5a1.5 1.5 0 013 0v5m0-1V3.5a1.5 1.5 0 013 0V10m0-5.5a1.5 1.5 0 013 0V11m0-3a1.5 1.5 0 013 0v6a7 7 0 01-7 7h-1a7 7 0 01-5.6-2.8L3.6 14a1.6 1.6 0 012.4-2.1L7 13"/></svg>',
+  shoe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18v-2c0-1.5-1-2.5-3-3l-4-1-2-4H5L3 12z"/><path d="M8 12h2M3 21h18"/></svg>',
+  shirt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l-5 3 2 4 2-1v12h10V9l2 1 2-4-5-3a4 4 0 01-8 0z"/></svg>',
+  mop:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2l-4 12M6 14h8l2 7H4z"/><path d="M7 18v3M10 18v3M13 18v3"/></svg>',
+  window:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16"/></svg>',
+  kid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 8v7m0 0l-3 6m3-6l3 6M7 11l5-1 5 1"/></svg>',
+  leaf:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c0-9 5-15 15-16 0 10-6 15-15 16zM5 21l8-8"/></svg>',
+  paw:'<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="10" r="2"/><circle cx="10" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="10" r="2"/><path d="M12 11c-3 0-6 4-6 6.5 0 2 2 2.5 3 2.5s2-.5 3-.5 2 .5 3 .5 3-.5 3-2.5C18 15 15 11 12 11z"/></svg>',
+  fan:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M8 6h8"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.1 5.1 0 001.1 2.7 11.6 11.6 0 004.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.2-1.3c-.1-.1-.2-.2-.5-.3z"/></svg>',
+  flag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3m0 1h13l-2 4 2 4H4"/></svg>',
+  people:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 14.5c3 0 6 2 6 5.5"/></svg>',
+  sticker:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v10l-6 6H4z"/><path d="M14 20v-6h6"/></svg>',
+  share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>',
+  cam:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13" r="4"/></svg>',
+  mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>',
+  print:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg>'
+};
+
+/* ---------------- DATOS ---------------- */
+const TICKER = ["79.593 t de residuos peligrosos en 2025","×4 plomo sobre San Ignacio","3 colegios a unos 500 m","+38 % de capacidad sin información pública","10 años sin estación del Gobierno Vasco en Zorroza y San Ignacio","Ningún estudio epidemiológico público","Permiso hasta 2031, ninguna fecha de cierre","Fecha · Datos · Salud","Sader-Profersa Kanpora!"];
+
+const STATS = [
+  ["79.593 t","de residuos peligrosos tratadas por Sader en 2025.","1"],
+  ["≈ 500 m","entre la planta y los centros escolares más cercanos: el primero, a unos 300 m; cuatro, a 600 m o menos en línea recta.","3"],
+  ["+38 %","de capacidad autorizada para residuos peligrosos el 17/03/2025, sin información pública.","7,9,1"],
+  ["×4","plomo depositado sobre San Ignacio frente al máximo urbano español.","13"],
+  ["×9 · ×6","arsénico y plomo en el suelo junto a la planta frente al valor legal para un parque.","14,15"],
+  ["+70 %","de partículas finas (PM2,5) sobre el valor guía anual de la OMS en San Ignacio.","20,25"],
+  ["10 años","sin estación de calidad del aire del Gobierno Vasco en Zorroza y San Ignacio (2014–2024).","18,19"],
+  ["0","estudios epidemiológicos públicos localizados sobre la población de los barrios afectados.","22"],
+  ["10/06/2031","fecha límite para abrir en Zierbena. No hay fecha de cierre obligatoria en Zorroza.","23"]
+];
+
+const FINDINGS = [
+  ["Una de las mayores plantas de residuos peligrosos del Estado funciona dentro de Bilbao","79.593 toneladas de residuos peligrosos en 2025, a unos 500 metros de tres centros escolares. La propia empresa se presenta como la de mayor capacidad de tratamiento de residuos de toda la zona norte.",2],
+  ["La inspección examinó las cantidades tratadas en 2022 y 2023","Sader recibió 86.328 y 80.117 toneladas de residuos peligrosos, con un límite de 79.140. Aunque se superó el límite específico para residuos peligrosos, la Inspección concluyó que no había incumplimiento al considerar la capacidad total autorizada.",3],
+  ["Después, le ampliaron la capacidad un 38 %","El 17 de marzo de 2025, como «modificación no sustancial»: sin información pública, sin estudio de dispersión y sin informe de Salud, según denuncia el vecindario.",3],
+  ["Tiene permiso para 2.000 toneladas al año de cromo hexavalente","Cancerígeno. Esa capacidad no aumentó con la ampliación de 2025. En 2024 trató 388 y en 2025, 110. El riesgo está en el transporte, la descarga y la manipulación de esos baños junto a viviendas.",3],
+  ["Sobre San Ignacio y Deusto cae más metal que en ninguna ciudad medida en España","4 veces más plomo, 3,7 veces más cinc y el doble de cromo que el peor entorno urbano. En el centro de Bilbao, medido a la vez, no ocurre. (El estudio compara las muestras con referencias urbanas seleccionadas; los resultados requieren contextualización y no permiten atribuir por sí solos una fuente concreta.)",4],
+  ["El suelo junto a la planta supera el valor legal para un parque","9 veces en arsénico, 6 en plomo y 4 en níquel. La Administración requirió a Sader en enero de 2026 el informe de situación del suelo, que según el órgano ambiental no se había presentado.",5],
+  ["Diez años sin estación del Gobierno Vasco en Zorroza y San Ignacio","De 2014 a 2024. La unidad móvil de San Ignacio, instalada en 2024, registra un 70 % más de partículas finas de lo que la OMS considera sano. Desde septiembre de 2026 no funciona bien.",6],
+  ["Se solicita un estudio epidemiológico específico para los barrios","No se ha localizado en las fuentes consultadas un estudio epidemiológico específico y público. También se solicita acceso a las mediciones de emisiones y a su metodología.",9],
+  ["El traslado al puerto es un permiso, no una orden","La autorización de Zierbena da hasta el 10 de junio de 2031 para empezar allí. No impone el cierre de Zorroza. Profersa no entra.",16]
+];
+
+/* Capítulos del informe */
+const CH = [
+ {n:1,p:"I",k:"La planta",t:"Qué es Sader y dónde está",h:`
+  <p>Sader (Sociedad Anónima de Descontaminación y Eliminación de Residuos) es una planta de tratamiento de residuos industriales peligrosos y no peligrosos situada en Punta Zorroza, en la margen izquierda de la ría de Bilbao. La sociedad se constituyó en 1986; su autorización ambiental integrada vigente se concedió el 14 de enero de 2008 y se revisó en 2022.{26,9} Pertenece al grupo Agaleus, igual que Profersa, la fábrica contigua que produce fertilizantes a partir de residuos y que se escindió de Sader en 2012 con autorización propia.{9,22} La prensa la ha descrito como la última gran industria contaminante que queda dentro del casco urbano de Bilbao.{22,27}</p>
+  <figure class="pair"><img class="zoom" src="img/hero-noche.jpg" alt="El complejo de noche junto a viviendas nuevas" loading="lazy"><img class="zoom" src="img/penacho.jpg" alt="Penacho sobre la planta de día" loading="lazy"><figcaption style="grid-column:1/-1">El complejo visto desde la otra orilla, de noche junto a las viviendas nuevas y de día. Registro fotográfico vecinal.{29}</figcaption></figure>
+  <p>La geografía explica el conflicto. San Ignacio queda justo enfrente, al otro lado de la ría; Zorroza, detrás; Ribera de Deusto, donde se están entregando viviendas nuevas, a sotavento de los vientos habituales. También resultan afectados Basurto, Altamira, Ibarrekolanda y Burtzeña (Barakaldo).{22,28} En el Parlamento Vasco se ha cifrado en unas 11.000 las personas expuestas a olores persistentes y mala calidad del aire.{8}</p>
+  <figure><img class="zoom" src="img/mapa-colegios.jpg" alt="Mapa de la planta y los centros escolares" loading="lazy"><figcaption>La planta y los cinco centros escolares a menos de 700 m: IES Zorrotza (≈300 m), CEIP Zorrotza Fray Juan (≈490 m), IES San Inazio (≈600 m), CEIP Intxixu (≈600 m) y CEIP Zazpilanda (≈690 m). Más lejos, CEIP San Inazio (≈930 m) y Madre de Dios (≈1,2 km).{3}</figcaption></figure>`},
+ {n:2,p:"I",k:"La planta",t:"Qué residuos trata y cuántos",h:`
+  <p>Sader recibe y almacena residuos peligrosos, los estabiliza y solidifica («inertización»), neutraliza baños ácidos y alcalinos agotados del tratamiento de superficies metálicas, reduce baños de cromo hexavalente y trata aceites usados, emulsiones y aguas aceitosas.{30,4} Entre los residuos que recibe figuran lodos industriales, polvos de acería y residuos del tratamiento de humos.{7,31} Llegan también de otras comunidades autónomas y de Francia.{8}</p>
+  <figure><img class="zoom" src="img/f-capacidad.jpg" alt="Gráfico: residuos admitidos y capacidad autorizada" loading="lazy"><figcaption>Residuos admitidos en 2025 y capacidad autorizada en Zorroza y en la nueva planta de Zierbena.{1,23}</figcaption></figure>
+  <p>En 2025 Sader admitió 79.593 toneladas de residuos peligrosos; el permiso le deja llegar a 108.500, un 36 % más. En residuos totales, 122.575 toneladas admitidas frente a 167.600 autorizadas. El Plan de Vigilancia Ambiental es un documento público que la empresa facilita a quien lo solicita.{1}</p>
+  <figure><img class="zoom" src="img/f-lineas.jpg" alt="Uso de la capacidad por línea de tratamiento" loading="lazy"><figcaption>Uso de la capacidad autorizada en cada línea en 2025. Plan de Vigilancia Ambiental de Sader 2025, tabla 4.{1}</figcaption></figure>
+  <h4 class="kicker" style="margin-top:26px">Las cifras de capacidad, ordenadas</h4>
+  <table><thead><tr><th>Cifra</th><th>Qué mide</th><th>Fuente</th></tr></thead><tbody>
+   <tr><td><b>79.140 t/año</b></td><td>Capacidad autorizada para peligrosos antes de la ampliación de 2025.</td><td>{9}</td></tr>
+   <tr><td><b>108.500 t/año</b></td><td>Capacidad autorizada vigente para peligrosos, sumando líneas (+37 %).</td><td>{1}</td></tr>
+   <tr><td><b>167.600 t/año</b></td><td>Capacidad autorizada total (peligrosos y no peligrosos).</td><td>{1}</td></tr>
+   <tr><td><b>&gt; 150.000 t/año</b></td><td>Capacidad de gestión que declara la empresa en su web.</td><td>{4}</td></tr>
+   <tr><td><b>79.593 t</b></td><td>Peligrosos admitidos en 2025.</td><td>{1}</td></tr>
+   <tr><td><b>122.575 t</b></td><td>Residuos admitidos en 2025, peligrosos y no peligrosos.</td><td>{1}</td></tr>
+   <tr><td><b>144.500 t/año</b></td><td>Capacidad de la nueva planta de Zierbena (101.150 t peligrosos + 43.350 no peligrosos).</td><td>{23}</td></tr>
+  </tbody></table>
+  <p><b>Una de las mayores del Estado.</b> No existe una clasificación oficial de plantas por capacidad. Lo que Sader trató en 2025{1} equivale a casi una cuarta parte de los residuos peligrosos que se generaron en Euskadi en 2018.{32} La propia empresa se presenta como la instalación de mayor capacidad de tratamiento de residuos de toda la zona norte.{4}</p>
+  <div class="box"><span class="tag tener">A tener en cuenta</span><p>Son órdenes de magnitud: comparan años distintos y Sader recibe también residuos de otras comunidades. Sirven para situar la planta, no para ordenarla en una clasificación que no existe.</p></div>`},
+ {n:3,p:"I",k:"El límite",t:"El tope de residuos peligrosos: superado y después ampliado",h:`
+  <div class="big-quote">Superó el límite de peligrosos. Después le ampliaron la capacidad.<small>En 2022 y 2023 Sader recibió más residuos peligrosos que el límite específico de su autorización. La Inspección no apreció incumplimiento. En 2025 el Gobierno Vasco le permitió tratar un 38 % más.{5,6,7}</small></div>
+  <p><b>El exceso.</b> La autorización de Sader, revisada en agosto de 2022, fija un máximo anual de 79.140 toneladas de residuos peligrosos y otro de 42.000 de no peligrosos.{9} Según los datos oficiales entregados al Parlamento Vasco, Sader recibió 86.327,84 toneladas de peligrosos en 2022 y 80.117 en 2023: un 9 % y algo más de un 1 % por encima del límite.{5} La inspección de 20 y 25 de noviembre de 2024 examinó esas cantidades y concluyó que no había incumplimiento al considerar la capacidad total autorizada; calificó el cumplimiento de «medio-alto», con cinco desviaciones menores.{6,33} La empresa afirma que nunca ha tenido un expediente sancionador.{33}</p>
+  <div class="box"><span class="tag importa">Por qué importa</span><p>Un tope específico para peligrosos existe precisamente porque no son intercambiables con los demás. Si el exceso puede compensarse con el hueco de los no peligrosos, el tope deja de ser un límite. El vecindario lo ha llevado al Ararteko.</p></div>
+  <p><b>La ampliación del 17 de marzo de 2025.</b> El Gobierno Vasco autorizó un aumento del 38 % como «modificación no sustancial» de la autorización ambiental integrada, un cauce que no exige información pública.{7,8} La capacidad para peligrosos pasó de 79.140 a 108.500 toneladas anuales.{9,1} El vecindario denuncia que se concedió sin estudio de dispersión de contaminantes, sin informe del Departamento de Salud y sin posibilidad de alegaciones.{7,21}</p>
+  <div class="box responden"><span class="tag responden">Lo que responde el Gobierno Vasco</span><p>En diciembre de 2025, el consejero de Industria, Transición Energética y Sostenibilidad, Mikel Jauregi, defendió en el Parlamento que la modificación es «no sustancial» según la evaluación técnica, que más volumen no supone más riesgo y que el cumplimiento de la planta en las inspecciones de 2024 fue «medio-alto».{8}</p></div>
+  <p><b>¿Qué fundamentos justifican la calificación de modificación no sustancial? ¿Por qué es «no sustancial» un 38 % más?</b> La Directiva europea de emisiones industriales considera sustancial cualquier ampliación que por sí sola alcance los umbrales que obligan a tener autorización: 10 toneladas diarias para residuos peligrosos.{10,11} Con las cifras oficiales, la ampliación supone 29.360 toneladas anuales más: unas 80 toneladas diarias, unas ocho veces ese umbral.{9,1}</p>
+  <div class="box pregunta"><span class="tag pregunta">Pregunta sin respuesta</span><p>¿En qué informe técnico se justifica que tratar unas 29.000 toneladas más de residuos peligrosos al año no tiene mayor incidencia sobre la salud y el medio ambiente? ¿Por qué no se ha publicado?</p></div>
+  <p><b>El cromo hexavalente.</b> Sus compuestos son cancerígenos para el ser humano (IARC, grupo 1), con el pulmón como órgano diana.{12} Sader recibe baños agotados y los reduce a cromo trivalente, mucho menos tóxico: el riesgo está en el transporte, la descarga y la manipulación. La línea tiene asignadas 2.000 toneladas al año. Esa capacidad no aumentó con la ampliación de 2025: es la misma que fijaba la revisión de 2022 y, según la documentación vecinal, se mantiene desde 2012; la autorización de 2008 fijaba un límite mayor. En 2024 recibió 388 toneladas y en 2025, 110.{9,34,1}</p>
+  <figure><img class="zoom" src="img/f-cromo.jpg" alt="Cromo hexavalente: tratado frente a autorizado" loading="lazy"><figcaption>Línea de cromo VI: lo tratado en 2025 y lo que permite la autorización.{1,12}</figcaption></figure>
+  <div class="box pregunta"><span class="tag pregunta">Pregunta sin respuesta</span><p>¿Qué controles se aplican al transporte, la descarga y la manipulación de los baños de cromo hexavalente, y con qué resultados?</p></div>`},
+ {n:4,p:"I",k:"Lo que cae del aire",t:"El estudio del CSIC: metales sobre los barrios",h:`
+  <p>Hasta 2026 la discusión se libraba sin datos: existía controversia sobre el alcance de las emisiones declaradas y la suficiencia de las mediciones disponibles. En abril de 2026 se encargó al Instituto Pirenaico de Ecología del CSIC un estudio de deposición atmosférica, dirigido por el investigador Jorge Pey Betrán.{13}</p>
+  <ul><li><b>Cuatro puntos:</b> Zorroza, Ribera de Deusto, San Ignacio y el centro de Bilbao como comparación.</li><li><b>56 días</b> (30 de abril–25 de junio de 2026), cuatro muestras por punto, con captadores atendidos por el vecindario.</li><li>Análisis en los laboratorios del IPE-CSIC de hasta 69 componentes, comparados con el rango medido en zonas urbanas de España entre 2016 y 2025.</li></ul>
+  <div class="big-quote">Aquí cae 4 veces más plomo que en otras ciudades.<small>En el centro de Bilbao, lo normal. En San Ignacio, cuatro veces el máximo de las ciudades españolas.{13}</small></div>
+  <figure><img class="zoom" src="img/f-deposicion.jpg" alt="Deposición de seis metales en los cuatro puntos" loading="lazy"><figcaption>Deposición de seis metales, en veces el máximo urbano español. IPE-CSIC (2026), tabla 4.{13}</figcaption></figure>
+  <p>El resultado central es un gradiente: la deposición de metales es máxima en Ribera de Deusto y San Ignacio, intermedia en Zorroza y mínima en el centro de Bilbao. Sobre San Ignacio se depositaron 8,9 microgramos de plomo por metro cuadrado y día: cuatro veces el máximo urbano español de referencia (2,2). Sobre Ribera de Deusto, 82 de cinc: 3,7 veces el máximo. El cromo dobla el máximo en ambos barrios.{13}</p>
+  <figure class="pair"><img class="zoom" src="img/f-deposicion-tabla.jpg" alt="Tabla de elementos que superan el máximo urbano" loading="lazy"><img class="zoom" src="img/f-centro.jpg" alt="San Ignacio frente al centro de Bilbao" loading="lazy"><figcaption style="grid-column:1/-1">Qué elementos superan el máximo urbano y dónde; y la comparación con el centro de Bilbao en el mismo estudio.{13}</figcaption></figure>
+  <div class="box"><span class="tag tener">A tener en cuenta</span><p>Es un estudio exploratorio: 56 días y cuatro puntos. Compara las muestras con referencias urbanas seleccionadas; los resultados requieren contextualización y no permiten atribuir por sí solos una fuente concreta. En España no hay límite legal para la deposición de metales; Alemania admite 100 µg/m²·día de plomo como media anual, y se midieron 8,9.{35} La nueva directiva europea obliga a empezar a vigilar la deposición.{36}</p></div>
+  <div class="box pregunta"><span class="tag pregunta">Pregunta sin respuesta</span><p>¿Qué tipo de cromo cae sobre Ribera de Deusto y San Ignacio? Una especiación lo aclararía. El vecindario la ha pedido. ¿Quién la encarga?</p></div>`},
+ {n:5,p:"I",k:"Lo que hay en el suelo",t:"Plomo, arsénico y níquel junto a la planta",h:`
+  <p>En mayo de 2026 se conocieron los resultados de un análisis de suelo hecho por vecinas y vecinos dentro de ECHO, un proyecto europeo de ciencia ciudadana. La muestra se tomó en un parterre junto al almacén de Sader, cerca de un parque infantil.{14}</p>
+  <figure><img class="zoom" src="img/f-suelo.jpg" alt="Metales en el suelo frente al valor legal para parque" loading="lazy"><figcaption>Metales en la muestra frente al valor indicativo de evaluación (VIE-B) de la ley vasca para «parque público».{14,15}</figcaption></figure>
+  <table><thead><tr><th>Metal</th><th>Medido (mg/kg)</th><th>Valor legal parque</th><th>Área de juego infantil</th><th>Veces</th></tr></thead><tbody>
+   <tr><td>Arsénico</td><td>270</td><td>30</td><td>30</td><td><b>×9</b></td></tr>
+   <tr><td>Plomo</td><td>2.700</td><td>450</td><td>120</td><td><b>×6</b></td></tr>
+   <tr><td>Níquel</td><td>2.010</td><td>500</td><td>110</td><td><b>×4</b></td></tr>
+   <tr><td>Cadmio</td><td>6,3</td><td>25</td><td>5</td><td>×0,25</td></tr>
+  </tbody></table>
+  <p>Superar un valor indicativo no prueba por sí solo un daño: lo que la ley establece es que hay que investigar y evaluar el riesgo.{15} El arsénico y los compuestos de níquel son cancerígenos del grupo 1 de la IARC.{12} El plomo daña el sistema nervioso, sobre todo en la infancia, y la OMS no reconoce ningún nivel de exposición seguro.{37}</p>
+  <div class="box"><span class="tag tener">A tener en cuenta</span><p>Es ciencia ciudadana y una sola localización: indica un problema, no lo delimita. Falta un muestreo oficial. El suelo de Punta Zorroza arrastra además un siglo de actividad industrial anterior a Sader.</p></div>
+  <p><b>El estado de la documentación sobre el suelo.</b> La revisión de la autorización de 2022 exigía a Sader un informe preliminar de situación del suelo, previsto para 2025 en su Plan de Vigilancia Ambiental.{9,34} Según los documentos citados, la inspección de noviembre de 2025 detectó que no se había presentado, la Administración formuló un requerimiento el 8 de enero de 2026 y la empresa aportó una «nota técnica».{14,16} Al denegar después una solicitud vecinal de acceso a ese informe, el órgano ambiental hizo constar que «no ha sido presentado por la empresa».{16} Queda por aclarar si la nota técnica satisface íntegramente lo exigido. A Profersa, la inspección le requiere el Documento Único de Suelos.{38}</p>
+  <div class="box"><span class="tag importa">Por qué importa</span><p>El informe de suelo fija el estado de partida. Sin él no se puede exigir a la empresa, cuando se vaya, que devuelva el terreno como lo encontró. En Punta Zorroza están previstas unas 2.100 viviendas.</p></div>`},
+ {n:6,p:"I",k:"Lo que se respira",t:"El aire del Distrito 1",h:`
+  <div class="big-quote">10 años sin estación en Zorroza y San Ignacio. Al medir, peor de lo que la OMS considera sano.<small>Zorroza dejó de figurar en los informes oficiales de calidad del aire después de 2011, y Elorrieta (San Ignacio) después de 2013. De 2014 a 2024 ninguno de los dos barrios tuvo estación del Gobierno Vasco. La unidad móvil de San Ignacio registró un 70 % más de partículas finas de lo que recomienda la OMS.{18,20,25}</small></div>
+  <figure><img class="zoom" src="img/f-13anos.jpg" alt="Cronología de la medición pública del aire" loading="lazy"><figcaption>Cronología de la medición pública del aire en el entorno de Sader.{17,39,19,18,40}</figcaption></figure>
+  <p>En julio de 2007, mientras se tramitaba la autorización de Sader, el Ayuntamiento de Bilbao informó de que debía incluirse en ella «la instalación de un sistema de medición en continuo, tal como se comprometió en el año 1997».{17} La autorización se concedió el 14 de enero de 2008.{9} Ese medidor no consta instalado. La cabina de Elorrieta dejó de funcionar en junio de 2010 y sus equipos pasaron a Erandio;{39} Zorroza dejó de figurar en los informes oficiales de calidad del aire después de 2011, y Elorrieta después de 2013.{18} En 2014 el Gobierno Vasco anunció campañas móviles en lugar de la estación fija; el vecindario pedía que se midieran también el benceno y el tolueno.{19} En 2024, tras los accidentes de Profersa, llegaron dos unidades móviles; la de San Ignacio es la Unidad Móvil 2.{40}</p>
+  <figure class="pair"><img class="zoom" src="img/f-oms.jpg" alt="Medias anuales frente a la OMS" loading="lazy"><img class="zoom" src="img/f-picos.jpg" alt="Días por encima del valor guía" loading="lazy"><figcaption style="grid-column:1/-1">Medias en San Ignacio frente a la OMS y a los límites europeos; días por encima del valor guía diario. Cálculo vecinal sobre datos públicos.{20,25,36}</figcaption></figure>
+  <p>El cálculo vecinal a partir de las series públicas da una media de 8,5 µg/m³ de PM2,5, 16,4 de PM10 y 16,5 de NO2.{20} Ninguno incumple los límites legales vigentes; los tres superan los valores guía de la OMS: un 70 %, un 9 % y un 65 %.{25} La nueva directiva europea reduce el límite de PM2,5 de 25 a 10 µg/m³ a partir de 2030.{36,42}</p>
+  <div class="box"><span class="tag tener">A tener en cuenta</span><p><b>Legal no significa sano.</b> El aire de San Ignacio cumple la ley de hoy, y lo decimos. No cumple lo que la OMS considera seguro. Y no todo viene de Sader: hay tráfico, un muelle de mercancías y otra industria. Estos datos miden el aire que se respira, no quién lo ensucia.</p></div>
+  <p><b>Un medidor que no cuenta y que falla.</b> Al ser móvil, sus datos no entran en la evaluación oficial. Durante unos tres meses dio valores anómalos de monóxido de carbono sin que nadie lo advirtiera. Y desde septiembre de 2026 no funciona correctamente.{21,18}</p>
+  <div class="box"><span class="tag indicio">Indicio</span><p>El mal funcionamiento desde septiembre de 2026 y el episodio del monóxido de carbono proceden de testimonios vecinales; pueden comprobarse en las series públicas del Gobierno Vasco.</p></div>`},
+ {n:7,p:"I",k:"El muelle",t:"Un muelle municipal con amianto, usado como aparcamiento",h:`
+  <p>Todos los camiones de Sader y Profersa entran y salen por el muelle de Zorroza y atraviesan el barrio: entre 7.000 y 8.000 al año, según la prensa.{27} El muelle del Astillero es municipal. El grupo tiene un contrato que le autoriza a transitar por él, pero no a aparcar camiones ni a depositar material, según se informó en el pleno municipal.{43}</p>
+  <figure><img class="zoom" src="img/polvo-muelle.jpg" alt="Polvo levantado en el muelle de Zorroza" loading="lazy"><figcaption>Polvo levantado en el muelle, visto desde la otra orilla. Registro fotográfico vecinal.{29}</figcaption></figure>
+  <p>Un estudio encargado a la empresa Dinam halló en el suelo del muelle pequeños fragmentos de amianto, «seguramente arrastrados por el viento», según publicaron El Correo y Naiz en abril de 2025.{44,45} La Federación de Asociaciones Vecinales de Bilbao sostiene que el Ayuntamiento lo sabía al menos desde finales de 2023. Junto al muelle, un informe de la Diputación Foral de Bizkaia sitúa en unas 19 toneladas el amianto de la cubierta de Grandes Molinos Vascos, pendiente de retirada.{45} El estudio de Dinam no se ha publicado.</p>
+  <div class="box"><span class="tag indicio">Indicio</span><p>Del estudio de Dinam solo se recoge aquí lo publicado en prensa. Publicar el estudio completo permitiría saber qué levantan los camiones a su paso.</p></div>
+  <figure class="trio"><img class="zoom" src="img/puerta.jpg" alt="Puerta abierta con material acumulado" loading="lazy"><img class="zoom" src="img/cubierta-deposito.jpg" alt="Depósito sobre una cubierta" loading="lazy"><img class="zoom" src="img/camion-reguero.jpg" alt="Camión junto a un reguero de líquido" loading="lazy"><figcaption style="grid-column:1/-1">Puerta averiada con material saliendo al muelle, depósito sobre la cubierta de Profersa y reguero de líquido. El vecindario denuncia también el uso del muelle como aparcamiento de camiones, remolques y cisternas.{29,43}</figcaption></figure>
+  <div class="box responden"><span class="tag responden">Lo que responden las instituciones</span><p>La Inspección Ambiental respondió a una denuncia por emisiones difusas, por correo de 18 de diciembre de 2025: «no hemos podido aclarar si las imágenes que mandaste eran una anormalidad o no. La empresa dice [que] no tuvieron ninguna incidencia ese día».{46} El Ayuntamiento informó al Ararteko de que hace un seguimiento periódico y de que el uso del muelle es correcto; el Ararteko cerró el expediente en julio de 2026 y le recordó su obligación de responder con celeridad.{43}</p></div>`},
+ {n:8,p:"I",k:"Los accidentes",t:"Cuando hubo una nube química, los medidores no midieron",h:`
+  <table><thead><tr><th>Fecha</th><th>Qué ocurrió</th><th></th></tr></thead><tbody>
+   <tr><td>26/04/2024</td><td>Incidente en Profersa: columna de vapor visible sobre Zorroza.</td><td>{22,47}</td></tr>
+   <tr><td>2/05/2024</td><td>Manifestación en Zorroza: unas 1.200 personas según la prensa.</td><td>{48}</td></tr>
+   <tr><td>10–11/05/2024</td><td>Reacción química en Profersa: nube de humo. A quien llamó al 112 se le indicó cerrar puertas y ventanas.</td><td>{22,47}</td></tr>
+   <tr><td>15/05/2024</td><td>El Gobierno Vasco ordena el cierre cautelar de Profersa.</td><td>{49,50}</td></tr>
+   <tr><td>Junio 2024</td><td>Profersa reabre con condiciones.</td><td>{47}</td></tr>
+   <tr><td>2024</td><td>El Gobierno Vasco incorpora dos unidades móviles de medición en la zona.</td><td>{40}</td></tr>
+   <tr><td>20/06/2024</td><td>Pequeño vertido de ácido clorhídrico en Sader; la empresa lo redujo a «unas gotas».</td><td>{51}</td></tr>
+  </tbody></table>
+  <p>Dos hechos de aquella primavera tienen consecuencias permanentes. Las plantas no están clasificadas entre los establecimientos que deben tener plan de emergencia exterior. No se ha localizado en las fuentes disponibles un protocolo público de aviso a la población; corresponde aclarar cuáles son legalmente exigibles y cuáles están vigentes.{22,52} Y la estación más próxima no registró el episodio: según la explicación oficial, la de Lutxana deja de emitir una hora al día para autocalibrarse y esa hora coincidió con el incidente.{47,51}</p>
+  <p>Las inspecciones del Gobierno Vasco ya habían recogido incumplimientos de Profersa en protección de la calidad del aire en junio de 2016, junio de 2020, noviembre de 2021 y mayo de 2022.{53}</p>
+  <div class="box pregunta"><span class="tag pregunta">Pregunta sin respuesta</span><p>¿Qué impide establecer un protocolo de aviso a la población cuando hay un incidente, con o sin plan de emergencia exterior?</p></div>`},
+ {n:9,p:"I",k:"Lo que no sabemos",t:"La salud: lo que falta por estudiar",h:`
+  <div class="big-quote">Ningún estudio público ha comparado la salud de estos barrios.<small>Un estudio epidemiológico compara la salud de un barrio con la del resto. El vecindario lo pide desde hace años. No se ha localizado ninguno específico y público.{22}</small></div>
+  <p>Vecinas y vecinos de Zorroza, San Ignacio y Basurto relatan desde hace más de una década problemas respiratorios, irritación de ojos y piel, dolores de cabeza y alergias.{28,54} Varias personas describen una frecuencia de cáncer que perciben como muy alta en sus portales.{21} Son testimonios: ningún estudio los ha confirmado ni desmentido. En 2010 se constituyó una Mesa de Olores con asociaciones vecinales, el Gobierno Vasco y los ayuntamientos de Bilbao y Barakaldo, que llegó a reunirse cuatro veces.{19}</p>
+  <div class="box"><span class="tag nosabe">Lo que no se sabe</span><p>Si en los barrios del canal hay más asma, alergias o cáncer que en el resto de Bilbao. Qué emite realmente la planta: no hemos localizado la publicación completa de las mediciones de emisiones en las fuentes consultadas. Qué información sobre los residuos de la nueva planta es confidencial: la autorización publica los tipos de residuos admisibles, pero determinada información sobre los residuos gestionados recibió tratamiento confidencial, cuyo alcance y justificación conviene aclarar. Sin datos nadie puede afirmar que la planta enferma. Tampoco que no lo hace.</p></div>
+  <div class="box responden"><span class="tag responden">Lo que responden la empresa y el Gobierno Vasco</span><p>Sader sostiene que no tiene ningún foco de emisión a la atmósfera y que no emite nada; mide sus propios parámetros cada quince días.{22} El Gobierno Vasco cita un estudio de olores de mayo de 2025 y una red de sensores sin incrementos preocupantes, y sostiene que Sader no es el origen de los malos olores.{8}</p></div>
+  <table><thead><tr><th>Contaminante</th><th>Dónde aparece</th><th>Evidencia sanitaria</th></tr></thead><tbody>
+   <tr><td>Cromo hexavalente</td><td>Línea de Sader (2.000 t/año). Doble de cromo total en la deposición; no se sabe de qué tipo.</td><td>Cancerígeno (IARC 1): pulmón.{12}</td></tr>
+   <tr><td>Plomo</td><td>Suelo ×6. Deposición ×4 en San Ignacio.</td><td>Neurotóxico, sobre todo en la infancia. Sin nivel seguro.{37,55}</td></tr>
+   <tr><td>Arsénico</td><td>Suelo ×9.</td><td>Cancerígeno (IARC 1).{12}</td></tr>
+   <tr><td>Níquel</td><td>Suelo ×4.</td><td>Compuestos cancerígenos (IARC 1).{12}</td></tr>
+   <tr><td>Amianto</td><td>Muelle: fragmentos en el suelo, según la prensa. Cubierta de Grandes Molinos Vascos: unas 19 t.</td><td>Cancerígeno (IARC 1).{12}</td></tr>
+   <tr><td>PM2,5</td><td>+70 % sobre la OMS.</td><td>Cancerígenas (IARC 1); asociadas a cáncer de pulmón en no fumadores.{56,57}</td></tr>
+   <tr><td>NO2</td><td>+65 % sobre la OMS.</td><td>Irritante; asociado a asma y EPOC.{25}</td></tr>
+  </tbody></table>
+  <div class="box"><span class="tag importa">Por qué importa</span><p>Un estudio epidemiológico es lo único que puede dar o quitar la razón a quienes dicen que enferman. Lo puede encargar el Departamento de Salud. Mientras no exista, la afirmación oficial de que no hay riesgo se apoya en la falta de datos, no en datos.</p></div>`},
+ {n:10,p:"I",k:"Las instalaciones",t:"El estado de la planta",h:`
+  <p>El vecindario ha fotografiado en 2026 cubiertas con chapas levantadas o ausentes, fachadas con desprendimientos y cerramientos deteriorados. En días de viento ha avisado a bomberos y a SOS Deiak por chapas sueltas.{29,21} La pregunta es sencilla: si estas instalaciones son aptas para tratar residuos industriales peligrosos, incluido cromo hexavalente, junto a viviendas.</p>
+  <figure class="pair"><img class="zoom" src="img/cubiertas-1.jpg" alt="Cubiertas deterioradas" loading="lazy"><img class="zoom" src="img/cubiertas-2.jpg" alt="Cubiertas deterioradas" loading="lazy"><figcaption style="grid-column:1/-1">Estado de las cubiertas del complejo en 2026. Registro fotográfico vecinal.{29}</figcaption></figure>
+  <p>El vecindario ha subrayado en todas sus convocatorias que no pide la pérdida de empleos: pide el cierre de la planta de Zorroza, su traslado a una instalación en condiciones y la garantía de los puestos de trabajo.{31,21} Recuerda que quienes están más cerca de lo que denuncia son las personas que trabajan dentro.</p>
+  <div class="box"><span class="tag hecho">La parte I, en seis frases</span><ul style="margin:6px 0 0"><li>79.593 t de residuos peligrosos en 2025; su permiso le deja tratar un 36 % más.</li><li>En 2022 y 2023 recibió más peligrosos que su límite específico; la Inspección no apreció incumplimiento. En 2025 obtuvo un 38 % más sin información pública.</li><li>Sobre San Ignacio y Deusto cae entre dos y cuatro veces más plomo, cinc y cromo que el máximo urbano español. En el centro de Bilbao, no.</li><li>El suelo junto a la planta multiplica por 9, 6 y 4 los valores de arsénico, plomo y níquel para un parque.</li><li>El aire de San Ignacio cumple la ley y supera en un 70 % el valor guía de la OMS para partículas finas.</li><li>No se han localizado emisiones publicadas ni estudio epidemiológico público, y el órgano ambiental hizo constar que el informe de suelo no se había presentado.</li></ul></div>`},
+ {n:11,p:"II",k:"El grupo",t:"De quién es Sader: el grupo Agaleus",h:`
+  <p>Desde junio de 2018 la administradora única de Sader es Agaleus Medio Ambiente y Energía, S.L., cabecera de un grupo familiar que controla también Profersa.{26,61} El grupo declaró superar los 13 millones de euros de facturación en 2022, con unas cien personas en plantilla, y ha crecido comprando: Sogecar y Quimycat (2022) y Ekinoil (2025).{66,67,69,70}</p>
+  <figure><img class="zoom" src="img/f-grupo.jpg" alt="Estructura societaria del grupo Agaleus" loading="lazy"><figcaption>Estructura societaria del grupo Agaleus.{26,61,62,63,64,65}</figcaption></figure>
+  <table><thead><tr><th>Sociedad</th><th>Actividad</th><th>Datos</th></tr></thead><tbody>
+   <tr><td>Agaleus Medio Ambiente y Energía, S.L.</td><td>Holding</td><td>Constituida en 2002. Domicilio en Zamudio desde enero de 2026.{62,63}</td></tr>
+   <tr><td>Sader, S.A.</td><td>Residuos peligrosos y no peligrosos. Zorroza.</td><td>Desde 1986. Administradora única: Agaleus.{26}</td></tr>
+   <tr><td>Profersa</td><td>Fertilizantes a partir de residuos. Zorroza.</td><td>Capital reducido a 60.000 € en octubre de 2026.{64}</td></tr>
+   <tr><td>Agaleus Circular Thinking, S.L.</td><td>Titular de la autorización de Zierbena.</td><td>Constituida en 2022. Socio único: Agaleus.{23,62}</td></tr>
+   <tr><td>Cogeneración Zorroza, A.I.E.</td><td>Electricidad y calor para Sader y Profersa.</td><td>90 % Agaleus, 10 % CADEM (ente público vasco), según el último dato oficial (2012).{65}</td></tr>
+  </tbody></table>
+  <p>El grupo pertenece a la familia Fernández. José Ricardo Fernández Besteiro preside el holding; Ángela Fernández Alonso es consejera delegada desde octubre de 2025; Gontzal Fresno, director general desde esa fecha.{61,71}</p>
+  <div class="box"><span class="tag nosabe">Lo que no se sabe</span><p>Cómo se reparte el capital entre los miembros de la familia: las sociedades limitadas no publican su libro de socios.</p></div>`},
+ {n:12,p:"II",k:"Las relaciones",t:"Trayectorias profesionales y transparencia",h:`
+  <div class="big-quote">Trayectorias entre el sector público y el privado.<small>La documentación citada describe cargos sucesivos; su compatibilidad jurídica requiere examinar el régimen aplicable y las fechas concretas.{72}</small></div>
+  <p>Ihobe es la sociedad pública de gestión ambiental del Gobierno Vasco. Xabier Caño González fue asesor jurídico del Departamento de Medio Ambiente (2005–2006) y director general de Ihobe (2006–2009).{72} Según los registros mercantiles, figura en los órganos de Sader y del holding desde 2009, el año en que dejó Ihobe; fue presidente de Sader (2017–2018), vicepresidente del holding (2018–2025) y consejero delegado de la división medioambiental de Agaleus de 2021 a septiembre de 2025.{72,26,61} Durante ese tiempo presidió Aclima, el clúster vasco de empresas de medio ambiente.{72,74}</p>
+  <figure><img class="zoom" src="img/f-trayectoria.jpg" alt="Trayectoria profesional documentada" loading="lazy"><figcaption>Cargos públicos, societarios y asociativos documentados.{72,73,26,61,74}</figcaption></figure>
+  <p>En julio de 2025, Ihobe y Aclima renovaron su convenio hasta 2028, entre cuyos fines está acelerar la instalación de infraestructuras de valorización de residuos. Por Aclima firmó Caño, entonces consejero delegado ambiental del grupo que tramitaba ante el Gobierno Vasco una de esas infraestructuras.{72,73}</p>
+  <div class="box pregunta"><span class="tag pregunta">Lo que se solicita</span><p>Conocer si existían obligaciones de abstención o incompatibilidad aplicables a los cargos y fechas mencionados y, en su caso, cómo se cumplieron. Los datos recogidos no permiten concluir que se produjera una infracción.</p></div>`},
+ {n:13,p:"II",k:"Las relaciones",t:"Una consejera delegada en la cúpula de la patronal",h:`
+  <p>Ángela Fernández Alonso, consejera delegada del grupo desde octubre de 2025, preside AVEQ-KIMIKA (asociación vasca de empresas químicas), es vicepresidenta de CEBEK, forma parte del comité ejecutivo de Confebask y del consejo de Elkargi.{66,71,75,76}</p>
+  <p>Ninguno de estos cargos es irregular. Son, sin embargo, los cauces ordinarios por los que la industria traslada sus posiciones al Gobierno Vasco.</p>`},
+ {n:14,p:"II",k:"Quién decide",t:"El Ayuntamiento de Bilbao: el convenio, el suelo y el muelle",h:`
+  <p>El 16 de septiembre de 2015 la Junta de Gobierno municipal aprobó un convenio urbanístico con Sader «para adelantar el cese de la actividad». Según la información publicada, preveía una indemnización de 2,7 millones de euros y el cese en el segundo semestre de 2018.{77,27} Once años después Sader sigue allí. El plazo dependía de un trámite municipal, la ordenación de Punta Zorroza, que se ha demorado; la prensa portuaria ha señalado que el convenio ampara la permanencia hasta 2028.{48,78}</p>
+  <figure><img class="zoom" src="img/f-fechas.jpg" alt="Fechas de salida anunciadas" loading="lazy"><figcaption>Fechas de salida anunciadas y lo que ocurrió con cada una.{77,27,54,22,23}</figcaption></figure>
+  <p>Antes de Zierbena, la empresa planteó trasladarse a Legutio, a Punta Sollana (2018) y a Ortuella, proyecto al que renunció en julio de 2025 tras la oposición vecinal y municipal.{72,27}</p>
+  <p><b>El suelo.</b> Punta Zorroza son unas 32 hectáreas frente a la ría donde el planeamiento prevé unas 2.100 viviendas.{79} <b>El muelle.</b> El Ayuntamiento es su propietario y ha sostenido ante el Ararteko que el uso que las empresas hacen de él es correcto. Su ordenanza de protección del medio ambiente es del año 2000.{43,80}</p>
+  <div class="box pregunta"><span class="tag pregunta">Pregunta sin respuesta</span><p>¿Cuánto se ha pagado de los 2,7 millones y con qué condiciones? ¿Por qué no se publica el estudio de Dinam sobre el muelle? ¿Qué canon paga el grupo por el uso del muelle municipal?</p></div>`},
+ {n:15,p:"II",k:"Quién decide",t:"El Gobierno Vasco: autoriza, inspecciona y amplía",h:`
+  <div class="big-quote">Las decisiones sobre Sader las toman el Gobierno Vasco y el Ayuntamiento.<small>El Gobierno Vasco autoriza la planta, la inspecciona y le amplió la capacidad. El Ayuntamiento de Bilbao firmó el convenio para adelantar su salida y es dueño del muelle.{8,24,77}</small></div>
+  <p>El departamento competente reúne industria y medio ambiente bajo un mismo consejero: quien promueve la actividad industrial es también quien la autoriza y la inspecciona.{8} El vecindario describe una inspección que traslada la versión de la empresa: ante fotografías de emisiones, la respuesta fue que la empresa decía no haber tenido incidencias ese día.{46,21} En noviembre de 2024 el consejero reconoció en el Parlamento Vasco que la inspección ambiental contaba con seis técnicos y anunció que se duplicarían.{40}</p>
+  <p><b>El Ararteko.</b> El vecindario tiene dos expedientes abiertos: uno sobre la ampliación como modificación no sustancial y otro sobre la falta de medidas ante los incumplimientos. Un tercero, sobre el uso del muelle, se cerró en julio de 2026. En su informe anual de 2025, el Ararteko constató carencias en el ejercicio de la inspección, el control y la disciplina ambiental. Sus resoluciones no son vinculantes.{21,43,81}</p>
+  <p>La lista completa de decisiones está en <a href="#quien-decide" onclick="pickActor('gv')">Quién decide → Gobierno Vasco</a>.</p>`},
+ {n:16,p:"II",k:"El traslado",t:"Un permiso hasta 2031, no una orden de cierre",h:`
+  <p>El 11 de febrero de 2026 el viceconsejero de Medio Ambiente concedió la autorización ambiental integrada a Agaleus Circular Thinking para una planta de residuos peligrosos y no peligrosos en el Puerto de Bilbao, en Zierbena. Se publicó en el BOPV el 10 de junio de 2026: 144.500 t al año, más de 20 millones de inversión y cinco años para empezar.{23,24,82}</p>
+  <figure><img class="zoom" src="img/mapa-traslado.jpg" alt="Mapa del traslado de Zorroza a Zierbena" loading="lazy"><figcaption>Del casco urbano al puerto exterior, unos 12 km ría abajo. © OpenStreetMap contributors.</figcaption></figure>
+  <h4 class="kicker">Cuatro cosas que la autorización no hace</h4>
+  <ol><li><b>No obliga a cerrar Zorroza.</b> Da derecho a trasladarse, no obligación. Ninguna resolución publicada fija una fecha de cese.{23,24}</li><li><b>No incluye a Profersa,</b> la de los accidentes de 2024. El grupo prevé cerrarla, sin fecha exigible.{24,64}</li><li><b>No aclara qué información sobre los residuos es confidencial:</b> la autorización enumera los residuos admisibles por línea, con sus códigos y cantidades máximas, pero el órgano ambiental respondió a una alegación que «la información relativa a los residuos gestionados se presenta como confidencial por motivos de competencia empresarial», sin precisar qué parte. Conviene aclarar su alcance y su justificación.{23,24}</li><li><b>Desestimó las alegaciones:</b> todas, incluidas las de los ayuntamientos de Getxo y Santurtzi y las de varios grupos políticos.{24,83,84}</li></ol>
+  <div class="box"><span class="tag importa">Por qué importa</span><p>La ley de acceso a la información ambiental admite la confidencialidad comercial, pero no cuando se pide información sobre emisiones.{85} Qué residuos entran en una planta determina qué puede salir de ella.</p></div>
+  <div class="box pregunta"><span class="tag pregunta">Pregunta sin respuesta</span><p>¿Qué resolución, de qué administración y con qué fecha obligará a cesar la actividad en Zorroza? ¿Qué ocurre si en junio de 2031 la planta de Zierbena no está en marcha?</p></div>`},
+ {n:17,p:"II",k:"Las relaciones",t:"Regulador, cliente y socio a la vez",h:`
+  <ul><li><b>Autoridad:</b> el Gobierno Vasco autoriza, inspecciona y sanciona; el Ayuntamiento ordena el suelo y es dueño del muelle.</li><li><b>Cliente:</b> entre los clientes que el grupo exhibe figuran Garbiker (Bizkaia), GHK (Gipuzkoa) y Zabalgarbi.{68}</li><li><b>Socio:</b> el ente público CADEM figuraba en 2012 con el 10 % de la cogeneración que abastece a las plantas.{65}</li><li><b>Interlocutor:</b> Ihobe colabora por convenio con el clúster que presidía un directivo del grupo.{73}</li></ul>
+  <figure><img class="zoom" src="img/f-red.jpg" alt="Red de relaciones" loading="lazy"><figcaption>Relaciones documentadas entre el grupo, las administraciones y las organizaciones empresariales.{23,77,72,73,71,68,65}</figcaption></figure>
+  <p>Desde el derrumbe del vertedero de Zaldibar en 2020, Euskadi tiene un problema de capacidad para tratar residuos industriales. La importancia de esta capacidad de tratamiento aconseja conocer qué criterios de continuidad del servicio y protección ambiental se han considerado en las decisiones sobre su traslado.</p>`},
+ {n:18,p:"II",k:"Otros expedientes",t:"Zubieta y Competencia",h:`
+  <p><b>Los lixiviados de Zubieta.</b> Entre 2022 y 2023 unas 5.400 toneladas de lixiviados del complejo de Gipuzkoa se enviaron a una planta navarra sin autorización para residuos líquidos. Sader recibió en Bilbao la misma corriente y fue parte en el procedimiento judicial abierto en Donostia en 2023. La Guardia Civil concluyó en 2025 que los residuos no eran peligrosos; la causa se archivó y el archivo está recurrido. Sader sostiene que no hubo actuación delictiva.{86,87,88}</p>
+  <p><b>Competencia.</b> Las autoridades de competencia investigaron a Sader en busca de pruebas de un posible reparto del mercado vasco de residuos. Se cerró sin sanción.{88}</p>
+  <div class="box"><span class="tag tener">A tener en cuenta</span><p>Ninguno de los dos expedientes ha terminado en sanción ni en condena. Se recogen porque describen el mercado en el que opera el grupo.</p></div>`},
+ {n:19,p:"II",k:"Quién decide",t:"Qué ha hecho cada institución",h:`
+  <p>El seguimiento completo, actor por actor, con acciones e inacciones y su fuente, está en la sección <a href="#quien-decide">Quién decide</a>.</p>
+  <table><thead><tr><th>Actor</th><th>Posición</th><th>Actuaciones documentadas</th></tr></thead><tbody>
+   <tr><td>Gobierno Vasco</td><td>Autoriza y defiende; niega que haya riesgo.</td><td>Ampliación del 38 % (2025). Autorización de Zierbena desestimando todas las alegaciones (2026).{8,23,24}</td></tr>
+   <tr><td>Ayuntamiento de Bilbao</td><td>Remite la calidad del aire al Gobierno Vasco.</td><td>Convenio de 2015. Propietario del muelle; sostiene ante el Ararteko que su uso es correcto.{77,43}</td></tr>
+   <tr><td>Diputación Foral de Bizkaia</td><td>Responsable del antiguo edificio de Grandes Molinos Vascos, junto al muelle.</td><td>Informe con unas 19 t de amianto en la cubierta, pendiente de retirada.{45}</td></tr>
+   <tr><td>Ayuntamientos de Getxo y Santurtzi</td><td>Contrarios a la nueva planta junto a sus municipios.</td><td>Alegaciones desestimadas.{24}</td></tr>
+   <tr><td>Grupos de la oposición</td><td>Contrarios a los permisos; piden sacar las plantas del casco urbano.</td><td>Preguntas parlamentarias, alegaciones a Zierbena y declaraciones públicas (2024–2025).{8,89,83,84}</td></tr>
+  </tbody></table>
+  <p>La tabla recoge actuaciones publicadas, no valoraciones.</p>`},
+ {n:20,p:"II",k:"Transparencia",t:"Lo que pedimos que se explique",h:`
+  <p>Este informe no afirma que nadie haya cometido un delito. Afirma algo distinto y comprobable: que las decisiones sobre Sader se han tomado en un entorno donde los papeles de regulador, regulado, cliente e interlocutor del sector se cruzan, y que casi ninguna se ha explicado en público.</p>
+  <table><thead><tr><th>Documentado</th><th>No consta</th><th>Quién puede explicarlo</th></tr></thead><tbody>
+   <tr><td>El exdirector de Ihobe entró en los órganos de Sader el año en que dejó el cargo.</td><td>Si se aplicó o examinó alguna incompatibilidad.</td><td>Gobierno Vasco; Ihobe</td></tr>
+   <tr><td>El clúster que presidía firmó con Ihobe en julio de 2025.</td><td>Quién negoció y si hubo abstenciones.</td><td>Ihobe; Aclima</td></tr>
+   <tr><td>La Inspección no apreció incumplimiento en el exceso de 2022–2023.</td><td>El razonamiento jurídico.</td><td>Dirección de Calidad Ambiental</td></tr>
+   <tr><td>La ampliación del 38 % se tramitó sin información pública.</td><td>El informe técnico que la justifica.</td><td>Viceconsejería de Medio Ambiente</td></tr>
+   <tr><td>Parte de la información sobre los residuos de Zierbena es confidencial.</td><td>Qué parte afecta a emisiones.</td><td>Viceconsejería de Medio Ambiente</td></tr>
+   <tr><td>El convenio de 2015 no ha sacado a Sader de Zorroza.</td><td>Qué se ha pagado y qué plazos siguen.</td><td>Ayuntamiento de Bilbao</td></tr>
+  </tbody></table>
+  <p>La documentación recoge relaciones profesionales e institucionales que justifican solicitar información sobre transparencia y prevención de posibles conflictos de intereses. No permite concluir por sí sola que existiera una incompatibilidad o actuación irregular.</p>`},
+ {n:21,p:"C",k:"Conclusiones",t:"Lo que los datos permiten afirmar",h:`
+  <ol>
+   <li><b>Una asimetría de información con origen institucional.</b> Se conoce a la tonelada lo que entra en la planta. No se conoce lo que sale. El medidor en continuo pedido en 2007 no consta instalado; Zorroza y San Ignacio estuvieron de 2014 a 2024 sin estación del Gobierno Vasco. Los únicos datos independientes, suelo y deposición, los ha producido y pagado el vecindario.</li>
+   <li><b>Los datos que existen apuntan en la misma dirección.</b> Dos mediciones independientes, en el suelo y en la deposición, encuentran metales pesados por encima de las referencias; en el muelle, la prensa ha informado de amianto. En conjunto justifican ampliar la investigación, sin permitir atribuir por sí solas una responsabilidad concreta.</li>
+   <li><b>Las decisiones de ampliación y el seguimiento merecen un examen público.</b> Se solicita aclarar la suficiencia de las inspecciones, los requerimientos sobre suelo y las actuaciones en salud pública.</li>
+   <li><b>Una red de relaciones densa, legal pieza a pieza y nunca explicada en conjunto.</b></li>
+   <li><b>El traslado no resuelve por sí solo nada de lo anterior.</b> Es un permiso con plazo en 2031, sin fecha de cierre en Zorroza y sin Profersa. Mientras tanto, la planta puede tratar un 36 % más de residuos peligrosos de los que trató en 2025.</li>
+  </ol>
+  <div class="big-quote">Fecha. Datos. Salud.<small>Lee las tres exigencias del vecindario y qué puedes hacer tú.</small></div>
+  <p><a class="btn solid" href="#exigimos">Qué exigimos</a> <a class="btn" href="#actua">Actúa</a></p>`}
+];
+
+const PROTECT = [
+  ["hand","Lávate las manos al llegar","Con agua y jabón, nada más entrar en casa y antes de comer o cocinar. Y las de los niños y niñas siempre al volver del parque o del patio.","El polvo con metales se pega a la piel y acaba en la boca. Es la vía de exposición más importante para el plomo en la infancia."],
+  ["shoe","Quítate los zapatos en la puerta","Deja el calzado de calle en la entrada y usa zapatillas de casa. Pon un felpudo fuera y otro dentro.","Las suelas arrastran el polvo de la calle y del suelo contaminado hasta alfombras y suelos donde juegan los críos."],
+  ["shirt","No tiendas la ropa fuera","Sobre todo los días de viento hacia tu barrio, con olor o con polvo visible. Tiéndela dentro o usa secadora. Si la tiendes fuera, sacúdela antes de guardarla.","La ropa húmeda atrapa partículas en suspensión y te las pones encima, pegadas a la piel durante horas."],
+  ["mop","Limpia en húmedo, no barras","Fregona y bayeta húmeda para suelos, muebles, alféizares y balcones. Evita escoba y plumero. Si tienes aspirador con filtro HEPA, úsalo.","Barrer en seco vuelve a poner el polvo en el aire que respiras. En húmedo se queda en el trapo."],
+  ["window","Ventila con cabeza","Ventila de forma corta e intensa (cinco o diez minutos). Evita abrir los días de olor, polvo o viento desde la planta y cierra si hay un episodio.","Renovar el aire de casa es necesario, pero no cuando lo que entra está peor que lo que sale."],
+  ["kid","Cuida a los más pequeños","Lávales las manos a menudo, mantén sus uñas cortas, limpia en húmedo sus juguetes de exterior y evita que coman en el parque sin lavarse.","Los niños y niñas se llevan las manos a la boca, respiran más aire por kilo de peso y su sistema nervioso es más sensible al plomo."],
+  ["leaf","Huertos y macetas: con cuidado","Lava muy bien (y pela si puedes) lo que cultives en el balcón o en huertos cercanos. No cultives comestibles directamente en suelo de la zona sin analizarlo.","En el suelo junto a la planta se han medido plomo y arsénico muy por encima del valor legal para un parque."],
+  ["paw","Patas limpias","Si tienes perro, límpiale las patas con un paño húmedo al volver del paseo.","Tus mascotas también traen a casa el polvo del suelo."],
+  ["fan","Un purificador, si puedes","Si te lo puedes permitir, un purificador con filtro HEPA en el dormitorio reduce las partículas finas en interiores. Cambia el filtro cuando toque.","Ayuda dentro de casa, pero no sustituye a lo demás ni a quitar la fuente."]
+];
+
+
+const ACTS = [
+  {i:"wa",t:"Únete a la comunidad de WhatsApp",p:"Es donde se avisa de las movilizaciones y de los episodios en tiempo real. Si ves algo, lo cuentas ahí.",b:"wa",feature:true},
+  {i:"flag",t:"Cuelga la bandera",p:"La bandera de la campaña en tu balcón convierte el barrio entero en una pancarta.",b:"flag"},
+  {i:"sticker",t:"Haz y pon pegatinas",p:"Los diseños están en el kit, listos para imprimir en papel adhesivo o en una copistería. En tu portal, tu ventana, tu carpeta, tu bici o tu coche.",b:"stickers"},
+  {i:"share",t:"Comparte en redes",p:"El carrusel, las tarjetas, las stories y los vídeos están listos para publicar, cada uno con su fuente. Un dato con fuente no se puede desmentir.",b:"kit"},
+  {i:"print",t:"Imprime y reparte el díptico",p:"En blanco y negro, bilingüe, A4 plegado a A5. Para buzones, comercios, el portal o la sala de espera del ambulatorio.",b:"diptico"},
+  {i:"cam",t:"Documenta y denuncia",p:"Fotos y vídeos con fecha y hora de polvo, humo, olores, regueros o camiones. Denúncialo a la Inspección Ambiental y compártelo en la comunidad de WhatsApp: lo sumamos al registro vecinal.",b:"denuncia"},
+  {i:"mail",t:"Pregunta a las instituciones",p:"Doce preguntas concretas que se pueden contestar con un documento. Copia las que quieras y mándalas a quien corresponde.",b:"preguntas"}
+];
+
+const ACTORS = [
+ {id:"gv",name:"Gobierno Vasco",role:"Departamento de Industria, Transición Energética y Sostenibilidad. Autoriza, inspecciona y sanciona.",
+  yes:[["14/01/2008","Concede la autorización ambiental integrada de Sader. El Ayuntamiento había pedido en 2007 incluir un medidor en continuo; no consta instalado.","9,17"],["Junio 2010","Deja de funcionar la cabina de Elorrieta; sus equipos pasan a Erandio.","39"],["2012","Concede autorización propia a Profersa.","9"],["17/08/2022","Revisa la autorización de Sader: topes anuales de peligrosos y no peligrosos; exige informe de suelo.","9"],["15/05/2024","Ordena el cierre cautelar de Profersa tras dos accidentes. Reabre en junio con condiciones.","49,47"],["2024","Incorpora dos unidades móviles de medición del aire en la zona, una en San Ignacio.","40"],["20–25/11/2024","La inspección examina las cantidades de 2022 y 2023; no aprecia incumplimiento y califica el cumplimiento de «medio-alto».","6"],["17/03/2025","Amplía un 38 % la capacidad de Sader como «modificación no sustancial», sin información pública.","7,8"],["12/2025","El consejero defiende en el Parlamento la ampliación y que más volumen no supone más riesgo.","8"],["8/01/2026","Requiere a Sader el informe de situación del suelo.","14,16"],["11/02/2026","Autoriza la planta de Zierbena. Desestima todas las alegaciones.","23,24"]],
+  no:[["2014–2024","Zorroza y San Ignacio pasan diez años sin estación de calidad del aire del Gobierno Vasco.","18,19"],["2025","Amplía sin estudio de dispersión ni informe del Departamento de Salud, según denuncia el vecindario.","7,21"],["—","No hemos localizado la publicación completa de las mediciones de emisiones de Sader y Profersa.","22"],["—","No se ha localizado un estudio epidemiológico específico y público de los barrios.","22"],["—","No se ha localizado un protocolo público de aviso a la población ante un incidente.","22,52"],["—","Ninguna resolución publicada fija fecha de cierre en Zorroza ni para Profersa.","23,24"],["Sept. 2026","La unidad móvil de San Ignacio no computa en la evaluación oficial y no funciona correctamente.","21,18"]]},
+ {id:"bilbao",name:"Ayuntamiento de Bilbao",role:"Ordena el suelo de Punta Zorroza y es dueño del muelle por el que pasan los camiones.",
+  yes:[["5/07/2007","Su informe pide incluir en la autorización «un sistema de medición en continuo, tal como se comprometió en el año 1997».","17"],["16/09/2015","Aprueba un convenio con Sader para adelantar el cese: 2,7 M€ y salida prevista en 2018.","77,27"],["2026","Informa al Ararteko de que hace seguimiento y de que el uso que las empresas hacen del muelle es correcto.","43"]],
+  no:[["2018 → hoy","El convenio no ha sacado a Sader de Zorroza; no consta qué se ha pagado ni qué penaliza el incumplimiento.","48,78"],["—","El estudio de Dinam sobre el muelle, del que la prensa publicó que halló fragmentos de amianto, no se ha publicado.","44,45"],["—","La ordenación de Punta Zorroza, que activa los plazos del convenio, sigue sin aprobarse.","48,78"],["—","Su ordenanza de protección del medio ambiente es del año 2000.","80"]]},
+ {id:"diputacion",name:"Diputación Foral de Bizkaia",role:"Responsable del antiguo edificio de Grandes Molinos Vascos, junto al muelle.",
+  yes:[["2025","Un informe sitúa en unas 19 toneladas el amianto de la cubierta, pendiente de retirada.","45"]],
+  no:[["—","La retirada del amianto de la cubierta sigue pendiente.","45"]]},
+ {id:"ararteko",name:"Ararteko",role:"Defensor del pueblo vasco. Investiga quejas; sus resoluciones no son vinculantes.",
+  yes:[["2025–2026","Tramita dos expedientes del vecindario: la ampliación como no sustancial y la falta de medidas ante los incumplimientos.","21"],["30/03/2026","Su informe anual de 2025 constata carencias en la inspección, el control y la disciplina ambiental.","81"],["13/07/2026","Cierra el expediente sobre el uso del muelle y recuerda al Ayuntamiento su deber de responder con celeridad.","43"]],
+  no:[["—","Sin resolución publicada sobre los dos expedientes abiertos.","21"]]},
+ {id:"getxo",name:"Getxo y Santurtzi",role:"Ayuntamientos vecinos de la futura planta de Zierbena.",
+  yes:[["2025–2026","Presentan alegaciones contra la planta de Zierbena. El Gobierno Vasco las desestima.","24"]],no:[]},
+ {id:"oposicion",name:"Grupos de la oposición",role:"Grupos con representación parlamentaria o municipal.",
+  yes:[["05/2024","Declaraciones que piden sacar ambas plantas del casco urbano.","89"],["02/2025","Alegaciones a la instalación de Zierbena y petición de un nuevo estudio ambiental.","83,84"],["12/2025","Pregunta en el Parlamento Vasco: unas 11.000 personas expuestas a olores y mala calidad del aire.","8"]],no:[]},
+ {id:"empresa",name:"La empresa (Agaleus)",role:"Grupo propietario de Sader y Profersa.",
+  yes:[["2015","Firma el convenio con el Ayuntamiento para salir en 2018.","77"],["2022","Anuncia que dejará de tratar residuos peligrosos en Zorroza en 2024.","27"],["2024","Anuncia que operará en el puerto en el segundo semestre de 2026.","22,54"],["07/2025","Renuncia al proyecto de Ortuella tras la oposición vecinal y municipal.","72"],["10/2026","Reduce el capital de Profersa a 60.000 €.","64"]],
+  no:[["2018, 2024, 2026","Ninguna de las fechas de salida anunciadas se ha cumplido.","77,27,22"],["—","Sostiene que no emite nada; no hemos localizado la publicación completa de sus mediciones.","22"],["2025–2026","Según el órgano ambiental, el informe de situación del suelo no ha sido presentado; aportó una «nota técnica».","16,14"]]}
+];
+
+const QUESTIONS = [
+ ["¿Cuáles son las emisiones medidas de Sader y de Profersa, por foco y difusas, en los últimos diez años?","Gobierno Vasco; empresa"],
+ ["¿En qué informe se justifica que la ampliación del 38 % no tiene mayor incidencia ambiental ni sanitaria? ¿Informó el Departamento de Salud?","Gobierno Vasco"],
+ ["¿Qué controles se aplican al transporte, la descarga y la manipulación de los baños de cromo hexavalente, y con qué resultados?","Gobierno Vasco; empresa"],
+ ["¿Qué tipo de cromo hay en la deposición y en el suelo de los barrios?","Gobierno Vasco"],
+ ["¿Con qué fundamento se compensó el exceso de residuos peligrosos de 2022 y 2023 con la capacidad total autorizada?","Gobierno Vasco"],
+ ["¿Cuándo presentará Sader el informe de situación del suelo? ¿Satisface la «nota técnica» lo exigido? ¿Y el Documento Único de Suelos de Profersa?","Gobierno Vasco"],
+ ["¿Qué dice el estudio de Dinam sobre el muelle? ¿Por qué no es público?","Ayuntamiento de Bilbao"],
+ ["¿Qué se ha pagado del convenio de 2015 y qué plazos siguen en vigor?","Ayuntamiento de Bilbao"],
+ ["¿Qué resolución fijará la fecha de cese en Zorroza? ¿Y la de Profersa?","Gobierno Vasco; Ayuntamiento"],
+ ["¿Qué información sobre los residuos de la planta de Zierbena se ha tratado como confidencial, y por qué? ¿Afecta alguna parte a emisiones?","Gobierno Vasco"],
+ ["¿Cuándo se encargará un estudio epidemiológico de los barrios del canal?","Departamento de Salud"],
+ ["¿Por qué Zorroza y San Ignacio estuvieron diez años sin estación del Gobierno Vasco, y por qué las actuales son móviles, no computan y fallan?","Gobierno Vasco"]
+];
+
+/* t: emp (empresa), adm (administración), acc (accidente), vec (vecindario), fut (futuro) */
+const TL = [
+ ["1986","Se constituye Sader en Punta Zorroza.","emp","26"],
+ ["2002","Se constituye Agaleus Medio Ambiente y Energía, S.L.","emp","63"],
+ ["2006–2009","Xabier Caño, director general de Ihobe.","adm","72"],
+ ["5/07/2007","Informe municipal: pide un medidor en continuo «tal como se comprometió en el año 1997».","adm","17"],
+ ["14/01/2008","Autorización ambiental integrada de Sader. El medidor no consta instalado.","adm","9"],
+ ["2009","Caño entra en los órganos de Sader, según el registro mercantil.","emp","26"],
+ ["Junio 2010","Deja de funcionar la cabina de Elorrieta.","adm","39"],
+ ["2010","Se constituye la Mesa de Olores; llega a reunirse cuatro veces.","vec","19"],
+ ["2011","Zorroza deja de figurar en los informes oficiales de calidad del aire.","adm","18"],
+ ["1/10/2012","Profersa se escinde de Sader con autorización propia.","adm","9"],
+ ["16/09/2015","Convenio Ayuntamiento–Sader. Salida prevista: 2018.","adm","77,27"],
+ ["2016–2022","Cuatro inspecciones con incumplimientos de Profersa en calidad del aire.","adm","53"],
+ ["5/06/2018","Agaleus, administradora única de Sader.","emp","26"],
+ ["2021","Caño, consejero delegado de la división ambiental de Agaleus.","emp","72"],
+ ["17/08/2022","Revisión de la autorización de Sader con topes anuales.","adm","9"],
+ ["2022–2023","Sader recibe más residuos peligrosos que su límite específico.","emp","5"],
+ ["2023","Estudio de Dinam sobre el muelle, según la prensa. No se publica.","adm","44,45"],
+ ["26/04/2024","Primer incidente en Profersa: columna de vapor sobre Zorroza.","acc","47"],
+ ["2/05/2024","Manifestación en Zorroza: unas 1.200 personas.","vec","48"],
+ ["10–11/05/2024","Reacción química en Profersa: nube de humo. Indicación de cerrar ventanas.","acc","22,47"],
+ ["15/05/2024","Cierre cautelar de Profersa.","adm","49"],
+ ["2024","Dos unidades móviles de medición del aire en la zona.","adm","40"],
+ ["20/06/2024","Pequeño vertido de ácido clorhídrico en Sader.","acc","51"],
+ ["20–25/11/2024","Inspección: cumplimiento «medio-alto»; no se aprecia incumplimiento en las cantidades.","adm","6"],
+ ["17/03/2025","Ampliación del 38 % como modificación no sustancial.","adm","7"],
+ ["Julio 2025","Agaleus renuncia a Ortuella. Ihobe y Aclima renuevan su convenio.","emp","72,73"],
+ ["Sept. 2025","Caño deja Agaleus.","emp","72"],
+ ["Nov. 2025","La inspección detecta que no se ha presentado el informe de suelo.","adm","14"],
+ ["12/2025","Pregunta parlamentaria; el consejero defiende la ampliación.","adm","8"],
+ ["18/12/2025","La Inspección responde a una denuncia: la empresa dice que no tuvo incidencias ese día.","vec","46"],
+ ["8/01/2026","Requerimiento del informe de suelo.","adm","14"],
+ ["11/02/2026","Autorización de la planta de Zierbena. Todas las alegaciones, desestimadas.","adm","23,24"],
+ ["30/04–25/06/2026","Campaña de deposición atmosférica del IPE-CSIC, con captadores atendidos por el vecindario.","vec","13"],
+ ["8/05/2026","Resultados del análisis de suelo ECHO: plomo y arsénico junto a un parque.","vec","14"],
+ ["4/06/2026","El vecindario exige «fechas» para el cese.","vec","31"],
+ ["10/06/2026","La autorización de Zierbena se publica en el BOPV. Empieza el plazo de cinco años.","adm","23"],
+ ["13/07/2026","El Ararteko cierra el expediente sobre el muelle.","adm","43"],
+ ["Sept. 2026","El medidor de San Ignacio deja de funcionar correctamente.","adm","21"],
+ ["11/12/2026","Fin del plazo para transponer la nueva directiva europea de calidad del aire.","fut","36"],
+ ["10/06/2031","Vence el plazo para iniciar la actividad en Zierbena. Sin fecha de cierre en Zorroza.","fut","23"]
+];
+
+const DOCS = [
+ {ty:"Informe de la campaña",t:"¿Qué estamos respirando? (ES)",p:"Edición pública, noviembre de 2026. Todas las cifras con su fuente.",f:"informe-sader-es.pdf"},
+ {ty:"Txostena",t:"Zer ari gara arnasten? (EU)",p:"Argitalpen publikoa, euskaraz.",f:"informe-sader-eu.pdf"},
+ {ty:"Estudio científico",t:"Deposición atmosférica en Bilbao · IPE-CSIC",p:"Jorge Pey Betrán (2026). 56 días, cuatro puntos.",f:"estudio-deposicion-csic-2026.pdf"}
+];
+
+/* ---------------- RENDER ---------------- */
+function sups(root=document){
+  $$('sup.s', root).forEach(s => {
+    if (s.dataset.done) return; s.dataset.done = 1;
+    s.innerHTML = '[' + s.dataset.s.split(',').filter(Boolean).map(n => `<a data-n="${n}" tabindex="0">${n}</a>`).join(',') + ']';
+  });
+}
+function setDocs(root=document){
+  $$('[data-doc]', root).forEach(a => a.href = docUrl(a.dataset.doc));
+}
+
+/* ticker */
+$('#ticker').innerHTML = [...TICKER, ...TICKER].map(t => `<span>${esc(t)}<i>●</i></span>`).join('');
+$('#ribbon-text').textContent = CONFIG.ribbon;
+
+/* stats */
+$('#stats').innerHTML = STATS.map(([n,t,s]) => `<div class="stat reveal"><div class="n">${n}</div><div class="t">${t}<sup class="s" data-s="${s}"></sup></div></div>`).join('');
+
+/* findings */
+$('#findings').innerHTML = FINDINGS.map(([h,p,c]) => `<div class="finding reveal"><div><h3>${h}</h3><p>${p}</p><a class="go" href="#informe" data-ch="${c}">Capítulo ${c} →</a></div></div>`).join('');
+
+/* report */
+const toc = $('#toc');
+const parts = {I:"Parte I · La planta y lo que se ha medido", II:"Parte II · Quién es quién y quién decide", C:"Cierre"};
+let lastP = '';
+toc.innerHTML = CH.map(c => { let h=''; if (c.p!==lastP){h=`<h4>${parts[c.p]}</h4>`; lastP=c.p;} return h + `<button data-ch="${c.n}"><span>${c.p==='C'?'·':c.n}</span>${c.t}</button>`; }).join('');
+function openCh(n, scroll){
+  const i = CH.findIndex(c => c.n == n); if (i < 0) return; const c = CH[i];
+  const prev = CH[i-1], next = CH[i+1];
+  $('#chapter').innerHTML = `<div class="kicker">${c.p==='C'?'':'Capítulo '+c.n+' · '}${c.k}</div><h3>${c.t}</h3>${R(c.h)}
+   <div class="chap-nav">${prev?`<button class="btn small" data-ch="${prev.n}">← ${prev.p==='C'?'':prev.n+'. '}${prev.t}</button>`:'<span></span>'}${next?`<button class="btn small dark" data-ch="${next.n}">${next.p==='C'?'':next.n+'. '}${next.t} →</button>`:''}</div>`;
+  $$('button', toc).forEach(b => b.classList.toggle('on', b.dataset.ch == n));
+  sups($('#chapter')); setDocs($('#chapter'));
+  try { localStorage.setItem('sader-ch', n); } catch(e){}
+  if (scroll) $('#informe').scrollIntoView({behavior:'smooth'});
+  if (window.innerWidth < 980) toc.classList.remove('open');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-ch]'); if (!b) return;
+  e.preventDefault(); openCh(b.dataset.ch, true);
+});
+$('#tocToggle').onclick = () => toc.classList.toggle('open');
+let startCh = 1; try { startCh = +localStorage.getItem('sader-ch') || 1; } catch(e){}
+openCh(startCh, false);
+
+/* protect */
+$('#protect').innerHTML = PROTECT.map(([i,h,p,w]) => `<div class="tip reveal"><div class="ico">${ico[i]}</div><h3>${h}</h3><p>${p}</p><span class="why"><b>Por qué:</b> ${w}</span></div>`).join('');
+
+/* acts */
+function actBtn(b){
+  switch(b){
+    case 'wa': return CONFIG.whatsapp ? `<a class="btn ${'dark'}" href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">Entrar en la comunidad</a>` : `<a class="btn dark" href="mailto:${esc(CONFIG.email)}?subject=Quiero%20participar">Pide el enlace</a>`;
+    case 'flag': return `<a class="btn small" href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">${CONFIG.flag.price ? 'Pídela · '+esc(CONFIG.flag.price) : 'Pide la tuya'}</a>`;
+    case 'stickers': return `<a class="btn small" href="${esc(CONFIG.materialUrl)}#pegatinas">Descargar diseños</a>`;
+    case 'kit': return `<a class="btn small" href="#kit">Ver el kit</a>`;
+    case 'diptico': return `<a class="btn small" data-doc="diptico-es.pdf" target="_blank" rel="noopener">Descargar díptico</a>`;
+    case 'denuncia': return `<a class="btn small" href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">Compártelo en la comunidad</a>`;
+    case 'preguntas': return `<a class="btn small" href="#quien-decide">Las doce preguntas</a>`;
+  }
+}
+const actExtra = {flag: () => `<p style="flex:0;font-size:14.5px;opacity:.85">${esc(CONFIG.flag.where)}</p>`, stickers: () => `<p style="flex:0;font-size:14.5px;opacity:.85">${esc(CONFIG.stickers.where)}</p>`};
+$('#acts').innerHTML = ACTS.map(a => `<div class="act reveal ${a.feature?'feature':''}"><div class="ico">${ico[a.i]}</div><h3>${a.t}</h3><p>${a.p}</p>${actExtra[a.b]?actExtra[a.b]():''}${actBtn(a.b)}</div>`).join('');
+
+/* events */
+const MES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const today = new Date(); today.setHours(0,0,0,0);
+const evs = CONFIG.events.map(e => ({...e, d: e.date ? new Date(e.date+'T12:00:00') : null}));
+const upcoming = evs.filter(e => !e.d || e.d >= today), past = evs.filter(e => e.d && e.d < today);
+function evHtml(e, isPast){
+  const d = e.d ? `${e.d.getDate()} ${MES[e.d.getMonth()]}<small>${e.time||''}${isPast?' · celebrada':''}</small>` : `Pronto<small>fecha por confirmar</small>`;
+  return `<div class="ev" style="${isPast?'opacity:.55':''}"><div class="d">${d}</div><div><h4>${esc(e.title)}</h4><p>${esc(e.place)}${e.text?' · '+esc(e.text):''}</p></div></div>`;
+}
+$('#events').innerHTML = upcoming.map(e => evHtml(e,false)).join('') + past.map(e => evHtml(e,true)).join('') + `<p style="color:#8f887f;font-size:14.5px;margin-top:16px">Las fechas se confirman en la comunidad de WhatsApp y en Instagram.</p>`;
+
+/* kit */
+const KIT_CARRUSEL = [["00-portada","Portada"],["01-contexto","Contexto"],["02-limite","El límite"],["03-suelo","El suelo"],["04-salud","La salud"],["05-quien-decide","Quién decide"],["06-cierre","Qué exigimos"]];
+const KIT_TARJETAS = [["plomo-aire","Plomo en el aire"],["aire","El aire"],["cromo","El cromo"],["medidores","Los medidores"],["confidencial","Información confidencial"]];
+/* [miniatura, imagen a tamaño completo, texto]. Las piezas salen de la carpeta material/ */
+const KIT = [["kit/cartel-1-diciembre.jpg","kit/cartel-1-diciembre.jpg","Cartel · Manifestación 1 de diciembre"],
+  ...KIT_CARRUSEL.map(([f,a]) => [`material/mini/es/carrusel/${f}.jpg`, `material/es/carrusel/${f}.png`, a]),
+  ...KIT_TARJETAS.map(([f,a]) => [`material/mini/es/tarjetas-4x5/${f}.jpg`, `material/es/tarjetas-4x5/${f}.png`, a])];
+$('#kitgrid').innerHTML = KIT.map(([m,f,a]) => `<img src="${m}" data-full="${f}" alt="${a}" title="${a}" loading="lazy" class="zoom">`).join('');
+$('#kitAll').href = CONFIG.materialUrl; $('#kitVideos').href = CONFIG.materialUrl + '#videos'; $('#kitStickers').href = CONFIG.materialUrl + '#pegatinas'; $('#kitLink2').href = CONFIG.materialUrl;
+const SHARE = `📣 1 DE DICIEMBRE · 18:30 · Manifestación del Gobierno Vasco (Gran Vía 85) al Ayuntamiento de Bilbao
+
+¿Qué estamos respirando? 🏭
+Dentro de Bilbao, a unos 500 m de tres colegios, funciona una de las mayores plantas de residuos peligrosos del Estado: Sader-Profersa, en Punta Zorroza.
+
+· 79.593 toneladas de residuos peligrosos en 2025
+· Sobre San Ignacio cae 4 veces más plomo que el máximo de las ciudades españolas (estudio IPE-CSIC)
+· 10 años sin estación del Gobierno Vasco en Zorroza y San Ignacio
+· Ningún estudio de salud del vecindario
+
+Exigimos fecha de cierre, datos públicos y un estudio epidemiológico.
+Los datos, con su fuente: ${CONFIG.siteUrl}
+Instagram: @sader_profersa_kanpora
+
+#SaderProfersaKanpora`;
+$('#shareText').textContent = SHARE;
+function copy(txt, msg){
+  const done = () => toast(msg||'Copiado');
+  try { navigator.clipboard.writeText(txt).then(done, () => fallbackCopy(txt, done)); } catch(e){ fallbackCopy(txt, done); }
+}
+function fallbackCopy(txt, done){ const t=document.createElement('textarea'); t.value=txt; document.body.appendChild(t); t.select(); try{document.execCommand('copy'); done();}catch(e){toast('Selecciona el texto y cópialo');} t.remove(); }
+$('#copyShare').onclick = () => copy(SHARE, 'Texto copiado. ¡Pásalo!');
+
+/* tracker */
+$('#actorTabs').innerHTML = ACTORS.map(a => `<button data-actor="${a.id}">${a.name}</button>`).join('');
+function itemHtml([d,t,s]){ return `<div class="item"><div class="d">${d}</div><div>${t}${s?`<sup class="s" data-s="${s}"></sup>`:''}</div></div>`; }
+window.pickActor = function(id){
+  const a = ACTORS.find(x => x.id === id) || ACTORS[0];
+  $$('#actorTabs button').forEach(b => b.classList.toggle('on', b.dataset.actor === a.id));
+  $('#actor').innerHTML = `<div class="actor-head"><h3>${a.name}</h3><span class="role">${a.role}</span></div>
+   <div class="col yes"><h4>Lo que ha hecho</h4>${a.yes.map(itemHtml).join('') || '<p class="pending">Sin actuaciones documentadas.</p>'}</div>
+   <div class="col no"><h4>Lo que no ha hecho / pendiente</h4>${a.no.length ? a.no.map(itemHtml).join('') : '<p style="color:var(--muted);font-size:16px;padding-top:12px;border-top:1px solid var(--line)">No es la institución que decide.</p>'}</div>`;
+  sups($('#actor'));
+};
+$('#actorTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) pickActor(b.dataset.actor); });
+pickActor('gv');
+$('#questions').innerHTML = QUESTIONS.map(([q,w],i) => `<div class="q"><div class="n">${i+1}</div><div>${q}</div><div class="who">${w}</div><div class="st"><span class="tag pregunta">Sin respuesta</span></div></div>`).join('');
+$('#copyQ').onclick = () => copy(QUESTIONS.map(([q,w],i) => `${i+1}. ${q} (${w})`).join('\n') + '\n\nFuente: informe vecinal «¿Qué estamos respirando?», noviembre de 2026.', 'Preguntas copiadas');
+
+/* timeline */
+const TLT = {all:"Todo",emp:"Empresa",adm:"Administraciones",acc:"Accidentes",vec:"Vecindario",fut:"Plazos"};
+$('#tlFilter').innerHTML = Object.entries(TLT).map(([k,v]) => `<button class="chip ${k==='all'?'on':''}" data-t="${k}">${v}</button>`).join('');
+function drawTL(t){
+  $('#timeline').innerHTML = TL.filter(x => t==='all' || x[2]===t).map(([d,x,ty,s]) => `<div class="tl t-${ty}"><div class="d">${d}</div><div class="dot"></div><div class="x">${x}<sup class="s" data-s="${s}"></sup></div></div>`).join('');
+  sups($('#timeline'));
+}
+$('#tlFilter').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; $$('#tlFilter .chip').forEach(c => c.classList.toggle('on', c===b)); drawTL(b.dataset.t); });
+drawTL('all');
+
+/* archive */
+$('#docsFeat').innerHTML = DOCS.map(d => `<a class="doc" data-doc="${d.f}" target="_blank" rel="noopener"><span class="ty">${d.ty}</span><h4>${d.t}</h4><p>${d.p}</p><span class="go">Abrir PDF →</span></a>`).join('');
+const CATS = ['Todas', ...new Set(FUENTES.map(s => s.cat))];
+let cat = 'Todas';
+$('#archChips').innerHTML = CATS.map(c => `<button class="chip ${c===cat?'on':''}" data-c="${c}">${c}${c==='Todas'?'':' · '+FUENTES.filter(s=>s.cat===c).length}</button>`).join('');
+$('#archChips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; cat = b.dataset.c; $$('#archChips .chip').forEach(c => c.classList.toggle('on', c===b)); drawSrc(); });
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function drawSrc(){
+  const q = norm($('#q').value.trim());
+  const list = FUENTES.filter(s => (cat==='Todas' || s.cat===cat) && (!q || norm(s.t + ' ' + s.cat + ' ' + s.url).includes(q)));
+  $('#count').textContent = `${list.length} de ${FUENTES.length} fuentes`;
+  $('#srcList').innerHTML = list.map(s => { const h = srcHref(s); return `<div class="src" id="src-${s.n}"><div class="n">${s.n}</div><div class="c">${s.cat}</div><div class="t">${esc(s.t)}${s.legacy?'<span class="leg">Fuente heredada de la edición íntegra · conviene volver a consultarla</span>':''}</div>${h?`<a class="lk" href="${esc(h)}" target="_blank" rel="noopener">Abrir ↗</a>`:'<span class="na">Documento vecinal / no enlazable</span>'}</div>`; }).join('') || '<p style="padding:20px 0">Nada coincide con la búsqueda.</p>';
+}
+$('#q').addEventListener('input', drawSrc);
+drawSrc();
+
+/* contact */
+document.querySelectorAll('a[data-wa]').forEach(a => { a.href = CONFIG.whatsapp; });
+$('#waShow').innerHTML = CONFIG.whatsapp ? `<a href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">Entrar en la comunidad</a>` : '—';
+$('#igShow').href = CONFIG.instagram;
+
+/* popover de fuentes */
+const pop = $('#pop');
+function showPop(a){
+  const s = srcMap[a.dataset.n]; if (!s) return;
+  const h = srcHref(s);
+  pop.innerHTML = `<div class="c">[${s.n}] ${s.cat}</div>${esc(s.t)}<div>${h?`<a href="${esc(h)}" target="_blank" rel="noopener">Abrir fuente ↗</a>`:''}<a href="#archivo" data-goto="${s.n}">Ver en el archivo</a></div>`;
+  pop.classList.add('show'); popY = scrollY;
+  const r = a.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
+  let x = Math.min(Math.max(10, r.left - pw/2), window.innerWidth - pw - 10);
+  let y = r.bottom + 8; if (y + ph > window.innerHeight - 10) y = r.top - ph - 8;
+  pop.style.left = x + 'px'; pop.style.top = y + 'px';
+}
+document.addEventListener('click', e => {
+  const a = e.target.closest('sup.s a');
+  if (a) { e.preventDefault(); e.stopPropagation(); showPop(a); return; }
+  const g = e.target.closest('[data-goto]');
+  if (g) { e.preventDefault(); pop.classList.remove('show'); cat='Todas'; $('#q').value=''; $$('#archChips .chip').forEach((c,i)=>c.classList.toggle('on',i===0)); drawSrc(); const el = $('#src-'+g.dataset.goto); if (el){ el.scrollIntoView({behavior:'smooth',block:'center'}); el.classList.add('flash'); setTimeout(()=>el.classList.remove('flash'),1600);} return; }
+  if (!e.target.closest('#pop')) pop.classList.remove('show');
+});
+document.addEventListener('keydown', e => { if (e.key==='Enter' && e.target.matches('sup.s a')) showPop(e.target); if (e.key==='Escape'){ pop.classList.remove('show'); lb.classList.remove('show'); } });
+let popY=0;
+window.addEventListener('scroll', () => { if (pop.classList.contains('show') && Math.abs(scrollY-popY)>120) pop.classList.remove('show'); }, {passive:true});
+
+/* lightbox */
+const lb = $('#lb');
+document.addEventListener('click', e => {
+  const img = e.target.closest('img.zoom'); if (!img) return;
+  $('img', lb).src = img.dataset.full || img.src; $('p', lb).textContent = img.alt || ''; lb.classList.add('show');
+});
+lb.onclick = () => lb.classList.remove('show');
+
+/* toast */
+let tt; function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('show'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('show'),2200); }
+
+/* nav */
+$('#burger').onclick = () => $('#nav').classList.toggle('open');
+$$('#nav a').forEach(a => a.addEventListener('click', () => $('#nav').classList.remove('open')));
+$$('[data-wa]').forEach(a => { if (CONFIG.whatsapp){ a.href = CONFIG.whatsapp; a.target='_blank'; a.rel='noopener'; } });
+const secs = ['informe','protegete','actua','quien-decide','cronologia','archivo','contacto'].map(id => document.getElementById(id));
+const navObs = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) $$('#nav a').forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#'+en.target.id)); }), {rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s => s && navObs.observe(s));
+
+/* reveal */
+const ro = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting){ en.target.classList.add('in'); ro.unobserve(en.target);} }), {threshold:.08});
+$$('.reveal').forEach(el => ro.observe(el));
+
+sups(); setDocs();
+</script>
+<script data-goatcounter="https://sader-egunero.goatcounter.com/count" async src="js/count.js"></script>
+</body>
+</html>
