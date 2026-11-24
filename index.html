@@ -17,6 +17,10 @@
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://sader-egunero.net/">
+<link rel="alternate" hreflang="es" href="https://sader-egunero.net/">
+<link rel="alternate" hreflang="eu" href="https://sader-egunero.net/eu/">
+<link rel="alternate" hreflang="en" href="https://sader-egunero.net/en/">
+<link rel="alternate" hreflang="x-default" href="https://sader-egunero.net/">
 <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">
 <meta name="author" content="Sader Egunero">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -68,6 +72,9 @@ section{padding:96px 0}
 .nav a.cta{background:var(--red);color:#fff;margin-left:8px}
 .nav a.cta:hover{background:var(--red-d)}
 .lang{font-family:var(--cond);font-weight:700;font-size:13px;border:1px solid #555;padding:4px 8px;border-radius:3px;text-decoration:none;color:#ccc;letter-spacing:.1em}
+.langs{display:inline-flex;gap:4px;margin-left:6px}
+.nav a.lang{padding:4px 7px;font-size:13px}
+.nav a.lang.cur{background:#fff;color:var(--ink);border-color:#fff}
 .burger{display:none;margin-left:auto;background:none;border:0;color:#fff;cursor:pointer;padding:8px}
 .burger svg{width:28px;height:28px}
 @media (max-width:1180px){
@@ -75,6 +82,7 @@ section{padding:96px 0}
   .nav.open{display:flex}
   .nav a{font-size:20px;padding:12px 8px}
   .nav a.cta{margin:8px 0 0;text-align:center}
+  .langs{margin:8px 0 6px 8px}
   .burger{display:block}
 }
 
@@ -376,7 +384,7 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
       <a href="#cronologia">Cronología</a>
       <a href="#archivo">Archivo</a>
       <a href="#contacto">Contacto</a>
-      <a class="lang" data-doc="informe-sader-eu.pdf" target="_blank" rel="noopener" title="Txostena euskaraz">EU</a>
+      <!--idiomas--><span class="langs"><a class="lang cur" href="index.html" lang="es" hreflang="es">ES</a><a class="lang" href="eu/index.html" lang="eu" hreflang="eu">EU</a><a class="lang" href="en/index.html" lang="en" hreflang="en">EN</a></span><!--/idiomas-->
       <a class="cta" href="#actua" data-wa>Únete</a>
     </nav>
     <button class="burger" id="burger" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
@@ -931,7 +939,7 @@ const ACTS = [
 
 const ACTORS = [
  {id:"gv",name:"Gobierno Vasco",role:"Departamento de Industria, Transición Energética y Sostenibilidad. Autoriza, inspecciona y sanciona.",
-  yes:[["14/01/2008","Concede la autorización ambiental integrada de Sader. El Ayuntamiento había pedido en 2007 incluir un medidor en continuo; no consta instalado.","9,17"],["Junio 2010","Deja de funcionar la cabina de Elorrieta; sus equipos pasan a Erandio.","39"],["2012","Concede autorización propia a Profersa.","9"],["17/08/2022","Revisa la autorización de Sader: topes anuales de peligrosos y no peligrosos; exige informe de suelo.","9"],["15/05/2024","Ordena el cierre cautelar de Profersa tras dos accidentes. Reabre en junio con condiciones.","49,47"],["2024","Incorpora dos unidades móviles de medición del aire en la zona, una en San Ignacio.","40"],["20–25/11/2024","La inspección examina las cantidades de 2022 y 2023; no aprecia incumplimiento y califica el cumplimiento de «medio-alto».","6"],["17/03/2025","Amplía un 38 % la capacidad de Sader como «modificación no sustancial», sin información pública.","7,8"],["12/2025","El consejero defiende en el Parlamento la ampliación y que más volumen no supone más riesgo.","8"],["8/01/2026","Requiere a Sader el informe de situación del suelo.","14,16"],["11/02/2026","Autoriza la planta de Zierbena. Desestima todas las alegaciones.","23,24"]],
+  yes:[["14/01/2008","Concede la autorización ambiental integrada de Sader. El Ayuntamiento había pedido en 2007 incluir un medidor en continuo; no consta instalado.","9,17"],["Junio 2010","Deja de funcionar la cabina de Elorrieta; sus equipos pasan a Erandio.","39"],["2012","Concede autorización propia a Profersa.","9"],["17/08/2022","Revisa la autorización de Sader: topes anuales de peligrosos y no peligrosos; exige informe de suelo.","9"],["15/05/2024","Ordena el cierre cautelar de Profersa tras dos accidentes. Reabre en junio con condiciones.","49,47"],["2024","Incorpora dos unidades móviles de medición del aire en la zona, una en San Ignacio.","40"],["20 y 25/11/2024","La inspección examina las cantidades de 2022 y 2023; no aprecia incumplimiento y califica el cumplimiento de «medio-alto».","6"],["17/03/2025","Amplía un 38 % la capacidad de Sader como «modificación no sustancial», sin información pública.","7,8"],["12/2025","El consejero defiende en el Parlamento la ampliación y que más volumen no supone más riesgo.","8"],["8/01/2026","Requiere a Sader el informe de situación del suelo.","14,16"],["11/02/2026","Autoriza la planta de Zierbena. Desestima todas las alegaciones.","23,24"]],
   no:[["2014–2024","Zorroza y San Ignacio pasan diez años sin estación de calidad del aire del Gobierno Vasco.","18,19"],["2025","Amplía sin estudio de dispersión ni informe del Departamento de Salud, según denuncia el vecindario.","7,21"],["—","No hemos localizado la publicación completa de las mediciones de emisiones de Sader y Profersa.","22"],["—","No se ha localizado un estudio epidemiológico específico y público de los barrios.","22"],["—","No se ha localizado un protocolo público de aviso a la población ante un incidente.","22,52"],["—","Ninguna resolución publicada fija fecha de cierre en Zorroza ni para Profersa.","23,24"],["Sept. 2026","La unidad móvil de San Ignacio no computa en la evaluación oficial y no funciona correctamente.","21,18"]]},
  {id:"bilbao",name:"Ayuntamiento de Bilbao",role:"Ordena el suelo de Punta Zorroza y es dueño del muelle por el que pasan los camiones.",
   yes:[["5/07/2007","Su informe pide incluir en la autorización «un sistema de medición en continuo, tal como se comprometió en el año 1997».","17"],["16/09/2015","Aprueba un convenio con Sader para adelantar el cese: 2,7 M€ y salida prevista en 2018.","77,27"],["2026","Informa al Ararteko de que hace seguimiento y de que el uso que las empresas hacen del muelle es correcto.","43"]],
@@ -991,11 +999,11 @@ const TL = [
  ["15/05/2024","Cierre cautelar de Profersa.","adm","49"],
  ["2024","Dos unidades móviles de medición del aire en la zona.","adm","40"],
  ["20/06/2024","Pequeño vertido de ácido clorhídrico en Sader.","acc","51"],
- ["20–25/11/2024","Inspección: cumplimiento «medio-alto»; no se aprecia incumplimiento en las cantidades.","adm","6"],
+ ["20 y 25/11/2024","Inspección: cumplimiento «medio-alto»; no se aprecia incumplimiento en las cantidades.","adm","6"],
  ["17/03/2025","Ampliación del 38 % como modificación no sustancial.","adm","7"],
  ["Julio 2025","Agaleus renuncia a Ortuella. Ihobe y Aclima renuevan su convenio.","emp","72,73"],
  ["Sept. 2025","Caño deja Agaleus.","emp","72"],
- ["Nov. 2025","La inspección detecta que no se ha presentado el informe de suelo.","adm","14"],
+ ["Nov. 2025","La inspección detecta que no se ha presentado el informe de suelo.","adm","16"],
  ["12/2025","Pregunta parlamentaria; el consejero defiende la ampliación.","adm","8"],
  ["18/12/2025","La Inspección responde a una denuncia: la empresa dice que no tuvo incidencias ese día.","vec","46"],
  ["8/01/2026","Requerimiento del informe de suelo.","adm","14"],

@@ -52,6 +52,12 @@ El contenido está en listas dentro del mismo archivo:
 - `QUESTIONS`: las doce preguntas.
 - `STATS`, `FINDINGS`, `PROTECT`, `ACTS`: cifras, hallazgos, consejos y formas de participar.
 
+## Idiomas
+
+La web está en castellano (`/`), euskera (`/eu/`) e inglés (`/en/`). El informe y el material de campaña están en castellano y en euskera.
+
+Solo se edita a mano la versión castellana (`index.html` y `material/index.html`). Las páginas de `eu/` y `en/` se generan a partir de ella con los textos traducidos, así que **no se editan directamente**: cualquier cambio hecho ahí se pierde al regenerarlas. Tras cambiar un texto en castellano hay que regenerarlas y traducir lo que haya cambiado; mientras un texto no tenga traducción, sale en castellano. Las figuras de la página en euskera están en `img/eu/` y proceden del informe en euskera.
+
 ## Criterios
 
 - Cada dato lleva su fuente. Si no la tiene, no se publica.

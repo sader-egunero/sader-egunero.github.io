@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sader-Profersa Kanpora! · Zer ari gara arnasten? · Sader Egunero</title>
+<meta name="description" content="Zorrotza, San Inazio eta Deustuko auzo-kanpaina. Sader-Profersak Bilbon duen hondakin arriskutsuen plantari buruzko txostena, datu guztiekin eta haien iturriekin. Nola babestu, nola parte hartu, eta erakundeek egin dutenaren (eta egin ez dutenaren) artxiboa.">
+<meta property="og:title" content="Zer ari gara arnasten? · Sader-Profersa Kanpora!">
+<meta property="og:description" content="Estatuko hondakin arriskutsuen planta handienetako bat Bilbo barruan dabil. Datuak, beren iturriarekin. Eta oraindik ezagutu behar dugun informazioa.">
+<meta property="og:image" content="https://sader-egunero.net/img/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Zer ari gara arnasten? Sader-Profersa Kanpora!">
+<meta property="og:url" content="https://sader-egunero.net/eu/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sader Egunero">
+<meta property="og:locale" content="eu_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sader-egunero.net/eu/">
+<link rel="alternate" hreflang="es" href="https://sader-egunero.net/">
+<link rel="alternate" hreflang="eu" href="https://sader-egunero.net/eu/">
+<link rel="alternate" hreflang="en" href="https://sader-egunero.net/en/">
+<link rel="alternate" hreflang="x-default" href="https://sader-egunero.net/">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">
+<meta name="author" content="Sader Egunero">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#141414">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<style>
+:root{
+  --red:#D7141E; --red-d:#A80E16; --ink:#141414; --ink-2:#2a2a2a; --paper:#F5F2ED; --paper-2:#EBE6DE;
+  --line:#d8d1c6; --muted:#5f5a53; --white:#fff; --ok:#1f6f43; --amber:#B86E00;
+  --display:'Anton',Impact,'Arial Narrow',sans-serif; --cond:'Barlow Condensed','Arial Narrow',sans-serif; --body:'Barlow',system-ui,-apple-system,Segoe UI,sans-serif;
+  --wrap:1180px; --r:4px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0 0 1em}
+h1,h2,h3{margin:0;font-weight:400}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.kicker{font-family:var(--cond);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px}
+.display{font-family:var(--display);text-transform:uppercase;line-height:.95;letter-spacing:.005em}
+.red{color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--cond);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:17px;padding:14px 22px;border:2px solid currentColor;text-decoration:none;cursor:pointer;background:none;color:inherit;border-radius:var(--r);transition:transform .15s, background .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--red);border-color:var(--red);color:#fff}
+.btn.solid:hover{background:var(--red-d);border-color:var(--red-d)}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.small{font-size:14px;padding:9px 14px}
+.btn svg{width:18px;height:18px}
+section{padding:96px 0}
+.sec-head{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:44px;max-width:860px}
+.sec-head h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(42px,6vw,76px);line-height:.95}
+.sec-head .lede{font-size:21px;color:var(--muted);max-width:760px}
+.dark-sec{background:var(--ink);color:#fff}
+.dark-sec .sec-head .lede{color:#bdb6ac}
+.red-sec{background:var(--red);color:#fff}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;border-bottom:3px solid var(--red)}
+.topbar .wrap{display:flex;align-items:center;gap:24px;height:62px}
+.brand{font-family:var(--display);font-size:22px;letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--red);font-weight:400}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{white-space:nowrap;font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:15px;text-decoration:none;padding:8px 10px;border-radius:3px;color:#ddd}
+.nav a:hover,.nav a.on{color:#fff;background:#2b2b2b}
+.nav a.cta{background:var(--red);color:#fff;margin-left:8px}
+.nav a.cta:hover{background:var(--red-d)}
+.lang{font-family:var(--cond);font-weight:700;font-size:13px;border:1px solid #555;padding:4px 8px;border-radius:3px;text-decoration:none;color:#ccc;letter-spacing:.1em}
+.langs{display:inline-flex;gap:4px;margin-left:6px}
+.nav a.lang{padding:4px 7px;font-size:13px}
+.nav a.lang.cur{background:#fff;color:var(--ink);border-color:#fff}
+.burger{display:none;margin-left:auto;background:none;border:0;color:#fff;cursor:pointer;padding:8px}
+.burger svg{width:28px;height:28px}
+@media (max-width:1180px){
+  .nav{display:none;position:absolute;top:65px;left:0;right:0;background:var(--ink);flex-direction:column;align-items:stretch;padding:12px 24px 24px;border-bottom:3px solid var(--red)}
+  .nav.open{display:flex}
+  .nav a{font-size:20px;padding:12px 8px}
+  .nav a.cta{margin:8px 0 0;text-align:center}
+  .langs{margin:8px 0 6px 8px}
+  .burger{display:block}
+}
+
+/* ---------- alert ribbon ---------- */
+.ribbon{background:var(--red);color:#fff;font-family:var(--cond);font-weight:600;letter-spacing:.04em;font-size:17px}
+.ribbon .wrap{display:flex;gap:16px;align-items:center;justify-content:center;padding:10px 24px;flex-wrap:wrap;text-align:center}
+.ribbon .pill{background:#fff;color:var(--red);padding:2px 10px;border-radius:2px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:13px}
+.ribbon a{color:#fff;font-weight:700}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:calc(100vh - 110px);min-height:min(calc(100svh - 110px),900px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#0b0b0b}
+.hero .bg{position:absolute;inset:0;background:url(../img/hero-noche.jpg) center 35%/cover no-repeat;filter:grayscale(.35) contrast(1.05);transform:scale(1.04);animation:drift 30s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.12) translateX(-2%)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.25) 0%,rgba(10,10,10,.55) 45%,rgba(10,10,10,.96) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:80px;padding-bottom:64px;width:100%}
+.hero .kicker{color:#fff;opacity:.9}
+.hero h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(64px,12.5vw,176px);line-height:.86;margin:18px 0 26px}
+.hero h1 span{display:block}
+.hero h1 .r{color:var(--red)}
+.hero .sub{font-size:clamp(19px,2.1vw,25px);max-width:760px;margin-bottom:34px;font-weight:500}
+.hero .sub strong{background:var(--red);padding:0 6px;font-weight:600}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero .claim{position:absolute;right:24px;bottom:28px;z-index:2;font-family:var(--cond);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;opacity:.7;writing-mode:vertical-rl;transform:rotate(180deg)}
+@media (max-width:700px){.hero .claim{display:none}}
+
+/* ticker */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;border-top:1px solid #333;border-bottom:1px solid #333}
+.ticker .track{display:flex;width:max-content;animation:tick 55s linear infinite}
+.ticker span{font-family:var(--display);text-transform:uppercase;font-size:28px;padding:16px 0;white-space:nowrap}
+.ticker span i{font-style:normal;color:var(--red);padding:0 26px}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker .track,.hero .bg{animation:none}}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:3px solid var(--ink)}
+.stat{padding:30px 26px 30px 0;border-bottom:1px solid var(--line)}
+.stat:not(:nth-child(3n+1)){padding-left:26px;border-left:1px solid var(--line)}
+.stat .n{font-family:var(--display);font-size:clamp(52px,6vw,84px);line-height:1;color:var(--red)}
+.stat .t{font-size:17px;max-width:300px;margin-top:8px}
+.stat .src{font-size:13px;color:var(--muted);margin-top:8px;font-family:var(--cond);letter-spacing:.04em}
+@media (max-width:820px){.stats{grid-template-columns:1fr 1fr}.stat{padding:22px 14px!important;border-left:0!important}.stat:nth-child(2n){border-left:1px solid var(--line)!important}}
+@media (max-width:480px){.stats{grid-template-columns:1fr}.stat:nth-child(2n){border-left:0!important}}
+.note{background:var(--paper-2);border-left:4px solid var(--ink);padding:16px 20px;font-size:16px;margin-top:28px}
+
+/* ---------- where ---------- */
+.where{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.where figure{margin:0}
+.where table{width:100%;border-collapse:collapse;font-size:16px;margin-top:10px}
+.where td,.where th{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line)}
+.where th{font-family:var(--cond);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted)}
+.where td:last-child{font-family:var(--cond);font-weight:700;font-size:18px;color:var(--red);white-space:nowrap}
+@media (max-width:900px){.where{grid-template-columns:1fr}}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px;font-family:var(--cond);letter-spacing:.02em}
+.zoom{cursor:zoom-in}
+
+/* ---------- findings ---------- */
+.findings{counter-reset:f;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.finding{counter-increment:f;display:grid;grid-template-columns:64px 1fr;gap:16px;padding:24px 0;border-top:1px solid #333}
+.finding:before{content:counter(f,decimal-leading-zero);font-family:var(--display);font-size:44px;line-height:1;color:var(--red)}
+.finding h3{font-family:var(--cond);font-weight:700;font-size:23px;line-height:1.15;margin-bottom:8px}
+.finding p{font-size:16.5px;color:#cfc8bd;margin:0}
+.finding a.go{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:#fff;text-decoration:none;border-bottom:2px solid var(--red);display:inline-block;margin-top:10px}
+@media (max-width:860px){.findings{grid-template-columns:1fr}}
+
+/* ---------- report reader ---------- */
+.report-top{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:34px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 36px}
+.tag{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;padding:3px 9px;border-radius:2px;display:inline-block}
+.tag.hecho{background:var(--ink);color:#fff}
+.tag.indicio{background:#f1d9a6;color:#5a3a00}
+.tag.nosabe{background:#e2dcd3;color:#333;border:1px dashed #888}
+.tag.pregunta{background:var(--red);color:#fff}
+.tag.responden{background:#dfe7ef;color:#1f3a56}
+.tag.importa{background:#fff;color:var(--ink);border:1px solid var(--ink)}
+.tag.tener{background:#fff;color:var(--muted);border:1px solid var(--line)}
+.reader{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.toc{position:sticky;top:84px;max-height:calc(100vh - 100px);overflow:auto;border-top:3px solid var(--ink);padding-right:6px}
+.toc h4{font-family:var(--cond);text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--muted);margin:18px 0 6px}
+.toc button{display:grid;grid-template-columns:30px 1fr;width:100%;text-align:left;background:none;border:0;padding:7px 6px;font:500 15.5px/1.25 var(--body);color:var(--ink);cursor:pointer;border-radius:3px}
+.toc button span{font-family:var(--cond);font-weight:700;color:var(--muted)}
+.toc button:hover{background:var(--paper-2)}
+.toc button.on{background:var(--ink);color:#fff}
+.toc button.on span{color:var(--red)}
+.chapter{background:#fff;border:1px solid var(--line);padding:48px 56px 40px;min-height:600px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.chapter .kicker{color:var(--red)}
+.chapter h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(34px,4vw,54px);line-height:.98;margin:10px 0 24px}
+.chapter p{font-size:18.5px;line-height:1.62}
+.chapter figure{margin:28px 0}
+.chapter figure img{border:1px solid var(--line)}
+.chapter .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chapter .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.chapter .pair img,.chapter .trio img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.chapter table{width:100%;border-collapse:collapse;font-size:15.5px;margin:20px 0}
+.chapter th,.chapter td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.chapter th{font-family:var(--cond);text-transform:uppercase;letter-spacing:.06em;font-size:13px;background:var(--paper)}
+.chapter ul{padding-left:20px}.chapter li{margin-bottom:6px}
+.big-quote{font-family:var(--display);text-transform:uppercase;font-size:clamp(30px,3.6vw,46px);line-height:1;background:var(--red);color:#fff;padding:28px 30px;margin:30px 0}
+.big-quote small{display:block;font-family:var(--body);text-transform:none;font-size:17px;line-height:1.45;margin-top:14px;font-weight:500}
+.box{border:1px solid var(--line);padding:18px 22px;margin:24px 0;background:var(--paper)}
+.box .tag{margin-bottom:10px}
+.box p:last-child{margin:0}
+.box.pregunta{border-color:var(--red);background:#fff4f4}
+.box.responden{border-color:#b9c9d9;background:#f2f6fa}
+.chap-nav{display:flex;justify-content:space-between;gap:12px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+sup.s{font-family:var(--cond);font-weight:700;font-size:12px;line-height:0}
+sup.s a{color:var(--red);text-decoration:none;cursor:pointer;padding:0 1px}
+sup.s a:hover{text-decoration:underline}
+.big-quote sup.s a,.red-sec sup.s a,.dark-sec sup.s a{color:#fff}
+@media (max-width:980px){
+  .reader{grid-template-columns:1fr}
+  .toc{position:relative;top:0;max-height:none;display:none}
+  .toc.open{display:block}
+  .toc-toggle{display:inline-flex!important}
+  .chapter{padding:30px 22px}
+  .chapter .trio{grid-template-columns:1fr 1fr}
+}
+.toc-toggle{display:none}
+
+/* ---------- demands ---------- */
+.demands{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.demand{padding:34px 30px;border-left:1px solid rgba(255,255,255,.35)}
+.demand:first-child{border-left:0;padding-left:0}
+.demand .n{font-family:var(--display);font-size:120px;line-height:.8;opacity:.25}
+.demand h3{font-family:var(--display);text-transform:uppercase;font-size:48px;line-height:1;margin:8px 0 14px}
+.demand p{font-size:18px;margin:0}
+.slogan{font-family:var(--display);text-transform:uppercase;font-size:clamp(34px,5vw,64px);line-height:1;margin-top:56px;padding-top:30px;border-top:3px solid #fff}
+@media (max-width:860px){.demands{grid-template-columns:1fr}.demand{border-left:0;padding:24px 0;border-top:1px solid rgba(255,255,255,.35)}}
+
+/* ---------- protect ---------- */
+.protect{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tip{background:#fff;border:1px solid var(--line);padding:26px 24px;position:relative}
+.tip .ico{width:54px;height:54px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;margin-bottom:16px}
+.tip .ico svg{width:28px;height:28px}
+.tip h3{font-family:var(--cond);font-weight:700;font-size:24px;line-height:1.1;margin-bottom:10px}
+.tip p{font-size:16.5px;margin:0;color:#3d3933}
+.tip .why{display:block;margin-top:12px;font-size:14.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px}
+@media (max-width:980px){.protect{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.protect{grid-template-columns:1fr}}
+.episode{display:grid;grid-template-columns:1fr 1.2fr;gap:0;margin-top:48px;border:3px solid var(--ink)}
+.episode .l{background:var(--ink);color:#fff;padding:36px}
+.episode .l h3{font-family:var(--display);text-transform:uppercase;font-size:46px;line-height:1}
+.episode ol{margin:0;padding:30px 36px 30px 60px;font-size:17.5px;background:#fff}
+.episode li{margin-bottom:12px;padding-left:6px}
+.episode li::marker{font-family:var(--display);color:var(--red)}
+@media (max-width:860px){.episode{grid-template-columns:1fr}}
+.disclaimer{font-size:14.5px;color:var(--muted);margin-top:22px;max-width:900px}
+
+/* ---------- act ---------- */
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.act{background:#1d1d1d;border:1px solid #333;padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.act .ico{color:var(--red)}
+.act .ico svg{width:40px;height:40px}
+.act h3{font-family:var(--display);text-transform:uppercase;font-size:32px;line-height:1}
+.act p{font-size:16.5px;color:#cfc8bd;margin:0;flex:1}
+.act .btn{align-self:flex-start;margin-top:6px}
+.act.feature{grid-column:span 2;background:var(--red);border-color:var(--red)}
+.act.feature p{color:#fff}
+.act.feature .ico{color:#fff}
+@media (max-width:980px){.acts{grid-template-columns:1fr 1fr}.act.feature{grid-column:span 2}}
+@media (max-width:620px){.acts{grid-template-columns:1fr}.act.feature{grid-column:auto}}
+.agenda{margin-top:56px;display:grid;grid-template-columns:320px 1fr;gap:40px}
+.agenda h3{font-family:var(--display);text-transform:uppercase;font-size:46px;line-height:1}
+.ev{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-top:1px solid #333}
+.ev .d{font-family:var(--display);font-size:34px;line-height:1;color:var(--red);text-transform:uppercase}
+.ev .d small{display:block;font-family:var(--cond);font-weight:700;font-size:14px;color:#aaa;letter-spacing:.1em;margin-top:4px}
+.ev h4{font-family:var(--cond);font-weight:700;font-size:22px;margin:0 0 4px}
+.ev p{margin:0;color:#bdb6ac;font-size:16px}
+@media (max-width:860px){.agenda{grid-template-columns:1fr}}
+.kit{margin-top:56px}
+.kit-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:20px}
+.kit-grid img{aspect-ratio:4/5;object-fit:cover;width:100%;border:1px solid #333;cursor:zoom-in;transition:transform .15s}
+.kit-grid img:hover{transform:scale(1.03)}
+@media (max-width:900px){.kit-grid{grid-template-columns:repeat(4,1fr)}}
+.kit-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;align-items:center}
+.share-text{background:#1d1d1d;border:1px solid #333;padding:18px;font-size:16px;color:#ddd;margin-top:20px;white-space:pre-line}
+
+/* ---------- tracker ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px}
+.tabs button{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:15px;padding:10px 14px;border:2px solid var(--ink);background:#fff;cursor:pointer;border-radius:3px}
+.tabs button.on{background:var(--ink);color:#fff}
+.actor{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.actor-head{grid-column:1/-1;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;border-bottom:3px solid var(--ink);padding-bottom:14px}
+.actor-head h3{font-family:var(--display);text-transform:uppercase;font-size:44px;line-height:1}
+.actor-head .role{font-size:17px;color:var(--muted)}
+.col h4{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:15px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.col h4:before{content:"";width:12px;height:12px;border-radius:50%;background:var(--ink)}
+.col.no h4:before{background:transparent;border:2px solid var(--red)}
+.item{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:16.5px}
+.item .d{font-family:var(--cond);font-weight:700;font-size:15px;color:var(--muted)}
+.col.no .item .d{color:var(--red)}
+@media (max-width:820px){.actor{grid-template-columns:1fr}}
+.questions{margin-top:64px}
+.q{display:grid;grid-template-columns:48px 1fr 200px 120px;gap:16px;padding:16px 0;border-top:1px solid var(--line);align-items:start;font-size:16.5px}
+.q .n{font-family:var(--display);font-size:30px;color:var(--red);line-height:1}
+.q .who{font-family:var(--cond);font-weight:600;font-size:15.5px;color:var(--muted)}
+.q .st{justify-self:start}
+@media (max-width:760px){.q{grid-template-columns:40px 1fr}.q .who,.q .st{grid-column:2}}
+
+/* ---------- timeline ---------- */
+.tl-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chip{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;padding:7px 12px;border:1px solid #555;border-radius:20px;background:none;color:#ddd;cursor:pointer}
+.chip.on{background:#fff;color:var(--ink);border-color:#fff}
+.timeline{position:relative;padding-left:0}
+.tl{display:grid;grid-template-columns:150px 22px 1fr;gap:18px;padding:12px 0}
+.tl .d{font-family:var(--cond);font-weight:700;font-size:18px;text-align:right;color:#ccc;padding-top:1px}
+.tl .dot{position:relative}
+.tl .dot:before{content:"";position:absolute;left:10px;top:-14px;bottom:-14px;width:2px;background:#3a3a3a}
+.tl .dot:after{content:"";position:absolute;left:4px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--ink);border:2px solid #888}
+.tl.t-acc .dot:after{background:var(--red);border-color:var(--red)}
+.tl.t-adm .dot:after{background:#fff;border-color:#fff}
+.tl.t-vec .dot:after{background:#f1d9a6;border-color:#f1d9a6}
+.tl.t-fut .dot:after{background:transparent;border:2px dashed var(--red)}
+.tl .x{font-size:17px;color:#e8e2d8}
+.tl .x .tag{margin-left:6px;vertical-align:2px}
+@media (max-width:640px){.tl{grid-template-columns:86px 18px 1fr;gap:10px}.tl .d{font-size:15px}}
+
+/* ---------- archive ---------- */
+.arch-tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.arch-tools input{flex:1;min-width:240px;font:500 17px var(--body);padding:13px 16px;border:2px solid var(--ink);border-radius:3px;background:#fff}
+.arch-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.arch-chips .chip{color:var(--ink);border-color:var(--ink)}
+.arch-chips .chip.on{background:var(--ink);color:#fff}
+.docs-feat{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:46px}
+.doc{background:#fff;border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:border-color .15s,transform .15s}
+.doc:hover{border-color:var(--ink);transform:translateY(-2px)}
+.doc .ty{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--red)}
+.doc h4{font-family:var(--cond);font-weight:700;font-size:21px;line-height:1.1;margin:0}
+.doc p{font-size:14.5px;color:var(--muted);margin:0;flex:1}
+.doc .go{font-family:var(--cond);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:980px){.docs-feat{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.docs-feat{grid-template-columns:1fr}}
+.src-list{border-top:3px solid var(--ink)}
+.src{display:grid;grid-template-columns:52px 170px 1fr 110px;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px;align-items:start}
+.src .n{font-family:var(--display);font-size:22px;color:var(--red)}
+.src .c{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;color:var(--muted);padding-top:3px}
+.src a.lk{font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.08em;text-decoration:none;border-bottom:2px solid var(--red);justify-self:start}
+.src .na{font-size:13px;color:var(--muted)}
+.src.flash{background:#fff4c2;transition:background 1.5s}
+.src .leg{font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
+@media (max-width:760px){.src{grid-template-columns:44px 1fr}.src .c{grid-column:2}.src .t{grid-column:2}.src .lk,.src .na{grid-column:2}}
+.count{font-family:var(--cond);font-weight:600;color:var(--muted)}
+
+/* ---------- contact ---------- */
+.contact{display:grid;grid-template-columns:1fr 1.25fr;gap:56px}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form label{display:block;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:14px;margin:16px 0 6px}
+form input,form select,form textarea{width:100%;font:500 17px var(--body);padding:12px 14px;border:2px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink)}
+form textarea{min-height:150px;resize:vertical}
+form .check{display:flex;gap:10px;align-items:flex-start;font-size:15px;margin:16px 0 22px;text-transform:none;font-family:var(--body);font-weight:400;letter-spacing:0}
+form .check input{width:20px;height:20px;margin-top:2px;flex:none}
+.out{display:none;border:3px solid var(--ink);background:#fff;padding:22px;margin-top:20px}
+.out.show{display:block}
+.out pre{white-space:pre-wrap;font:15px/1.5 var(--body);background:var(--paper);padding:14px;margin:12px 0}
+.contact-side .line{padding:16px 0;border-top:1px solid var(--line)}
+.contact-side .line b{display:block;font-family:var(--cond);text-transform:uppercase;letter-spacing:.1em;font-size:13px;color:var(--muted);font-weight:700}
+.contact-side .line span{font-size:19px;font-weight:600}
+@media (max-width:860px){.contact{grid-template-columns:1fr}form .row{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#bdb6ac;padding:64px 0 40px;font-size:15px}
+footer .big{font-family:var(--display);text-transform:uppercase;color:#fff;font-size:clamp(44px,8vw,110px);line-height:.9}
+footer .big b{color:var(--red);font-weight:400}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-top:40px;border-top:1px solid #333;padding-top:30px}
+footer a{color:#fff}
+footer h5{font-family:var(--cond);text-transform:uppercase;letter-spacing:.12em;color:#fff;font-size:14px;margin:0 0 10px}
+footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr}}
+
+/* ---------- popover & lightbox ---------- */
+.pop{position:fixed;z-index:90;max-width:380px;background:var(--ink);color:#fff;padding:14px 16px;font-size:14.5px;line-height:1.45;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.35);display:none}
+.pop.show{display:block}
+.pop .c{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:11.5px;color:var(--red);margin-bottom:4px}
+.pop a{color:#fff;font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.08em;display:inline-block;margin-top:8px;margin-right:12px}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,10,10,.94);display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.lb.show{display:flex}
+.lb img{max-width:100%;max-height:88vh;object-fit:contain;background:#fff}
+.lb p{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#ccc;font-size:14px;margin:0;padding:0 20px}
+.lb button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:40px;cursor:pointer;line-height:1}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 20px;border-radius:4px;font-family:var(--cond);font-weight:700;letter-spacing:.06em;z-index:120;opacity:0;transition:opacity .25s;pointer-events:none}
+.toast.show{opacity:1}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+.pending{opacity:.75;font-style:italic}
+</style>
+</head>
+<body>
+<noscript><p style="margin:0;padding:14px 24px;background:#D7141E;color:#fff;font-family:sans-serif">Webgune honek JavaScript behar du txostena kapituluka erakusteko. Bitartean, <a href="../docs/informe-sader-eu.pdf" style="color:#fff">txosten osoa PDFan</a> irakur dezakezu.</p></noscript>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio">SADER-PROFERSA <b>KANPORA!</b></a>
+    <nav class="nav" id="nav">
+      <a href="#informe">Txostena</a>
+      <a href="#protegete">Babestu</a>
+      <a href="#actua">Ekin</a>
+      <a href="#quien-decide">Nork erabakitzen du</a>
+      <a href="#cronologia">Kronologia</a>
+      <a href="#archivo">Artxiboa</a>
+      <a href="#contacto">Kontaktua</a>
+      <!--idiomas--><span class="langs"><a class="lang" href="../index.html" lang="es" hreflang="es">ES</a><a class="lang cur" href="index.html" lang="eu" hreflang="eu">EU</a><a class="lang" href="../en/index.html" lang="en" hreflang="en">EN</a></span><!--/idiomas-->
+      <a class="cta" href="#actua" data-wa>Batu</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Ireki menua"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<div class="ribbon" id="ribbon"><div class="wrap"><span class="pill">Hurrengo hitzordua</span><span id="ribbon-text">Manifestazioa · Abenduak 1 · 18:30 · Eusko Jaurlaritzatik (Gran Vía 85) Bilboko Udalera</span><a href="#agenda">Ikusi agenda →</a></div></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" style="padding:0">
+  <div class="bg" role="img" aria-label="Sader-Profersaren konplexua gauez, beste ertzeko etxebizitza berrien ondoan"></div>
+  <div class="wrap">
+    <div class="kicker">Zorrotza · San Inazio · Deustu · Deustuko Erribera · Basurtu</div>
+    <h1><span>Zer ari gara</span><span class="r">arnasten?</span></h1>
+    <p class="sub">Bilbo barruan, hiru ikastetxetik 500 metro ingurura, Estatuko hondakin arriskutsuen planta handienetako bat dabil. <strong>Datuak, beren iturriarekin. Eta oraindik ezagutu behar dugun informazioa.</strong></p>
+    <div class="ctas">
+      <a class="btn solid" href="#agenda">Abenduak 1 · Manifestazioa!</a>
+      <a class="btn" href="#informe">Irakurri txostena</a>
+      <a class="btn" href="#actua">Ekin orain</a>
+      <a class="btn" href="#protegete">Babestu etxean</a>
+    </div>
+  </div>
+  <div class="claim">Gure osasunak balio du haien irabaziak baino gehiago</div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="ticker"></div></div>
+
+<!-- ============ CIFRAS ============ -->
+<section id="cifras">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Begirada batean</div>
+      <h2>Ezagutu beharko zenituzkeen bederatzi zifra</h2>
+      <p class="lede">Guztiak <em>Zer ari gara arnasten?</em> auzo-txostenetik datoz (2026ko azaroa). Sakatu kortxete arteko zenbakia iturria ikusteko.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+    <p class="note reveal">Ahalmenaren zifrak iturriaren arabera aldatzen dira, gauza desberdinak neurtzen dituztelako (hondakin arriskutsuak edo guztiak; baimendua edo benetan tratatua). Txostenaren 2. kapituluak taula bakar batean ordenatzen ditu denak.</p>
+  </div>
+</section>
+
+<!-- ============ DÓNDE ============ -->
+<section style="padding-top:0">
+  <div class="wrap where">
+    <figure class="reveal"><img class="zoom" src="../img/eu/mapa-colegios.jpg" alt="Mapa: Sader-en planta Zorrotzako Puntan eta inguruko ikastetxeak, 500 m-ko eta 1 km-ko erradioekin" loading="lazy"><figcaption>Planta eta inguruko ikastetxeak, 500 m-ko eta 1 km-ko erradioekin. Geuk egina, © OpenStreetMap contributors oinarri hartuta.</figcaption></figure>
+    <div class="reveal">
+      <div class="kicker red">Non dago</div>
+      <h2 class="display" style="font-size:clamp(38px,4.6vw,60px);margin:10px 0 18px">Hondakin arriskutsuen planta bat hiriaren erdian</h2>
+      <p>Sader-ek industria-hondakin arriskutsuak tratatzen ditu Zorrotzako Puntan 1986tik. Haren ondoan, Profersak ongarriak ekoizten ditu hondakinetatik abiatuta. Biak Agaleus taldekoak dira. San Inazio parez pare dago, itsasadarraren beste aldean; Zorrotza, atzean; Deustuko Erribera, haizebean.<sup class="s" data-s="27,26,22"></sup></p>
+      <table>
+        <thead><tr><th>Ikastetxea</th><th>Auzoa</th><th>Distantzia</th></tr></thead>
+        <tbody>
+          <tr><td>Zorrotza BHI</td><td>Zorrotza</td><td>≈ 300 m</td></tr>
+          <tr><td>Zorrotza Fray Juan HLHI</td><td>Zorrotza</td><td>≈ 490 m</td></tr>
+          <tr><td>San Inazio BHI</td><td>San Inazio</td><td>≈ 600 m</td></tr>
+          <tr><td>Intxixu Ikastola HLHI</td><td>San Inazio</td><td>≈ 600 m</td></tr>
+          <tr><td>Zazpilanda HLHI</td><td>Zorrotza</td><td>≈ 690 m</td></tr>
+          <tr><td>San Inazio HLHI</td><td>San Inazio</td><td>≈ 930 m</td></tr>
+          <tr><td>Madre de Dios Ikastetxea</td><td>San Inazio</td><td>≈ 1,2 km</td></tr>
+        </tbody>
+      </table>
+      <figcaption>Gutxi gorabeherako distantziak (±50 m), lerro zuzenean, plantaren helbidearen (Arsenal bidea 19) eta ikastetxe bakoitzaren helbidearen artean; ez dira ibilbideak.<sup class="s" data-s="3"></sup></figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HALLAZGOS ============ -->
+<section class="dark-sec" id="hallazgos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Laburpena</div>
+      <h2>Bederatzi aurkikuntza</h2>
+      <p class="lede">Txostenaren funtsa. Aurkikuntza bakoitzak datu, ñabardura eta iturri guztiak dituen kapitulura eramango zaitu.</p>
+    </div>
+    <div class="findings" id="findings"></div>
+  </div>
+</section>
+
+<!-- ============ INFORME ============ -->
+<section id="informe">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Auzo-txostena · edizio publikoa · 2026ko azaroa</div>
+      <h2>Txosten osoa, kontsultatzeko</h2>
+      <p class="lede">Hogei kapitulu: zer den planta eta zer neurtu den (I. zatia), eta nor den nor eta nork erabakitzen duen (II. zatia). Hemen duzu kapitulu bakoitza laburtuta, bere irudi eta iturriekin. Aipatzeko edo inprimatzeko, deskargatu PDF osoa.</p>
+    </div>
+    <div class="report-top">
+      <a class="btn solid" data-doc="informe-sader-eu.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>Txostena PDFan (gaztelaniaz)</a>
+      <a class="btn" data-doc="informe-sader-es.pdf" target="_blank" rel="noopener">Txostena PDFan (euskaraz)</a>
+      <a class="btn" data-doc="estudio-deposicion-csic-2026.pdf" target="_blank" rel="noopener">CSICen ikerketa</a>
+      <button class="btn toc-toggle" id="tocToggle">Kapituluen aurkibidea</button>
+    </div>
+    <div class="legend">
+      <span class="tag hecho">Dokumentatutako gertaera</span><span class="tag indicio">Zantzua</span><span class="tag nosabe">Zer ez den ezagutzen</span><span class="tag pregunta">Erantzunik gabeko galdera</span>
+      <span style="font-size:15px;color:var(--muted)">Txostenak bereizi egiten ditu dokumentatutako gertaerak, hipotesiak eta galdera irekiak; balizko irregulartasunei egindako aipamenak ez dira erantzukizun juridikoari buruzko ondorioak. Modu automatizatuan eraiki da adimen artifizialarekin, iturri irekietan oinarrituta; emaitza kaltetutako eremuetako auzokideek berrikusi dute, baina oraindik zehaztugabetasunen bat izan dezake, eta zuzenduko da.</span>
+    </div>
+    <div class="reader">
+      <aside class="toc" id="toc"></aside>
+      <article class="chapter" id="chapter" aria-live="polite"></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXIGIMOS ============ -->
+<section class="red-sec" id="exigimos">
+  <div class="wrap">
+    <div class="kicker">Zer exijitzen duten auzokideek</div>
+    <div class="demands" style="margin-top:24px">
+      <div class="demand reveal"><div class="n">1</div><h3>Data</h3><p>Zorrotzan itxiera-data derrigorrezkoa eta berehalakoa, baita Profersarentzat ere, lanpostuen bermearekin. Portuko baimenak ez du ixtera behartzen, eta aurreko hiru data bete gabe geratu dira.</p></div>
+      <div class="demand reveal"><div class="n">2</div><h3>Datuak</h3><p>Isurien eta lurzoruaren datu publikoak. Neurgailu finkoak, funtzionatzen dutenak eta ebaluazio ofizialean konputatzen dutenak. Gertakari bat dagoenean biztanleriari abisatzeko protokoloa.</p></div>
+      <div class="demand reveal"><div class="n">3</div><h3>Osasuna</h3><p>Eragindako auzoen azterketa epidemiologiko bat eta kromoaren espeziazioa: gure etxeen gainera erortzen dena minbizi-eragilea den jakitea.</p></div>
+    </div>
+    <div class="slogan reveal">Gure osasunak balio du haien irabaziak baino gehiago.</div>
+  </div>
+</section>
+
+<!-- ============ PROTÉGETE ============ -->
+<section id="protegete">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Bitartean</div>
+      <h2>Zer egin dezakezun babesteko</h2>
+      <p class="lede">Plantaren ondoan beruna, artsenikoa, nikela eta kromoa neurtu dira lurzoruan eta airetik erortzen denean. Inguruko hautsa substantzia batzuekin kontaktuan jartzeko bidea izan daiteke. Aipatutako ingurumen-neurketek ez dute, berez, banakako esposizioa kuantifikatzeko ez iturri bakar bat identifikatzeko aukerarik ematen. Ohitura orokor hauek hautsarekiko kontaktua mugatzen lagun dezakete.</p>
+    </div>
+    <div class="protect" id="protect"></div>
+    <div class="episode reveal">
+      <div class="l"><div class="kicker red">Gertakari bat badago</div><h3>Hodeia, usain bizia edo hauts ikusgaia</h3><p style="margin-top:14px;color:#bdb6ac;font-size:16px">Eskura dauden iturrietan ez da aurkitu kanpoko larrialdi-plan espezifikorik, ezta biztanleriari abisatzeko protokolo publikorik ere; argitu beharra dago zein diren legez exijigarriak eta zein dauden indarrean. 2024ko maiatzean, 112ra deitu zuenari ateak eta leihoak ixteko esan zioten.<sup class="s" data-s="22,52"></sup></p></div>
+      <ol>
+        <li><b>Itxi ateak eta leihoak</b> eta itzali kanpoko airea hartzen duten aparatuak (erauzgailuak, klimatizazioa).</li>
+        <li><b>Deitu 112ra</b> kea edo hodei bat ikusten baduzu, edo norbait gaizki sentitzen bada.</li>
+        <li><b>Dokumentatu:</b> argazkia edo bideoa, ordua, grabatzen ari zaren lekua eta haizearen norabidea adierazita. Datadun froga batek hamar kexak baino gehiago balio du.</li>
+        <li><b>Salatu</b> Eusko Jaurlaritzaren Ingurumen Ikuskaritzan eta <a data-wa target="_blank" rel="noopener">partekatu WhatsApp komunitatean</a>: auzo-erregistroan jasoko dugu.</li>
+        <li><b>Sintomak badituzu</b> (begietako edo eztarriko narritadura, eztula, arnasa hartzeko zailtasuna), joan zure osasun-zentrora eta aipatu esposizioa. Horrela jasota geratuko da.</li>
+      </ol>
+    </div>
+    <p class="disclaimer">Hautsarekiko esposizioa murrizteko higiene-aholku orokorrak dira, ez aholku medikoa. Zure osasunari edo zure seme-alabenari buruzko zalantzarik baduzu, galdetu zure medikuari edo pediatrari. Eta gogoan izan: etxean babesteak laguntzen du, baina konponbidea ez dago zure lanbasean. Konponbidea da etxebizitzen ondoan hondakin arriskutsuen plantarik ez egotea.</p>
+  </div>
+</section>
+
+<!-- ============ ACTÚA ============ -->
+<section class="dark-sec" id="actua">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Antolatu</div>
+      <h2>Zer egin dezakezun joan dadin</h2>
+      <p class="lede">Datu hauek existitzen badira, auzokideek neurtu eta ordaindu dituztelako da. Orain arte lortutako guztia (2024ko neurgailua, Profersaren behin-behineko itxiera, CSICen ikerketa) mobilizatu ondoren iritsi zen. Balkoi bakoitzak, pegatina bakoitzak eta partekatutako mezu bakoitzak balio du.</p>
+    </div>
+    <div class="acts" id="acts"></div>
+
+    <div class="agenda" id="agenda">
+      <div><div class="kicker red">Agenda</div><h3>Mobilizazioak</h3><p style="color:#bdb6ac;margin-top:14px;font-size:16px">Deialdiak WhatsApp komunitatean eta Instagramen iragartzen dira.</p><figure style="margin:24px 0 0"><img class="zoom" src="../kit/cartel-1-diciembre.jpg" alt="Kartela: Manifestazioa · Abenduak 1 / 1 de diciembre · 18:30 · Eusko Jaurlaritza, Gran Vía 85 → Bilboko Udala" loading="lazy" style="border:1px solid #333"><figcaption style="color:#8f887f">Abenduaren 1eko manifestazioaren kartela. Sakatu handitzeko, eta partekatu.</figcaption></figure></div>
+      <div id="events"></div>
+    </div>
+
+    <div class="kit" id="kit">
+      <div class="kicker red">Kanpainako kita</div>
+      <h3 class="display" style="font-size:clamp(36px,4.6vw,58px);margin:10px 0 8px">Partekatu</h3>
+      <p style="color:#cfc8bd;max-width:780px">Instagramerako karrusela (ordenan, 00tik 06ra), txartel solteak, bertsio bertikalak storyetarako eta WhatsAppeko egoeretarako, bideoak, diptikoa eta inprimatzeko pegatinak. Irudi bakoitza bere testuarekin eta iturriekin argitaratzen da. Sakatu irudi bat handian ikusteko; materialaren orrian pieza bakoitza tamaina osoan dago, euskaraz eta gaztelaniaz.</p>
+      <div class="kit-grid" id="kitgrid"></div>
+      <div class="kit-row">
+        <a class="btn solid" id="kitAll">Deskargatu material guztia (EU / ES)</a>
+        <a class="btn" id="kitVideos">Bideoak</a>
+        <a class="btn" href="../material/eu/papera/diptikoa-A4-A5ean-tolestua.pdf" target="_blank" rel="noopener">Inprimatzeko diptikoa</a>
+        <a class="btn" href="../material/eu/gida/gida-sareak-eu.pdf" target="_blank" rel="noopener">Sareetarako gida azkarra</a>
+        <a class="btn" id="kitStickers">Inprimatzeko pegatinak</a>
+        <button class="btn" id="copyShare">Kopiatu partekatzeko testua</button>
+      </div>
+      <div class="share-text" id="shareText"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIÉN DECIDE ============ -->
+<section id="quien-decide">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Jarraipen instituzionala</div>
+      <h2>Nork erabakitzen du: egindakoak eta egin gabekoak</h2>
+      <p class="lede">Administrazio eta erakunde bakoitzak gai honetan egin duena, eta egin ez duena. Aipatutako iturrietan deskribatutako jarduketen hautaketa bat da; interpretatzeko, espediente osoa kontsultatu behar izan daiteke.</p>
+    </div>
+    <div class="tabs" id="actorTabs"></div>
+    <div class="actor" id="actor"></div>
+
+    <div class="questions">
+      <div class="sec-head reveal" style="margin-bottom:20px">
+        <div class="kicker red">Kazetarientzat eta erakundeentzat</div>
+        <h2 style="font-size:clamp(36px,4.6vw,58px)">Erantzuna duten hamabi galdera</h2>
+        <p class="lede">Bakoitza dagoeneko existitzen den dokumentu batekin edo administrazio batek enkargatu dezakeen neurketa batekin erantzun daiteke. Bati erantzuten zaionean, hemen eguneratuko dugu.</p>
+      </div>
+      <div id="questions"></div>
+      <div class="kit-row"><button class="btn dark" id="copyQ">Kopiatu hamabi galderak</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRONOLOGÍA ============ -->
+<section class="dark-sec" id="cronologia">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">1986–2031</div>
+      <h2>Berrogei urte Zorrotzako Puntan</h2>
+      <p class="lede">Lizentziak, handitzeak, istripuak, lekualdatze-promesak eta auzokideek egin dutena.</p>
+    </div>
+    <div class="tl-filter" id="tlFilter"></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ============ ARCHIVO ============ -->
+<section id="archivo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker red">Dokumentazio-zentroa</div>
+      <h2>Dokumentu-artxiboa</h2>
+      <p class="lede">Kanpainaren txostenak eta oinarri dituzten iturri guztiak: aldizkari ofizialak, legeak, ikerketa zientifikoak, merkataritza-erregistroak eta prentsaren jarraipena. Bilatu hitz baten bidez edo iragazi motaren arabera. Iturrien izenburuak jatorrizko hizkuntzan daude.</p>
+    </div>
+    <div class="docs-feat" id="docsFeat"></div>
+    <div class="arch-tools">
+      <input type="search" id="q" placeholder="Bilatu: Ararteko, cromo, BOPV, Profersa, elDiario…" aria-label="Bilatu artxiboan">
+      <span class="count" id="count"></span>
+    </div>
+    <div class="arch-chips" id="archChips"></div>
+    <div class="src-list" id="srcList"></div>
+    <p class="disclaimer">Zenbakiak bat datoz txostenaren oharrekin. «Jarauntsitako iturri» gisa markatutakoak edizio osotik datoz, eta komeni da berriro kontsultatzea hedabide batean aipatu aurretik, erregistroak aldatu egiten direlako. Iturriak 2026ko azaroaren 16tik 22ra bitartean berrikusi dira; komeni da estekak eta dokumentuak berriro egiaztatzea aipatu aurretik, alda daitezkeelako.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" style="background:var(--paper-2)">
+  <div class="wrap contact" style="grid-template-columns:1fr">
+    <div class="contact-side reveal">
+      <div class="kicker red">Kontaktua</div>
+      <h2 class="display" style="font-size:clamp(42px,6vw,76px);margin:10px 0 18px">Batu zaitez</h2>
+      <p style="font-size:19px;max-width:760px">Batzeko, mobilizazioen berri izateko edo gertakari baten berri emateko, sartu WhatsApp komunitatean. Instagramen ere bagaude.</p>
+      <div class="line"><b>WhatsApp komunitatea</b><span id="waShow">—</span></div>
+      <div class="line"><b>Instagram</b><span><a id="igShow" target="_blank" rel="noopener">@sader_profersa_kanpora</a></span></div>
+      <div class="line"><b>Kanpainako materiala</b><span><a id="kitLink2">Irudiak, bideoak, diptikoa eta pegatinak deskargatzeko</a></span></div>
+      <div class="line"><b>Webgunea</b><span><a href="https://sader-egunero.net">sader-egunero.net</a> · Sader Egunero</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">Sader-Profersa <b>Kanpora!</b></div>
+    <div class="cols">
+      <div><h5>Oharra</h5><p>Webgune honek datuak beren iturriarekin biltzen ditu. Modu automatizatuan eraiki da adimen artifizialarekin, iturri irekietan oinarrituta; emaitza kaltetutako eremuetako auzokideek berrikusi dute, baina oraindik zehaztugabetasunen bat izan dezake, eta zuzenduko da. Bereizi egiten ditu dokumentatutako gertaerak, hipotesiak eta galdera irekiak; balizko irregulartasunei egindako aipamenak ez dira erantzukizun juridikoari buruzko ondorioak. Pertsonen izenak kargu publiko, sozietate- edo elkarte-karguren bat dutenean edo izan dutenean bakarrik agertzen dira, eta kargu horri dagokionez soilik. Ez da irizpen mediko edo juridikoa. Euskarazko bertsio hau gaztelaniazko jatorrizkotik itzuli da; desadostasunik balego, gaztelaniazkoa da erreferentzia. Akatsen bat ikusi duzu? <a href="mailto:sader-egunero-info@ni.eus?subject=Error">Abisatu</a> eta zuzenduko dugu.</p></div>
+      <div><h5>Atalak</h5><ul><li><a href="#informe">Txostena</a></li><li><a href="#protegete">Babestu</a></li><li><a href="#actua">Ekin</a></li><li><a href="#quien-decide">Nork erabakitzen du</a></li><li><a href="#archivo">Artxiboa</a></li></ul></div>
+      <div><h5>Dokumentuak</h5><ul><li><a data-doc="informe-sader-es.pdf" target="_blank" rel="noopener">Txostena (ES)</a></li><li><a data-doc="informe-sader-eu.pdf" target="_blank" rel="noopener">Txostena (EU)</a></li><li><a data-doc="estudio-deposicion-csic-2026.pdf" target="_blank" rel="noopener">IPE-CSIC ikerketa</a></li><li><a href="../material/eu/papera/diptikoa-A4-A5ean-tolestua.pdf" target="_blank" rel="noopener">Diptikoa</a></li><li><a href="material/index.html">Kanpainako materiala</a></li></ul></div>
+    </div>
+    <p style="margin-top:34px;font-size:13px">«Zer ari gara arnasten?» auzo-txostena, edizio publikoa, 2026ko azaroa. Sader Egunero · sader-egunero.net · Sader-Profersa Kanpora! kanpaina. Mapak: © OpenStreetMap contributors. Webgune honek bisitak cookierik eta datu pertsonalik gabe zenbatzen ditu, <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a> erabiliz.</p>
+    <p style="margin-top:10px;font-size:13px">© 2026 Sader Egunero. Besterik adierazi ezean, webgune hau, txostena eta kanpainako materiala <a rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.eu" target="_blank">Creative Commons Aitortu-PartekatuBerdin 4.0 Nazioartekoa (CC BY-SA 4.0)</a> lizentziarekin argitaratzen dira: kopiatu, zabaldu eta egokitu ditzakezu, Sader Egunero aipatzen baduzu eta emaitza lizentzia berarekin partekatzen baduzu. Lizentziak ez ditu hirugarrenen materialak hartzen: IPE-CSICen ikerketa, manifestazioaren kartela, OpenStreetMapeko mapak eta letra-tipoak.</p>
+  </div>
+</footer>
+
+<div class="pop" id="pop"></div>
+<div class="lb" id="lb"><button aria-label="Itxi">×</button><img alt=""><p></p></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* =====================================================================
+   CONFIGURACIÓN — edita solo este bloque para poner la web al día
+   ===================================================================== */
+const CONFIG = {
+  // Enlace de invitación a la comunidad de WhatsApp. Vacío = el botón pide el enlace por correo.
+  whatsapp: "https://chat.whatsapp.com/FS7nTh8IU3nCq67NZSfTjH",
+  // Correo público de contacto. Retirado de la web el 23/11/2026: vacío = no se muestra.
+  email: "",
+  // Instagram de la campaña
+  instagram: "https://www.instagram.com/sader_profersa_kanpora",
+  // Página de descargas con todo el material de campaña (carpeta material/)
+  materialUrl: "material/index.html",
+  // Carpeta de los PDF enlazados
+  docBase: "../docs/",
+  // Bandera de balcón
+  flag: { price: "", where: "Eskatu WhatsApp komunitatean." },
+  // Pegatinas
+  stickers: { where: "A4 orriak etxean inprimatzeko eta kopiategirako fitxategiak, euskaraz, gaztelaniaz eta elebidunak." },
+  // Texto del aviso rojo de arriba
+  ribbon: "Manifestazioa · Abenduak 1 · 18:30 · Eusko Jaurlaritzatik (Gran Vía 85) Bilboko Udalera",
+  // URL pública de la web
+  siteUrl: "https://sader-egunero.net/eu/",
+  // Agenda. date: "AAAA-MM-DD" (o "" si no hay fecha), time, title, place, text
+  events: [
+    { date: "2026-12-01", time: "18:30", title: "Manifestazioa: Sader-Profersa Kanpora! · Noiz arte?", place: "Irteera: Eusko Jaurlaritza, Gran Vía 85 → Bilboko Udala", text: "«Leihoak ireki nahi ditugu». Deitzaileak: Ekologistak Martxan, FACUA Euskadi eta Bilboko Auzo Elkarteen Federazioa." },
+  ]
+};
+/* ===================================================================== */
+
+const FUENTES = [{"n": 1, "cat": "Zientifikoa eta auzokoa", "t": "Sader, S.A. Plan de Vigilancia Ambiental 2025, tabla 4 «Residuos admitidos por línea de tratamiento» (capacidad autorizada y cantidades admitidas en 2025, por línea). Documento público, disponible a solicitud (sin enlace público).", "url": "", "legacy": false, "k": "pva25"}, {"n": 2, "cat": "Erregistroak eta korporatiboak", "t": "ASEGRE, Asociación de Empresas Gestoras de Residuos y Recursos Especiales. Dossier corporativo (2022): en España se generan unos 2,5 millones de toneladas de residuos peligrosos al año.", "url": "https://asegre.com/wp-content/uploads/2022/12/Dossier_Asegre_2022_12_VF.pdf", "legacy": false, "k": "asegre"}, {"n": 3, "cat": "Zientifikoa eta auzokoa", "t": "Geuk egina, txosten honen edizio osorako: ikastetxeen kokapena beren fitxa ofizialen arabera, eta lerro zuzeneko distantziak © OpenStreetMap contributors kartografiaren gainean neurtuta.", "url": "", "legacy": false, "k": "osm"}, {"n": 4, "cat": "Erregistroak eta korporatiboak", "t": "Sader. «Acerca de Sader» (sitio web corporativo): «la instalación de mayor capacidad de tratamiento de residuos de toda la zona Norte»; capacidad de gestión superior a 150.000 t/año.", "url": "https://sader.es/acerca-de-sader/", "legacy": false, "k": "sader_web"}, {"n": 5, "cat": "Prentsa", "t": "elDiario.es/Euskadi (12/11/2024). I. Rioja Andueza, «La empresa Sader de Bilbao superó en 2022 y 2023 el máximo de residuos “peligrosos” que podía recibir».", "url": "https://www.eldiario.es/euskadi/empresa-sader-bilbao-supero-2022-2023-maximo-residuos-peligrosos-podia-recibir_1_11813106.html", "legacy": false, "k": "ed_exceso24"}, {"n": 6, "cat": "Prentsa", "t": "elDiario.es/Euskadi (11/02/2025). «La última inspección del Gobierno vasco en la empresa Sader de Bilbao detectó cinco “desviaciones” ambientales».", "url": "https://www.eldiario.es/euskadi/ultima-inspeccion-gobierno-vasco-empresa-sader-bilbao-detecto-cinco-desviaciones-ambientales_1_12045420.html", "legacy": false, "k": "ed_insp25"}, {"n": 7, "cat": "Prentsa", "t": "Naiz (14/11/2025). «Una nueva marcha vecinal demanda soluciones y “no más autorizaciones” para Sader y Profersa».", "url": "https://www.naiz.eus/info/noticia/amp/20251114/una-marcha-vecinal-demanda-soluciones-y-no-mas-autorizaciones-para-sader-y-profersa", "legacy": false, "k": "naiz_marcha25"}, {"n": 8, "cat": "Prentsa", "t": "elDiario.es/Euskadi (19/12/2025). I. Rioja Andueza, «El Gobierno vasco niega que Sader sea un “riesgo” en Bilbao pero admite que en el puerto se “minimizará” el impacto».", "url": "https://www.eldiario.es/euskadi/gobierno-vasco-niega-sader-sea-riesgo-bilbao-admite-puerto-minimizara-impacto_1_12858662.html", "legacy": false, "k": "ed_riesgo25"}, {"n": 9, "cat": "Ofiziala eta araudia", "t": "Boletín Oficial del País Vasco, n.º 14, 20 de enero de 2023. Resolución de 17 de agosto de 2022, de la viceconsejera de Sostenibilidad Ambiental, por la que se revisa y modifica la autorización ambiental integrada concedida a SADER (concedida por Resolución de 14 de enero de 2008).", "url": "https://www.euskadi.eus/bopv2/datos/2023/01/2300336a.pdf", "legacy": false, "k": "bopv23"}, {"n": 10, "cat": "Ofiziala eta araudia", "t": "Directiva 2010/75/UE del Parlamento Europeo y del Consejo, de 24 de noviembre de 2010, sobre las emisiones industriales. Art. 20.3 (cambios sustanciales) y anexo I, punto 5.1.", "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32010L0075", "legacy": false, "k": "dei"}, {"n": 11, "cat": "Ofiziala eta araudia", "t": "Real Decreto 815/2013, de 18 de octubre, por el que se aprueba el Reglamento de emisiones industriales. Art. 14 (criterios de modificación sustancial) y anejo 1, epígrafe 5.1. Texto consolidado, BOE-A-2013-10949.", "url": "https://www.boe.es/buscar/pdf/2013/BOE-A-2013-10949-consolidado.pdf", "legacy": false, "k": "rd815"}, {"n": 12, "cat": "Ofiziala eta araudia", "t": "International Agency for Research on Cancer (2012). Arsenic, Metals, Fibres and Dusts. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, vol. 100C. Lyon: IARC. (Compuestos de cromo VI, arsénico, cadmio, compuestos de níquel y amianto: grupo 1.)", "url": "https://publications.iarc.fr/120", "legacy": false, "k": "iarc100c"}, {"n": 13, "cat": "Zientifikoa eta auzokoa", "t": "Pey Betrán, J. (2026). Estudio de la deposición atmosférica en Bilbao. Instituto Pirenaico de Ecología (IPE-CSIC). Campaña de muestreo: 30 de abril–25 de junio de 2026; 16 pp.; tablas 1 a 4.", "url": "doc:estudio-deposicion-csic-2026.pdf", "legacy": false, "k": "csic"}, {"n": 14, "cat": "Prentsa", "t": "Naiz (8/05/2026). «Niveles alarmantes de plomo y arsénico en un parque junto a la planta de Sader en Zorrotza».", "url": "https://www.naiz.eus/eu/info/noticia/20260508/niveles-alarmantes-de-plomo-y-arsenico-en-un-parque-junto-a-la-planta-de-sader-en-zorrotza", "legacy": false, "k": "naiz_suelo26"}, {"n": 15, "cat": "Ofiziala eta araudia", "t": "Ley 4/2015, de 25 de junio, para la prevención y corrección de la contaminación del suelo (País Vasco). Art. 16 (informes de situación del suelo), art. 23 (declaración de la calidad del suelo) y anexo III (valores indicativos de evaluación VIE-B). Texto consolidado.", "url": "https://www.euskadi.eus/bopv2/datos/textosconsolidados/201502935_vigentea.pdf", "legacy": false, "k": "ley4"}, {"n": 16, "cat": "Zientifikoa eta auzokoa", "t": "Órgano ambiental del Gobierno Vasco. Resolución que deniega una solicitud vecinal de acceso al «Informe Preliminar de la Situación del Suelo» de Sader por no haber sido presentado por la empresa. Documentación vecinal.", "url": "", "legacy": false, "k": "res_suelo"}, {"n": 17, "cat": "Zientifikoa eta auzokoa", "t": "Ayuntamiento de Bilbao, Área de Urbanismo y Medio Ambiente. Expediente 07-1250-000005: informe de la Subárea de Medio Ambiente de 5/07/2007 sobre la solicitud de autorización ambiental integrada de Sader, notificado al Gobierno Vasco el 9/07/2007. Documentación vecinal.", "url": "", "legacy": false, "k": "ayto07"}, {"n": 18, "cat": "Ofiziala eta araudia", "t": "Gobierno Vasco. Informes anuales de la calidad del aire en la CAPV (2010–2014 y 2024): relación de estaciones con datos de cada año.", "url": "", "legacy": false, "k": "gv_aire"}, {"n": 19, "cat": "Prentsa", "t": "El Correo (20/01/2014). V. Urieta, «Los malos olores colman la paciencia de vecinos de Zorroza y San Ignacio» y «¿Por qué no funcionan las cabinas?».", "url": "", "legacy": false, "k": "elcorreo14"}, {"n": 20, "cat": "Zientifikoa eta auzokoa", "t": "Auzo-kalkulua, Eusko Jaurlaritzaren airearen kalitate-sareko 2. Unitate Mugikorra estazioaren datu publikoetatik abiatuta (2024ko ekainetik aurrerako datuak; 2025eko urriko analisia).", "url": "", "legacy": false, "k": "calc_aire"}, {"n": 21, "cat": "Zientifikoa eta auzokoa", "t": "Auzokideen testigantzak (2026). Testigantza gisa aipatzen dira.", "url": "", "legacy": false, "k": "testimonios26"}, {"n": 22, "cat": "Prentsa", "t": "elDiario.es/Euskadi (18/05/2024). I. Rioja Andueza, «Sader-Profersa: la última empresa contaminante en el casco urbano de Bilbao en seis claves».", "url": "https://www.eldiario.es/euskadi/sader-profersa-ultima-empresa-contaminante-casco-bilbao-seis-claves-urbano_1_11371352.amp.html", "legacy": false, "k": "ed_claves24"}, {"n": 23, "cat": "Ofiziala eta araudia", "t": "Boletín Oficial del País Vasco, n.º 108, 10 de junio de 2026. Resolución de 11 de febrero de 2026, del viceconsejero de Medio Ambiente, por la que se formula declaración de impacto ambiental y se concede autorización ambiental integrada a la instalación de valorización y eliminación de residuos peligrosos y no peligrosos promovida por Agaleus Circular Thinking, S.L. en Zierbena (Bizkaia).", "url": "https://www.euskadi.eus/bopv2/datos/2026/06/2602517a.pdf", "legacy": false, "k": "bopv26"}, {"n": 24, "cat": "Prentsa", "t": "elDiario.es/Euskadi (24/02/2026). I. Rioja Andueza, «El Gobierno vasco rechaza las alegaciones y autoriza a Agaleus en el puerto de Bilbao, que permitirá cerrar Sader».", "url": "https://www.eldiario.es/euskadi/gobierno-vasco-rechaza-alegaciones-autoriza-agaleus-puerto-bilbao-permitira-cerrar-sader_1_13015725.html", "legacy": false, "k": "ed_zierbena26"}, {"n": 25, "cat": "Ofiziala eta araudia", "t": "Organización Mundial de la Salud (2021). WHO global air quality guidelines: particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide. Ginebra: OMS. ISBN 978-92-4-003422-8.", "url": "https://www.who.int/publications/i/item/9789240034228", "legacy": false, "k": "oms21"}, {"n": 26, "cat": "Erregistroak eta korporatiboak", "t": "Empresia (registros del BORME). «Sociedad Anónima de Descontaminación y Eliminación de Residuos».", "url": "https://www.empresia.es/empresa/sociedad-anonima-de-descontaminacion-y-eliminacion-de-residuos/", "legacy": true, "k": "empresia_sader"}, {"n": 27, "cat": "Prentsa", "t": "El Salto (6/02/2022). G. Uriarte, «Sader, la última fábrica altamente contaminante de Bilbao».", "url": "https://www.elsaltodiario.com/medioambiente/sader-ultima-fabrica-altamente-contaminante-bilbao", "legacy": false, "k": "salto22"}, {"n": 28, "cat": "Prentsa", "t": "Radio Popular–Herri Irratia (2024). «Denuncian que la salud de los bilbaínos está en peligro: Sader Profersa sigue contaminando».", "url": "https://radiopopular.com/podcast/denuncian-que-la-salud-de-los-bilbainos-esta-en-peligro-sader-profersa-sigue-contaminando", "legacy": true, "k": "radiopop24"}, {"n": 29, "cat": "Zientifikoa eta auzokoa", "t": "Auzokideen argazki-erregistroa (2025–2026).", "url": "", "legacy": false, "k": "fotos"}, {"n": 30, "cat": "Ofiziala eta araudia", "t": "Gestoresderesiduos.org. Ficha del centro «S.A. de Descontaminación y Eliminación de Residuos (SADER)» (operaciones de gestión autorizadas).", "url": "https://gestoresderesiduos.org/manager_centers/s-a-de-descontaminacion-y-elim-de-residuos-sader", "legacy": true, "k": "gestores"}, {"n": 31, "cat": "Prentsa", "t": "Naiz (4/06/2026). «El vecindario afectado por Sader pide “fechas” para el cese de esta actividad en Bilbo».", "url": "https://www.naiz.eus/es/info/noticia/20260604/el-vecindario-afectado-por-sader-piden-fechas-para-el-cese-de-esta-actividad-en-bilbo", "legacy": false, "k": "naiz_fechas26"}, {"n": 32, "cat": "Ofiziala eta araudia", "t": "Gobierno Vasco. Plan de Prevención y Gestión de Residuos de la CAPV 2030, tabla 1 (generación de residuos peligrosos en 2018: 326.169 t).", "url": "https://www.euskadi.eus/contenidos/noticia/xiileg_planes_departamentales/es_def/Plan-gestion-residuos-2030.pdf", "legacy": false, "k": "ppgr30"}, {"n": 33, "cat": "Erregistroak eta korporatiboak", "t": "Sader. «Comunicaciones» (comunicados de la empresa sobre la inspección de 2024 y su historial sancionador).", "url": "https://sader.es/comunicaciones/", "legacy": true, "k": "sader_com"}, {"n": 34, "cat": "Zientifikoa eta auzokoa", "t": "Sader, S.A. Plan de Vigilancia Ambiental 2024. Documento público, disponible a solicitud (sin enlace público).", "url": "", "legacy": false, "k": "pva24"}, {"n": 35, "cat": "Ofiziala eta araudia", "t": "Technische Anleitung zur Reinhaltung der Luft (TA Luft), Alemania, n.º 4.5.1, tabla 6: valores de inmisión para la deposición de contaminantes (arsénico 4, plomo 100, cadmio 2, níquel 15 µg/m²·día, media anual).", "url": "https://www.umwelt-online.de/recht/luft/ta_luft/ta02_4b.htm", "legacy": false, "k": "taluft"}, {"n": 36, "cat": "Ofiziala eta araudia", "t": "Directiva (UE) 2024/2881 del Parlamento Europeo y del Consejo, de 23 de octubre de 2024, sobre la calidad del aire ambiente y una atmósfera más limpia en Europa (versión refundida). DOUE L, 20/11/2024. Transposición: 11 de diciembre de 2026.", "url": "https://eur-lex.europa.eu/eli/dir/2024/2881/oj?locale=es", "legacy": false, "k": "dir2024"}, {"n": 37, "cat": "Ofiziala eta araudia", "t": "Organización Mundial de la Salud. «Intoxicación por plomo y salud» (nota descriptiva).", "url": "https://www.who.int/es/news-room/fact-sheets/detail/lead-poisoning-and-health", "legacy": false, "k": "omsplomo"}, {"n": 38, "cat": "Zientifikoa eta auzokoa", "t": "Profersa. Plan de Vigilancia Ambiental 2025. Documento público, disponible a solicitud (sin enlace público).", "url": "", "legacy": false, "k": "pva25p"}, {"n": 39, "cat": "Prentsa", "t": "El Correo (20/01/2011). J. García, «La estación fantasma de San Ignacio».", "url": "", "legacy": false, "k": "elcorreo11"}, {"n": 40, "cat": "Prentsa", "t": "elDiario.es/Euskadi (22/11/2024). «El Gobierno vasco promete “gestiones” para sacar las empresas Sader y Profersa del casco urbano de Bilbao».", "url": "https://www.eldiario.es/euskadi/gobierno-vasco-promete-gestiones-sacar-empresas-sader-profersa-casco-urbano-bilbao_1_11844389.html", "legacy": false, "k": "ed_gestiones24"}, {"n": 41, "cat": "Ofiziala eta araudia", "t": "Directiva 2008/50/CE del Parlamento Europeo y del Consejo, de 21 de mayo de 2008, relativa a la calidad del aire ambiente y a una atmósfera más limpia en Europa (valores límite vigentes hasta su sustitución).", "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32008L0050", "legacy": false, "k": "dir2008"}, {"n": 42, "cat": "Ofiziala eta araudia", "t": "Consejo de la Unión Europea. «Calidad del aire» (ficha explicativa de la Directiva (UE) 2024/2881 y de los valores límite para 2030).", "url": "https://www.consilium.europa.eu/es/policies/air-quality/", "legacy": false, "k": "consilium"}, {"n": 43, "cat": "Zientifikoa eta auzokoa", "t": "Arartekoa. 2026/07/13ko idazkia, 1550/2026/QC espedientea ixten duena, taldeko enpresek Astilleroko kaiaz egiten duten erabilerari buruzkoa. Auzokideen dokumentazioa.", "url": "", "legacy": false, "k": "ararteko26"}, {"n": 44, "cat": "Prentsa", "t": "El Correo (14/04/2025). «Preocupación vecinal por la presencia de amianto en Molinos Vascos».", "url": "https://www.elcorreo.com/bizkaia/preocupacion-vecinal-presencia-amianto-molinos-vascos-20250414004743-nt_amp.html", "legacy": false, "k": "elcorreo25"}, {"n": 45, "cat": "Prentsa", "t": "Naiz (20/04/2025). «19 toneladas de amianto aguardan en Molinos Vascos, pendiente de restauración por la Diputación».", "url": "https://www.naiz.eus/es/info/noticia/20250420/19-toneladas-de-amianto-aguardan-en-molinos-vascos-pendiente-de-restauracion-por-la-diputacion", "legacy": false, "k": "naiz_amianto25"}, {"n": 46, "cat": "Zientifikoa eta auzokoa", "t": "Eusko Jaurlaritzaren Ingurumen Ikuskaritza. 2025/12/18ko mezu elektronikoa, auzokide baten salaketari erantzunez. Auzokideen dokumentazioa.", "url": "", "legacy": false, "k": "correo_insp"}, {"n": 47, "cat": "Prentsa", "t": "Deia (7/06/2024). «Profersa reabre en Zorrotza tras un incidente que provocó una nube de vapor y el cierre temporal de la planta».", "url": "https://www.deia.eus/bilbao/2024/06/07/profersa-reabre-zorrotza-incidente-provoco-8328901.html", "legacy": false, "k": "deia_profersa24"}, {"n": 48, "cat": "Prentsa", "t": "El Salto (15/05/2024). «Sader y Profersa siguen contaminando Bilbao con una bula del Ayuntamiento que dura ya nueve años».", "url": "https://www.elsaltodiario.com/contaminacion/sader-profersa-siguen-contaminando-bilbao-bula-del-ayuntamiento-dura-ya-nueve-anos", "legacy": false, "k": "salto24"}, {"n": 49, "cat": "Prentsa", "t": "elDiario.es/Euskadi (15/05/2024). «Decretan el cierre cautelar de una empresa en Bilbao que acumula incidencias y críticas vecinales».", "url": "https://www.eldiario.es/euskadi/decretan-cierre-cautelar-empresa-bilbao-acumula-incidencias-criticas-vecinales_1_11366874.html", "legacy": false, "k": "ed_cierre24"}, {"n": 50, "cat": "Prentsa", "t": "Europa Press (15/05/2024). «El Gobierno vasco ordena el cierre cautelar de la empresa Profersa en Zorroza tras los últimos incidentes».", "url": "https://www.europapress.es/euskadi/noticia-gobierno-vasco-ordena-cierre-cautelar-empresa-profersa-zorroza-ultimos-incidentes-20240515143410.html", "legacy": true, "k": "europapress24"}, {"n": 51, "cat": "Prentsa", "t": "elDiario.es/Euskadi (15/07/2024). I. Rioja Andueza, «La empresa Sader de Bilbao registró en junio un pequeño vertido de ácido clorhídrico».", "url": "https://www.eldiario.es/euskadi/empresa-sader-bilbao-registro-junio-pequeno-vertido-acido-clorhidrico_1_11525365.html", "legacy": false, "k": "ed_hcl24"}, {"n": 52, "cat": "Ofiziala eta araudia", "t": "Irekia, Gobierno Vasco. «El Gobierno vasco recuerda que la planta de fertilizantes de Zorrotza realiza síntesis química y nada tiene que ver con el caso de Texas».", "url": "https://www.irekia.euskadi.eus/es/news/14185-gobierno-vasco-recuerda-que-planta-fertilizantes-zorrotza-realiza-sintesis-quimica-nada-tiene-que-ver-con-caso-texas", "legacy": false, "k": "irekia_texas"}, {"n": 53, "cat": "Ofiziala eta araudia", "t": "Gobierno Vasco. Informes de inspección ambiental de Profersa publicados en el buscador de informes de inspección (2016–2022).", "url": "", "legacy": false, "k": "insp_gv"}, {"n": 54, "cat": "Prentsa", "t": "elDiario.es/Euskadi (13/11/2024). M. López, «Vecinos de Bilbao contra Sader-Profersa y el “abandono de las instituciones”: “Nos ahogamos, respiramos basura cada día”».", "url": "https://www.eldiario.es/euskadi/vecinos-bilbao-sader-profersa-abandono-instituciones-ahogamos-respiramos-basura-dia_1_11818133.html", "legacy": false, "k": "ed_vecinos24"}, {"n": 55, "cat": "Ofiziala eta araudia", "t": "International Agency for Research on Cancer (2006). Inorganic and Organic Lead Compounds. IARC Monographs, vol. 87. Lyon: IARC. (Compuestos inorgánicos de plomo: grupo 2A.)", "url": "https://publications.iarc.fr/105", "legacy": false, "k": "iarc87"}, {"n": 56, "cat": "Ofiziala eta araudia", "t": "International Agency for Research on Cancer (2016). Outdoor Air Pollution. IARC Monographs, vol. 109. Lyon: IARC. (Contaminación atmosférica exterior y materia particulada: grupo 1.)", "url": "https://publications.iarc.fr/538", "legacy": false, "k": "iarc109"}, {"n": 57, "cat": "Literatura zientifikoa", "t": "Hill, W., Lim, E. L., Weeden, C. E., et al. (2023). Lung adenocarcinoma promotion by air pollutants. Nature, 616, 159–167. doi:10.1038/s41586-023-05874-3. (Presentado por C. Swanton en el congreso de la ESMO de 2022.)", "url": "https://doi.org/10.1038/s41586-023-05874-3", "legacy": false, "k": "hill23"}, {"n": 58, "cat": "Literatura zientifikoa", "t": "Agencia Europea de Medio Ambiente. Daños a la salud humana por la contaminación del aire en Europa (evaluación de la carga de enfermedad, 2022).", "url": "", "legacy": false, "k": "eea22"}, {"n": 59, "cat": "Literatura zientifikoa", "t": "Ecologistas en Acción / Ekologistak Martxan (2025). La calidad del aire en el Estado español durante 2024.", "url": "", "legacy": false, "k": "eea_aq"}, {"n": 60, "cat": "Literatura zientifikoa", "t": "Fervers, B., et al. (2023). Estudio XENAIR sobre exposición a contaminación atmosférica y riesgo de cáncer de mama, presentado en el congreso de la European Society for Medical Oncology (Madrid, octubre de 2023).", "url": "", "legacy": false, "k": "esmo23"}, {"n": 61, "cat": "Erregistroak eta korporatiboak", "t": "Empresia (registros del BORME). «Agaleus Medio Ambiente y Energía SL»: órganos sociales, vinculaciones y actos inscritos.", "url": "https://www.empresia.es/empresa/agaleus-medio-ambiente-y-energia/", "legacy": true, "k": "empresia_ag"}, {"n": 62, "cat": "Erregistroak eta korporatiboak", "t": "Datoscif (registros del BORME). «Agaleus Medio Ambiente y Energía SL» y «Agaleus Circular Thinking SL».", "url": "https://www.datoscif.es/empresa/agaleus-medio-ambiente-y-energia-sl", "legacy": true, "k": "datoscif"}, {"n": 63, "cat": "Erregistroak eta korporatiboak", "t": "eInforma (Informa D&B). «Agaleus Medio Ambiente y Energía SL» (perfil mercantil).", "url": "https://www.einforma.com/informacion-empresa/agaleus-medio-ambiente-energia", "legacy": true, "k": "einforma"}, {"n": 64, "cat": "Erregistroak eta korporatiboak", "t": "Iberinform. «Producción de Fertilizantes SA» (perfil mercantil y actos del BORME).", "url": "https://www.iberinform.es/empresa/5453573/produccion-de-fertilizantes", "legacy": true, "k": "iberinform"}, {"n": 65, "cat": "Ofiziala eta araudia", "t": "Gobierno Vasco. El sector público de la CAE y entidades participadas, 2012: ficha de Cogeneración Zorroza, A.I.E.", "url": "https://www.euskadi.eus/contenidos/informacion/sector_publico_cae_2013/es_def/adjuntos/cogeneracion%20zorroza%202012.pdf", "legacy": true, "k": "cadem12"}, {"n": 66, "cat": "Erregistroak eta korporatiboak", "t": "Deia (3/03/2025). «Ángela Fernández (Agaleus): “Ekinbarri nos ha permitido ordenarnos, entendernos y delegar”».", "url": "https://www.deia.eus/economia/2025/03/03/ekinbarri-permitido-ordenarnos-entender-delegar-agaleus-empresas-bizkaia-programa-mejora-9329658.html", "legacy": true, "k": "deia_ekin25"}, {"n": 67, "cat": "Erregistroak eta korporatiboak", "t": "Estrategia Empresarial. «El Grupo Agaleus adquiere el 100 % de Quimycat».", "url": "https://estrategia.net/noticias/el-grupo-agaleus-adquiere-el-100-de-quimycat", "legacy": true, "k": "estrategia"}, {"n": 68, "cat": "Erregistroak eta korporatiboak", "t": "Agaleus. Sitio web corporativo (actividad, cifras del grupo y clientes).", "url": "https://agaleus.com/", "legacy": true, "k": "agaleus_web"}, {"n": 69, "cat": "Erregistroak eta korporatiboak", "t": "Agaleus. «Agaleus adquiere el 100 % de las acciones de Sogecar» (comunicación corporativa).", "url": "https://agaleus.com/agaleus-adquiere-la-propiedad-completa-de-sogecar/", "legacy": true, "k": "agaleus_sogecar"}, {"n": 70, "cat": "Erregistroak eta korporatiboak", "t": "Noticias de Álava (16/06/2025). «El grupo Agaleus compra la alavesa Ekinoil».", "url": "https://www.noticiasdealava.eus/alava/2025/06/16/grupo-agaleus-compra-alavesa-ekinoil-troconiz-9765642.html", "legacy": true, "k": "nalava"}, {"n": 71, "cat": "Erregistroak eta korporatiboak", "t": "AVEQ-KIMIKA (octubre de 2025). «Agaleus anuncia cambios en su cúpula directiva».", "url": "https://www.aveq-kimika.es/noticias/agaleus-cambio-directiva/", "legacy": true, "k": "aveq_cambio"}, {"n": 72, "cat": "Prentsa", "t": "elDiario.es/Euskadi (9/10/2025). I. Rioja Andueza, «Xabier Caño deja su cargo como directivo de Agaleus, el grupo que aglutina a Sader y Profersa».", "url": "https://www.eldiario.es/euskadi/xabier-cano-deja-cargo-directivo-agaleus-grupo-aglutina-sader-profersa_1_12671247.html", "legacy": false, "k": "ed_cano25"}, {"n": 73, "cat": "Ofiziala eta araudia", "t": "Ihobe, Sociedad Pública de Gestión Ambiental (9/07/2025). «Ihobe y Aclima trabajarán conjuntamente para mejorar la gestión de residuos y fomentar la economía circular».", "url": "https://www.ihobe.eus/es/actualidad/ihobe-y-aclima-trabajaran-conjuntamente-para-mejorar-gestion-residuos-fomentar", "legacy": false, "k": "ihobe25"}, {"n": 74, "cat": "Erregistroak eta korporatiboak", "t": "Aclima, Basque Environment Cluster. «Xabier Caño, presidente de Aclima» (entrevista y datos del clúster).", "url": "https://aclima.eus/en/noticia/xabier-cano-presidente-de-aclima-las-empresas-invierten-en-tecnologia-porque-no-reciclar-ahora-es-mas-caro/", "legacy": true, "k": "aclima_cano"}, {"n": 75, "cat": "Erregistroak eta korporatiboak", "t": "AVEQ-KIMIKA. Ficha de empresa socia: Sogecar.", "url": "https://www.aveq-kimika.es/empresas-socias/sogecar/", "legacy": true, "k": "aveq_sogecar"}, {"n": 76, "cat": "Erregistroak eta korporatiboak", "t": "AVEQ-KIMIKA. «Ángela Fernández, nombrada colegiada de honor del COQIQ».", "url": "https://www.aveq-kimika.es/noticias/angela-fernandez-nombrada-colegiada-de-honor-coqiq/", "legacy": true, "k": "aveq_coqiq"}, {"n": 77, "cat": "Ofiziala eta araudia", "t": "Ayuntamiento de Bilbao (16/09/2015). Nota oficial sobre la aprobación del convenio urbanístico para adelantar el cese de la actividad de Sader en Punta Zorroza.", "url": "https://www.bilbao.eus/cs/Satellite?c=BIO_Noticia_FA&cid=1279146426368&language=es&pageid=3000075248&pagename=Bilbaonet%2FBIO_Noticia_FA%2FBIO_Noticia", "legacy": true, "k": "ayto15"}, {"n": 78, "cat": "Prentsa", "t": "Diario del Puerto, reproducido por ACE-Cargadores (17/05/2024). «El proyecto de Agaleus en el nuevo muelle AZ-0 refuerza el valor industrial del Puerto de Bilbao».", "url": "https://www.ace-cargadores.com/2024/05/17/el-proyecto-de-agaleus-en-el-nuevo-muelle-az-0-refuerza-el-valor-industrial-del-puerto-de-bilbao/", "legacy": false, "k": "ace24"}, {"n": 79, "cat": "Prentsa", "t": "Idom. «Ordenación urbanística Punta Zorroza» (ficha del proyecto).", "url": "https://www.idom.com/proyecto/ordenacion-urbanistica-punta-zorroza/", "legacy": true, "k": "idom"}, {"n": 80, "cat": "Ofiziala eta araudia", "t": "Ayuntamiento de Bilbao. Ordenanza Municipal de Protección del Medio Ambiente, Boletín Oficial de Bizkaia de 10 de junio de 2000 (sustituye a la de 22 de julio de 1992).", "url": "https://normatia.com/es/normativa/proteccion-medio-ambiente-bilbao/2000/exposicion-de-motivos/", "legacy": false, "k": "opma"}, {"n": 81, "cat": "Ofiziala eta araudia", "t": "Ararteko. Informe anual al Parlamento Vasco 2025, entregado el 30 de marzo de 2026. Resumen difundido por la Red Europea de Defensores del Pueblo.", "url": "https://eno.ombudsman.europa.eu/home/news/maincontent/informe-anual-del-ararteko-al-pa.html", "legacy": false, "k": "ararteko25"}, {"n": 82, "cat": "Prentsa", "t": "Deia (24/02/2026). «La dueña de Sader recibe autorización ambiental para su planta de residuos en el Puerto de Bilbao».", "url": "https://www.deia.eus/bizkaia/2026/02/24/duena-sader-recibe-autorizacion-ambiental-10743467.html", "legacy": false, "k": "deia_aai26"}, {"n": 83, "cat": "Prentsa", "t": "Tercera Información (18/02/2025). «Elkarrekin Podemos presenta alegaciones a la instalación de Sader-Profersa en el puerto de Bilbao».", "url": "https://www.tercerainformacion.es/articulo/actualidad/euskal-herria/18/02/2025/elkarrekin-podemos-presenta-alegaciones-a-la-instalacion-de-sader-profersa-en-el-puerto-de-bilbao/", "legacy": true, "k": "tercera25"}, {"n": 84, "cat": "Prentsa", "t": "Cadena SER / Radio Bilbao (5/02/2025). «El PP de Getxo alerta sobre el impacto de Sader y Profersa y exige un nuevo estudio ambiental».", "url": "https://cadenaser.com/euskadi/2025/02/05/el-pp-de-getxo-alerta-sobre-el-impacto-de-sader-y-profersa-y-exige-un-nuevo-estudio-ambiental-radio-bilbao/", "legacy": true, "k": "ser_pp25"}, {"n": 85, "cat": "Ofiziala eta araudia", "t": "Ley 27/2006, de 18 de julio, por la que se regulan los derechos de acceso a la información, de participación pública y de acceso a la justicia en materia de medio ambiente. Art. 13 (excepciones a la obligación de facilitar la información ambiental). BOE-A-2006-13010.", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13010", "legacy": false, "k": "ley27"}, {"n": 86, "cat": "Prentsa", "t": "Gestoresderesiduos.org (2025). «Los lixiviados de la discordia: un conflicto de residuos enfrenta a País Vasco y Navarra».", "url": "https://gestoresderesiduos.org/noticias/los-lixiviados-de-la-discordia-un-conflicto-de-residuos-enfrenta-a-pais-vasco-y-navarra", "legacy": true, "k": "gestores_lix"}, {"n": 87, "cat": "Prentsa", "t": "elDiario.es/Euskadi (5/03/2025). I. Rioja Andueza, «La Guardia Civil da un balón de oxígeno a Asensio, Sader y Ecofert Sansoain al no ver peligrosos los lixiviados de Zubieta».", "url": "https://www.eldiario.es/euskadi/guardia-civil-da-balon-oxigeno-asensio-sader-ecofert-sansoain-no-ver-peligrosos-lixiviados-zubieta_1_12105341.html", "legacy": false, "k": "ed_gc25"}, {"n": 88, "cat": "Prentsa", "t": "elDiario.es/Euskadi (9/11/2025). I. Rioja Andueza, «Competencia cierra la investigación contra Sader, en la que buscaba pruebas de reparto del mercado vasco de residuos».", "url": "https://www.eldiario.es/euskadi/competencia-cierra-investigacion-sader-buscaba-pruebas-reparto-mercado-vasco-residuos_1_12753523.html", "legacy": false, "k": "ed_comp25"}, {"n": 89, "cat": "Prentsa", "t": "EH Bildu Bilbao (mayo de 2024). «La decisión de clausurar la planta de Profersa pone en evidencia la necesidad de sacar del casco urbano Profersa y Sader».", "url": "https://ehbildu.eus/herriak/bilbo/es/noticias/la-decision-de-clausurar-la-planta-de-profersa-pone-en-evidencia-la-necesidad-de-sacar-del-casco-urbano-profersa-y-sader-tal-y-como-demanda-la-ciudadania", "legacy": true, "k": "ehbildu24"}, {"n": 90, "cat": "Prentsa", "t": "Radio Nervión (12/11/2026). «Bilbao une fuerzas contra Sader y Profersa y prepara una gran movilización antes de diciembre».", "url": "https://www.radionervion.com/2026/11/12/bilbao-une-fuerzas-contra-sader-y-profersa-y-prepara-una-gran-movilizacion-antes-de-diciembre/", "legacy": false, "k": "rnervion26"}, {"n": 91, "cat": "Prentsa", "t": "BilbaoHiria (12/11/2026). «“Sader-Profersa Kanpora”: los vecinos de Bilbao preparan una movilización antes de diciembre».", "url": "https://bilbaohiria.com/bilbao/sader-profersa-kanpora-movilizacion-diciembre-estudio-csic", "legacy": false, "k": "bhiria26"}];
+const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const docUrl = f => CONFIG.docBase + f;
+const srcMap = Object.fromEntries(FUENTES.map(s => [s.n, s]));
+const srcHref = s => !s ? '' : s.url && s.url.startsWith('doc:') ? docUrl(s.url.slice(4)) : s.url;
+/* {1,2} → superíndice con enlace a la fuente */
+const R = html => html.replace(/\{([\d,\s]+)\}/g, (_, l) => `<sup class="s" data-s="${l.replace(/\s/g,'')}"></sup>`);
+const ico = {
+  hand:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11V5a1.5 1.5 0 013 0v5m0-1V3.5a1.5 1.5 0 013 0V10m0-5.5a1.5 1.5 0 013 0V11m0-3a1.5 1.5 0 013 0v6a7 7 0 01-7 7h-1a7 7 0 01-5.6-2.8L3.6 14a1.6 1.6 0 012.4-2.1L7 13"/></svg>',
+  shoe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18v-2c0-1.5-1-2.5-3-3l-4-1-2-4H5L3 12z"/><path d="M8 12h2M3 21h18"/></svg>',
+  shirt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l-5 3 2 4 2-1v12h10V9l2 1 2-4-5-3a4 4 0 01-8 0z"/></svg>',
+  mop:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2l-4 12M6 14h8l2 7H4z"/><path d="M7 18v3M10 18v3M13 18v3"/></svg>',
+  window:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16"/></svg>',
+  kid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 8v7m0 0l-3 6m3-6l3 6M7 11l5-1 5 1"/></svg>',
+  leaf:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c0-9 5-15 15-16 0 10-6 15-15 16zM5 21l8-8"/></svg>',
+  paw:'<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="10" r="2"/><circle cx="10" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="10" r="2"/><path d="M12 11c-3 0-6 4-6 6.5 0 2 2 2.5 3 2.5s2-.5 3-.5 2 .5 3 .5 3-.5 3-2.5C18 15 15 11 12 11z"/></svg>',
+  fan:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M8 6h8"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.1 5.1 0 001.1 2.7 11.6 11.6 0 004.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.2-1.3c-.1-.1-.2-.2-.5-.3z"/></svg>',
+  flag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3m0 1h13l-2 4 2 4H4"/></svg>',
+  people:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 14.5c3 0 6 2 6 5.5"/></svg>',
+  sticker:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v10l-6 6H4z"/><path d="M14 20v-6h6"/></svg>',
+  share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>',
+  cam:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13" r="4"/></svg>',
+  mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>',
+  print:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg>'
+};
+
+/* ---------------- DATOS ---------------- */
+const TICKER = ["79.593 t hondakin arriskutsu 2025ean","×4 berun San Inazioren gainean","3 ikastetxe 500 m ingurura","+% 38 ahalmen, jendaurreko informaziorik gabe","10 urte Eusko Jaurlaritzaren estaziorik gabe Zorrotzan eta San Inazion","Azterketa epidemiologiko publikorik ez","2031ra arteko baimena, itxiera-datarik ez","Data · Datuak · Osasuna","Sader-Profersa Kanpora!"];
+
+const STATS = [
+  ["79.593 t","hondakin arriskutsu tratatu zituen Sader-ek 2025ean.","1"],
+  ["≈ 500 m","plantaren eta ikastetxe hurbilenen artean: lehena, 300 m ingurura; lau, 600 m-ra edo gutxiagora, lerro zuzenean.","3"],
+  ["+% 38","hondakin arriskutsuentzako baimendutako ahalmena 2025/03/17an, jendaurreko informaziorik gabe.","7,9,1"],
+  ["×4","San Inazion metatutako beruna, Espainiako hiri-maximoaren aldean.","13"],
+  ["×9 · ×6","plantaren ondoko lurzoruko artsenikoa eta beruna, parke baterako balio legalaren aldean.","14,15"],
+  ["+% 70","partikula fin (PM2,5) San Inazion, OMEren urteko gida-balioaren gainetik.","20,25"],
+  ["10 urte","Eusko Jaurlaritzaren airearen kalitate-estaziorik gabe Zorrotzan eta San Inazion (2014–2024).","18,19"],
+  ["0","azterketa epidemiologiko publiko aurkitu dira eragindako auzoetako biztanleriari buruz.","22"],
+  ["10/06/2031","Zierbenan irekitzeko azken eguna. Ez dago Zorrotzan ixteko derrigorrezko datarik.","23"]
+];
+
+const FINDINGS = [
+  ["Estatuko hondakin arriskutsuen planta handienetako bat Bilbo barruan dabil","79.593 tona hondakin arriskutsu 2025ean, hiru ikastetxetik 500 metro ingurura. Enpresak berak iparraldeko eremu osoan hondakinak tratatzeko ahalmen handiena duen instalazio gisa aurkezten du bere burua.",2],
+  ["Ikuskaritzak 2022an eta 2023an tratatutako kantitateak aztertu zituen","Sader-ek 86.328 eta 80.117 tona hondakin arriskutsu jaso zituen, 79.140ko mugarekin. Hondakin arriskutsuentzako muga espezifikoa gainditu bazen ere, Ikuskaritzak ondorioztatu zuen ez zegoela ez-betetzerik, baimendutako ahalmen osoa kontuan hartuta.",3],
+  ["Ondoren, ahalmena % 38 handitu zioten","2025eko martxoaren 17an, «aldaketa ez-funtsezko» gisa: jendaurreko informaziorik gabe, sakabanatze-azterketarik gabe eta Osasun Sailaren txostenik gabe, auzokideek salatzen dutenez.",3],
+  ["Urtean 2.000 tona kromo hexabalenterako baimena du","Minbizi-eragilea. Ahalmen hori ez zen handitu 2025eko handitzearekin. 2024an 388 tratatu zituen eta 2025ean, 110. Arriskua bainu horiek etxebizitzen ondoan garraiatzean, deskargatzean eta maneiatzean dago.",3],
+  ["San Inazion eta Deustun Espainian neurtutako beste edozein hiritan baino metal gehiago erortzen da","4 aldiz berun gehiago, 3,7 aldiz zink gehiago eta kromoaren bikoitza hiri-ingururik txarrenean baino. Bilbo erdialdean, aldi berean neurtuta, ez da hori gertatzen. (Ikerketak laginak hautatutako hiri-erreferentziekin alderatzen ditu; emaitzek testuingurua behar dute eta ez dute, berez, iturri jakin bat egozteko aukerarik ematen.)",4],
+  ["Plantaren ondoko lurzoruak parke baterako balio legala gainditzen du","9 aldiz artsenikoan, 6 berunean eta 4 nikelean. Administrazioak 2026ko urtarrilean eskatu zion Sader-i lurzoruaren egoera-txostena; ingurumen-organoaren arabera, aurkeztu gabe zegoen.",5],
+  ["Hamar urte Eusko Jaurlaritzaren estaziorik gabe Zorrotzan eta San Inazion","2014tik 2024ra. San Inazioko unitate mugikorrak, 2024an jarriak, OMEk osasungarritzat jotzen duena baino % 70 partikula fin gehiago erregistratzen ditu. 2026ko irailetik ez dabil ondo.",6],
+  ["Auzoentzako azterketa epidemiologiko espezifiko bat eskatzen da","Kontsultatutako iturrietan ez da azterketa epidemiologiko espezifiko eta publikorik aurkitu. Isurien neurketak eta haien metodologia eskuratzea ere eskatzen da.",9],
+  ["Portura lekualdatzea baimena da, ez agindua","Zierbenako baimenak 2031ko ekainaren 10era arteko epea ematen du han hasteko. Ez du Zorrotzaren itxiera ezartzen. Profersa ez dago barruan.",16]
+];
+
+/* Capítulos del informe */
+const CH = [
+ {n:1,p:"I",k:"Planta",t:"Zer da Sader eta non dago",h:`
+  <p>Sader (Sociedad Anónima de Descontaminación y Eliminación de Residuos) industria-hondakin arriskutsuak eta ez-arriskutsuak tratatzeko planta bat da, Zorrotzako Puntan kokatua, Bilboko itsasadarraren ezkerraldean. Sozietatea 1986an eratu zen; indarrean duen ingurumen-baimen integratua 2008ko urtarrilaren 14an eman zitzaion, eta 2022an berrikusi zen.{26,9} Agaleus taldekoa da, Profersa bezala: ondoko fabrika horrek ongarriak ekoizten ditu hondakinetatik abiatuta, eta 2012an banandu zen Sader-etik, berezko baimenarekin.{9,22} Prentsak Bilboko hirigunean geratzen den azken industria kutsatzaile handitzat deskribatu du.{22,27}</p>
+  <figure class="pair"><img class="zoom" src="../img/hero-noche.jpg" alt="Konplexua gauez, etxebizitza berrien ondoan" loading="lazy"><img class="zoom" src="../img/penacho.jpg" alt="Ke-luma plantaren gainean, egunez" loading="lazy"><figcaption style="grid-column:1/-1">Konplexua beste ertzetik ikusita, gauez etxebizitza berrien ondoan eta egunez. Auzokideen argazki-erregistroa.{29}</figcaption></figure>
+  <p>Geografiak azaltzen du gatazka. San Inazio parez pare dago, itsasadarraren beste aldean; Zorrotza, atzean; Deustuko Erribera, etxebizitza berriak ematen ari diren lekua, ohiko haizeen haizebean. Basurtu, Altamira, Ibarrekolanda eta Burtzeña (Barakaldo) ere kaltetuta daude.{22,28} Eusko Legebiltzarrean 11.000 pertsona ingurutan zenbatetsi dira usain iraunkorren eta airearen kalitate txarraren eraginpean daudenak.{8}</p>
+  <figure><img class="zoom" src="../img/eu/mapa-colegios.jpg" alt="Plantaren eta ikastetxeen mapa" loading="lazy"><figcaption>Planta eta 700 m baino gutxiagora dauden bost ikastetxeak: Zorrotza BHI (≈300 m), Zorrotza Fray Juan HLHI (≈490 m), San Inazio BHI (≈600 m), Intxixu HLHI (≈600 m) eta Zazpilanda HLHI (≈690 m). Urrunago, San Inazio HLHI (≈930 m) eta Madre de Dios (≈1,2 km).{3}</figcaption></figure>`},
+ {n:2,p:"I",k:"Planta",t:"Zer hondakin tratatzen dituen eta zenbat",h:`
+  <p>Sader-ek hondakin arriskutsuak jaso eta biltegiratzen ditu, egonkortu eta solidotu egiten ditu («inertizazioa»), metal-gainazalen tratamenduko bainu azido eta alkalino agortuak neutralizatzen ditu, kromo hexabalentezko bainuak erreduzitzen ditu eta olio erabiliak, emultsioak eta ur oliotsuak tratatzen ditu.{30,4} Jasotzen dituen hondakinen artean industria-lohiak, altzairutegiko hautsak eta keen tratamenduko hondakinak daude.{7,31} Beste autonomia-erkidego batzuetatik eta Frantziatik ere iristen dira.{8}</p>
+  <figure><img class="zoom" src="../img/eu/f-capacidad.jpg" alt="Grafikoa: onartutako hondakinak eta baimendutako ahalmena" loading="lazy"><figcaption>2025ean onartutako hondakinak eta baimendutako ahalmena Zorrotzan eta Zierbenako planta berrian.{1,23}</figcaption></figure>
+  <p>2025ean Sader-ek 79.593 tona hondakin arriskutsu onartu zituen; baimenak 108.500era iristen uzten dio, % 36 gehiago. Hondakin guztiak kontuan hartuta, 122.575 tona onartu ziren, baimendutako 167.600en aldean. Ingurumena Zaintzeko Plana dokumentu publikoa da, eta enpresak eskatzen duenari ematen dio.{1}</p>
+  <figure><img class="zoom" src="../img/eu/f-lineas.jpg" alt="Ahalmenaren erabilera tratamendu-lerroka" loading="lazy"><figcaption>Baimendutako ahalmenaren erabilera lerro bakoitzean, 2025ean. Sader-en 2025eko Ingurumena Zaintzeko Plana, 4. taula.{1}</figcaption></figure>
+  <h4 class="kicker" style="margin-top:26px">Ahalmenaren zifrak, ordenatuta</h4>
+  <table><thead><tr><th>Zifra</th><th>Zer neurtzen duen</th><th>Iturria</th></tr></thead><tbody>
+   <tr><td><b>79.140 t/urte</b></td><td>Hondakin arriskutsuentzako baimendutako ahalmena, 2025eko handitzearen aurretik.</td><td>{9}</td></tr>
+   <tr><td><b>108.500 t/urte</b></td><td>Hondakin arriskutsuentzako indarreko baimendutako ahalmena, lerroak batuta (+% 37).</td><td>{1}</td></tr>
+   <tr><td><b>167.600 t/urte</b></td><td>Baimendutako ahalmen osoa (arriskutsuak eta ez-arriskutsuak).</td><td>{1}</td></tr>
+   <tr><td><b>&gt; 150.000 t/urte</b></td><td>Enpresak bere webgunean adierazten duen kudeaketa-ahalmena.</td><td>{4}</td></tr>
+   <tr><td><b>79.593 t</b></td><td>2025ean onartutako hondakin arriskutsuak.</td><td>{1}</td></tr>
+   <tr><td><b>122.575 t</b></td><td>2025ean onartutako hondakinak, arriskutsuak eta ez-arriskutsuak.</td><td>{1}</td></tr>
+   <tr><td><b>144.500 t/urte</b></td><td>Zierbenako planta berriaren ahalmena (101.150 t arriskutsu + 43.350 ez-arriskutsu).</td><td>{23}</td></tr>
+  </tbody></table>
+  <p><b>Estatuko handienetako bat.</b> Ez dago planten ahalmenaren araberako sailkapen ofizialik. Sader-ek 2025ean tratatu zuena{1} Euskadin 2018an sortu ziren hondakin arriskutsuen ia laurdenaren baliokidea da.{32} Enpresak berak iparraldeko eremu osoan hondakinak tratatzeko ahalmen handiena duen instalazio gisa aurkezten du bere burua.{4}</p>
+  <div class="box"><span class="tag tener">Kontuan hartu</span><p>Magnitude-ordenak dira: urte desberdinak alderatzen dituzte, eta Sader-ek beste erkidego batzuetako hondakinak ere jasotzen ditu. Planta kokatzeko balio dute, ez existitzen ez den sailkapen batean ordenatzeko.</p></div>`},
+ {n:3,p:"I",k:"Muga",t:"Hondakin arriskutsuen muga: gainditua eta gero handitua",h:`
+  <div class="big-quote">Hondakin arriskutsuen muga gainditu zuen. Ondoren, ahalmena handitu zioten.<small>2022an eta 2023an Sader-ek bere baimenaren muga espezifikoa baino hondakin arriskutsu gehiago jaso zituen. Ikuskaritzak ez zuen ez-betetzerik ikusi. 2025ean Eusko Jaurlaritzak % 38 gehiago tratatzeko baimena eman zion.{5,6,7}</small></div>
+  <p><b>Gehiegizkoa.</b> Sader-en baimenak, 2022ko abuztuan berrikusiak, urtean gehienez 79.140 tona hondakin arriskutsu eta 42.000 tona ez-arriskutsu finkatzen ditu.{9} Eusko Legebiltzarrari emandako datu ofizialen arabera, Sader-ek 86.327,84 tona hondakin arriskutsu jaso zituen 2022an eta 80.117 2023an: mugaren gainetik % 9 eta % 1 pasatxo.{5} 2024ko azaroaren 20ko eta 25eko ikuskaritzak kantitate horiek aztertu zituen, eta ondorioztatu zuen ez zegoela ez-betetzerik, baimendutako ahalmen osoa kontuan hartuta; betetze-maila «ertain-altutzat» jo zuen, bost desbideratze txikirekin.{6,33} Enpresak dio inoiz ez duela zehapen-espedienterik izan.{33}</p>
+  <div class="box"><span class="tag importa">Zergatik duen garrantzia</span><p>Hondakin arriskutsuentzako muga espezifiko bat badago, hain zuzen, gainerakoekin trukagarriak ez direlako. Gehiegizkoa ez-arriskutsuen tartearekin konpentsa badaiteke, muga hori ez da muga. Auzokideek Arartekoarengana eraman dute.</p></div>
+  <p><b>2025eko martxoaren 17ko handitzea.</b> Eusko Jaurlaritzak % 38ko igoera baimendu zuen ingurumen-baimen integratuaren «aldaketa ez-funtsezko» gisa, jendaurreko informaziorik eskatzen ez duen bidetik.{7,8} Hondakin arriskutsuentzako ahalmena urteko 79.140 tonatik 108.500era igaro zen.{9,1} Auzokideek salatzen dute kutsatzaileen sakabanatze-azterketarik gabe, Osasun Sailaren txostenik gabe eta alegazioak egiteko aukerarik gabe eman zela.{7,21}</p>
+  <div class="box responden"><span class="tag responden">Eusko Jaurlaritzak erantzuten duena</span><p>2025eko abenduan, Industria, Trantsizio Energetiko eta Jasangarritasuneko sailburu Mikel Jauregik Legebiltzarrean defendatu zuen aldaketa «ez-funtsezkoa» dela ebaluazio teknikoaren arabera, bolumen handiagoak ez dakarrela arrisku handiagorik, eta plantaren betetze-maila «ertain-altua» izan zela 2024ko ikuskaritzetan.{8}</p></div>
+  <p><b>Zer oinarrik justifikatzen dute aldaketa ez-funtsezkotzat jotzea? Zergatik da «ez-funtsezkoa» % 38 gehiago?</b> Industria-isurien Europako zuzentarauak funtsezkotzat jotzen du berez baimena izatera behartzen duten atalaseetara iristen den edozein handitze: egunean 10 tona, hondakin arriskutsuen kasuan.{10,11} Zifra ofizialekin, handitzeak urtean 29.360 tona gehiago dakartza: egunean 80 tona inguru, atalase horren zortzi halako inguru.{9,1}</p>
+  <div class="box pregunta"><span class="tag pregunta">Erantzunik gabeko galdera</span><p>Zein txosten teknikotan justifikatzen da urtean 29.000 tona inguru hondakin arriskutsu gehiago tratatzeak ez duela eragin handiagorik osasunean eta ingurumenean? Zergatik ez da argitaratu?</p></div>
+  <p><b>Kromo hexabalentea.</b> Haren konposatuak minbizi-eragileak dira gizakiarentzat (IARC, 1. taldea), eta birika da xede-organoa.{12} Sader-ek bainu agortuak jasotzen ditu eta kromo hirubalente bihurtzen ditu, askoz toxikotasun txikiagokoa: arriskua garraioan, deskargan eta maneiuan dago. Lerroak urtean 2.000 tona ditu esleituta. Ahalmen hori ez zen handitu 2025eko handitzearekin: 2022ko berrikuspenak finkatzen zuen bera da eta, auzokideen dokumentazioaren arabera, 2012tik mantentzen da; 2008ko baimenak muga handiagoa finkatzen zuen. 2024an 388 tona jaso zituen eta 2025ean, 110.{9,34,1}</p>
+  <figure><img class="zoom" src="../img/eu/f-cromo.jpg" alt="Kromo hexabalentea: tratatua eta baimendua" loading="lazy"><figcaption>Kromo VI lerroa: 2025ean tratatutakoa eta baimenak uzten duena.{1,12}</figcaption></figure>
+  <div class="box pregunta"><span class="tag pregunta">Erantzunik gabeko galdera</span><p>Zein kontrol aplikatzen dira kromo hexabalentezko bainuak garraiatzean, deskargatzean eta maneiatzean, eta zer emaitzarekin?</p></div>`},
+ {n:4,p:"I",k:"Airetik erortzen dena",t:"CSICen ikerketa: metalak auzoen gainean",h:`
+  <p>2026ra arte eztabaida daturik gabe egiten zen: eztabaidagai ziren deklaratutako isurien irismena eta eskura zeuden neurketen nahikotasuna. 2026ko apirilean, CSICeko Pirinioetako Ekologia Institutuari atmosferako deposizioari buruzko ikerketa bat enkargatu zitzaion, Jorge Pey Betrán ikertzaileak zuzendua.{13}</p>
+  <ul><li><b>Lau puntu:</b> Zorrotza, Deustuko Erribera, San Inazio eta, alderatzeko, Bilbo erdialdea.</li><li><b>56 egun</b> (2026ko apirilaren 30etik ekainaren 25era), lau lagin puntuko, auzokideek zaindutako kaptadoreekin.</li><li>IPE-CSICen laborategietan 69 osagai arte aztertu ziren, eta Espainiako hiriguneetan 2016 eta 2025 artean neurtutako tartearekin alderatu.</li></ul>
+  <div class="big-quote">Hemen beste hiri batzuetan baino 4 aldiz berun gehiago erortzen da.<small>Bilbo erdialdean, ohikoa. San Inazion, Espainiako hirien maximoaren lau halako.{13}</small></div>
+  <figure><img class="zoom" src="../img/eu/f-deposicion.jpg" alt="Sei metalen deposizioa lau puntuetan" loading="lazy"><figcaption>Sei metalen deposizioa, Espainiako hiri-maximoaren zenbat halako den adierazita. IPE-CSIC (2026), 4. taula.{13}</figcaption></figure>
+  <p>Emaitza nagusia gradiente bat da: metalen deposizioa maximoa da Deustuko Erriberan eta San Inazion, tartekoa Zorrotzan eta minimoa Bilbo erdialdean. San Inazioren gainean 8,9 mikrogramo berun metatu ziren metro koadroko eta eguneko: erreferentziako Espainiako hiri-maximoaren lau halako (2,2). Deustuko Erriberaren gainean, 82 mikrogramo zink: maximoaren 3,7 halako. Kromoak maximoa bikoizten du bi auzoetan.{13}</p>
+  <figure class="pair"><img class="zoom" src="../img/eu/f-deposicion-tabla.jpg" alt="Hiri-maximoa gainditzen duten elementuen taula" loading="lazy"><img class="zoom" src="../img/eu/f-centro.jpg" alt="San Inazio, Bilbo erdialdearen aldean" loading="lazy"><figcaption style="grid-column:1/-1">Zein elementuk gainditzen duten hiri-maximoa eta non; eta ikerketa berean Bilbo erdialdearekin egindako alderaketa.{13}</figcaption></figure>
+  <div class="box"><span class="tag tener">Kontuan hartu</span><p>Ikerketa esploratzailea da: 56 egun eta lau puntu. Laginak hautatutako hiri-erreferentziekin alderatzen ditu; emaitzek testuingurua behar dute eta ez dute, berez, iturri jakin bat egozteko aukerarik ematen. Espainian ez dago metalen deposiziorako muga legalik; Alemaniak 100 µg/m²·egun berun onartzen du urteko batez besteko gisa, eta 8,9 neurtu ziren.{35} Europako zuzentarau berriak deposizioa zaintzen hastera behartzen du.{36}</p></div>
+  <div class="box pregunta"><span class="tag pregunta">Erantzunik gabeko galdera</span><p>Zer kromo mota erortzen da Deustuko Erriberan eta San Inazion? Espeziazio batek argituko luke. Auzokideek eskatu dute. Nork enkargatuko du?</p></div>`},
+ {n:5,p:"I",k:"Lurzoruan dagoena",t:"Beruna, artsenikoa eta nikela plantaren ondoan",h:`
+  <p>2026ko maiatzean jakin ziren auzokideek ECHO proiektuaren barruan —herritarren zientziako Europako proiektua— egindako lurzoru-analisi baten emaitzak. Lagina Sader-en biltegiaren ondoko lorategi-zati batean hartu zen, haur-parke batetik gertu.{14}</p>
+  <figure><img class="zoom" src="../img/eu/f-suelo.jpg" alt="Metalak lurzoruan, parke baterako balio legalaren aldean" loading="lazy"><figcaption>Lagineko metalak, euskal legeak «parke publiko»rako ezartzen duen ebaluazio-balio adierazlearen (VIE-B) aldean.{14,15}</figcaption></figure>
+  <table><thead><tr><th>Metala</th><th>Neurtua (mg/kg)</th><th>Parkerako balio legala</th><th>Haurren jolas-eremua</th><th>Aldiz</th></tr></thead><tbody>
+   <tr><td>Artsenikoa</td><td>270</td><td>30</td><td>30</td><td><b>×9</b></td></tr>
+   <tr><td>Beruna</td><td>2.700</td><td>450</td><td>120</td><td><b>×6</b></td></tr>
+   <tr><td>Nikela</td><td>2.010</td><td>500</td><td>110</td><td><b>×4</b></td></tr>
+   <tr><td>Kadmioa</td><td>6,3</td><td>25</td><td>5</td><td>×0,25</td></tr>
+  </tbody></table>
+  <p>Balio adierazle bat gainditzeak ez du, berez, kalterik frogatzen: legeak ezartzen duena da ikertu eta arriskua ebaluatu behar dela.{15} Artsenikoa eta nikel-konposatuak IARCen 1. taldeko minbizi-eragileak dira.{12} Berunak nerbio-sistema kaltetzen du, batez ere haurtzaroan, eta OMEk ez du esposizio-maila segururik aitortzen.{37}</p>
+  <div class="box"><span class="tag tener">Kontuan hartu</span><p>Herritarren zientzia da, eta kokaleku bakarra: arazo bat adierazten du, ez du mugatzen. Laginketa ofizial bat falta da. Gainera, Zorrotzako Puntako lurzoruak Sader baino lehenagoko mende bateko industria-jarduera darama gainean.</p></div>
+  <p><b>Lurzoruari buruzko dokumentazioaren egoera.</b> 2022ko baimenaren berrikuspenak lurzoruaren egoerari buruzko aurretiazko txosten bat eskatzen zion Sader-i, haren Ingurumena Zaintzeko Planean 2025erako aurreikusia.{9,34} Aipatutako dokumentuen arabera, 2025eko azaroko ikuskaritzak hauteman zuen ez zela aurkeztu, Administrazioak errekerimendua egin zuen 2026ko urtarrilaren 8an eta enpresak «ohar tekniko» bat aurkeztu zuen.{14,16} Gero, txosten hori eskuratzeko auzo-eskaera bat ukatzean, ingurumen-organoak jasota utzi zuen «enpresak ez duela aurkeztu».{16} Argitzeke dago ohar teknikoak eskatutakoa osorik betetzen duen. Profersari, ikuskaritzak Lurzoruen Dokumentu Bakarra eskatzen dio.{38}</p>
+  <div class="box"><span class="tag importa">Zergatik duen garrantzia</span><p>Lurzoru-txostenak abiapuntuko egoera finkatzen du. Hura gabe ezin zaio enpresari exijitu, joaten denean, lurra aurkitu zuen bezala itzul dezala. Zorrotzako Puntan 2.100 etxebizitza inguru daude aurreikusita.</p></div>`},
+ {n:6,p:"I",k:"Arnasten dena",t:"1. Barrutiko airea",h:`
+  <div class="big-quote">10 urte estaziorik gabe Zorrotzan eta San Inazion. Neurtzean, OMEk osasungarritzat jotzen duena baino okerrago.<small>Zorrotza 2011tik aurrera desagertu zen airearen kalitateari buruzko txosten ofizialetatik, eta Elorrieta (San Inazio) 2013tik aurrera. 2014tik 2024ra bi auzoetako batek ere ez zuen Eusko Jaurlaritzaren estaziorik izan. San Inazioko unitate mugikorrak OMEk gomendatzen duena baino % 70 partikula fin gehiago erregistratu zituen.{18,20,25}</small></div>
+  <figure><img class="zoom" src="../img/eu/f-13anos.jpg" alt="Airearen neurketa publikoaren kronologia" loading="lazy"><figcaption>Airearen neurketa publikoaren kronologia Sader-en inguruan.{17,39,19,18,40}</figcaption></figure>
+  <p>2007ko uztailean, Sader-en baimena izapidetzen ari zen bitartean, Bilboko Udalak jakinarazi zuen baimenean sartu behar zela «etengabeko neurketa-sistema bat instalatzea, 1997an konprometitu zen bezala».{17} Baimena 2008ko urtarrilaren 14an eman zen.{9} Neurgailu hori ez dago instalatuta jasota. Elorrietako kabinak 2010eko ekainean utzi zion funtzionatzeari, eta haren ekipoak Erandiora eraman zituzten;{39} Zorrotza 2011tik aurrera desagertu zen airearen kalitateari buruzko txosten ofizialetatik, eta Elorrieta 2013tik aurrera.{18} 2014an Eusko Jaurlaritzak kanpaina mugikorrak iragarri zituen estazio finkoaren ordez; auzokideek bentzenoa eta toluenoa ere neurtzeko eskatzen zuten.{19} 2024an, Profersako istripuen ondoren, bi unitate mugikor iritsi ziren; San Inaziokoa 2. Unitate Mugikorra da.{40}</p>
+  <figure class="pair"><img class="zoom" src="../img/eu/f-oms.jpg" alt="Urteko batez bestekoak, OMEren aldean" loading="lazy"><img class="zoom" src="../img/eu/f-picos.jpg" alt="Gida-balioaren gaineko egunak" loading="lazy"><figcaption style="grid-column:1/-1">San Inazioko batez bestekoak, OMEren eta Europako mugen aldean; eguneko gida-balioaren gaineko egunak. Auzo-kalkulua, datu publikoen gainean.{20,25,36}</figcaption></figure>
+  <p>Serie publikoetatik abiatuta egindako auzo-kalkuluak batez beste 8,5 µg/m³ PM2,5, 16,4 PM10 eta 16,5 NO2 ematen ditu.{20} Batek ere ez ditu indarreko muga legalak hausten; hirurek gainditzen dituzte OMEren gida-balioak: % 70, % 9 eta % 65.{25} Europako zuzentarau berriak PM2,5aren muga 25etik 10 µg/m³-ra jaisten du 2030etik aurrera.{36,42}</p>
+  <div class="box"><span class="tag tener">Kontuan hartu</span><p><b>Legezkoa izateak ez du esan nahi osasungarria denik.</b> San Inazioko aireak gaurko legea betetzen du, eta hala diogu. Ez du betetzen OMEk segurutzat jotzen duena. Eta dena ez dator Sader-etik: trafikoa dago, salgaien kai bat eta beste industria batzuk. Datu hauek arnasten den airea neurtzen dute, ez nork zikintzen duen.</p></div>
+  <p><b>Konputatzen ez duen eta huts egiten duen neurgailua.</b> Mugikorra denez, haren datuak ez dira ebaluazio ofizialean sartzen. Hiru hilabete inguruz karbono monoxidoaren balio anomaloak eman zituen, inor ohartu gabe. Eta 2026ko irailetik ez dabil behar bezala.{21,18}</p>
+  <div class="box"><span class="tag indicio">Zantzua</span><p>2026ko irailetik aurrerako funtzionamendu txarra eta karbono monoxidoaren gertakaria auzokideen testigantzetatik datoz; Eusko Jaurlaritzaren serie publikoetan egiazta daitezke.</p></div>`},
+ {n:7,p:"I",k:"Kaia",t:"Amiantoa duen udal-kai bat, aparkaleku gisa erabilia",h:`
+  <p>Sader-en eta Profersaren kamioi guztiak Zorrotzako kaitik sartu eta irteten dira, eta auzoa zeharkatzen dute: urtean 7.000 eta 8.000 artean, prentsaren arabera.{27} Astilleroko kaia udalarena da. Taldeak bertatik igarotzeko baimena ematen dion kontratu bat du, baina ez kamioiak aparkatzeko ez materiala uzteko, udalbatzan jakinarazi zenez.{43}</p>
+  <figure><img class="zoom" src="../img/polvo-muelle.jpg" alt="Hautsa harrotuta Zorrotzako kaian" loading="lazy"><figcaption>Kaian harrotutako hautsa, beste ertzetik ikusita. Auzokideen argazki-erregistroa.{29}</figcaption></figure>
+  <p>Dinam enpresari enkargatutako azterlan batek amianto-zati txikiak aurkitu zituen kaiko lurrean, «seguruenik haizeak eramanda», El Correok eta Naizek 2025eko apirilean argitaratu zutenez.{44,45} Bilboko Auzo Elkarteen Federazioak dio Udalak gutxienez 2023aren amaieratik zekiela. Kaiaren ondoan, Bizkaiko Foru Aldundiaren txosten batek 19 tona ingurutan kokatzen du Grandes Molinos Vascos eraikinaren estalkiko amiantoa, kentzeko zain dagoena.{45} Dinamen azterlana ez da argitaratu.</p>
+  <div class="box"><span class="tag indicio">Zantzua</span><p>Dinamen azterlanetik prentsan argitaratutakoa baino ez da hemen jasotzen. Azterlan osoa argitaratzeak aukera emango luke jakiteko zer harrotzen duten kamioiek pasatzean.</p></div>
+  <figure class="trio"><img class="zoom" src="../img/puerta.jpg" alt="Atea irekita, materiala pilatuta" loading="lazy"><img class="zoom" src="../img/cubierta-deposito.jpg" alt="Metaketa estalki baten gainean" loading="lazy"><img class="zoom" src="../img/camion-reguero.jpg" alt="Kamioi bat likido-arrasto baten ondoan" loading="lazy"><figcaption style="grid-column:1/-1">Matxuratutako atea, materiala kaira irteten dela; metaketa Profersaren estalkiaren gainean, eta likido-arrastoa. Auzokideek salatzen dute, halaber, kaia kamioien, atoien eta zisternen aparkaleku gisa erabiltzen dela.{29,43}</figcaption></figure>
+  <div class="box responden"><span class="tag responden">Erakundeek erantzuten dutena</span><p>Ingurumen Ikuskaritzak isuri difusoengatiko salaketa bati erantzun zion, 2025eko abenduaren 18ko mezu elektroniko baten bidez: «ezin izan dugu argitu bidali zenituen irudiak anormaltasun bat ziren ala ez. Enpresak dio egun horretan ez zutela inolako gorabeherarik izan».{46} Udalak Arartekoari jakinarazi zion aldizkako jarraipena egiten duela eta kaiaren erabilera zuzena dela; Arartekoak 2026ko uztailean itxi zuen espedientea, eta arin erantzuteko betebeharra gogorarazi zion.{43}</p></div>`},
+ {n:8,p:"I",k:"Istripuak",t:"Hodei kimiko bat egon zenean, neurgailuek ez zuten neurtu",h:`
+  <table><thead><tr><th>Data</th><th>Zer gertatu zen</th><th></th></tr></thead><tbody>
+   <tr><td>26/04/2024</td><td>Gertakaria Profersan: lurrun-zutabe ikusgaia Zorrotzaren gainean.</td><td>{22,47}</td></tr>
+   <tr><td>2/05/2024</td><td>Manifestazioa Zorrotzan: 1.200 pertsona inguru, prentsaren arabera.</td><td>{48}</td></tr>
+   <tr><td>10–11/05/2024</td><td>Erreakzio kimikoa Profersan: ke-hodeia. 112ra deitu zuenari ateak eta leihoak ixteko esan zioten.</td><td>{22,47}</td></tr>
+   <tr><td>15/05/2024</td><td>Eusko Jaurlaritzak Profersaren behin-behineko itxiera agintzen du.</td><td>{49,50}</td></tr>
+   <tr><td>2024ko ekaina</td><td>Profersa baldintzekin irekitzen da berriro.</td><td>{47}</td></tr>
+   <tr><td>2024</td><td>Eusko Jaurlaritzak bi neurketa-unitate mugikor jartzen ditu eremuan.</td><td>{40}</td></tr>
+   <tr><td>20/06/2024</td><td>Azido klorhidrikoaren isuri txiki bat Sader-en; enpresak «tanta batzuk» baino ez zirela esan zuen.</td><td>{51}</td></tr>
+  </tbody></table>
+  <p>Udaberri hartako bi gertaerak ondorio iraunkorrak dituzte. Plantak ez daude kanpoko larrialdi-plana izan behar duten establezimenduen artean sailkatuta. Eskura dauden iturrietan ez da aurkitu biztanleriari abisatzeko protokolo publikorik; argitu beharra dago zein diren legez exijigarriak eta zein dauden indarrean.{22,52} Eta estazio hurbilenak ez zuen gertakaria erregistratu: azalpen ofizialaren arabera, Lutxanakoak egunean ordubetez uzten dio datuak emateari autokalibratzeko, eta ordu hori gertakariarekin bat etorri zen.{47,51}</p>
+  <p>Eusko Jaurlaritzaren ikuskaritzek lehendik ere jasoak zituzten Profersaren ez-betetzeak airearen kalitatearen babesean: 2016ko ekainean, 2020ko ekainean, 2021eko azaroan eta 2022ko maiatzean.{53}</p>
+  <div class="box pregunta"><span class="tag pregunta">Erantzunik gabeko galdera</span><p>Zerk eragozten du gertakari bat dagoenean biztanleriari abisatzeko protokolo bat ezartzea, kanpoko larrialdi-plana egon ala ez?</p></div>`},
+ {n:9,p:"I",k:"Ez dakiguna",t:"Osasuna: aztertzeko dagoena",h:`
+  <div class="big-quote">Azterketa publiko batek ere ez du auzo hauen osasuna alderatu.<small>Azterketa epidemiologiko batek auzo baten osasuna gainerakoenarekin alderatzen du. Auzokideek urteak daramatzate eskatzen. Ez da espezifiko eta publikorik aurkitu.{22}</small></div>
+  <p>Zorrotzako, San Inazioko eta Basurtuko auzokideek hamarkada bat baino gehiago daramate arnas arazoak, begietako eta azaleko narritadura, buruko minak eta alergiak kontatzen.{28,54} Hainbat pertsonak beren atarietan oso altutzat jotzen duten minbizi-maiztasuna deskribatzen dute.{21} Testigantzak dira: azterketa batek ere ez ditu baieztatu, ezta gezurtatu ere. 2010ean Usainen Mahaia eratu zen, auzo-elkarteekin, Eusko Jaurlaritzarekin eta Bilboko eta Barakaldoko udalekin; lau aldiz bildu zen.{19}</p>
+  <div class="box"><span class="tag nosabe">Zer ez den ezagutzen</span><p>Kanaleko auzoetan Bilboko gainerakoetan baino asma, alergia edo minbizi gehiago dagoen. Plantak benetan zer isurtzen duen: kontsultatutako iturrietan ez dugu aurkitu isurien neurketen argitalpen osorik. Planta berriko hondakinei buruzko zer informazio den isilpekoa: baimenak onar daitezkeen hondakin motak argitaratzen ditu, baina kudeatutako hondakinei buruzko informazio jakin batek isilpeko tratamendua jaso zuen, eta komeni da haren irismena eta justifikazioa argitzea. Daturik gabe inork ezin du esan plantak gaixotzen duenik. Ezta gaixotzen ez duenik ere.</p></div>
+  <div class="box responden"><span class="tag responden">Enpresak eta Eusko Jaurlaritzak erantzuten dutena</span><p>Sader-ek dio ez duela atmosferarako isurpen-fokurik eta ez duela ezer isurtzen; bere parametroak hamabost egunean behin neurtzen ditu.{22} Eusko Jaurlaritzak 2025eko maiatzeko usainen azterlan bat eta igoera kezkagarririk gabeko sentsore-sare bat aipatzen ditu, eta dio Sader ez dela usain txarren jatorria.{8}</p></div>
+  <table><thead><tr><th>Kutsatzailea</th><th>Non agertzen den</th><th>Osasun-ebidentzia</th></tr></thead><tbody>
+   <tr><td>Kromo hexabalentea</td><td>Sader-en lerroa (2.000 t/urte). Kromo totalaren bikoitza deposizioan; ez da ezagutzen zer motatakoa.</td><td>Minbizi-eragilea (IARC 1): birika.{12}</td></tr>
+   <tr><td>Beruna</td><td>Lurzorua ×6. Deposizioa ×4 San Inazion.</td><td>Neurotoxikoa, batez ere haurtzaroan. Maila segururik ez.{37,55}</td></tr>
+   <tr><td>Artsenikoa</td><td>Lurzorua ×9.</td><td>Minbizi-eragilea (IARC 1).{12}</td></tr>
+   <tr><td>Nikela</td><td>Lurzorua ×4.</td><td>Konposatu minbizi-eragileak (IARC 1).{12}</td></tr>
+   <tr><td>Amiantoa</td><td>Kaia: zatiak lurrean, prentsaren arabera. Grandes Molinos Vascos eraikinaren estalkia: 19 t inguru.</td><td>Minbizi-eragilea (IARC 1).{12}</td></tr>
+   <tr><td>PM2,5</td><td>+% 70 OMEren gainetik.</td><td>Minbizi-eragileak (IARC 1); erretzaile ez direnen biriketako minbiziarekin lotuak.{56,57}</td></tr>
+   <tr><td>NO2</td><td>+% 65 OMEren gainetik.</td><td>Narritagarria; asmarekin eta BGBKrekin lotua.{25}</td></tr>
+  </tbody></table>
+  <div class="box"><span class="tag importa">Zergatik duen garrantzia</span><p>Azterketa epidemiologiko bat da gaixotzen direla diotenei arrazoia eman edo kendu diezaiekeen bakarra. Osasun Sailak enkarga dezake. Existitzen ez den bitartean, arriskurik ez dagoela dioen baieztapen ofiziala datu-faltan oinarritzen da, ez datuetan.</p></div>`},
+ {n:10,p:"I",k:"Instalazioak",t:"Plantaren egoera",h:`
+  <p>Auzokideek 2026an argazkiak atera dizkiete xafla altxatuak edo falta direnak dituzten estalkiei, zatiak erortzen zaizkien fatxadei eta hondatutako itxiturei. Haize-egunetan suhiltzaileei eta SOS Deiak zerbitzuari abisatu diete xafla solteengatik.{29,21} Galdera sinplea da: instalazio hauek egokiak ote diren industria-hondakin arriskutsuak, kromo hexabalentea barne, etxebizitzen ondoan tratatzeko.</p>
+  <figure class="pair"><img class="zoom" src="../img/cubiertas-1.jpg" alt="Estalki hondatuak" loading="lazy"><img class="zoom" src="../img/cubiertas-2.jpg" alt="Estalki hondatuak" loading="lazy"><figcaption style="grid-column:1/-1">Konplexuko estalkien egoera 2026an. Auzokideen argazki-erregistroa.{29}</figcaption></figure>
+  <p>Auzokideek deialdi guztietan azpimarratu dute ez dutela lanpostuak galtzea eskatzen: Zorrotzako planta ixtea, baldintza egokiak dituen instalazio batera lekualdatzea eta lanpostuak bermatzea eskatzen dute.{31,21} Gogorarazten dute salatzen dutenetik hurbilen daudenak barruan lan egiten duten pertsonak direla.</p>
+  <div class="box"><span class="tag hecho">I. zatia, sei esalditan</span><ul style="margin:6px 0 0"><li>79.593 t hondakin arriskutsu 2025ean; baimenak % 36 gehiago tratatzen uzten dio.</li><li>2022an eta 2023an bere muga espezifikoa baino hondakin arriskutsu gehiago jaso zituen; Ikuskaritzak ez zuen ez-betetzerik ikusi. 2025ean % 38 gehiago lortu zuen, jendaurreko informaziorik gabe.</li><li>San Inazioren eta Deustuaren gainean Espainiako hiri-maximoa baino bi eta lau aldiz bitarte berun, zink eta kromo gehiago erortzen da. Bilbo erdialdean, ez.</li><li>Plantaren ondoko lurzoruak 9, 6 eta 4 aldiz biderkatzen ditu parke baterako artseniko-, berun- eta nikel-balioak.</li><li>San Inazioko aireak legea betetzen du, eta partikula finetarako OMEren gida-balioa % 70 gainditzen du.</li><li>Ez da argitaratutako isuririk ez azterketa epidemiologiko publikorik aurkitu, eta ingurumen-organoak jasota utzi zuen lurzoru-txostena ez zela aurkeztu.</li></ul></div>`},
+ {n:11,p:"II",k:"Taldea",t:"Noren jabetzakoa den Sader: Agaleus taldea",h:`
+  <p>2018ko ekainetik Sader-en administratzaile bakarra Agaleus Medio Ambiente y Energía, S.L. da, Profersa ere kontrolatzen duen familia-talde baten burua.{26,61} Taldeak 2022an 13 milioi eurotik gorako fakturazioa adierazi zuen, ehun bat langilerekin, eta erosketen bidez hazi da: Sogecar eta Quimycat (2022) eta Ekinoil (2025).{66,67,69,70}</p>
+  <figure><img class="zoom" src="../img/eu/f-grupo.jpg" alt="Agaleus taldearen sozietate-egitura" loading="lazy"><figcaption>Agaleus taldearen sozietate-egitura.{26,61,62,63,64,65}</figcaption></figure>
+  <table><thead><tr><th>Sozietatea</th><th>Jarduera</th><th>Datuak</th></tr></thead><tbody>
+   <tr><td>Agaleus Medio Ambiente y Energía, S.L.</td><td>Holdinga</td><td>2002an eratua. Egoitza Zamudion 2026ko urtarriletik.{62,63}</td></tr>
+   <tr><td>Sader, S.A.</td><td>Hondakin arriskutsuak eta ez-arriskutsuak. Zorrotza.</td><td>1986tik. Administratzaile bakarra: Agaleus.{26}</td></tr>
+   <tr><td>Profersa</td><td>Ongarriak hondakinetatik abiatuta. Zorrotza.</td><td>Kapitala 60.000 €-ra murriztua 2026ko urrian.{64}</td></tr>
+   <tr><td>Agaleus Circular Thinking, S.L.</td><td>Zierbenako baimenaren titularra.</td><td>2022an eratua. Bazkide bakarra: Agaleus.{23,62}</td></tr>
+   <tr><td>Cogeneración Zorroza, A.I.E.</td><td>Elektrizitatea eta beroa Sader-entzat eta Profersarentzat.</td><td>% 90 Agaleus, % 10 CADEM (euskal erakunde publikoa), azken datu ofizialaren arabera (2012).{65}</td></tr>
+  </tbody></table>
+  <p>Taldea Fernández familiarena da. José Ricardo Fernández Besteiro da holdingeko presidentea; Ángela Fernández Alonso, kontseilari delegatua 2025eko urritik; Gontzal Fresno, zuzendari nagusia data horretatik.{61,71}</p>
+  <div class="box"><span class="tag nosabe">Zer ez den ezagutzen</span><p>Kapitala familiako kideen artean nola banatzen den: sozietate mugatuek ez dute beren bazkide-liburua argitaratzen.</p></div>`},
+ {n:12,p:"II",k:"Harremanak",t:"Ibilbide profesionalak eta gardentasuna",h:`
+  <div class="big-quote">Sektore publikoaren eta pribatuaren arteko ibilbideak.<small>Aipatutako dokumentazioak ondoz ondoko karguak deskribatzen ditu; haien bateragarritasun juridikoa zehazteko, aplikatu beharreko araubidea eta data zehatzak aztertu behar dira.{72}</small></div>
+  <p>Ihobe Eusko Jaurlaritzaren ingurumen-kudeaketako sozietate publikoa da. Xabier Caño González Ingurumen Saileko aholkulari juridikoa izan zen (2005–2006) eta Ihobe-ren zuzendari nagusia (2006–2009).{72} Merkataritza-erregistroen arabera, Sader-en eta holdingaren organoetan ageri da 2009tik, Ihobe utzi zuen urtetik; Sader-eko presidentea izan zen (2017–2018), holdingeko presidenteordea (2018–2025) eta Agaleuseko ingurumen-dibisioko kontseilari delegatua 2021etik 2025eko irailera.{72,26,61} Denbora horretan Aclima-ko presidentea izan zen, Euskadiko ingurumen-enpresen klusterrekoa.{72,74}</p>
+  <figure><img class="zoom" src="../img/eu/f-trayectoria.jpg" alt="Dokumentatutako ibilbide profesionala" loading="lazy"><figcaption>Dokumentatutako kargu publikoak, sozietate-karguak eta elkarte-karguak.{72,73,26,61,74}</figcaption></figure>
+  <p>2025eko uztailean, Ihobe-k eta Aclima-k 2028ra arte berritu zuten hitzarmena; haren helburuen artean dago hondakinak balorizatzeko azpiegituren instalazioa bizkortzea. Aclima-ren izenean Caño-k sinatu zuen, orduan azpiegitura horietako bat Eusko Jaurlaritzaren aurrean izapidetzen ari zen taldearen ingurumen-arloko kontseilari delegatua zenak.{72,73}</p>
+  <div class="box pregunta"><span class="tag pregunta">Eskatzen dena</span><p>Jakitea ea aipatutako karguei eta datei aplika zekizkiekeen abstentzio- edo bateraezintasun-betebeharrik ba ote zegoen eta, hala bada, nola bete ziren. Jasotako datuek ez dute ondorioztatzen uzten arau-hausterik gertatu zenik.</p></div>`},
+ {n:13,p:"II",k:"Harremanak",t:"Kontseilari delegatua patronalaren gailurrean",h:`
+  <p>Ángela Fernández Alonso, taldeko kontseilari delegatua 2025eko urritik, AVEQ-KIMIKAko presidentea da (Euskadiko enpresa kimikoen elkartea), CEBEKeko presidenteordea, eta Confebaskeko batzorde betearazleko eta Elkargiko kontseiluko kidea.{66,71,75,76}</p>
+  <p>Kargu horietako bat ere ez da irregularra. Hala ere, industriak bere jarrerak Eusko Jaurlaritzari helarazteko erabiltzen dituen ohiko bideak dira.</p>`},
+ {n:14,p:"II",k:"Nork erabakitzen du",t:"Bilboko Udala: hitzarmena, lurzorua eta kaia",h:`
+  <p>2015eko irailaren 16an, udaleko Gobernu Batzordeak hirigintza-hitzarmen bat onartu zuen Sader-ekin, «jarduera uztea aurreratzeko». Argitaratutako informazioaren arabera, 2,7 milioi euroko kalte-ordaina eta 2018ko bigarren seihilekoan jarduera uztea aurreikusten zituen.{77,27} Hamaika urte geroago, Sader han dago oraindik. Epea udal-izapide baten mende zegoen, Zorrotzako Puntaren antolamenduaren mende, eta hura atzeratu egin da; portuko prentsak adierazi du hitzarmenak 2028ra arte bertan jarraitzea babesten duela.{48,78}</p>
+  <figure><img class="zoom" src="../img/eu/f-fechas.jpg" alt="Iragarritako irteera-datak" loading="lazy"><figcaption>Iragarritako irteera-datak eta bakoitzarekin gertatu zena.{77,27,54,22,23}</figcaption></figure>
+  <p>Zierbenaren aurretik, enpresak Legutiora, Sollanako Puntara (2018) eta Ortuellara lekualdatzea planteatu zuen; azken proiektu horri 2025eko uztailean uko egin zion, auzokideen eta udalaren aurkakotasunaren ondoren.{72,27}</p>
+  <p><b>Lurzorua.</b> Zorrotzako Punta 32 hektarea inguru dira itsasadarraren aurrean, eta plangintzak 2.100 etxebizitza inguru aurreikusten ditu bertan.{79} <b>Kaia.</b> Udala da haren jabea, eta Arartekoaren aurrean defendatu du enpresek egiten duten erabilera zuzena dela. Ingurumena babesteko haren ordenantza 2000. urtekoa da.{43,80}</p>
+  <div class="box pregunta"><span class="tag pregunta">Erantzunik gabeko galdera</span><p>Zenbat ordaindu da 2,7 milioietatik, eta zer baldintzarekin? Zergatik ez da argitaratzen Dinamek kaiari buruz egindako azterlana? Zer kanon ordaintzen du taldeak udal-kaia erabiltzeagatik?</p></div>`},
+ {n:15,p:"II",k:"Nork erabakitzen du",t:"Eusko Jaurlaritza: baimentzen du, ikuskatzen du eta handitzen du",h:`
+  <div class="big-quote">Sader-i buruzko erabakiak Eusko Jaurlaritzak eta Udalak hartzen dituzte.<small>Eusko Jaurlaritzak planta baimentzen du, ikuskatzen du, eta ahalmena handitu zion. Bilboko Udalak haren irteera aurreratzeko hitzarmena sinatu zuen, eta kaiaren jabea da.{8,24,77}</small></div>
+  <p>Sail eskudunak industria eta ingurumena sailburu beraren mende biltzen ditu: industria-jarduera sustatzen duena da, aldi berean, baimentzen eta ikuskatzen duena.{8} Auzokideek enpresaren bertsioa helarazten duen ikuskaritza bat deskribatzen dute: isurien argazkien aurrean, erantzuna izan zen enpresak zioela egun horretan ez zuela gorabeherarik izan.{46,21} 2024ko azaroan sailburuak Eusko Legebiltzarrean aitortu zuen ingurumen-ikuskaritzak sei teknikari zituela, eta bikoiztu egingo zirela iragarri zuen.{40}</p>
+  <p><b>Arartekoa.</b> Auzokideek bi espediente dituzte irekita: bata handitzea aldaketa ez-funtsezko gisa izapidetzeari buruz, eta bestea ez-betetzeen aurrean neurririk ez hartzeari buruz. Hirugarren bat, kaiaren erabilerari buruzkoa, 2026ko uztailean itxi zen. 2025eko urteko txostenean, Arartekoak gabeziak egiaztatu zituen ingurumen-ikuskaritzan, -kontrolean eta -diziplinan. Haren ebazpenak ez dira lotesleak.{21,43,81}</p>
+  <p>Erabakien zerrenda osoa hemen dago: <a href="#quien-decide" onclick="pickActor('gv')">Nork erabakitzen du → Eusko Jaurlaritza</a>.</p>`},
+ {n:16,p:"II",k:"Lekualdatzea",t:"2031ra arteko baimena, ez itxiera-agindua",h:`
+  <p>2026ko otsailaren 11n, Ingurumeneko sailburuordeak ingurumen-baimen integratua eman zion Agaleus Circular Thinking-i, Bilboko Portuan, Zierbenan, hondakin arriskutsuen eta ez-arriskutsuen planta bat jartzeko. EHAAn 2026ko ekainaren 10ean argitaratu zen: urtean 144.500 t, 20 milioi eurotik gorako inbertsioa eta bost urte hasteko.{23,24,82}</p>
+  <figure><img class="zoom" src="../img/mapa-traslado.jpg" alt="Zorrotzatik Zierbenara lekualdatzearen mapa" loading="lazy"><figcaption>Hirigunetik kanpoko portura, 12 km inguru itsasadarrean behera. © OpenStreetMap contributors.</figcaption></figure>
+  <h4 class="kicker">Baimenak egiten ez dituen lau gauza</h4>
+  <ol><li><b>Ez du Zorrotza ixtera behartzen.</b> Lekualdatzeko eskubidea ematen du, ez betebeharra. Argitaratutako ebazpen batek ere ez du jarduera uzteko datarik finkatzen.{23,24}</li><li><b>Ez du Profersa barne hartzen,</b> 2024ko istripuena. Taldeak ixtea aurreikusten du, data exijigarririk gabe.{24,64}</li><li><b>Ez du argitzen hondakinei buruzko zer informazio den isilpekoa:</b> baimenak lerroka onar daitezkeen hondakinak zerrendatzen ditu, beren kode eta gehieneko kantitateekin, baina ingurumen-organoak alegazio bati erantzun zion «kudeatutako hondakinei buruzko informazioa isilpeko gisa aurkezten dela, enpresa-lehiaren arrazoiengatik», zein zati den zehaztu gabe. Komeni da haren irismena eta justifikazioa argitzea.{23,24}</li><li><b>Alegazioak ezetsi zituen:</b> guztiak, Getxoko eta Santurtziko udalenak eta hainbat talde politikorenak barne.{24,83,84}</li></ol>
+  <div class="box"><span class="tag importa">Zergatik duen garrantzia</span><p>Ingurumen-informazioa eskuratzeari buruzko legeak merkataritza-isilpekotasuna onartzen du, baina ez isuriei buruzko informazioa eskatzen denean.{85} Planta batean zer hondakin sartzen den, horrek zehazten du zer irten daitekeen handik.</p></div>
+  <div class="box pregunta"><span class="tag pregunta">Erantzunik gabeko galdera</span><p>Zein ebazpenek, zein administraziorenak eta zer datarekin behartuko du Zorrotzan jarduera uztera? Zer gertatuko da 2031ko ekainean Zierbenako planta martxan ez badago?</p></div>`},
+ {n:17,p:"II",k:"Harremanak",t:"Arautzailea, bezeroa eta bazkidea aldi berean",h:`
+  <ul><li><b>Agintaritza:</b> Eusko Jaurlaritzak baimentzen, ikuskatzen eta zehatzen du; Udalak lurzorua antolatzen du eta kaiaren jabea da.</li><li><b>Bezeroa:</b> taldeak erakusten dituen bezeroen artean daude Garbiker (Bizkaia), GHK (Gipuzkoa) eta Zabalgarbi.{68}</li><li><b>Bazkidea:</b> CADEM erakunde publikoa 2012an plantak hornitzen dituen kogenerazioaren % 10ekin ageri zen.{65}</li><li><b>Solaskidea:</b> Ihobe-k hitzarmen bidez kolaboratzen du taldeko zuzendari batek presiditzen zuen klusterrarekin.{73}</li></ul>
+  <figure><img class="zoom" src="../img/eu/f-red.jpg" alt="Harreman-sarea" loading="lazy"><figcaption>Taldearen, administrazioen eta enpresa-erakundeen arteko harreman dokumentatuak.{23,77,72,73,71,68,65}</figcaption></figure>
+  <p>2020an Zaldibarko zabortegia erori zenetik, Euskadik industria-hondakinak tratatzeko ahalmen-arazo bat du. Tratamendu-ahalmen horren garrantzia dela eta, komeni da jakitea zerbitzuaren jarraitutasunari eta ingurumen-babesari buruzko zer irizpide hartu diren kontuan hura lekualdatzeari buruzko erabakietan.</p>`},
+ {n:18,p:"II",k:"Beste espediente batzuk",t:"Zubieta eta Lehiaren Defentsa",h:`
+  <p><b>Zubietako lixibiatuak.</b> 2022 eta 2023 artean, Gipuzkoako konplexuko 5.400 tona lixibiatu inguru hondakin likidoetarako baimenik gabeko planta nafar batera bidali ziren. Sader-ek korronte bera jaso zuen Bilbon, eta 2023an Donostian irekitako prozedura judizialean alderdi izan zen. Guardia Zibilak 2025ean ondorioztatu zuen hondakinak ez zirela arriskutsuak; auzia artxibatu egin zen, eta artxibatzearen aurka helegitea jarri da. Sader-ek dio ez zela jarduera deliktiborik izan.{86,87,88}</p>
+  <p><b>Lehia.</b> Lehiaren arloko agintariek Sader ikertu zuten, hondakinen euskal merkatuaren balizko banaketa baten froga bila. Zehapenik gabe itxi zen.{88}</p>
+  <div class="box"><span class="tag tener">Kontuan hartu</span><p>Bi espedienteetako bat ere ez da zehapenarekin edo kondenarekin amaitu. Taldeak diharduen merkatua deskribatzen dutelako jasotzen dira.</p></div>`},
+ {n:19,p:"II",k:"Nork erabakitzen du",t:"Zer egin duen erakunde bakoitzak",h:`
+  <p>Jarraipen osoa, eragilez eragile, egindakoekin eta egin gabekoekin eta haien iturriarekin, <a href="#quien-decide">Nork erabakitzen du</a> atalean dago.</p>
+  <table><thead><tr><th>Eragilea</th><th>Jarrera</th><th>Dokumentatutako jarduketak</th></tr></thead><tbody>
+   <tr><td>Eusko Jaurlaritza</td><td>Baimentzen eta defendatzen du; arriskurik dagoela ukatzen du.</td><td>% 38ko handitzea (2025). Zierbenako baimena, alegazio guztiak ezetsita (2026).{8,23,24}</td></tr>
+   <tr><td>Bilboko Udala</td><td>Airearen kalitatea Eusko Jaurlaritzaren esku uzten du.</td><td>2015eko hitzarmena. Kaiaren jabea; Arartekoaren aurrean dio haren erabilera zuzena dela.{77,43}</td></tr>
+   <tr><td>Bizkaiko Foru Aldundia</td><td>Grandes Molinos Vascos eraikin zaharraren arduraduna, kaiaren ondoan.</td><td>Txostena: 19 t amianto inguru estalkian, kentzeko zain.{45}</td></tr>
+   <tr><td>Getxoko eta Santurtziko udalak</td><td>Beren udalerrien ondoko planta berriaren aurka.</td><td>Alegazioak ezetsita.{24}</td></tr>
+   <tr><td>Oposizioko taldeak</td><td>Baimenen aurka; plantak hirigunetik ateratzeko eskatzen dute.</td><td>Legebiltzarreko galderak, Zierbenari buruzko alegazioak eta adierazpen publikoak (2024–2025).{8,89,83,84}</td></tr>
+  </tbody></table>
+  <p>Taulak argitaratutako jarduketak jasotzen ditu, ez balorazioak.</p>`},
+ {n:20,p:"II",k:"Gardentasuna",t:"Azaltzeko eskatzen duguna",h:`
+  <p>Txosten honek ez du esaten inork deliturik egin duenik. Beste zerbait dio, egiaztagarria: Sader-i buruzko erabakiak arautzailearen, araututakoaren, bezeroaren eta sektoreko solaskidearen rolak gurutzatzen diren ingurune batean hartu direla, eta ia bat ere ez dela jendaurrean azaldu.</p>
+  <table><thead><tr><th>Dokumentatua</th><th>Ez dago jasota</th><th>Nork azal dezakeen</th></tr></thead><tbody>
+   <tr><td>Ihobe-ren zuzendari ohia kargua utzi zuen urtean sartu zen Sader-en organoetan.</td><td>Bateraezintasunik aplikatu edo aztertu zen.</td><td>Eusko Jaurlaritza; Ihobe</td></tr>
+   <tr><td>Presiditzen zuen klusterrak Ihobe-rekin sinatu zuen 2025eko uztailean.</td><td>Nork negoziatu zuen eta abstentziorik izan zen.</td><td>Ihobe; Aclima</td></tr>
+   <tr><td>Ikuskaritzak ez zuen ez-betetzerik ikusi 2022–2023ko gehiegizkoan.</td><td>Arrazoibide juridikoa.</td><td>Ingurumen Kalitatearen Zuzendaritza</td></tr>
+   <tr><td>% 38ko handitzea jendaurreko informaziorik gabe izapidetu zen.</td><td>Hura justifikatzen duen txosten teknikoa.</td><td>Ingurumen Sailburuordetza</td></tr>
+   <tr><td>Zierbenako hondakinei buruzko informazioaren zati bat isilpekoa da.</td><td>Zein zatik eragiten dien isuriei.</td><td>Ingurumen Sailburuordetza</td></tr>
+   <tr><td>2015eko hitzarmenak ez du Sader Zorrotzatik atera.</td><td>Zer ordaindu den eta zer epe dauden indarrean.</td><td>Bilboko Udala</td></tr>
+  </tbody></table>
+  <p>Dokumentazioak harreman profesionalak eta instituzionalak jasotzen ditu, eta horiek justifikatzen dute gardentasunari eta balizko interes-gatazken prebentzioari buruzko informazioa eskatzea. Ez du, berez, ondorioztatzen uzten bateraezintasunik edo jarduera irregularrik egon zenik.</p>`},
+ {n:21,p:"C",k:"Ondorioak",t:"Datuek baieztatzen uzten dutena",h:`
+  <ol>
+   <li><b>Jatorri instituzionala duen informazio-asimetria.</b> Plantan sartzen dena tonaraino ezagutzen da. Irteten dena ez da ezagutzen. 2007an eskatutako etengabeko neurgailua ez dago instalatuta jasota; Zorrotzak eta San Inaziok 2014tik 2024ra ez zuten Eusko Jaurlaritzaren estaziorik izan. Datu independente bakarrak, lurzorua eta deposizioa, auzokideek sortu eta ordaindu dituzte.</li>
+   <li><b>Dauden datuek norabide berean seinalatzen dute.</b> Bi neurketa independentek, lurzoruan eta deposizioan, metal astunak aurkitzen dituzte erreferentzien gainetik; kaian, prentsak amiantoaren berri eman du. Elkarrekin ikerketa zabaltzea justifikatzen dute, berez erantzukizun zehatz bat egozteko aukerarik eman gabe.</li>
+   <li><b>Handitze-erabakiek eta jarraipenak azterketa publikoa merezi dute.</b> Ikuskaritzen nahikotasuna, lurzoruari buruzko errekerimenduak eta osasun publikoko jarduerak argitzea eskatzen da.</li>
+   <li><b>Harreman-sare trinkoa, bere pieza bakoitzean legala eta multzo gisa inoiz azaldu gabea.</b></li>
+   <li><b>Lekualdatzeak ez du berez aurrekoetatik ezer konpontzen.</b> 2031ko epea duen baimena da, Zorrotzan itxiera-datarik gabe eta Profersarik gabe. Bitartean, plantak 2025ean tratatu zuena baino % 36 hondakin arriskutsu gehiago trata ditzake.</li>
+  </ol>
+  <div class="big-quote">Data. Datuak. Osasuna.<small>Irakurri auzokideen hiru exijentziak eta zer egin dezakezun zuk.</small></div>
+  <p><a class="btn solid" href="#exigimos">Zer exijitzen dugun</a> <a class="btn" href="#actua">Ekin</a></p>`}
+];
+
+const PROTECT = [
+  ["hand","Garbitu eskuak iristean","Urarekin eta xaboiarekin, etxean sartu bezain laster eta jan edo sukaldatu aurretik. Eta haurrenak, beti, parketik edo jolastokitik itzultzean.","Metalak dituen hautsa azalari itsasten zaio eta ahoan amaitzen du. Haurtzaroan berunarekiko esposizio-bide garrantzitsuena da."],
+  ["shoe","Kendu oinetakoak atean","Utzi kaleko oinetakoak sarreran eta erabili etxeko zapatilak. Jarri lanpas bat kanpoan eta beste bat barruan.","Zolek kaleko eta kutsatutako lurzoruko hautsa eramaten dute haurrak jolasten diren alfonbra eta zoruetaraino."],
+  ["shirt","Ez eseki arropa kanpoan","Batez ere haizeak zure auzorantz jotzen duen egunetan, usaina edo hauts ikusgaia dagoenean. Eseki barruan edo erabili lehorgailua. Kanpoan esekitzen baduzu, astindu gorde aurretik.","Arropa hezeak airean esekita dauden partikulak harrapatzen ditu, eta gainean jartzen dituzu, azalari itsatsita orduz."],
+  ["mop","Garbitu bustian, ez erratzarekin","Lanbasa eta trapu hezea zoruetarako, altzarietarako, leiho-ertzetarako eta balkoietarako. Saihestu erratza eta hautsa kentzeko lumak. HEPA iragazkia duen xurgagailua baduzu, erabili.","Lehorrean erratza pasatzeak hautsa berriro jartzen du arnasten duzun airean. Bustian, trapuan geratzen da."],
+  ["window","Aireztatu zentzuz","Aireztatu labur eta indartsu (bost edo hamar minutu). Saihestu leihoak irekitzea usaina, hautsa edo plantatik datorren haizea dagoen egunetan, eta itxi gertakari bat badago.","Etxeko airea berritzea beharrezkoa da, baina ez sartzen dena irteten dena baino okerragoa denean."],
+  ["kid","Zaindu txikienak","Garbitu eskuak maiz, izan azazkalak motz, garbitu bustian kanpoko jostailuak eta saihestu parkean eskuak garbitu gabe jatea.","Haurrek eskuak ahora eramaten dituzte, aire gehiago arnasten dute pisu-kiloko, eta haien nerbio-sistema sentikorragoa da berunarekiko."],
+  ["leaf","Baratzeak eta loreontziak: kontuz","Garbitu oso ondo (eta zuritu, ahal baduzu) balkoian edo inguruko baratzeetan lantzen duzuna. Ez landatu jatekorik zuzenean inguruko lurzoruan, aurretik aztertu gabe.","Plantaren ondoko lurzoruan beruna eta artsenikoa neurtu dira, parke baterako balio legalaren oso gainetik."],
+  ["paw","Hankak garbi","Txakurra baduzu, garbitu hankak trapu heze batekin paseotik itzultzean.","Zure maskotek ere lurzoruko hautsa ekartzen dute etxera."],
+  ["fan","Purifikagailu bat, ahal baduzu","Ahal baduzu, logelan HEPA iragazkia duen purifikagailu batek barruko partikula finak murrizten ditu. Aldatu iragazkia dagokionean.","Etxe barruan laguntzen du, baina ez du gainerakoa ordezten, ezta iturria kentzea ere."]
+];
+
+
+const ACTS = [
+  {i:"wa",t:"Batu WhatsApp komunitatera",p:"Hor ematen da mobilizazioen eta gertakarien berri, denbora errealean. Zerbait ikusten baduzu, han kontatzen duzu.",b:"wa",feature:true},
+  {i:"flag",t:"Eseki bandera",p:"Kanpainako bandera zure balkoian jartzeak auzo osoa pankarta bihurtzen du.",b:"flag"},
+  {i:"sticker",t:"Egin eta jarri pegatinak",p:"Diseinuak kitean daude, paper itsasgarrian edo kopiategi batean inprimatzeko prest. Zure atarian, leihoan, karpetan, bizikletan edo autoan.",b:"stickers"},
+  {i:"share",t:"Partekatu sareetan",p:"Karrusela, txartelak, storyak eta bideoak argitaratzeko prest daude, bakoitza bere iturriarekin. Iturria duen datu bat ezin da gezurtatu.",b:"kit"},
+  {i:"print",t:"Inprimatu eta banatu diptikoa",p:"Zuri-beltzean, elebiduna, A4 A5era tolestua. Postontzietarako, dendetarako, atarirako edo anbulatorioko itxarongelarako.",b:"diptico"},
+  {i:"cam",t:"Dokumentatu eta salatu",p:"Hautsaren, kearen, usainen, likido-arrastoen edo kamioien argazkiak eta bideoak, data eta orduarekin. Salatu Ingurumen Ikuskaritzan eta partekatu WhatsApp komunitatean: auzo-erregistroan jasoko dugu.",b:"denuncia"},
+  {i:"mail",t:"Galdetu erakundeei",p:"Dokumentu batekin erantzun daitezkeen hamabi galdera zehatz. Kopiatu nahi dituzunak eta bidali dagokionari.",b:"preguntas"}
+];
+
+const ACTORS = [
+ {id:"gv",name:"Eusko Jaurlaritza",role:"Industria, Trantsizio Energetiko eta Jasangarritasun Saila. Baimentzen, ikuskatzen eta zehatzen du.",
+  yes:[["14/01/2008","Sader-en ingurumen-baimen integratua ematen du. Udalak 2007an etengabeko neurgailu bat sartzeko eskatu zuen; ez dago instalatuta jasota.","9,17"],["2010eko ekaina","Elorrietako kabinak funtzionatzeari uzten dio; haren ekipoak Erandiora doaz.","39"],["2012","Berezko baimena ematen dio Profersari.","9"],["17/08/2022","Sader-en baimena berrikusten du: arriskutsuen eta ez-arriskutsuen urteko mugak; lurzoru-txostena eskatzen du.","9"],["15/05/2024","Profersaren behin-behineko itxiera agintzen du, bi istripuren ondoren. Ekainean irekitzen da berriro, baldintzekin.","49,47"],["2024","Airea neurtzeko bi unitate mugikor jartzen ditu eremuan, bat San Inazion.","40"],["20 eta 25/11/2024","Ikuskaritzak 2022ko eta 2023ko kantitateak aztertzen ditu; ez du ez-betetzerik ikusten eta betetze-maila «ertain-altutzat» jotzen du.","6"],["17/03/2025","Sader-en ahalmena % 38 handitzen du «aldaketa ez-funtsezko» gisa, jendaurreko informaziorik gabe.","7,8"],["12/2025","Sailburuak Legebiltzarrean handitzea defendatzen du, eta bolumen handiagoak ez dakarrela arrisku handiagorik.","8"],["8/01/2026","Lurzoruaren egoera-txostena eskatzen dio Sader-i.","14,16"],["11/02/2026","Zierbenako planta baimentzen du. Alegazio guztiak ezesten ditu.","23,24"]],
+  no:[["2014–2024","Zorrotzak eta San Inaziok hamar urte ematen dituzte Eusko Jaurlaritzaren airearen kalitate-estaziorik gabe.","18,19"],["2025","Sakabanatze-azterketarik eta Osasun Sailaren txostenik gabe handitzen du, auzokideek salatzen dutenez.","7,21"],["—","Ez dugu aurkitu Sader-en eta Profersaren isurien neurketen argitalpen osorik.","22"],["—","Ez da aurkitu auzoen azterketa epidemiologiko espezifiko eta publikorik.","22"],["—","Ez da aurkitu gertakari baten aurrean biztanleriari abisatzeko protokolo publikorik.","22,52"],["—","Argitaratutako ebazpen batek ere ez du itxiera-datarik finkatzen Zorrotzan, ezta Profersarentzat ere.","23,24"],["2026ko iraila","San Inazioko unitate mugikorrak ez du ebaluazio ofizialean konputatzen, eta ez dabil behar bezala.","21,18"]]},
+ {id:"bilbao",name:"Bilboko Udala",role:"Zorrotzako Puntako lurzorua antolatzen du, eta kamioiak igarotzen diren kaiaren jabea da.",
+  yes:[["5/07/2007","Haren txostenak baimenean «etengabeko neurketa-sistema bat, 1997an konprometitu zen bezala» sartzeko eskatzen du.","17"],["16/09/2015","Sader-ekin hitzarmen bat onartzen du jarduera uztea aurreratzeko: 2,7 M€ eta 2018rako aurreikusitako irteera.","77,27"],["2026","Arartekoari jakinarazten dio jarraipena egiten duela eta enpresek kaiaz egiten duten erabilera zuzena dela.","43"]],
+  no:[["2018 → gaur","Hitzarmenak ez du Sader Zorrotzatik atera; ez dago jasota zer ordaindu den, ezta ez-betetzeak zer zigor duen ere.","48,78"],["—","Dinamek kaiari buruz egindako azterlana ez da argitaratu; prentsak argitaratu zuenez, amianto-zatiak aurkitu zituen.","44,45"],["—","Zorrotzako Puntaren antolamendua, hitzarmenaren epeak abiarazten dituena, onartu gabe dago oraindik.","48,78"],["—","Ingurumena babesteko haren ordenantza 2000. urtekoa da.","80"]]},
+ {id:"diputacion",name:"Bizkaiko Foru Aldundia",role:"Grandes Molinos Vascos eraikin zaharraren arduraduna, kaiaren ondoan.",
+  yes:[["2025","Txosten batek 19 tona ingurutan kokatzen du estalkiko amiantoa, kentzeko zain dagoena.","45"]],
+  no:[["—","Estalkiko amiantoa kentzeko zain dago oraindik.","45"]]},
+ {id:"ararteko",name:"Arartekoa",role:"Euskadiko herriaren defendatzailea. Kexak ikertzen ditu; haren ebazpenak ez dira lotesleak.",
+  yes:[["2025–2026","Auzokideen bi espediente izapidetzen ditu: handitzea ez-funtsezko gisa, eta ez-betetzeen aurrean neurririk ez hartzea.","21"],["30/03/2026","2025eko urteko txostenak gabeziak egiaztatzen ditu ingurumen-ikuskaritzan, -kontrolean eta -diziplinan.","81"],["13/07/2026","Kaiaren erabilerari buruzko espedientea ixten du, eta Udalari arin erantzuteko betebeharra gogorarazten dio.","43"]],
+  no:[["—","Argitaratutako ebazpenik ez, irekita dauden bi espedienteei buruz.","21"]]},
+ {id:"getxo",name:"Getxo eta Santurtzi",role:"Zierbenako etorkizuneko plantaren ondoko udalak.",
+  yes:[["2025–2026","Zierbenako plantaren aurkako alegazioak aurkezten dituzte. Eusko Jaurlaritzak ezetsi egiten ditu.","24"]],no:[]},
+ {id:"oposicion",name:"Oposizioko taldeak",role:"Legebiltzarrean edo udalean ordezkaritza duten taldeak.",
+  yes:[["05/2024","Bi plantak hirigunetik ateratzeko eskatzen duten adierazpenak.","89"],["02/2025","Zierbenako instalazioari alegazioak, eta ingurumen-azterketa berri baten eskaera.","83,84"],["12/2025","Galdera Eusko Legebiltzarrean: 11.000 pertsona inguru usainen eta airearen kalitate txarraren eraginpean.","8"]],no:[]},
+ {id:"empresa",name:"Enpresa (Agaleus)",role:"Sader-en eta Profersaren jabe den taldea.",
+  yes:[["2015","Udalarekin hitzarmena sinatzen du 2018an irteteko.","77"],["2022","Iragartzen du 2024an utziko diola Zorrotzan hondakin arriskutsuak tratatzeari.","27"],["2024","Iragartzen du 2026ko bigarren seihilekoan portuan jardungo duela.","22,54"],["07/2025","Ortuellako proiektuari uko egiten dio, auzokideen eta udalaren aurkakotasunaren ondoren.","72"],["10/2026","Profersaren kapitala 60.000 €-ra murrizten du.","64"]],
+  no:[["2018, 2024, 2026","Iragarritako irteera-datetatik bat ere ez da bete.","77,27,22"],["—","Dio ez duela ezer isurtzen; ez dugu aurkitu haren neurketen argitalpen osorik.","22"],["2025–2026","Ingurumen-organoaren arabera, lurzoruaren egoera-txostena ez da aurkeztu; «ohar tekniko» bat aurkeztu zuen.","16,14"]]}
+];
+
+const QUESTIONS = [
+ ["Zeintzuk dira Sader-en eta Profersaren neurtutako isuriak, fokuka eta difusoak, azken hamar urteetan?","Eusko Jaurlaritza; enpresa"],
+ ["Zein txostenetan justifikatzen da % 38ko handitzeak ez duela ingurumen- edo osasun-eragin handiagorik? Osasun Sailak txostena eman al zuen?","Eusko Jaurlaritza"],
+ ["Zein kontrol aplikatzen dira kromo hexabalentezko bainuak garraiatzean, deskargatzean eta maneiatzean, eta zer emaitzarekin?","Eusko Jaurlaritza; enpresa"],
+ ["Zer kromo mota dago auzoetako deposizioan eta lurzoruan?","Eusko Jaurlaritza"],
+ ["Zer oinarriz konpentsatu zen 2022ko eta 2023ko hondakin arriskutsuen gehiegizkoa baimendutako ahalmen osoarekin?","Eusko Jaurlaritza"],
+ ["Noiz aurkeztuko du Sader-ek lurzoruaren egoera-txostena? «Ohar teknikoak» eskatutakoa betetzen al du? Eta Profersaren Lurzoruen Dokumentu Bakarra?","Eusko Jaurlaritza"],
+ ["Zer dio Dinamen azterlanak kaiari buruz? Zergatik ez da publikoa?","Bilboko Udala"],
+ ["Zer ordaindu da 2015eko hitzarmenetik eta zer epe daude indarrean?","Bilboko Udala"],
+ ["Zein ebazpenek finkatuko du Zorrotzan jarduera uzteko data? Eta Profersarena?","Eusko Jaurlaritza; Udala"],
+ ["Zierbenako plantaren hondakinei buruzko zer informazio tratatu da isilpekotzat, eta zergatik? Zatiren batek eragiten die isuriei?","Eusko Jaurlaritza"],
+ ["Noiz enkargatuko da kanaleko auzoen azterketa epidemiologikoa?","Osasun Saila"],
+ ["Zergatik egon ziren Zorrotza eta San Inazio hamar urtez Eusko Jaurlaritzaren estaziorik gabe, eta zergatik dira gaurkoak mugikorrak, ez dute konputatzen eta huts egiten dute?","Eusko Jaurlaritza"]
+];
+
+/* t: emp (empresa), adm (administración), acc (accidente), vec (vecindario), fut (futuro) */
+const TL = [
+ ["1986","Sader eratzen da, Zorrotzako Puntan.","emp","26"],
+ ["2002","Agaleus Medio Ambiente y Energía, S.L. eratzen da.","emp","63"],
+ ["2006–2009","Xabier Caño, Ihobe-ren zuzendari nagusia.","adm","72"],
+ ["5/07/2007","Udal-txostena: etengabeko neurgailu bat eskatzen du, «1997an konprometitu zen bezala».","adm","17"],
+ ["14/01/2008","Sader-en ingurumen-baimen integratua. Neurgailua ez dago instalatuta jasota.","adm","9"],
+ ["2009","Caño Sader-en organoetan sartzen da, merkataritza-erregistroaren arabera.","emp","26"],
+ ["2010eko ekaina","Elorrietako kabinak funtzionatzeari uzten dio.","adm","39"],
+ ["2010","Usainen Mahaia eratzen da; lau aldiz biltzen da.","vec","19"],
+ ["2011","Zorrotza airearen kalitateari buruzko txosten ofizialetatik desagertzen da.","adm","18"],
+ ["1/10/2012","Profersa Sader-etik banatzen da, berezko baimenarekin.","adm","9"],
+ ["16/09/2015","Udala–Sader hitzarmena. Aurreikusitako irteera: 2018.","adm","77,27"],
+ ["2016–2022","Lau ikuskaritza, Profersaren ez-betetzeekin airearen kalitatean.","adm","53"],
+ ["5/06/2018","Agaleus, Sader-en administratzaile bakarra.","emp","26"],
+ ["2021","Caño, Agaleuseko ingurumen-dibisioko kontseilari delegatua.","emp","72"],
+ ["17/08/2022","Sader-en baimenaren berrikuspena, urteko mugekin.","adm","9"],
+ ["2022–2023","Sader-ek bere muga espezifikoa baino hondakin arriskutsu gehiago jasotzen ditu.","emp","5"],
+ ["2023","Dinamen azterlana kaiari buruz, prentsaren arabera. Ez da argitaratzen.","adm","44,45"],
+ ["26/04/2024","Lehen gertakaria Profersan: lurrun-zutabea Zorrotzaren gainean.","acc","47"],
+ ["2/05/2024","Manifestazioa Zorrotzan: 1.200 pertsona inguru.","vec","48"],
+ ["10–11/05/2024","Erreakzio kimikoa Profersan: ke-hodeia. Leihoak ixteko jarraibidea.","acc","22,47"],
+ ["15/05/2024","Profersaren behin-behineko itxiera.","adm","49"],
+ ["2024","Airea neurtzeko bi unitate mugikor eremuan.","adm","40"],
+ ["20/06/2024","Azido klorhidrikoaren isuri txiki bat Sader-en.","acc","51"],
+ ["20 eta 25/11/2024","Ikuskaritza: betetze-maila «ertain-altua»; ez da ez-betetzerik ikusten kantitateetan.","adm","6"],
+ ["17/03/2025","% 38ko handitzea, aldaketa ez-funtsezko gisa.","adm","7"],
+ ["2025eko uztaila","Agaleus-ek Ortuellari uko egiten dio. Ihobe-k eta Aclima-k hitzarmena berritzen dute.","emp","72,73"],
+ ["2025eko iraila","Caño-k Agaleus uzten du.","emp","72"],
+ ["2025eko azaroa","Ikuskaritzak hautematen du lurzoru-txostena ez dela aurkeztu.","adm","16"],
+ ["12/2025","Legebiltzarreko galdera; sailburuak handitzea defendatzen du.","adm","8"],
+ ["18/12/2025","Ikuskaritzak salaketa bati erantzuten dio: enpresak dio egun horretan ez zuela gorabeherarik izan.","vec","46"],
+ ["8/01/2026","Lurzoru-txostenaren errekerimendua.","adm","14"],
+ ["11/02/2026","Zierbenako plantaren baimena. Alegazio guztiak, ezetsita.","adm","23,24"],
+ ["30/04–25/06/2026","IPE-CSICen atmosferako deposizio-kanpaina, auzokideek zaindutako kaptadoreekin.","vec","13"],
+ ["8/05/2026","ECHO lurzoru-analisiaren emaitzak: beruna eta artsenikoa parke baten ondoan.","vec","14"],
+ ["4/06/2026","Auzokideek «datak» exijitzen dituzte jarduera uzteko.","vec","31"],
+ ["10/06/2026","Zierbenako baimena EHAAn argitaratzen da. Bost urteko epea hasten da.","adm","23"],
+ ["13/07/2026","Arartekoak kaiari buruzko espedientea ixten du.","adm","43"],
+ ["2026ko iraila","San Inazioko neurgailuak behar bezala funtzionatzeari uzten dio.","adm","21"],
+ ["11/12/2026","Airearen kalitateari buruzko Europako zuzentarau berria transposatzeko epearen amaiera.","fut","36"],
+ ["10/06/2031","Zierbenan jarduera hasteko epea iraungitzen da. Zorrotzan itxiera-datarik ez.","fut","23"]
+];
+
+const DOCS = [
+ {ty:"Kanpainaren txostena",t:"¿Qué estamos respirando? (ES)",p:"Edizio publikoa, 2026ko azaroa, gaztelaniaz. Zifra guztiak beren iturriarekin.",f:"informe-sader-es.pdf"},
+ {ty:"Txostena",t:"Zer ari gara arnasten? (EU)",p:"Argitalpen publikoa, euskaraz.",f:"informe-sader-eu.pdf"},
+ {ty:"Ikerketa zientifikoa",t:"Atmosferako deposizioa Bilbon · IPE-CSIC",p:"Jorge Pey Betrán (2026). 56 egun, lau puntu.",f:"estudio-deposicion-csic-2026.pdf"}
+];
+
+/* ---------------- RENDER ---------------- */
+function sups(root=document){
+  $$('sup.s', root).forEach(s => {
+    if (s.dataset.done) return; s.dataset.done = 1;
+    s.innerHTML = '[' + s.dataset.s.split(',').filter(Boolean).map(n => `<a data-n="${n}" tabindex="0">${n}</a>`).join(',') + ']';
+  });
+}
+function setDocs(root=document){
+  $$('[data-doc]', root).forEach(a => a.href = docUrl(a.dataset.doc));
+}
+
+/* ticker */
+$('#ticker').innerHTML = [...TICKER, ...TICKER].map(t => `<span>${esc(t)}<i>●</i></span>`).join('');
+$('#ribbon-text').textContent = CONFIG.ribbon;
+
+/* stats */
+$('#stats').innerHTML = STATS.map(([n,t,s]) => `<div class="stat reveal"><div class="n">${n}</div><div class="t">${t}<sup class="s" data-s="${s}"></sup></div></div>`).join('');
+
+/* findings */
+$('#findings').innerHTML = FINDINGS.map(([h,p,c]) => `<div class="finding reveal"><div><h3>${h}</h3><p>${p}</p><a class="go" href="#informe" data-ch="${c}">${c}. kapitulua →</a></div></div>`).join('');
+
+/* report */
+const toc = $('#toc');
+const parts = {I:"I. zatia · Planta eta neurtu dena", II:"II. zatia · Nor den nor eta nork erabakitzen duen", C:"Amaiera"};
+let lastP = '';
+toc.innerHTML = CH.map(c => { let h=''; if (c.p!==lastP){h=`<h4>${parts[c.p]}</h4>`; lastP=c.p;} return h + `<button data-ch="${c.n}"><span>${c.p==='C'?'·':c.n}</span>${c.t}</button>`; }).join('');
+function openCh(n, scroll){
+  const i = CH.findIndex(c => c.n == n); if (i < 0) return; const c = CH[i];
+  const prev = CH[i-1], next = CH[i+1];
+  $('#chapter').innerHTML = `<div class="kicker">${c.p==='C'?'':c.n+'. kapitulua'+' · '}${c.k}</div><h3>${c.t}</h3>${R(c.h)}
+   <div class="chap-nav">${prev?`<button class="btn small" data-ch="${prev.n}">← ${prev.p==='C'?'':prev.n+'. '}${prev.t}</button>`:'<span></span>'}${next?`<button class="btn small dark" data-ch="${next.n}">${next.p==='C'?'':next.n+'. '}${next.t} →</button>`:''}</div>`;
+  $$('button', toc).forEach(b => b.classList.toggle('on', b.dataset.ch == n));
+  sups($('#chapter')); setDocs($('#chapter'));
+  try { localStorage.setItem('sader-ch', n); } catch(e){}
+  if (scroll) $('#informe').scrollIntoView({behavior:'smooth'});
+  if (window.innerWidth < 980) toc.classList.remove('open');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-ch]'); if (!b) return;
+  e.preventDefault(); openCh(b.dataset.ch, true);
+});
+$('#tocToggle').onclick = () => toc.classList.toggle('open');
+let startCh = 1; try { startCh = +localStorage.getItem('sader-ch') || 1; } catch(e){}
+openCh(startCh, false);
+
+/* protect */
+$('#protect').innerHTML = PROTECT.map(([i,h,p,w]) => `<div class="tip reveal"><div class="ico">${ico[i]}</div><h3>${h}</h3><p>${p}</p><span class="why"><b>Zergatik:</b> ${w}</span></div>`).join('');
+
+/* acts */
+function actBtn(b){
+  switch(b){
+    case 'wa': return CONFIG.whatsapp ? `<a class="btn ${'dark'}" href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">Sartu komunitatean</a>` : `<a class="btn dark" href="mailto:${esc(CONFIG.email)}?subject=Parte%20hartu%20nahi%20dut">Eskatu esteka</a>`;
+    case 'flag': return `<a class="btn small" href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">${CONFIG.flag.price ? 'Eskatu · '+esc(CONFIG.flag.price) : 'Eskatu zurea'}</a>`;
+    case 'stickers': return `<a class="btn small" href="${esc(CONFIG.materialUrl)}#pegatinas">Deskargatu diseinuak</a>`;
+    case 'kit': return `<a class="btn small" href="#kit">Ikusi kita</a>`;
+    case 'diptico': return `<a class="btn small" href="../material/eu/papera/diptikoa-A4-A5ean-tolestua.pdf" target="_blank" rel="noopener">Deskargatu diptikoa</a>`;
+    case 'denuncia': return `<a class="btn small" href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">Partekatu komunitatean</a>`;
+    case 'preguntas': return `<a class="btn small" href="#quien-decide">Hamabi galderak</a>`;
+  }
+}
+const actExtra = {flag: () => `<p style="flex:0;font-size:14.5px;opacity:.85">${esc(CONFIG.flag.where)}</p>`, stickers: () => `<p style="flex:0;font-size:14.5px;opacity:.85">${esc(CONFIG.stickers.where)}</p>`};
+$('#acts').innerHTML = ACTS.map(a => `<div class="act reveal ${a.feature?'feature':''}"><div class="ico">${ico[a.i]}</div><h3>${a.t}</h3><p>${a.p}</p>${actExtra[a.b]?actExtra[a.b]():''}${actBtn(a.b)}</div>`).join('');
+
+/* events */
+const MES = ['urt','ots','mar','api','mai','eka','uzt','abu','ira','urr','aza','abe'];
+const today = new Date(); today.setHours(0,0,0,0);
+const evs = CONFIG.events.map(e => ({...e, d: e.date ? new Date(e.date+'T12:00:00') : null}));
+const upcoming = evs.filter(e => !e.d || e.d >= today), past = evs.filter(e => e.d && e.d < today);
+function evHtml(e, isPast){
+  const d = e.d ? `${e.d.getDate()} ${MES[e.d.getMonth()]}<small>${e.time||''}${isPast?' · eginda':''}</small>` : `Laster<small>data zehazteke</small>`;
+  return `<div class="ev" style="${isPast?'opacity:.55':''}"><div class="d">${d}</div><div><h4>${esc(e.title)}</h4><p>${esc(e.place)}${e.text?' · '+esc(e.text):''}</p></div></div>`;
+}
+$('#events').innerHTML = upcoming.map(e => evHtml(e,false)).join('') + past.map(e => evHtml(e,true)).join('') + `<p style="color:#8f887f;font-size:14.5px;margin-top:16px">Datak WhatsApp komunitatean eta Instagramen baieztatzen dira.</p>`;
+
+/* kit */
+const KIT_CARRUSEL = [["00-azala","Azala"],["01-testuingurua","Testuingurua"],["02-muga","Muga"],["03-lurzorua","Lurzorua"],["04-osasuna","Osasuna"],["05-nork-erabakitzen","Nork erabakitzen du"],["06-itxiera","Zer exijitzen dugun"]];
+const KIT_TARJETAS = [["beruna-airetik","Beruna airean"],["airea","Airea"],["kromoa","Kromoa"],["neurgailuak","Neurgailuak"],["isilpekoa","Isilpeko informazioa"]];
+/* [miniatura, imagen a tamaño completo, texto]. Las piezas salen de la carpeta material/ */
+const KIT = [["../kit/cartel-1-diciembre.jpg","../kit/cartel-1-diciembre.jpg","Kartela · Abenduaren 1eko manifestazioa"],
+  ...KIT_CARRUSEL.map(([f,a]) => [`../material/mini/eu/karrusela/${f}.jpg`, `../material/eu/karrusela/${f}.png`, a]),
+  ...KIT_TARJETAS.map(([f,a]) => [`../material/mini/eu/txartelak-4x5/${f}.jpg`, `../material/eu/txartelak-4x5/${f}.png`, a])];
+$('#kitgrid').innerHTML = KIT.map(([m,f,a]) => `<img src="${m}" data-full="${f}" alt="${a}" title="${a}" loading="lazy" class="zoom">`).join('');
+$('#kitAll').href = CONFIG.materialUrl; $('#kitVideos').href = CONFIG.materialUrl + '#videos'; $('#kitStickers').href = CONFIG.materialUrl + '#pegatinas'; $('#kitLink2').href = CONFIG.materialUrl;
+const SHARE = `📣 ABENDUAK 1 · 18:30 · Manifestazioa, Eusko Jaurlaritzatik (Gran Vía 85) Bilboko Udalera
+
+Zer ari gara arnasten? 🏭
+Bilbo barruan, hiru ikastetxetik 500 m ingurura, Estatuko hondakin arriskutsuen planta handienetako bat dabil: Sader-Profersa, Zorrotzako Puntan.
+
+· 79.593 tona hondakin arriskutsu 2025ean
+· San Inazioren gainean Espainiako hirien maximoa baino 4 aldiz berun gehiago erortzen da (IPE-CSIC ikerketa)
+· 10 urte Eusko Jaurlaritzaren estaziorik gabe Zorrotzan eta San Inazion
+· Auzokideen osasun-azterketarik ez
+
+Itxiera-data, datu publikoak eta azterketa epidemiologiko bat exijitzen ditugu.
+Datuak, beren iturriarekin: ${CONFIG.siteUrl}
+Instagram: @sader_profersa_kanpora
+
+#SaderProfersaKanpora`;
+$('#shareText').textContent = SHARE;
+function copy(txt, msg){
+  const done = () => toast(msg||'Kopiatuta');
+  try { navigator.clipboard.writeText(txt).then(done, () => fallbackCopy(txt, done)); } catch(e){ fallbackCopy(txt, done); }
+}
+function fallbackCopy(txt, done){ const t=document.createElement('textarea'); t.value=txt; document.body.appendChild(t); t.select(); try{document.execCommand('copy'); done();}catch(e){toast('Hautatu testua eta kopiatu');} t.remove(); }
+$('#copyShare').onclick = () => copy(SHARE, 'Testua kopiatuta. Zabaldu!');
+
+/* tracker */
+$('#actorTabs').innerHTML = ACTORS.map(a => `<button data-actor="${a.id}">${a.name}</button>`).join('');
+function itemHtml([d,t,s]){ return `<div class="item"><div class="d">${d}</div><div>${t}${s?`<sup class="s" data-s="${s}"></sup>`:''}</div></div>`; }
+window.pickActor = function(id){
+  const a = ACTORS.find(x => x.id === id) || ACTORS[0];
+  $$('#actorTabs button').forEach(b => b.classList.toggle('on', b.dataset.actor === a.id));
+  $('#actor').innerHTML = `<div class="actor-head"><h3>${a.name}</h3><span class="role">${a.role}</span></div>
+   <div class="col yes"><h4>Egin duena</h4>${a.yes.map(itemHtml).join('') || '<p class="pending">Dokumentatutako jarduketarik ez.</p>'}</div>
+   <div class="col no"><h4>Egin ez duena / egiteke</h4>${a.no.length ? a.no.map(itemHtml).join('') : '<p style="color:var(--muted);font-size:16px;padding-top:12px;border-top:1px solid var(--line)">Ez da erabakitzen duen erakundea.</p>'}</div>`;
+  sups($('#actor'));
+};
+$('#actorTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) pickActor(b.dataset.actor); });
+pickActor('gv');
+$('#questions').innerHTML = QUESTIONS.map(([q,w],i) => `<div class="q"><div class="n">${i+1}</div><div>${q}</div><div class="who">${w}</div><div class="st"><span class="tag pregunta">Erantzunik gabe</span></div></div>`).join('');
+$('#copyQ').onclick = () => copy(QUESTIONS.map(([q,w],i) => `${i+1}. ${q} (${w})`).join('\n') + '\n\nIturria: «Zer ari gara arnasten?» auzo-txostena, 2026ko azaroa.', 'Galderak kopiatuta');
+
+/* timeline */
+const TLT = {all:"Dena",emp:"Enpresa",adm:"Administrazioak",acc:"Istripuak",vec:"Auzokideak",fut:"Epeak"};
+$('#tlFilter').innerHTML = Object.entries(TLT).map(([k,v]) => `<button class="chip ${k==='all'?'on':''}" data-t="${k}">${v}</button>`).join('');
+function drawTL(t){
+  $('#timeline').innerHTML = TL.filter(x => t==='all' || x[2]===t).map(([d,x,ty,s]) => `<div class="tl t-${ty}"><div class="d">${d}</div><div class="dot"></div><div class="x">${x}<sup class="s" data-s="${s}"></sup></div></div>`).join('');
+  sups($('#timeline'));
+}
+$('#tlFilter').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; $$('#tlFilter .chip').forEach(c => c.classList.toggle('on', c===b)); drawTL(b.dataset.t); });
+drawTL('all');
+
+/* archive */
+$('#docsFeat').innerHTML = DOCS.map(d => `<a class="doc" data-doc="${d.f}" target="_blank" rel="noopener"><span class="ty">${d.ty}</span><h4>${d.t}</h4><p>${d.p}</p><span class="go">Ireki PDFa →</span></a>`).join('');
+const CATS = ['Guztiak', ...new Set(FUENTES.map(s => s.cat))];
+let cat = 'Guztiak';
+$('#archChips').innerHTML = CATS.map(c => `<button class="chip ${c===cat?'on':''}" data-c="${c}">${c}${c==='Guztiak'?'':' · '+FUENTES.filter(s=>s.cat===c).length}</button>`).join('');
+$('#archChips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; cat = b.dataset.c; $$('#archChips .chip').forEach(c => c.classList.toggle('on', c===b)); drawSrc(); });
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function drawSrc(){
+  const q = norm($('#q').value.trim());
+  const list = FUENTES.filter(s => (cat==='Guztiak' || s.cat===cat) && (!q || norm(s.t + ' ' + s.cat + ' ' + s.url).includes(q)));
+  $('#count').textContent = `${FUENTES.length} iturritik ${list.length}`;
+  $('#srcList').innerHTML = list.map(s => { const h = srcHref(s); return `<div class="src" id="src-${s.n}"><div class="n">${s.n}</div><div class="c">${s.cat}</div><div class="t">${esc(s.t)}${s.legacy?'<span class="leg">Edizio osotik jarauntsitako iturria · komeni da berriro kontsultatzea</span>':''}</div>${h?`<a class="lk" href="${esc(h)}" target="_blank" rel="noopener">Ireki ↗</a>`:'<span class="na">Auzo-dokumentua / ezin da estekatu</span>'}</div>`; }).join('') || '<p style="padding:20px 0">Ez dago bilaketarekin bat datorren ezer.</p>';
+}
+$('#q').addEventListener('input', drawSrc);
+drawSrc();
+
+/* contact */
+document.querySelectorAll('a[data-wa]').forEach(a => { a.href = CONFIG.whatsapp; });
+$('#waShow').innerHTML = CONFIG.whatsapp ? `<a href="${esc(CONFIG.whatsapp)}" target="_blank" rel="noopener">Sartu komunitatean</a>` : '—';
+$('#igShow').href = CONFIG.instagram;
+
+/* popover de fuentes */
+const pop = $('#pop');
+function showPop(a){
+  const s = srcMap[a.dataset.n]; if (!s) return;
+  const h = srcHref(s);
+  pop.innerHTML = `<div class="c">[${s.n}] ${s.cat}</div>${esc(s.t)}<div>${h?`<a href="${esc(h)}" target="_blank" rel="noopener">Ireki iturria ↗</a>`:''}<a href="#archivo" data-goto="${s.n}">Ikusi artxiboan</a></div>`;
+  pop.classList.add('show'); popY = scrollY;
+  const r = a.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
+  let x = Math.min(Math.max(10, r.left - pw/2), window.innerWidth - pw - 10);
+  let y = r.bottom + 8; if (y + ph > window.innerHeight - 10) y = r.top - ph - 8;
+  pop.style.left = x + 'px'; pop.style.top = y + 'px';
+}
+document.addEventListener('click', e => {
+  const a = e.target.closest('sup.s a');
+  if (a) { e.preventDefault(); e.stopPropagation(); showPop(a); return; }
+  const g = e.target.closest('[data-goto]');
+  if (g) { e.preventDefault(); pop.classList.remove('show'); cat='Guztiak'; $('#q').value=''; $$('#archChips .chip').forEach((c,i)=>c.classList.toggle('on',i===0)); drawSrc(); const el = $('#src-'+g.dataset.goto); if (el){ el.scrollIntoView({behavior:'smooth',block:'center'}); el.classList.add('flash'); setTimeout(()=>el.classList.remove('flash'),1600);} return; }
+  if (!e.target.closest('#pop')) pop.classList.remove('show');
+});
+document.addEventListener('keydown', e => { if (e.key==='Enter' && e.target.matches('sup.s a')) showPop(e.target); if (e.key==='Escape'){ pop.classList.remove('show'); lb.classList.remove('show'); } });
+let popY=0;
+window.addEventListener('scroll', () => { if (pop.classList.contains('show') && Math.abs(scrollY-popY)>120) pop.classList.remove('show'); }, {passive:true});
+
+/* lightbox */
+const lb = $('#lb');
+document.addEventListener('click', e => {
+  const img = e.target.closest('img.zoom'); if (!img) return;
+  $('img', lb).src = img.dataset.full || img.src; $('p', lb).textContent = img.alt || ''; lb.classList.add('show');
+});
+lb.onclick = () => lb.classList.remove('show');
+
+/* toast */
+let tt; function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('show'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('show'),2200); }
+
+/* nav */
+$('#burger').onclick = () => $('#nav').classList.toggle('open');
+$$('#nav a').forEach(a => a.addEventListener('click', () => $('#nav').classList.remove('open')));
+$$('[data-wa]').forEach(a => { if (CONFIG.whatsapp){ a.href = CONFIG.whatsapp; a.target='_blank'; a.rel='noopener'; } });
+const secs = ['informe','protegete','actua','quien-decide','cronologia','archivo','contacto'].map(id => document.getElementById(id));
+const navObs = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) $$('#nav a').forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#'+en.target.id)); }), {rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s => s && navObs.observe(s));
+
+/* reveal */
+const ro = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting){ en.target.classList.add('in'); ro.unobserve(en.target);} }), {threshold:.08});
+$$('.reveal').forEach(el => ro.observe(el));
+
+sups(); setDocs();
+</script>
+<script data-goatcounter="https://sader-egunero.goatcounter.com/count" async src="../js/count.js"></script>
+</body>
+</html>
