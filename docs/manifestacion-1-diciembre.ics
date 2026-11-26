@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sader Egunero//sader-egunero.net//ES
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:manifestazioa-20261201@sader-egunero.net
+DTSTAMP:20261126T090000Z
+DTSTART:20261201T173000Z
+DTEND:20261201T193000Z
+SUMMARY:Manifestazioa / Manifestación: Sader-Profersa Kanpora!
+LOCATION:Eusko Jaurlaritza / Gobierno Vasco\, Gran Vía 85\, Bilbao
+DESCRIPTION:18:30 · Eusko Jaurlaritza (Gran Vía 85) → Bilboko Udala. https://sader-egunero.net
+URL:https://sader-egunero.net/
+END:VEVENT
+END:VCALENDAR
