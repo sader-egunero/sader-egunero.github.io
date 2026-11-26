@@ -138,6 +138,18 @@ body:not(.pasada) .ribbon{display:none}
 body:not(.pasada) .hero .wrap{padding-top:64px;padding-bottom:36px}
 @media (max-width:700px){.h-mani .fecha .r{display:block}.h-mani .top{gap:28px}.h-mani .cartel{max-width:none}.h-mani .cartel img{transform:none}}
 
+/* ---------- noticias ---------- */
+.news-head{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:32px}
+.news-head .kicker{color:#bdb6ac}
+.news-head h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(40px,5vw,64px);line-height:.98;margin:8px 0 0}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.ncard{background:#1f1f1f;border-top:3px solid var(--red);padding:22px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:#fff}
+.ncard:hover{background:#262626}
+.ncard .kicker{font-size:13px;color:#bdb6ac}
+.ncard b{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:24px;line-height:1.06}
+.ncard .t{font-size:16px;color:#d8d1c6}
+@media (max-width:900px){.news-grid{grid-template-columns:1fr}}
+
 /* ---------- nuevo informe del CSIC ---------- */
 .csic{background:var(--paper);border-bottom:3px solid var(--ink)}
 .csic .wrap{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
@@ -435,13 +447,13 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
   <div class="wrap">
     <a class="brand" href="#inicio">SADER-PROFERSA <b>KANPORA!</b></a>
     <nav class="nav" id="nav">
+      <a href="#noticias">Noticias</a>
       <a href="#informe">El informe</a>
       <a href="#protegete">Protégete</a>
       <a href="#actua">Actúa</a>
       <a href="#quien-decide">Quién decide</a>
       <a href="#cronologia">Cronología</a>
       <a href="#archivo">Archivo</a>
-      <a href="#contacto">Contacto</a>
       <!--idiomas--><span class="langs"><a class="lang cur" href="index.html" lang="es" hreflang="es">ES</a><a class="lang" href="eu/index.html" lang="eu" hreflang="eu">EU</a><a class="lang" href="en/index.html" lang="en" hreflang="en">EN</a></span><!--/idiomas-->
       <a class="cta" href="#actua" data-wa>Únete</a>
     </nav>
@@ -523,6 +535,35 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
         <a class="btn" href="csic/index.html">Lo esencial en 2 minutos</a>
       </div>
       <p class="nota">56 días de medición en cuatro puntos, con captadores atendidos por el vecindario. Ciudades de referencia: Barcelona, Zaragoza, Palma y Pamplona (2016–2025). Es un estudio exploratorio: no permite atribuir por sí solo una fuente concreta.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark-sec news" id="noticias">
+  <div class="wrap">
+    <div class="news-head">
+      <div>
+        <div class="kicker">Al día</div>
+        <h2>Noticias y reacciones</h2>
+      </div>
+      <a class="btn small" href="noticias/index.html">Ver todas</a>
+    </div>
+    <div class="news-grid">
+      <a class="ncard" href="noticias/index.html#profersa">
+        <span class="kicker">26 nov 2026 · Instituciones</span>
+        <b>Sader se queda. Profersa cerrará en pérdidas y con indemnización millonaria</b>
+        <span class="t">El Ayuntamiento pacta con Agaleus el cese de Profersa por unos 3 millones de euros. La planta de residuos peligrosos sigue en Zorroza sin fecha de cierre.</span>
+      </a>
+      <a class="ncard" href="noticias/index.html#manifestacion">
+        <span class="kicker">Convocatoria · 1 dic 2026</span>
+        <b>Manifestación el 1 de diciembre, del Gobierno Vasco al Ayuntamiento. Se mantiene tras el anuncio sobre Profersa</b>
+        <span class="t">A las 18:30 desde Gran Vía 85. El convenio anunciado afecta solo a Profersa; Sader sigue sin fecha de cierre.</span>
+      </a>
+      <a class="ncard" href="noticias/index.html#csic">
+        <span class="kicker">24 nov 2026 · Estudio</span>
+        <b>El informe del CSIC ya está disponible: sobre San Ignacio cae cuatro veces más plomo que el máximo de las ciudades de referencia</b>
+        <span class="t">Cuatro puntos de Bilbao, 56 días de medición y hasta 69 componentes analizados. El resumen y el PDF completo.</span>
+      </a>
     </div>
   </div>
 </section>

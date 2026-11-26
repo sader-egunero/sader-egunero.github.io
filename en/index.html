@@ -138,6 +138,18 @@ body:not(.pasada) .ribbon{display:none}
 body:not(.pasada) .hero .wrap{padding-top:64px;padding-bottom:36px}
 @media (max-width:700px){.h-mani .fecha .r{display:block}.h-mani .top{gap:28px}.h-mani .cartel{max-width:none}.h-mani .cartel img{transform:none}}
 
+/* ---------- noticias ---------- */
+.news-head{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:32px}
+.news-head .kicker{color:#bdb6ac}
+.news-head h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(40px,5vw,64px);line-height:.98;margin:8px 0 0}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.ncard{background:#1f1f1f;border-top:3px solid var(--red);padding:22px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:#fff}
+.ncard:hover{background:#262626}
+.ncard .kicker{font-size:13px;color:#bdb6ac}
+.ncard b{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:24px;line-height:1.06}
+.ncard .t{font-size:16px;color:#d8d1c6}
+@media (max-width:900px){.news-grid{grid-template-columns:1fr}}
+
 /* ---------- nuevo informe del CSIC ---------- */
 .csic{background:var(--paper);border-bottom:3px solid var(--ink)}
 .csic .wrap{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
@@ -435,13 +447,13 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
   <div class="wrap">
     <a class="brand" href="#inicio">SADER-PROFERSA <b>KANPORA!</b></a>
     <nav class="nav" id="nav">
+      <a href="#noticias">News</a>
       <a href="#informe">The report</a>
       <a href="#protegete">Protect yourself</a>
       <a href="#actua">Take action</a>
       <a href="#quien-decide">Who decides</a>
       <a href="#cronologia">Timeline</a>
       <a href="#archivo">Archive</a>
-      <a href="#contacto">Contact</a>
       <!--idiomas--><span class="langs"><a class="lang" href="../index.html" lang="es" hreflang="es">ES</a><a class="lang" href="../eu/index.html" lang="eu" hreflang="eu">EU</a><a class="lang cur" href="index.html" lang="en" hreflang="en">EN</a></span><!--/idiomas-->
       <a class="cta" href="#actua" data-wa>Join</a>
     </nav>
@@ -523,6 +535,35 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
         <a class="btn" href="csic/index.html">The essentials in 2 minutes</a>
       </div>
       <p class="nota">56 days of measurement at four sites, with collectors looked after by residents. Reference cities: Barcelona, Zaragoza, Palma and Pamplona (2016–2025). It is an exploratory study: it does not, on its own, allow a specific source to be identified.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark-sec news" id="noticias">
+  <div class="wrap">
+    <div class="news-head">
+      <div>
+        <div class="kicker">Latest</div>
+        <h2>News and reactions</h2>
+      </div>
+      <a class="btn small" href="noticias/index.html">See all</a>
+    </div>
+    <div class="news-grid">
+      <a class="ncard" href="noticias/index.html#profersa">
+        <span class="kicker">26 Nov 2026 · Institutions</span>
+        <b>Sader stays. Profersa will close while making losses, and with compensation in the millions</b>
+        <span class="t">The City Council has agreed with Agaleus that Profersa will cease operating, for about 3 million euros. The hazardous waste plant remains in Zorroza with no closure date.</span>
+      </a>
+      <a class="ncard" href="noticias/index.html#manifestacion">
+        <span class="kicker">Call to action · 1 Dec 2026</span>
+        <b>Demonstration on 1 December, from the Basque Government to City Hall. It goes ahead after the Profersa announcement</b>
+        <span class="t">At 6.30 pm from Gran Vía 85. The agreement announced affects only Profersa; Sader still has no closure date.</span>
+      </a>
+      <a class="ncard" href="noticias/index.html#csic">
+        <span class="kicker">24 Nov 2026 · Study</span>
+        <b>The CSIC report is now available: four times more lead falls on San Ignacio than the maximum for the reference cities</b>
+        <span class="t">Four sites in Bilbao, 56 days of measurement and up to 69 components analysed. The summary and the full PDF.</span>
+      </a>
     </div>
   </div>
 </section>

@@ -138,6 +138,18 @@ body:not(.pasada) .ribbon{display:none}
 body:not(.pasada) .hero .wrap{padding-top:64px;padding-bottom:36px}
 @media (max-width:700px){.h-mani .fecha .r{display:block}.h-mani .top{gap:28px}.h-mani .cartel{max-width:none}.h-mani .cartel img{transform:none}}
 
+/* ---------- noticias ---------- */
+.news-head{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:32px}
+.news-head .kicker{color:#bdb6ac}
+.news-head h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(40px,5vw,64px);line-height:.98;margin:8px 0 0}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.ncard{background:#1f1f1f;border-top:3px solid var(--red);padding:22px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:#fff}
+.ncard:hover{background:#262626}
+.ncard .kicker{font-size:13px;color:#bdb6ac}
+.ncard b{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:24px;line-height:1.06}
+.ncard .t{font-size:16px;color:#d8d1c6}
+@media (max-width:900px){.news-grid{grid-template-columns:1fr}}
+
 /* ---------- nuevo informe del CSIC ---------- */
 .csic{background:var(--paper);border-bottom:3px solid var(--ink)}
 .csic .wrap{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
@@ -435,13 +447,13 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
   <div class="wrap">
     <a class="brand" href="#inicio">SADER-PROFERSA <b>KANPORA!</b></a>
     <nav class="nav" id="nav">
+      <a href="#noticias">Albisteak</a>
       <a href="#informe">Txostena</a>
       <a href="#protegete">Babestu</a>
       <a href="#actua">Ekin</a>
       <a href="#quien-decide">Nork erabakitzen du</a>
       <a href="#cronologia">Kronologia</a>
       <a href="#archivo">Artxiboa</a>
-      <a href="#contacto">Kontaktua</a>
       <!--idiomas--><span class="langs"><a class="lang" href="../index.html" lang="es" hreflang="es">ES</a><a class="lang cur" href="index.html" lang="eu" hreflang="eu">EU</a><a class="lang" href="../en/index.html" lang="en" hreflang="en">EN</a></span><!--/idiomas-->
       <a class="cta" href="#actua" data-wa>Batu</a>
     </nav>
@@ -523,6 +535,35 @@ footer ul{list-style:none;padding:0;margin:0}footer li{margin:4px 0}
         <a class="btn" href="csic/index.html">Funtsezkoena 2 minututan</a>
       </div>
       <p class="nota">56 eguneko neurketa lau puntutan, auzokideek zaindutako kaptadoreekin. Erreferentziako hiriak: Bartzelona, Zaragoza, Palma eta Iruñea (2016–2025). Ikerketa esploratzailea da: ez du, berez, iturri jakin bat egozteko aukerarik ematen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark-sec news" id="noticias">
+  <div class="wrap">
+    <div class="news-head">
+      <div>
+        <div class="kicker">Egunean</div>
+        <h2>Albisteak eta erreakzioak</h2>
+      </div>
+      <a class="btn small" href="noticias/index.html">Ikusi guztiak</a>
+    </div>
+    <div class="news-grid">
+      <a class="ncard" href="noticias/index.html#profersa">
+        <span class="kicker">2026ko aza. 26 · Erakundeak</span>
+        <b>Sader geratu egiten da. Profersa galeretan itxiko da, eta milioiko kalte-ordainarekin</b>
+        <span class="t">Udalak Agaleusekin adostu du Profersaren jarduera uztea, 3 milioi euro ingururen truke. Hondakin arriskutsuen plantak Zorrotzan jarraitzen du, itxiera-datarik gabe.</span>
+      </a>
+      <a class="ncard" href="noticias/index.html#manifestacion">
+        <span class="kicker">Deialdia · 2026ko abe. 1</span>
+        <b>Manifestazioa abenduaren 1ean, Eusko Jaurlaritzatik Udalera. Profersari buruzko iragarpenaren ondoren ere, bere horretan dago</b>
+        <span class="t">18:30ean, Gran Vía 85etik. Iragarritako hitzarmenak Profersari bakarrik eragiten dio; Saderrek itxiera-datarik gabe jarraitzen du.</span>
+      </a>
+      <a class="ncard" href="noticias/index.html#csic">
+        <span class="kicker">2026ko aza. 24 · Ikerketa</span>
+        <b>CSICen txostena eskuragarri dago: San Inazioren gainean, erreferentziako hirien maximoa baino lau aldiz berun gehiago erortzen da</b>
+        <span class="t">Bilboko lau puntu, 56 eguneko neurketa eta 69 osagai arte aztertuta. Laburpena eta PDF osoa.</span>
+      </a>
     </div>
   </div>
 </section>
